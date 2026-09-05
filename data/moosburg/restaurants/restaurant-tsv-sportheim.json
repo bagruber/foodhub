@@ -1,0 +1,44 @@
+{
+  "id": "restaurant-tsv-sportheim",
+  "name": "Restaurant TSV Sportheim",
+  "city": "moosburg",
+  "osm": "node/1871379343",
+  "address": {
+    "street": "Buchenlandstraße 36",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.479462,
+    "lon": 11.945913,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1871379343",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-06-26."
+    }
+  },
+  "contact": {
+    "website": "https://tsv-moosburg.de/sportlerheim/"
+  },
+  "cuisines": [
+    "balkan",
+    "international"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
+    "Karte laut OSM unter http://tsv-moosburg.de/wp-content/uploads/2020/11/Speisekarte.pdf"
+  ],
+  "openingHours": {
+    "raw": "Tu-Fr 11:30-14:30,17:00-23:00; Sa,Su,PH 10:00-22:00",
+    "osm": "Tu-Fr 11:30-14:30,17:00-23:00; Sa,Su,PH 10:00-22:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1871379343",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-06-26."
+    }
+  }
+}

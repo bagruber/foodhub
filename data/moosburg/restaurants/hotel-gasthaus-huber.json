@@ -1,0 +1,34 @@
+{
+  "id": "hotel-gasthaus-huber",
+  "name": "Hotel Gasthaus Huber",
+  "city": "moosburg",
+  "osm": "node/4293358798",
+  "address": {
+    "street": "Viehmarktstraße 5",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.466266,
+    "lon": 11.940197,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/4293358798",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-07-10."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 7603-0",
+    "website": "https://www.huber-hotel.de/"
+  },
+  "cuisines": [
+    "german",
+    "beer_garden"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ]
+}

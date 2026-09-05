@@ -1,0 +1,42 @@
+{
+  "id": "danys-sportsbar",
+  "name": "Danys Sportsbar",
+  "city": "moosburg",
+  "osm": "node/6747298613",
+  "address": {
+    "street": "Bahnhofstraße 50",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.471044,
+    "lon": 11.931982,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/6747298613",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 759217"
+  },
+  "cuisines": [
+    "bar"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Su,PH 11:00-22:00, Tu-Th 15:00-23:00, Fr,Sa 11:00-01:00; Mo off",
+    "osm": "Su,PH 11:00-22:00, Tu-Th 15:00-23:00, Fr,Sa 11:00-01:00; Mo off",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/6747298613",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "moosi",
+  "name": "Moosi",
+  "city": "moosburg",
+  "osm": "node/1827670873",
+  "address": {
+    "street": "Auf dem Gries 23",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.466882,
+    "lon": 11.93853,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1827670873",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  },
+  "contact": {},
+  "cuisines": [
+    "bar"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Mo 18:00-01:30, We,Th 18:00-04:00, Fr,Sa 18:00-05:30",
+    "osm": "Mo 18:00-01:30, We,Th 18:00-04:00, Fr,Sa 18:00-05:30",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1827670873",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  }
+}

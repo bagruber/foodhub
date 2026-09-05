@@ -1,0 +1,42 @@
+{
+  "id": "wiesender-caf",
+  "name": "Wiesender Café",
+  "city": "moosburg",
+  "osm": "node/687782802",
+  "address": {
+    "street": "Stadtplatz 17",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.467079,
+    "lon": 11.935287,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/687782802",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-23."
+    }
+  },
+  "contact": {
+    "website": "https://www.wiesender.de/"
+  },
+  "cuisines": [
+    "cafe"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Mo-Sa 07:00-18:00; Su,PH 07:30-18:00",
+    "osm": "Mo-Sa 07:00-18:00; Su,PH 07:30-18:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/687782802",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-23."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "hinweis": "Die 14 kennzeichnungspflichtigen Allergene der LMIV, Anhang II. Slug ist der Wert in den Kartendaten, label die Beschriftung in der App.",
+  "allergene": {
+    "gluten": "Glutenhaltiges Getreide",
+    "crustaceans": "Krebstiere",
+    "eggs": "Eier",
+    "fish": "Fisch",
+    "peanuts": "Erdnüsse",
+    "soybeans": "Soja",
+    "milk": "Milch und Milchprodukte",
+    "nuts": "Schalenfrüchte",
+    "celery": "Sellerie",
+    "mustard": "Senf",
+    "sesame": "Sesam",
+    "sulphites": "Schwefeldioxid und Sulphite",
+    "lupin": "Lupine",
+    "molluscs": "Weichtiere"
+  },
+  "zusatzstoffe": {
+    "colorant": "Farbstoff",
+    "preservative": "Konservierungsstoff",
+    "antioxidant": "Antioxidationsmittel",
+    "flavour_enhancer": "Geschmacksverstärker",
+    "sulphured": "geschwefelt",
+    "blackened": "geschwärzt",
+    "waxed": "gewachst",
+    "phosphate": "Phosphat",
+    "sweetener": "Süßungsmittel",
+    "phenylalanine": "enthält eine Phenylalaninquelle",
+    "caffeine": "coffeinhaltig",
+    "quinine": "chininhaltig",
+    "taurine": "taurinhaltig",
+    "nitrite_salt": "Nitritpökelsalz",
+    "milk_protein": "Milcheiweiß",
+    "acidifier": "Säuerungsmittel",
+    "surimi": "Surimi, Krebsfleischimitat",
+    "tartrazine": "Tartrazin",
+    "stabiliser": "Stabilisatoren",
+    "genetically_modified": "gentechnisch verändert",
+    "protein": "mit Proteinen"
+  }
+}

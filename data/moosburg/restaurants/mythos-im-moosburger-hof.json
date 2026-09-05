@@ -1,0 +1,45 @@
+{
+  "id": "mythos-im-moosburger-hof",
+  "name": "Mythos im Moosburger Hof",
+  "city": "moosburg",
+  "osm": "node/692985130",
+  "address": {
+    "street": "Landshuter Straße 14",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.465976,
+    "lon": 11.938096,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/692985130",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-01."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 9544",
+    "website": "https://www.mythos-moosburg.de/"
+  },
+  "cuisines": [
+    "greek",
+    "international"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
+    "Karte laut OSM unter https://mythos-moosburg.de/products"
+  ],
+  "openingHours": {
+    "raw": "Mo-Su 11:00-14:30,17:00-24:00",
+    "osm": "Mo-Su 11:00-14:30,17:00-24:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/692985130",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-01."
+    }
+  }
+}

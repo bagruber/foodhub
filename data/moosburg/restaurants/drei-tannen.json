@@ -1,0 +1,51 @@
+{
+  "id": "drei-tannen",
+  "name": "Gasthof Drei Tannen",
+  "city": "moosburg",
+  "address": {
+    "street": "Thalbacher Straße 53",
+    "postalCode": "85368",
+    "city": "Moosburg an der Isar"
+  },
+  "contact": {
+    "phone": "+49 8761 334633",
+    "email": "info@gasthof-dreitannen.de",
+    "website": "https://www.gasthof-dreitannen.de/"
+  },
+  "cuisines": [
+    "bavarian",
+    "german",
+    "inn",
+    "burger"
+  ],
+  "openingHours": {
+    "raw": "täglich von 11 - 22 Uhr, kein Ruhetag",
+    "osm": "Mo-Su 11:00-22:00",
+    "provenance": {
+      "kind": "pdf",
+      "file": "sources/moosburg/drei-tannen_speisekarte_2026-08-30.pdf",
+      "url": "https://www.gasthof-dreitannen.de/",
+      "retrievedAt": "2026-09-04",
+      "createdAt": "2026-08-30",
+      "note": "Steht auf Seite 1 der Speisekarte."
+    }
+  },
+  "ratings": [],
+  "menus": [
+    "drei-tannen_2026-08-30.json"
+  ],
+  "open": [
+    "Bewertungen noch nicht angebunden"
+  ],
+  "osm": "node/4317249046",
+  "location": {
+    "lat": 48.472053,
+    "lon": 11.93389,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/4317249046",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  }
+}

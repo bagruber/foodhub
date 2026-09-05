@@ -1,0 +1,930 @@
+{
+  "restaurant_info": {
+    "name": "AN Asia Cuisine & Sushi[cite: 1]",
+    "adresse": "Landshuter Straße 14, 85368 Moosburg[cite: 1]",
+    "oeffnungszeiten": "Montag - Freitag: 11:00 - 14:30 | 17:00 - 22:30, Samstag & Sonntag: 17:00 - 22:30[cite: 1]",
+    "beschreibung": "Bei AN bieten wir Ihnen ein unvergessliches kulinarisches Erlebnis mit authentischen asiatischen Gerichten und frischen Sushi. Jedes Gericht kombiniert frische Zutaten und traditionelle Zubereitung, um einen unverwechselbaren Geschmack zu bieten.[cite: 1]"
+  },
+  "zusatzstoffe": {
+    "1": "mit Farbstoff[cite: 1]",
+    "2": "mit Konservierungsstoff[cite: 1]",
+    "3": "mit Antioxidationsmittel[cite: 1]",
+    "4": "mit Geschmacksverstärker[cite: 1]",
+    "5": "geschwefelt[cite: 1]",
+    "6": "geschwärzt[cite: 1]",
+    "7": "mit Phosphat[cite: 1]",
+    "8": "mit Süssungsmittel[cite: 1]",
+    "9": "enthält Phenylalaninquelle[cite: 1]",
+    "10": "gewachst[cite: 1]",
+    "11": "mit Nitritpökelsalz[cite: 1]",
+    "12": "Tartrazin[cite: 1]",
+    "13": "gentechnisch verändert[cite: 1]",
+    "14": "mit Säuerungsmittel[cite: 1]",
+    "15": "Stabilisatoren[cite: 1]",
+    "16": "mit Proteine[cite: 1]",
+    "17": "mit Koffein[cite: 1]",
+    "18": "Nüsse und daraus gewonne Erzeugnisse[cite: 1]"
+  },
+  "allergene": {
+    "a": "glutenhaltiges Getreide/Weizen[cite: 1]",
+    "b": "Krebstiere[cite: 1]",
+    "c": "Eier und Eierzeugnisse[cite: 1]",
+    "d": "Fisch und Fischerzeugnisse[cite: 1]",
+    "e": "Erdnüsse und Erdnusserzeugnisse[cite: 1]",
+    "f": "Sojabohnen und Sojabohnenerzeugnisse[cite: 1]",
+    "g": "Milch und Milcherzeugnisse[cite: 1]",
+    "h": "Schalenfrüchte und Schalenfruchterzeugnisse[cite: 1]",
+    "i": "Sellerie und Sellerieerzeugnisse[cite: 1]",
+    "k": "Senf und Senferzeugnisse[cite: 1]",
+    "l": "Sesamsamen und Sesamerzeugnisse[cite: 1]",
+    "m": "Schwefeldioxid und Sulfite[cite: 1]",
+    "n": "Lupinen und Lupinenerzeugnisse[cite: 1]",
+    "o": "Weichtiere und Weichtiererzeugnisse[cite: 1]"
+  },
+  "speisekarte": {
+    "mittagsgerichte": {
+      "hinweis": "MO - FR : 11:00 - 14:30 UHR[cite: 1]",
+      "gerichte": [
+        {
+          "nummer": "M1[cite: 1]",
+          "name": "Süß-Saure Suppe[cite: 1]",
+          "allergene": "a,c,d[cite: 1]",
+          "preis": "4,00 €[cite: 1]"
+        },
+        {
+          "nummer": "M2[cite: 1]",
+          "name": "Mini-Frühlingsrolle[cite: 1]",
+          "preis": "4,00 €[cite: 1]"
+        },
+        {
+          "nummer": "M3[cite: 1]",
+          "name": "Ente knusprig mit Gemüse und Reis, Soße nach Wahl[cite: 1]",
+          "preis": "12,00 €[cite: 1]",
+          "auswahl": "A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k][cite: 1]"
+        },
+        {
+          "nummer": "M4[cite: 1]",
+          "name": "Huhn knusprig mit Gemüse und Reis, Soße nach Wahl[cite: 1]",
+          "preis": "11,00 €[cite: 1]",
+          "auswahl": "A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k][cite: 1]"
+        },
+        {
+          "nummer": "M5[cite: 1]",
+          "name": "Hühnerfleisch mit Gemüse und Reis, Soße nach Wahl[cite: 1]",
+          "preis": "11,00 €[cite: 1]",
+          "auswahl": "A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k][cite: 1]"
+        },
+        {
+          "nummer": "M6[cite: 1]",
+          "name": "Rindfleisch mit Gemüse und Reis, Soße nach Wahl[cite: 1]",
+          "preis": "11,00 €[cite: 1]",
+          "auswahl": "A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k][cite: 1]"
+        },
+        {
+          "nummer": "M7[cite: 1]",
+          "name": "Tofu gebraten mit Gemüse und Reis, Soße nach Wahl[cite: 1]",
+          "preis": "10,00 €[cite: 1]",
+          "auswahl": "A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k][cite: 1]"
+        },
+        {
+          "nummer": "M8[cite: 1]",
+          "name": "Garnelen mit Gemüse und Reis, Soße nach Wahl[cite: 1]",
+          "preis": "12,00 €[cite: 1]",
+          "auswahl": "A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k][cite: 1]"
+        },
+        {
+          "nummer": "M9[cite: 1]",
+          "name": "Gebratener Eierreis mit Gemüse[cite: 1]",
+          "allergene": "a,d,h[cite: 1]",
+          "preis_basis": "10,00 €[cite: 1]",
+          "auswahl": "A. Hühnerfleisch 11,00 € | B. Knuspriges Huhn [Allergene: b] 11,00 € | C. Knusprige Ente [Allergene: b] 12,00 € | D. Garnelen 12,00 € | E. Tofu 10,00 €[cite: 1]"
+        },
+        {
+          "nummer": "M10[cite: 1]",
+          "name": "Gebratene Nudeln mit Gemüse[cite: 1]",
+          "preis_basis": "10,00 €[cite: 1]",
+          "auswahl": "A. Hühnerfleisch 11,00 € | B. Knuspriges Huhn [Allergene: b] 11,00 € | C. Knusprige Ente [Allergene: b] 12,00 € | D. Garnelen 12,00 € | E. Tofu 10,00 €[cite: 1]"
+        },
+        {
+          "nummer": "M11[cite: 1]",
+          "name": "Maki Box[cite: 1]",
+          "beschreibung": "8 Avocado Maki, 8 Sake Maki, 8 Tekka Maki[cite: 1]",
+          "preis": "12,00 €[cite: 1]"
+        },
+        {
+          "nummer": "M12[cite: 1]",
+          "name": "Mix Box[cite: 1]",
+          "beschreibung": "3 Nigiri (Lachs, Thunfisch, Ebi), 4 Sake Maki, 4 Tekka Maki, 4 Tobiko Maki, 4 Alaska Maki[cite: 1]",
+          "preis": "16,00 €[cite: 1]"
+        },
+        {
+          "nummer": "M13[cite: 1]",
+          "name": "Inside-Out-Box[cite: 1]",
+          "beschreibung": "8 California Maki, 8 Tobiko Maki, 8 Alaska Maki[cite: 1]",
+          "preis": "18,00 €[cite: 1]"
+        }
+      ]
+    },
+    "suppen": [
+      {
+        "nummer": "1[cite: 1]",
+        "name": "Süß-sauer Suppe[cite: 1]",
+        "allergene": "a,c,d[cite: 1]",
+        "preis": "5,00 €[cite: 1]"
+      },
+      {
+        "nummer": "2[cite: 1]",
+        "name": "Curry Suppe (leicht scharf)[cite: 1]",
+        "beschreibung": "Mit gemischtem Gemüse und Entenfleisch[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "5,50 €[cite: 1]"
+      },
+      {
+        "nummer": "3[cite: 1]",
+        "name": "Hühner Suppe[cite: 1]",
+        "beschreibung": "Mit Gemüse und Hühnerfleisch[cite: 1]",
+        "allergene": "a,d,k[cite: 1]",
+        "preis": "5,00 €[cite: 1]"
+      },
+      {
+        "nummer": "4[cite: 1]",
+        "name": "Wantan Suppe[cite: 1]",
+        "beschreibung": "Mit Fleischfüllung in Teigtaschen und Gemüse, Glasnudeln[cite: 1]",
+        "allergene": "a,d,k[cite: 1]",
+        "preis": "5,00 €[cite: 1]"
+      },
+      {
+        "nummer": "5[cite: 1]",
+        "name": "Tom Yum (scharf)[cite: 1]",
+        "beschreibung": "Mit Gemüse, Garnelen, Zitronengras[cite: 1]",
+        "allergene": "a,d,k[cite: 1]",
+        "preis": "6,00 €[cite: 1]"
+      },
+      {
+        "nummer": "6[cite: 1]",
+        "name": "Tom Kha (leicht scharf)[cite: 1]",
+        "beschreibung": "Mit Gemüse, Hühnerfleisch, Kokosmilch[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "5,50 €[cite: 1]"
+      },
+      {
+        "nummer": "7[cite: 1]",
+        "name": "Miso Suppe[cite: 1]",
+        "beschreibung": "Mit Tofu, Seetang, Platte[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "5,00 €[cite: 1]"
+      }
+    ],
+    "vorspeisen": [
+      {
+        "nummer": "8[cite: 1]",
+        "name": "Gyoza Chicken[cite: 1]",
+        "beschreibung": "5 Teigtaschen mit Hühnerfleisch[cite: 1]",
+        "preis": "6,50 €[cite: 1]"
+      },
+      {
+        "nummer": "9[cite: 1]",
+        "name": "Gyoza Vegetarisch[cite: 1]",
+        "beschreibung": "5 Teigtaschen mit Gemüsefüllung[cite: 1]",
+        "preis": "5,50 €[cite: 1]"
+      },
+      {
+        "nummer": "10[cite: 1]",
+        "name": "Große Frühlingsrolle[cite: 1]",
+        "beschreibung": "Mit Gemüse, Hackfleisch, Glasnudeln[cite: 1]",
+        "allergene": "a,c,d,k[cite: 1]",
+        "preis": "5,00 €[cite: 1]"
+      },
+      {
+        "nummer": "11[cite: 1]",
+        "name": "Vietnamesische Frühlingsrollen (2 Stk.)[cite: 1]",
+        "beschreibung": "Hausgemachte Frühlingsrollen gefüllt mit Hackfleisch, Glasnudeln, Gemüse[cite: 1]",
+        "allergene": "a,c,d,k[cite: 1]",
+        "preis": "5,00 €[cite: 1]"
+      },
+      {
+        "nummer": "12[cite: 1]",
+        "name": "Mini Frühlingsrolle[cite: 1]",
+        "beschreibung": "5 Vegetarisch minirollen[cite: 1]",
+        "preis": "4,50 €[cite: 1]"
+      },
+      {
+        "nummer": "13[cite: 1]",
+        "name": "Wantan Gebacken[cite: 1]",
+        "beschreibung": "5 Teigtaschen mit Fleisch und Garnelenfüllung[cite: 1]",
+        "preis": "5,50 €[cite: 1]"
+      },
+      {
+        "nummer": "14[cite: 1]",
+        "name": "Garnelen Tempura (5 Stk.)[cite: 1]",
+        "beschreibung": "Garnelen im Teigmantel[cite: 1]",
+        "allergene": "a,d,k[cite: 1]",
+        "preis": "6,50 €[cite: 1]"
+      },
+      {
+        "nummer": "15[cite: 1]",
+        "name": "Sate Spieße[cite: 1]",
+        "beschreibung": "3 gegrillte Hühnerspieße mit Erdnuss-Sauce[cite: 1]",
+        "allergene": "a,b,d,e,h,k[cite: 1]",
+        "preis": "6,50 €[cite: 1]"
+      },
+      {
+        "nummer": "16[cite: 1]",
+        "name": "Dinsum Ha Cao[cite: 1]",
+        "beschreibung": "4 Stück gedämpfte Maultaschen mit Garnelenfüllung[cite: 1]",
+        "allergene": "a,d,i,k[cite: 1]",
+        "preis": "7,00 €[cite: 1]"
+      },
+      {
+        "nummer": "17[cite: 1]",
+        "name": "Dinsum Xiu Mai[cite: 1]",
+        "beschreibung": "4 Stück gedämpfte Maultaschen mit Fleisch und Garnelenfüllung[cite: 1]",
+        "allergene": "a,d,i,k[cite: 1]",
+        "preis": "7,00 €[cite: 1]"
+      },
+      {
+        "nummer": "18[cite: 1]",
+        "name": "Yaki Tori[cite: 1]",
+        "beschreibung": "3 Stück Spezielle Hühnerspieße mit Teriyaki Sauce, Sesam[cite: 1]",
+        "allergene": "a,d,e[cite: 1]",
+        "preis": "7,00 €[cite: 1]"
+      },
+      {
+        "nummer": "19[cite: 1]",
+        "name": "Goi Cuon[cite: 1]",
+        "beschreibung": "2 Sommerrollen eingerollt in Reisblätter mit Salat, Kräutern und Erdnuss-Soße[cite: 1]",
+        "auswahl": "A. Garnelen (gekochte Garnelen) 8,00 € | B. Rind (gegrilltes Rinderhüftsteak) 7,00 € | C. Hühnerfleisch (gegrilltes Hühnerbrustfilet) 7,00 € | D. Ente (Knusprige Ente) 7,00 € | E. Tofu (gebratener Tofu) 6,00 € | F. Salmon Avo (roher Lachs, Avocado) 8,00 €[cite: 1]"
+      }
+    ],
+    "salat": [
+      {
+        "nummer": "20[cite: 1]",
+        "name": "Edamame[cite: 1]",
+        "beschreibung": "Japanische grüne Bohnen[cite: 1]",
+        "preis": "6,50 €[cite: 1]"
+      },
+      {
+        "nummer": "21[cite: 1]",
+        "name": "Hühnerfleisch Salat[cite: 1]",
+        "beschreibung": "Mit Gemüse und Hühnerfleisch[cite: 1]",
+        "allergene": "a,i,k[cite: 1]",
+        "preis": "6,50 €[cite: 1]"
+      },
+      {
+        "nummer": "22[cite: 1]",
+        "name": "Ente Salat[cite: 1]",
+        "beschreibung": "Frische Mangostreifen mit Kräutern, Erdnüssen, Schalotten[cite: 1]",
+        "allergene": "a,i,k[cite: 1]",
+        "preis": "8,50 €[cite: 1]"
+      },
+      {
+        "nummer": "23[cite: 1]",
+        "name": "Avocado Salat[cite: 1]",
+        "beschreibung": "Mit Avocado, Wildkräutersalat[cite: 1]",
+        "preis": "7,00 €[cite: 1]"
+      },
+      {
+        "nummer": "24[cite: 1]",
+        "name": "Wakame Salat[cite: 1]",
+        "beschreibung": "Seealgensalat mit erlesenem Sesam[cite: 1]",
+        "preis": "7,50 €[cite: 1]"
+      },
+      {
+        "nummer": "25[cite: 1]",
+        "name": "Papaya Salat[cite: 1]",
+        "beschreibung": "Frische Papaya mit Garnelen, Kräutern, Erdnüssen, Schalotten[cite: 1]",
+        "allergene": "a,b,c,f,n[cite: 1]",
+        "preis": "8,50 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_gebratenes_huehnerfleisch": [
+      {
+        "nummer": "30[cite: 1]",
+        "name": "Hühnerfleisch gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "13,00 €[cite: 1]"
+      },
+      {
+        "nummer": "31[cite: 1]",
+        "name": "Hühnerfleisch gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "13,00 €[cite: 1]"
+      },
+      {
+        "nummer": "32[cite: 1]",
+        "name": "Hühnerfleisch gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse in Mangosoße[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "13,00 €[cite: 1]"
+      },
+      {
+        "nummer": "33[cite: 1]",
+        "name": "Hühnerfleisch gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse in Sojasoße[cite: 1]",
+        "allergene": "b,k[cite: 1]",
+        "preis": "13,00 €[cite: 1]"
+      },
+      {
+        "nummer": "34[cite: 1]",
+        "name": "Hühnerfleisch gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse in Gongpo Soße (leicht scharf)[cite: 1]",
+        "allergene": "a,b,d[cite: 1]",
+        "preis": "13,00 €[cite: 1]"
+      },
+      {
+        "nummer": "35[cite: 1]",
+        "name": "Hühnerfleisch gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und Sate-Erdnuss Soße[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "13,00 €[cite: 1]"
+      },
+      {
+        "nummer": "36[cite: 1]",
+        "name": "Hühnerfleisch gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und Süß-Sauer-Soße (scharf)[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "13,00 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_gebratenes_rindfleisch": [
+      {
+        "nummer": "40[cite: 1]",
+        "name": "Rindfleisch[cite: 1]",
+        "beschreibung": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "41[cite: 1]",
+        "name": "Rindfleisch[cite: 1]",
+        "beschreibung": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "42[cite: 1]",
+        "name": "Rindfleisch[cite: 1]",
+        "beschreibung": "Mit Gemüse in Mangosoße[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "43[cite: 1]",
+        "name": "Rindfleisch[cite: 1]",
+        "beschreibung": "Mit Gemüse in Sojasoße[cite: 1]",
+        "allergene": "b,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "44[cite: 1]",
+        "name": "Rindfleisch[cite: 1]",
+        "beschreibung": "Mit Gemüse in Gongpo Soße (leicht scharf)[cite: 1]",
+        "allergene": "a,b,d[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "45[cite: 1]",
+        "name": "Rindfleisch[cite: 1]",
+        "beschreibung": "Mit Gemüse und Sate-Erdnuss Soße[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "46[cite: 1]",
+        "name": "Rindfleisch[cite: 1]",
+        "beschreibung": "Mit Gemüse und Süß-Sauer-Soße (scharf)[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_ente_knusprig": [
+      {
+        "nummer": "50[cite: 1]",
+        "name": "Ente Knusprig[cite: 1]",
+        "beschreibung": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "17,00 €[cite: 1]"
+      },
+      {
+        "nummer": "51[cite: 1]",
+        "name": "Ente Knusprig[cite: 1]",
+        "beschreibung": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "17,00 €[cite: 1]"
+      },
+      {
+        "nummer": "52[cite: 1]",
+        "name": "Ente Knusprig[cite: 1]",
+        "beschreibung": "Mit Gemüse in Mangosoße[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "17,00 €[cite: 1]"
+      },
+      {
+        "nummer": "53[cite: 1]",
+        "name": "Ente Knusprig[cite: 1]",
+        "beschreibung": "Mit Gemüse in Sojasoße[cite: 1]",
+        "allergene": "b,k[cite: 1]",
+        "preis": "17,00 €[cite: 1]"
+      },
+      {
+        "nummer": "54[cite: 1]",
+        "name": "Ente Knusprig[cite: 1]",
+        "beschreibung": "Mit Gemüse in Gongpo Soße (leicht scharf)[cite: 1]",
+        "allergene": "a,b,d[cite: 1]",
+        "preis": "17,00 €[cite: 1]"
+      },
+      {
+        "nummer": "55[cite: 1]",
+        "name": "Ente Knusprig[cite: 1]",
+        "beschreibung": "Mit Gemüse und Sate-Erdnuss Soße[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "17,00 €[cite: 1]"
+      },
+      {
+        "nummer": "56[cite: 1]",
+        "name": "Ente Knusprig[cite: 1]",
+        "beschreibung": "Mit Gemüse in Süß-Sauer Soße[cite: 1]",
+        "allergene": "a,b[cite: 1]",
+        "preis": "17,00 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_haehnchen_knusprig": [
+      {
+        "nummer": "60[cite: 1]",
+        "name": "Knuspriges Huhn[cite: 1]",
+        "beschreibung": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "61[cite: 1]",
+        "name": "Knuspriges Huhn[cite: 1]",
+        "beschreibung": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "62[cite: 1]",
+        "name": "Knuspriges Huhn[cite: 1]",
+        "beschreibung": "Mit Gemüse in Mangosoße[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "63[cite: 1]",
+        "name": "Knuspriges Huhn[cite: 1]",
+        "beschreibung": "Mit Gemüse in Sojasoße[cite: 1]",
+        "allergene": "b,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "64[cite: 1]",
+        "name": "Knuspriges Huhn[cite: 1]",
+        "beschreibung": "Mit Gemüse in Gongpo Soße (leicht scharf)[cite: 1]",
+        "allergene": "a,b,d[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "65[cite: 1]",
+        "name": "Knuspriges Huhn[cite: 1]",
+        "beschreibung": "Mit Gemüse und Sate-Erdnuss Soße[cite: 1]",
+        "allergene": "b,k[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "66[cite: 1]",
+        "name": "Knuspriges Huhn[cite: 1]",
+        "beschreibung": "Mit Gemüse in Süß-Sauer Soße[cite: 1]",
+        "allergene": "a,b[cite: 1]",
+        "preis": "15,00 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_garnelen_und_gemuese": [
+      {
+        "nummer": "70[cite: 1]",
+        "name": "Garnelen gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und Currysauce (scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "18,50 €[cite: 1]"
+      },
+      {
+        "nummer": "71[cite: 1]",
+        "name": "Garnelen gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und gelber Kokos-Currysauce (leicht scharf)[cite: 1]",
+        "allergene": "a,e,k[cite: 1]",
+        "preis": "18,50 €[cite: 1]"
+      },
+      {
+        "nummer": "72[cite: 1]",
+        "name": "Garnelen gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und Mangosauce[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "18,50 €[cite: 1]"
+      },
+      {
+        "nummer": "73[cite: 1]",
+        "name": "Garnelen gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und Sojasauce[cite: 1]",
+        "allergene": "b,k[cite: 1]",
+        "preis": "18,50 €[cite: 1]"
+      },
+      {
+        "nummer": "74[cite: 1]",
+        "name": "Garnelen gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse in Gongpo-Sauce (leicht scharf)[cite: 1]",
+        "allergene": "a,b,d[cite: 1]",
+        "preis": "18,50 €[cite: 1]"
+      },
+      {
+        "nummer": "75[cite: 1]",
+        "name": "Garnelen gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und Satay-Erdnusssauce[cite: 1]",
+        "allergene": "b,k[cite: 1]",
+        "preis": "18,50 €[cite: 1]"
+      },
+      {
+        "nummer": "76[cite: 1]",
+        "name": "Garnelen gebraten[cite: 1]",
+        "beschreibung": "Mit Gemüse und Süß-Sauer-Soße (scharf)[cite: 1]",
+        "allergene": "a,k[cite: 1]",
+        "preis": "18,50 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_nudeln_und_reis": [
+      {
+        "nummer": "80[cite: 1]",
+        "name": "Nudeln gebraten mit Gemüse[cite: 1]",
+        "allergene": "c-d-k[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 13,00 € | B. Huhn Knusprig 15,00 € | C. Ente Knusprig 17,00 € | D. Garnelen 18,50 € | E. Tofu 12,00 € | F. Rindfleisch 15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "81[cite: 1]",
+        "name": "Eierreis gebraten mit Gemüse[cite: 1]",
+        "allergene": "a-d-k[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 13,00 € | B. Huhn Knusprig 15,00 € | C. Ente Knusprig 17,00 € | D. Garnelen 18,50 € | E. Tofu 12,00 € | F. Rindfleisch 15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "82[cite: 1]",
+        "name": "Pad Thai mit Gemüse[cite: 1]",
+        "allergene": "a-c-d-k-h[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 13,00 € | B. Huhn Knusprig 15,00 € | C. Ente Knusprig 17,00 € | D. Garnelen 18,50 € | E. Tofu 12,00 € | F. Rindfleisch 15,00 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_tofu_gebraten": [
+      {
+        "nummer": "90[cite: 1]",
+        "name": "Mit Gemüse, Reis und roter Thai-Kokos-Currysauce (scharf)[cite: 1]",
+        "allergene": "a,b,e,k[cite: 1]",
+        "preis": "12,00 €[cite: 1]"
+      },
+      {
+        "nummer": "91[cite: 1]",
+        "name": "Mit Gemüse, Reis und gelber Thai-Kokos-Currysauce (leicht scharf)[cite: 1]",
+        "allergene": "a,b,e,k[cite: 1]",
+        "preis": "12,00 €[cite: 1]"
+      },
+      {
+        "nummer": "92[cite: 1]",
+        "name": "Mit Gemüse, Reis und Mangosauce[cite: 1]",
+        "allergene": "a,b,e,k[cite: 1]",
+        "preis": "12,00 €[cite: 1]"
+      },
+      {
+        "nummer": "93[cite: 1]",
+        "name": "Mit Gemüse, Reis und Sojasauce[cite: 1]",
+        "allergene": "a,b,e,k[cite: 1]",
+        "preis": "12,00 €[cite: 1]"
+      },
+      {
+        "nummer": "94[cite: 1]",
+        "name": "Mit Gemüse in Gongpo-Sauce (leicht scharf)[cite: 1]",
+        "allergene": "a,b,e,k[cite: 1]",
+        "preis": "12,00 €[cite: 1]"
+      },
+      {
+        "nummer": "95[cite: 1]",
+        "name": "Mit Gemüse und Satay-Erdnusssauce[cite: 1]",
+        "allergene": "a,b,e,k[cite: 1]",
+        "preis": "12,00 €[cite: 1]"
+      },
+      {
+        "nummer": "96[cite: 1]",
+        "name": "Mit Gemüse und Süß-Sauer-Soße (scharf)[cite: 1]",
+        "allergene": "a,b,e,k[cite: 1]",
+        "preis": "12,00 €[cite: 1]"
+      }
+    ],
+    "nachtisch": [
+      {
+        "nummer": "97[cite: 1]",
+        "name": "Banane[cite: 1]",
+        "auswahl": "a. Banane gebacken (5 Stk.) Mit Honig und Sesam, Erdnüssen 5,00 € | b. Banane gekocht Mit Sesam und Erdnüssen in Kokosmilch 6,50 € | c. Banane und Vanilleeis Mit Honig und Erdnüssen (4 Stk. Banane, 1 Vanilleeis) 5,50 €[cite: 1]"
+      },
+      {
+        "nummer": "98[cite: 1]",
+        "name": "Mochi Eis[cite: 1]",
+        "beschreibung": "Cocos, Schoko, Mango[cite: 1]",
+        "preis": "7,50 €[cite: 1]"
+      },
+      {
+        "nummer": "99[cite: 1]",
+        "name": "Kem Vanilleeis[cite: 1]",
+        "beschreibung": "Mit Erdnüssen[cite: 1]",
+        "preis": "7,50 €[cite: 1]"
+      },
+      {
+        "nummer": "100[cite: 1]",
+        "name": "Kem Me Den[cite: 1]",
+        "beschreibung": "Schwarzes Sesam-Eis und Erdnüsse.[cite: 1]",
+        "preis": "7,50 €[cite: 1]"
+      }
+    ],
+    "hauptspeisen_spezial": [
+      {
+        "nummer": "V1[cite: 1]",
+        "name": "PHO[cite: 1]",
+        "beschreibung": "Hausgemachte Suppe mit Kräutern Reisbandnudeln, Sojasprossen[cite: 1]",
+        "allergene": "a-h-k-b[cite: 1]",
+        "auswahl": "A. Rindfleisch 16,00 € | B. Hühnerfleisch 15,00 € | C. Tofu 15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "V2[cite: 1]",
+        "name": "BÚN BOWLS[cite: 1]",
+        "beschreibung": "Mit Wildkräutersalat, Thai Kräutern, Reisnudeln, Erdnüssen Hausgemachter Soße und nach Wahl[cite: 1]",
+        "allergene": "h-k-b[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 15,00 € | B. Huhn Knusprig 16,00 € | C. Ente Knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 € | G. Schweinefleisch 16,00 € | H. Frühlingsrolle 15,00 €[cite: 1]"
+      },
+      {
+        "nummer": "V3[cite: 1]",
+        "name": "UDON GEBRATEN MIT GEMÜSE[cite: 1]",
+        "allergene": "a-c-d-k-h[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 15,00 € | B. Huhn Knusprig 16,00 € | C. Ente Knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €[cite: 1]"
+      },
+      {
+        "nummer": "V4[cite: 1]",
+        "name": "MISO RAMEN[cite: 1]",
+        "allergene": "a-c-d-k[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 15,00 € | B. Huhn knusprig 16,00 € | C. Ente knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €[cite: 1]"
+      },
+      {
+        "nummer": "V5[cite: 1]",
+        "name": "TONKOTSU RAMEN[cite: 1]",
+        "allergene": "a-c-d-k[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 15,00 € | B. Huhn knusprig 16,00 € | C. Ente knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €[cite: 1]"
+      },
+      {
+        "nummer": "V6[cite: 1]",
+        "name": "TANTAN RAMEN (SCHARF)[cite: 1]",
+        "allergene": "a-c-d-k[cite: 1]",
+        "auswahl": "A. Hühnerfleisch 15,00 € | B. Huhn knusprig 16,00 € | C. Ente knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €[cite: 1]"
+      }
+    ],
+    "beilagen": [
+      {
+        "name": "Nudeln gebraten mit Gemüse[cite: 1]",
+        "preis": "6,00 €[cite: 1]"
+      },
+      {
+        "name": "Eierreis gebraten mit Gemüse[cite: 1]",
+        "preis": "6,00 €[cite: 1]"
+      },
+      {
+        "name": "Extra Reis[cite: 1]",
+        "preis": "3,00 €[cite: 1]"
+      },
+      {
+        "name": "Extra Soße[cite: 1]",
+        "preis": "3,00 €[cite: 1]"
+      }
+    ],
+    "sushi_maki": {
+      "hinweis": "JE 8 STK.[cite: 1]",
+      "gerichte": [
+        { "nummer": "101[cite: 1]", "name": "Sake Avocado Maki[cite: 1]", "beschreibung": "Mit Lachs, Avocado[cite: 1]", "allergene": "d[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "102[cite: 1]", "name": "Teka Avocado Maki[cite: 1]", "beschreibung": "Mit Thunfisch, Avocado[cite: 1]", "allergene": "d[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "103[cite: 1]", "name": "Ebi Avocado Maki[cite: 1]", "beschreibung": "Mit Garnelen, Avocado[cite: 1]", "allergene": "b[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "104[cite: 1]", "name": "Unagi Avocado Maki[cite: 1]", "beschreibung": "Mit Aal, Avocado[cite: 1]", "allergene": "d[cite: 1]", "preis": "6,50 €[cite: 1]" },
+        { "nummer": "105[cite: 1]", "name": "Ebi Tempura Maki[cite: 1]", "beschreibung": "Tempura[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "106[cite: 1]", "name": "Salmonskin Maki[cite: 1]", "beschreibung": "Gegrillter Lachs, Gurken, Aal-Soße[cite: 1]", "allergene": "d[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "107[cite: 1]", "name": "Avocado Maki[cite: 1]", "beschreibung": "Avocado Roll[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "nummer": "108[cite: 1]", "name": "Kappa Maki[cite: 1]", "beschreibung": "Gurke Roll[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "nummer": "109[cite: 1]", "name": "Shinko Maki[cite: 1]", "beschreibung": "Eingelegter Rettich Roll[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "nummer": "110[cite: 1]", "name": "Kamin Maki[cite: 1]", "beschreibung": "Kürbis Roll[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "nummer": "111[cite: 1]", "name": "Tamago Maki[cite: 1]", "allergene": "d[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "nummer": "112[cite: 1]", "name": "Surimi Maki[cite: 1]", "beschreibung": "Krebs Roll[cite: 1]", "allergene": "b,d[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "nummer": "113[cite: 1]", "name": "Ebi Maki[cite: 1]", "beschreibung": "Garnelen Roll[cite: 1]", "preis": "5,00 €[cite: 1]" },
+        { "nummer": "114[cite: 1]", "name": "Shake Maki[cite: 1]", "beschreibung": "Lachs Roll[cite: 1]", "allergene": "d[cite: 1]", "preis": "5,00 €[cite: 1]" },
+        { "nummer": "115[cite: 1]", "name": "Tekka Maki[cite: 1]", "beschreibung": "Thunfisch Roll[cite: 1]", "allergene": "d[cite: 1]", "preis": "5,00 €[cite: 1]" }
+      ]
+    },
+    "sushi_inside_out": {
+      "hinweis": "JE 8 STK.[cite: 1]",
+      "gerichte": [
+        { "nummer": "116[cite: 1]", "name": "Red Dragon[cite: 1]", "beschreibung": "Garnelen, Surimi, Gurke, Fischkaviar, Mayonnaise[cite: 1]", "allergene": "b,g,j[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "117[cite: 1]", "name": "California Roll[cite: 1]", "beschreibung": "Surimi, Avocado, Gurke, Frischkäse mit Sesam[cite: 1]", "allergene": "b,g,j[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "118[cite: 1]", "name": "Tuna Roll[cite: 1]", "beschreibung": "Thunfisch, Avocado, Gurke, Frischkäse mit Sesam[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "119[cite: 1]", "name": "Salmon Roll[cite: 1]", "beschreibung": "Lachs, Avocado, Gurke, Frischkäse mit Sesam[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "120[cite: 1]", "name": "Salmon Skin Roll[cite: 1]", "beschreibung": "Gegrillter Lachs, Gurke, Frischkäse mit Sesam[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "121[cite: 1]", "name": "Unagi Roll[cite: 1]", "beschreibung": "Aal, Gurke, Frischkäse mit Sesam, Aal-Soße[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "122[cite: 1]", "name": "Tempura Roll[cite: 1]", "beschreibung": "Garnelen Tempura, Avocado, Frischkäse mit Aal-Soße[cite: 1]", "preis": "9,00 €[cite: 1]" },
+        { "nummer": "123[cite: 1]", "name": "Duck's Roll[cite: 1]", "beschreibung": "Ente, Rucola, Frischkäse mit Aal-Soße[cite: 1]", "preis": "9,00 €[cite: 1]" },
+        { "nummer": "124[cite: 1]", "name": "Chicken Roll[cite: 1]", "beschreibung": "Hähnchen, Avocado, Gurke, Frischkäse und Sesam[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "125[cite: 1]", "name": "Rucola Roll[cite: 1]", "beschreibung": "Avocado, Gurke, Frischkäse mit Rucola[cite: 1]", "allergene": "o[cite: 1]", "preis": "7,00 €[cite: 1]" },
+        { "nummer": "126[cite: 1]", "name": "Monk Roll[cite: 1]", "beschreibung": "Avocado, Gurke, Mango, Frischkäse mit Sesam[cite: 1]", "allergene": "o[cite: 1]", "preis": "7,00 €[cite: 1]" }
+      ]
+    },
+    "sushi_crunchy": {
+      "hinweis": "JE 10 STK.[cite: 1]",
+      "gerichte": [
+        { "nummer": "S1[cite: 1]", "name": "Crunchy Salmon Rolls[cite: 1]", "beschreibung": "Lachs, Avocado, Gurke, Frischkäse mit Unagi-Sauce und scharfe Mayonnaise[cite: 1]", "preis": "13,00 €[cite: 1]" },
+        { "nummer": "S2[cite: 1]", "name": "Crunchy Shrimp Rolls[cite: 1]", "beschreibung": "Tempura Garnelen, Gurke, Avocado, Frischkäse, Mayonnaise[cite: 1]", "preis": "13,00 €[cite: 1]" },
+        { "nummer": "S3[cite: 1]", "name": "Crunchy Chicken[cite: 1]", "beschreibung": "Hähnchen, Avocado, Gurke, Frischkäse, Unagi-Sauce und scharfe Mayonnaise[cite: 1]", "preis": "12,00 €[cite: 1]" },
+        { "nummer": "S4[cite: 1]", "name": "Crunchy Veggie[cite: 1]", "beschreibung": "Avocado, Gurke, Mango, Frischkäse, Rucola, Unagi-Sauce, scharfe Mayonnaise & Sesam[cite: 1]", "preis": "11,00 €[cite: 1]" },
+        { "nummer": "S5[cite: 1]", "name": "Special Cruchy[cite: 1]", "beschreibung": "Lachs, Thunfisch, Garnelen, Avocado, Frischkäse, Unagi- Sauce, scharfe Mayonnaise und Fischkaviar[cite: 1]", "preis": "16,00 €[cite: 1]" }
+      ]
+    },
+    "sushi_spezialitaeten": {
+      "hinweis": "JE 8 STK.[cite: 1]",
+      "gerichte": [
+        { "nummer": "S6[cite: 1]", "name": "Tempura Salmon Roll[cite: 1]", "beschreibung": "Garnelen Tempura, Avocado, Frischkäse ummantelt mit Lachs, Avocado, Unagi-Sauce, scharfer Mayonnaise[cite: 1]", "preis": "13,00 €[cite: 1]" },
+        { "nummer": "S7[cite: 1]", "name": "Tempura Deluxe Roll[cite: 1]", "beschreibung": "Garnelen Tempura, Gurke, Frischkäse ummantelt mit Avocado, scharfer Mayonnaise, Unagi-Sauce[cite: 1]", "preis": "13,00 €[cite: 1]" },
+        { "nummer": "S8[cite: 1]", "name": "Salmon Rucola Roll[cite: 1]", "beschreibung": "Lachs, Avocado, Frischkäse ummantelt mit flammbiertem Lachs, Rucola, scharfer Mayonnaise, Unagi-Sauce[cite: 1]", "preis": "13,00 €[cite: 1]" },
+        { "nummer": "S9[cite: 1]", "name": "Salmon Mango Roll[cite: 1]", "beschreibung": "Gegrillte Lachs, Mango, Frischkäse ummantelt mit flammbiertem Lachs, Frühlingszwiebeln, scharfer Mayonnaise, Unagi-Sauce[cite: 1]", "preis": "13,00 €[cite: 1]" },
+        { "nummer": "S10[cite: 1]", "name": "Moon River Roll[cite: 1]", "beschreibung": "Surimi, Avocado, Gurke, Frischkäse ummantelt mit Lachs, Rucola, scharfer Mayonnaise, Unagi-Sauce[cite: 1]", "preis": "13,00 €[cite: 1]" },
+        { "nummer": "S11[cite: 1]", "name": "Veggie Roll[cite: 1]", "beschreibung": "Avocado, Gurke, Mango, Frischkäse ummantelt mit Avocado, Sesam, scharfer Mayonnaise[cite: 1]", "preis": "10,00 €[cite: 1]" }
+      ]
+    },
+    "sushi_nigiri": {
+      "hinweis": "JE 2 STK.[cite: 1]",
+      "gerichte": [
+        { "nummer": "N1[cite: 1]", "name": "Sake Nigiri (Lachs)[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "N2[cite: 1]", "name": "Maguro (Thunfisch)[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "N3[cite: 1]", "name": "Ebi (Garnelen)[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "N4[cite: 1]", "name": "Ika (Tintenfisch)[cite: 1]", "preis": "5,50 €[cite: 1]" },
+        { "nummer": "N5[cite: 1]", "name": "Tako (Oktopus)[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "N6[cite: 1]", "name": "Unagi (Aal)[cite: 1]", "preis": "6,00 €[cite: 1]" },
+        { "nummer": "N7[cite: 1]", "name": "Tamago (Eierstich)[cite: 1]", "allergene": "b,c[cite: 1]", "preis": "5,00 €[cite: 1]" },
+        { "nummer": "N8[cite: 1]", "name": "Saba (Makrele)[cite: 1]", "preis": "5,00 €[cite: 1]" },
+        { "nummer": "N9[cite: 1]", "name": "Shiromi (Tilapia)[cite: 1]", "preis": "5,00 €[cite: 1]" },
+        { "nummer": "N10[cite: 1]", "name": "Tobiko (Fischkaviar)[cite: 1]", "preis": "8,00 €[cite: 1]" },
+        { "nummer": "N11[cite: 1]", "name": "Avocado (Avocado)[cite: 1]", "preis": "5,00 €[cite: 1]" }
+      ]
+    },
+    "sushi_sashimi": [
+      { "nummer": "S15[cite: 1]", "name": "Salmon Sashimi[cite: 1]", "beschreibung": "8 Stück Lachs, Wakame, Avocado, Wildkräutersalat[cite: 1]", "preis": "16,00 €[cite: 1]" },
+      { "nummer": "S16[cite: 1]", "name": "Tuna Sashimi[cite: 1]", "beschreibung": "8 Stück Thunfisch, Wakame, Avocado, Wildkräutersalat[cite: 1]", "preis": "18,00 €[cite: 1]" },
+      { "nummer": "S17[cite: 1]", "name": "Salmon Tuna Sashimi[cite: 1]", "beschreibung": "8 Stück Lachs und Thunfisch, Wakame, Avocado, Wildkräutersalat[cite: 1]", "preis": "18,00 €[cite: 1]" }
+    ],
+    "sushi_menue": [
+      { "nummer": "S20[cite: 1]", "name": "Sapporo[cite: 1]", "beschreibung": "8 Lachs Maki, 8 Tuna Maki, 8 Kappa Maki[cite: 1]", "allergene": "d,j,k[cite: 1]", "preis": "13,00 €[cite: 1]" },
+      { "nummer": "S21[cite: 1]", "name": "Edo[cite: 1]", "beschreibung": "8 Lachs Maki, 8 Tuna Maki, 2 Nigiri (Lachs, Thunfisch)[cite: 1]", "allergene": "d,k[cite: 1]", "preis": "14,00 €[cite: 1]" },
+      { "nummer": "S22[cite: 1]", "name": "Nara[cite: 1]", "beschreibung": "8 Alaskas Maki, 3 Nigiri (Lachs, Thunfisch, Tilapia)[cite: 1]", "allergene": "d,j,k[cite: 1]", "preis": "14,00 €[cite: 1]" },
+      { "nummer": "S23[cite: 1]", "name": "Matoi[cite: 1]", "beschreibung": "4 Tobiko Maki, 4 Alaska Maki, 4 Sake Maki, 4 Tuna Maki, 3 Nigiri (Lachs, Thunfisch, Ebi)[cite: 1]", "allergene": "d,j,k[cite: 1]", "preis": "18,00 €[cite: 1]" },
+      { "nummer": "S24[cite: 1]", "name": "Matsu[cite: 1]", "beschreibung": "8 Tobiko Maki, 8 California Maki, 8 Salmonskin Maki[cite: 1]", "allergene": "b,d,k[cite: 1]", "preis": "20,00 €[cite: 1]" },
+      { "nummer": "S25[cite: 1]", "name": "Nagano[cite: 1]", "beschreibung": "8 Alaska Maki, 8 Nigiri[cite: 1]", "allergene": "c,d,j,k[cite: 1]", "preis": "19,00 €[cite: 1]" },
+      { "nummer": "S26[cite: 1]", "name": "Salmon mix[cite: 1]", "beschreibung": "8 Lachs Maki, 8 Salmon, Rucola Rolle, 10 Crunchy Salmon[cite: 1]", "preis": "28,00 €[cite: 1]" },
+      { "nummer": "S27[cite: 1]", "name": "Sushi Platte für 2[cite: 1]", "beschreibung": "10 Crunchy Salmon Roll, 8 Lachs Maki, 8 Gurke Maki, 8 Tobiko Maki, 8 California Maki, 6 Nigiri[cite: 1]", "preis": "45,00 €[cite: 1]" },
+      { "nummer": "S28[cite: 1]", "name": "Sushi Platte ab 2 Special[cite: 1]", "beschreibung": "8 Tempura Salmon Rolle, 8 Red Dragon, 8 Alaska Maki, 4 Lachs Maki, 4 Avocado Maki, 10 Crunchy Chicken, 6 Nigiri, 3 Stück Lachs Sashimi[cite: 1]", "preis": "75,00 €[cite: 1]" }
+    ]
+  },
+  "getraenke": {
+    "softdrinks": [
+      { "name": "Adelholzener Classic[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Adelholzener Natural[cite: 1]", "preis": "0,75 L 6,80 €[cite: 1]" },
+      { "name": "Coca Cola, light[cite: 1]", "zusatzstoffe": "1-9-11[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Libella Orangen Limonade[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Libella Zitronen Limonade[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Cola Mix[cite: 1]", "zusatzstoffe": "1-9[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Bitter Lemon[cite: 1]", "zusatzstoffe": "3-10[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Ginger Ale Mint[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Wild Berry[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Tonic Water[cite: 1]", "preis": "0,25 L 2,50 € / 0,50 L 4,00 €[cite: 1]" },
+      { "name": "Eistee Pfirsich[cite: 1]", "preis": "0,25 L 3,00 € / 0,50 L 5,00 €[cite: 1]" }
+    ],
+    "schorle": [
+      { "name": "Mango / Lychee / Johannisbeere / Orangen / Maracuja / Apfel / Rhabarber[cite: 1]", "preis": "0,25 L 2,50 € / 0,5 L 4,00 €[cite: 1]" }
+    ],
+    "saft": [
+      { "name": "Mango / Lychee / Johannisbeere / Orangen / Maracuja / Apfel / Rhabarber[cite: 1]", "preis": "0,25 L 3,50 € / 0,5 L 5,00 €[cite: 1]" }
+    ],
+    "erfrischungsgetraenke": [
+      { "name": "Unicon Lemon[cite: 1]", "beschreibung": "Bitter Lemon, Zitronensaft, Minze, Zucker, Eiswürfel[cite: 1]", "preis": "6,50 €[cite: 1]" },
+      { "name": "Ginger Ale Mint[cite: 1]", "beschreibung": "American Ginger Ale mit Minze, Eiswürfel[cite: 1]", "preis": "6,50 €[cite: 1]" },
+      { "name": "Colito[cite: 1]", "beschreibung": "Cola, Limetten, Minze, Eiswürfel[cite: 1]", "preis": "6,50 €[cite: 1]" },
+      { "name": "Very Beery[cite: 1]", "beschreibung": "Beeren, Zucker, Limetten, Wild Berry Thymian[cite: 1]", "preis": "6,50 €[cite: 1]" }
+    ],
+    "aperitif": [
+      { "name": "Aperol Spritz[cite: 1]", "zusatzstoffe": "1-5-7[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Aperol Lemon Spritz[cite: 1]", "zusatzstoffe": "1-2-5[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Campari Spritz[cite: 1]", "zusatzstoffe": "5-7[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Campari Orange[cite: 1]", "zusatzstoffe": "5-6-7[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Hugo[cite: 1]", "zusatzstoffe": "7[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Ramazzotti Rosato[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Lillet Wild Berry[cite: 1]", "preis": "7,50 €[cite: 1]" }
+    ],
+    "longdrinks": [
+      { "name": "Gin Tonic Water Bombay[cite: 1]", "zusatzstoffe": "5[cite: 1]", "beschreibung": "Tonic Water, Gin, Zitrone, Eiswürfel[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Vodka Lemon[cite: 1]", "zusatzstoffe": "1-4-5[cite: 1]", "beschreibung": "Bitter Lemon, Wodka, Zitrone-Basilikum, Eiswürfel[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Cuba Libre[cite: 1]", "zusatzstoffe": "1-4[cite: 1]", "beschreibung": "Rum, Cola, Limette, Eiswürfel[cite: 1]", "preis": "7,50 €[cite: 1]" },
+      { "name": "Whiskey Cola[cite: 1]", "zusatzstoffe": "1-4[cite: 1]", "beschreibung": "Whiskey, Cola, Limette, Eiswürfel[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Tom Collins[cite: 1]", "zusatzstoffe": "5[cite: 1]", "beschreibung": "Soda Gin, Zitronensaft, Zucker, Eiswürfel[cite: 1]", "preis": "8,50 €[cite: 1]" }
+    ],
+    "cocktails": [
+      { "name": "Mojito[cite: 1]", "zusatzstoffe": "1-2-4[cite: 1]", "beschreibung": "Soda, Rum, Limetten, Rohrzucker, Minze, Eiswürfel[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Mai Tai[cite: 1]", "zusatzstoffe": "1-2-4[cite: 1]", "beschreibung": "Dunkler Rum, Captain Morgan, Limette, Ananas, Mandelsirup, Eiswürfel[cite: 1]", "preis": "9,50 €[cite: 1]" },
+      { "name": "Sex on the Beach[cite: 1]", "beschreibung": "Vodka-Pfirsich-Schnaps, Orangensaft, Cranberrysaft[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Moscow Mule[cite: 1]", "zusatzstoffe": "1-2[cite: 1]", "beschreibung": "Wodka, Ginger Bier, Limetten, Gurken, Eiswürfel[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Hanoi Mule[cite: 1]", "zusatzstoffe": "1-2[cite: 1]", "beschreibung": "Nếp mới, Ginger Bier, Limetten, Minze, Eiswürfel[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Singapore Sling[cite: 1]", "zusatzstoffe": "1-2-4[cite: 1]", "beschreibung": "Gin Cherry Brandy, Limetten, Ananas, Minze, Eiswürfel[cite: 1]", "preis": "8,50 €[cite: 1]" }
+    ],
+    "cocktails_alkoholfrei": [
+      { "name": "Hausgemachte Limonade[cite: 1]", "beschreibung": "Mit Braunzucker, Limette, Minze, Ingwer-Soda[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Fresh Garden[cite: 1]", "beschreibung": "Mit Maracuja, Orangen, Lychee und Ananassaft[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Kokos Kiss[cite: 1]", "beschreibung": "Mit Cream de Coconut, Sahne, Ananas, Orangen, Saft, Grenadine[cite: 1]", "preis": "8,50 €[cite: 1]" },
+      { "name": "Mara Coco[cite: 1]", "beschreibung": "Mit Cream de Coconut, Sahne und Maracujasaft[cite: 1]", "preis": "8,50 €[cite: 1]" }
+    ],
+    "spirituosen": {
+      "whiskey_2cl": [
+        { "name": "Chivas Regal 12 Jahre[cite: 1]", "preis": "5,50 €[cite: 1]" },
+        { "name": "Jack Daniel's[cite: 1]", "zusatzstoffe": "1-3[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Johnnie Walker[cite: 1]", "preis": "4,50 €[cite: 1]" }
+      ],
+      "digestif_2cl": [
+        { "name": "Hennessy V-S-O-P[cite: 1]", "preis": "5,50 €[cite: 1]" },
+        { "name": "Rémy Martin V-S-O-P[cite: 1]", "preis": "5,50 €[cite: 1]" },
+        { "name": "Nep Moi[cite: 1]", "zusatzstoffe": "1-3[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Bambus[cite: 1]", "zusatzstoffe": "1-3[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Vodka Absolut[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Williamsbirne[cite: 1]", "zusatzstoffe": "1-3[cite: 1]", "preis": "4,50 €[cite: 1]" }
+      ],
+      "rum_2cl": [
+        { "name": "Havana Club[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Myers's Rum[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Don Papa[cite: 1]", "preis": "6,50 €[cite: 1]" }
+      ],
+      "bitter_2cl": [
+        { "name": "Ramazzotti[cite: 1]", "zusatzstoffe": "1[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Fernet Branca[cite: 1]", "zusatzstoffe": "1[cite: 1]", "preis": "4,50 €[cite: 1]" },
+        { "name": "Jägermeister[cite: 1]", "preis": "4,50 €[cite: 1]" }
+      ]
+    },
+    "bier": [
+      { "name": "Helles Bier[cite: 1]", "beschreibung": "Augustiner Hell / Paulaner Hell, alkoholfrei, Ur-Dunkel[cite: 1]", "allergene": "a,m[cite: 1]", "preis": "0.5 L 4,00 €[cite: 1]" },
+      { "name": "Weißbier[cite: 1]", "beschreibung": "Paulaner Weißbier (trüb, dunkel, leicht, alkoholfrei)[cite: 1]", "allergene": "a,m[cite: 1]", "preis": "0.5 L 4,20 €[cite: 1]" },
+      { "name": "Pils[cite: 1]", "allergene": "a,m[cite: 1]", "preis": "0.3L 3,90 €[cite: 1]" },
+      { "name": "Radler[cite: 1]", "allergene": "a,m[cite: 1]", "preis": "0.5 L 4,00 €[cite: 1]" },
+      { "name": "Weißbier-Zitrone (Russ'n) / Cola-Weißbier[cite: 1]", "zusatzstoffe": "2,3,4,9[cite: 1]", "preis": "0.5 L 4,20 €[cite: 1]" }
+    ],
+    "bier_asia": [
+      { "name": "Saigon Bier[cite: 1]", "preis": "0,33 L 4,00 €[cite: 1]" },
+      { "name": "Japan Bier[cite: 1]", "preis": "0,33 L 4,00 €[cite: 1]" },
+      { "name": "Thai Bier (Singha)[cite: 1]", "preis": "0,33 L 4,00 €[cite: 1]" },
+      { "name": "Warmer Sake[cite: 1]", "preis": "10 CL 6,50 €[cite: 1]" },
+      { "name": "Warmer Pflaumenwein[cite: 1]", "preis": "10 CL 5,50 €[cite: 1]" },
+      { "name": "Lycheewein[cite: 1]", "preis": "10 CL 5,50 €[cite: 1]" }
+    ],
+    "tea": [
+      { "name": "Jasmin Tee[cite: 1]", "preis": "4,00 €[cite: 1]" },
+      { "name": "Grüner Tee[cite: 1]", "preis": "4,00 €[cite: 1]" },
+      { "name": "Schwarzer Tee[cite: 1]", "preis": "4,00 €[cite: 1]" },
+      { "name": "Ingwer Tee[cite: 1]", "preis": "4,00 €[cite: 1]" },
+      { "name": "Grüner Ingwer Tee[cite: 1]", "preis": "4,00 €[cite: 1]" }
+    ],
+    "bevande_calde_heissgetraenke": {
+      "hinweis": "Zusatzstoffe/Allergene: 9,g[cite: 1]",
+      "getraenke": [
+        { "name": "Tasse Kaffee[cite: 1]", "preis": "3,50 €[cite: 1]" },
+        { "name": "Espresso[cite: 1]", "preis": "2,50 €[cite: 1]" },
+        { "name": "Espresso Doppio[cite: 1]", "preis": "3,50 €[cite: 1]" },
+        { "name": "Cappuccino[cite: 1]", "preis": "3,90 €[cite: 1]" },
+        { "name": "Latte Macchiato[cite: 1]", "preis": "4,00 €[cite: 1]" }
+      ]
+    },
+    "weine": {
+      "weisswein": [
+        { "name": "Grüner Veltliner[cite: 1]", "beschreibung": "Trocken, Niederösterreich[cite: 1]", "preis": "0,2 L 6,50 €[cite: 1]" },
+        { "name": "Pinot Grigio Doc[cite: 1]", "beschreibung": "La Marea Sizilianische Länder, Italien[cite: 1]", "preis": "0,2 L 6,50 €[cite: 1]" },
+        { "name": "Riesling[cite: 1]", "beschreibung": "Halbtrocken, Deutscher Qualitätswein[cite: 1]", "preis": "0,2 L 6,50 €[cite: 1]" },
+        { "name": "Lugana[cite: 1]", "beschreibung": "2024 Lugana Denominazione di Origine Controllata, Italien[cite: 1]", "preis": "0,75 L 38,00 €[cite: 1]" },
+        { "name": "Sauvignon Blanc[cite: 1]", "beschreibung": "2024 Sauvignon Blanc trocken, Baden Deutscher Qualitätswein[cite: 1]", "preis": "0,75 L 38,00 €[cite: 1]" }
+      ],
+      "rotwein": [
+        { "name": "Zweigelt[cite: 1]", "beschreibung": "Qualitätswein aus Österreich[cite: 1]", "preis": "0,2 L 6,50 €[cite: 1]" },
+        { "name": "Merlot[cite: 1]", "beschreibung": "2022 Merlot di Puglia, Italien[cite: 1]", "preis": "0,2 L 6,50 €[cite: 1]" },
+        { "name": "Blaufränkisch[cite: 1]", "beschreibung": "Qualitätswein aus Österreich, trocken[cite: 1]", "preis": "0,2 L 6,50 €[cite: 1]" },
+        { "name": "Château[cite: 1]", "beschreibung": "2022 Château Mauriac Bordeaux, Frankreich[cite: 1]", "preis": "0,75 L 38,00 €[cite: 1]" },
+        { "name": "Chianti[cite: 1]", "beschreibung": "Le ginestre Chianti Classico 2019 aus Italien[cite: 1]", "preis": "0,75 L 38,00 €[cite: 1]" }
+      ],
+      "rosewein": [
+        { "name": "Dornfelder[cite: 1]", "beschreibung": "Halbtrocken (Deutschland)[cite: 1]", "preis": "0,2 L 6,50 €[cite: 1]" }
+      ],
+      "schaumwein": [
+        { "name": "Prosecco Valdo[cite: 1]", "beschreibung": "Extra trocken, Superiore DOCG[cite: 1]", "preis": "0,1 L 5,50 € / 0,75 L 32,00 €[cite: 1]" },
+        { "name": "Prosecco Mionetto[cite: 1]", "preis": "0,1 L 5,50 € / 0,75 L 32,00 €[cite: 1]" },
+        { "name": "Weinschorle[cite: 1]", "preis": "0,2 L 5,50 € / 0,5 L 9,50 €[cite: 1]" }
+      ]
+    }
+  }
+}

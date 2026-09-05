@@ -1,0 +1,44 @@
+{
+  "id": "alexander-the-great",
+  "name": "Alexander The Great",
+  "city": "moosburg",
+  "osm": "node/3966569879",
+  "address": {
+    "street": "Weingraben 4",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.466828,
+    "lon": 11.935788,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/3966569879",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-03-08."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 7294700",
+    "website": "https://www.alexander-moosburg.com"
+  },
+  "cuisines": [
+    "greek"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
+    "Karte laut OSM unter https://www.alexander-moosburg.com/_files/ugd/40e28a_12377cc6e168498ebf0b653894258e36.pdf"
+  ],
+  "openingHours": {
+    "raw": "Th-Tu,PH 11:30-14:30,17:00-24:00",
+    "osm": "Th-Tu,PH 11:30-14:30,17:00-24:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/3966569879",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-03-08."
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "karamurats-kebab-smoothie",
+  "name": "Karamurat's Kebab & Smoothie",
+  "city": "moosburg",
+  "osm": "node/9876450294",
+  "address": {
+    "street": "Bahnhofstraße 42",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.469715,
+    "lon": 11.930878,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/9876450294",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
+    }
+  },
+  "contact": {
+    "phone": "+4915147001954",
+    "website": "http://karamurats.de/"
+  },
+  "cuisines": [
+    "kebab",
+    "fast_food"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Mo-Fr 11:30-19:00",
+    "osm": "Mo-Fr 11:30-19:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/9876450294",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "westerberg-stubn",
+  "name": "Westerberg-Stub'n",
+  "city": "moosburg",
+  "osm": "node/1874586826",
+  "address": {
+    "street": "Am Stadion 7",
+    "postalCode": "85368",
+    "city": "Moosburg an der Isar"
+  },
+  "location": {
+    "lat": 48.465901,
+    "lon": 11.92814,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1874586826",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 62180",
+    "website": "https://www.westerberg-stubn.de/"
+  },
+  "cuisines": [
+    "bavarian",
+    "german",
+    "regional",
+    "inn"
+  ],
+  "openingHours": {
+    "raw": "We-Sa 17:00-23:00; Su,PH 11:00-14:00,17:00-21:30",
+    "osm": "We-Sa 17:00-23:00; Su,PH 11:00-14:00,17:00-21:30",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1874586826",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
+    }
+  },
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Speisekarte noch nicht eingelesen",
+    "Bewertungen noch nicht angebunden",
+    "Quell-URL der Karte laut OSM: https://www.westerberg-stubn.de/#speisekarte"
+  ]
+}

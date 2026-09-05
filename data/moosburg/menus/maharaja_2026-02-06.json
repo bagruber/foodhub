@@ -1,0 +1,2625 @@
+{
+  "restaurantId": "maharaja",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/maharaja_speisekarte_2026-02-06.pdf",
+    "retrievedAt": "2026-09-04",
+    "url": "https://maharaja-moosburg.com/",
+    "createdAt": "2026-02-06",
+    "note": "Das PDF selbst nennt das Haus nirgends. Die Website bietet es unter demselben Dateinamen an, unter dem es hier ankam."
+  },
+  "legend": {
+    "allergens": {
+      "1": "gluten",
+      "2": "milk",
+      "3": "nuts",
+      "4": "peanuts",
+      "5": "fish",
+      "6": "molluscs",
+      "7": "crustaceans",
+      "8": "soybeans",
+      "9": "celery",
+      "10": "sesame",
+      "11": "lupin",
+      "12": "eggs",
+      "13": "mustard",
+      "14": "sulphites"
+    },
+    "additives": {
+      "A": "preservative",
+      "B": "antioxidant",
+      "C": "phosphate",
+      "D": "sulphured",
+      "E": "caffeine",
+      "F": "waxed",
+      "G": "colorant",
+      "H": "sweetener",
+      "I": "flavour_enhancer",
+      "J": "quinine",
+      "K": "blackened",
+      "L": "phenylalanine",
+      "M": "taurine"
+    }
+  },
+  "sections": [
+    {
+      "title": "Suppen",
+      "items": [
+        {
+          "name": "Dal Soup",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "101",
+          "description": "Linsensuppe nach Punjabi Art"
+        },
+        {
+          "name": "Garlic Fish Soup",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "102",
+          "description": "Knoblauch-Fisch-Suppe nach Art das Haus"
+        }
+      ],
+      "note": "2,4 €"
+    },
+    {
+      "title": "Vorspeisen",
+      "items": [
+        {
+          "name": "Papad",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "110",
+          "description": "würzige Big Chips aus Hülsenfrüchtemehl"
+        },
+        {
+          "name": "Sabzi Pakora",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "111",
+          "description": "Kartoffeln und Blumenkohl*"
+        },
+        {
+          "name": "Chicken Pakora",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "112",
+          "description": "Hühnerfleisch*"
+        },
+        {
+          "name": "Paneer Pakora",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "113",
+          "description": "indischem Käse*"
+        },
+        {
+          "name": "Samosa (2 Stück)",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "115",
+          "description": "würzige Pasteten mit Gemüsefüllung"
+        },
+        {
+          "name": "Springrolls (6 Stück)",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "4",
+            "a",
+            "g",
+            "i"
+          ],
+          "allergens": [
+            "gluten",
+            "peanuts"
+          ],
+          "additives": [
+            "colorant",
+            "flavour_enhancer",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "116",
+          "description": "Frühlingsrollen mit Gemüsefüllung"
+        },
+        {
+          "name": "Dahi Puri",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "118",
+          "description": "6 knusprige Puris, gefüllt mit Kartoffeln, Kichererbsen, Tamarinden Chutney, grünem Chutney und Joghurt, garniert mit frischem Koriander"
+        },
+        {
+          "name": "Seekh Kebab (leicht scharf)",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "120",
+          "description": "Gehackter Hühnerfleischspieß gegrillt",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        }
+      ],
+      "note": "mit 3 verschiedenen Soßen. * gebacken mit"
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Gemischter Salat",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "131",
+          "description": "Saison Salat mit Gurken, Cocktailtomaten"
+        },
+        {
+          "name": "Tomatensalat",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "132",
+          "description": "mit roten Zwiebeln"
+        }
+      ],
+      "note": "mit Joghurt/Balsamico/Essig Öl"
+    },
+    {
+      "title": "Brot und Beilagen",
+      "items": [
+        {
+          "name": "Nan/Tawa Roti",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "140",
+          "description": "Brot aus Weizenmehl/Vollkornmehl"
+        },
+        {
+          "name": "Punjabi Raita Joghurt mit Gurken",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "143",
+          "description": "Tomaten, Zwiebeln und etwas kräftige Gewürzen"
+        },
+        {
+          "name": "Basmati Reis (Big Portion)",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "144"
+        },
+        {
+          "name": "Chutney-Teller",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "145",
+          "description": "ag ag Mango , Minze und Knoblauch"
+        },
+        {
+          "name": "Garlic Nan",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "146"
+        }
+      ],
+      "note": "1,2"
+    },
+    {
+      "title": "Grill-Spezialitäten²",
+      "items": [
+        {
+          "name": "ChickenTikka ‘‘Noorani‘‘",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "150",
+          "description": "Hühnerfleisch in Traditional Punjabi Tikka Paste mariniert und gegrillt Zu Grill-Gerichten servieren wir Kachumbersalat(weisskraut)"
+        },
+        {
+          "name": "Paneer Tikka „Sadabahaar“",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "154",
+          "description": "Indischer Käse in Traditional Punjabi Tikka Paste mariniert und gegrillt 1 ofenfrisches Nan , Basmatireis, und würzige Soße"
+        }
+      ]
+    },
+    {
+      "title": "Hühnerfleisch²",
+      "items": [
+        {
+          "name": "Panjabi Chicken Curry",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "161",
+          "description": "Hühnerfleisch in Cashewcremecurrysoße"
+        },
+        {
+          "name": "Chicken Tikka Masala",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "162",
+          "description": "Hühnerfleisch gegrillt mit Cashewgewürzsoße"
+        },
+        {
+          "name": "Chicken Jalfrezi",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "163",
+          "description": "mit Zwiebeln und Paprikaschoten (Pikant)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Panjabi Chili Chicken",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "164",
+          "description": "mit Zwiebeln und Paprika (leicht Scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Chicken Palak²",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "165",
+          "description": "mit Spinat und Ingwer-Knoblauchsoße"
+        },
+        {
+          "name": "Butter Chicken",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "166",
+          "description": "Gegrilltes Fleisch in Tomaten-Creme-Soße"
+        },
+        {
+          "name": "Chicken Goa ( leicht scharf)",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "167",
+          "description": "mit versch. Gemüse in Kokos-Curry-Soße",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Mango Chicken",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "168",
+          "description": "Zartes Fleisch in Mango-Safran-Cashew-Soße"
+        }
+      ],
+      "note": "Jedes Gericht wird mit Basmatireis"
+    },
+    {
+      "title": "Lamm und Rindfleisch",
+      "items": [
+        {
+          "name": "Lamm Palak",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "176",
+          "description": "mit Spinat und Ingwer-Knoblauchsoße"
+        },
+        {
+          "name": "Beef Jalfrezi",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "178",
+          "description": "mit Zwiebeln und Paprikaschoten (Pikant)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ],
+      "note": "Jedes Gericht wird mit Basmatireis"
+    },
+    {
+      "title": "Enten",
+      "items": [
+        {
+          "name": "Enten Curry (leicht Scharf)",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "181",
+          "description": "Paniert mit versch. Gemüse in Kokossoße",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Ente Süß-Sauer",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "182",
+          "description": "Paniert mit versch. Gemüse in Süß-Sauer- Soße"
+        }
+      ],
+      "note": "Jedes Gericht wird mit Basmatireis serviert"
+    },
+    {
+      "title": "Asia Nudeln",
+      "items": [
+        {
+          "name": "Jheenga Nudeln",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "186",
+          "description": "mit Garnelen und frischen Gemüse"
+        },
+        {
+          "name": "Battakh Nudeln",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "187",
+          "description": "mit frischem Gemüse und Ente"
+        }
+      ],
+      "note": "Gebratene Eiernudeln"
+    },
+    {
+      "title": "Fisch",
+      "items": [
+        {
+          "name": "Punjabi Fish Curry",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "191",
+          "description": "Fisch in Cashew Creme Curry Soße"
+        },
+        {
+          "name": "Goa Prawns (leicht Scharf)",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "195",
+          "description": "Garnelen mit Gemüse in Kokos-Curry-Soße",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        }
+      ],
+      "note": "Jedes Gericht wird mit Basmatireis serviert"
+    },
+    {
+      "title": "Vegetarisch auf Wunsch auch VEGAN erhältlich",
+      "items": [
+        {
+          "name": "Dal Tardka Pandjrangi",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "201",
+          "description": "Fünf versch. Linsen in Tomaten-Knoblauchsoße"
+        },
+        {
+          "name": "Mix Vegetable",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "202",
+          "description": "Versch. Gemüse in Punjabi-Curry-Soße"
+        },
+        {
+          "name": "Aloo Gobhi",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "203",
+          "description": "Blumenkohl, Kartoffeln Punjabi-Curry-Soße"
+        },
+        {
+          "name": "Amritsari Pindi Shollay",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "204",
+          "description": "Kartoffeln und Kichererbsen in würziger Soße"
+        },
+        {
+          "name": "Aloo Matar Paneer",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "205",
+          "description": "Indischer Käse mit Erbsen und Kartoffeln"
+        },
+        {
+          "name": "Chili Paneer (scharf)",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "12"
+          ],
+          "allergens": [
+            "eggs"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "206",
+          "description": "Indischer Käse mit Zwiebeln, Paprikaschoten",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Palak Paneer",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "207",
+          "description": "Indische Käse mit Spinat in Tomatenknoblauchsoße"
+        },
+        {
+          "name": "Vegetable Malai Kofta",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "208",
+          "description": "Gemüseklöschen in Cashewcremecurrysoße"
+        }
+      ]
+    },
+    {
+      "title": "Biryani-Reisgericht",
+      "items": [
+        {
+          "name": "Chicken Dum Biryani",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "215",
+          "description": "Hühnerfleisch mit Nüssen und Rosinen"
+        },
+        {
+          "name": "Vegetable Dum Biryani",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "218",
+          "description": "Versch. Gemüse mit Nüssen und Rosinen"
+        }
+      ],
+      "note": "serviert mit Curry oder Makhni"
+    },
+    {
+      "title": "Dessert",
+      "items": [
+        {
+          "name": "Gulab Jamun",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "225",
+          "description": "Milchbällchen² in Hafer-Reis-Firni"
+        },
+        {
+          "name": "Mango Cream",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "226",
+          "description": "mit Nüssen"
+        },
+        {
+          "name": "Mango Cream",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "227",
+          "description": "mit Versch. Früchten"
+        },
+        {
+          "name": "Mango Cream",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "228",
+          "description": "mit Vanilleeis"
+        },
+        {
+          "name": "Gebackene Banane",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "229",
+          "description": "Mit Hönig Nüssen und Vanilleeis"
+        }
+      ]
+    },
+    {
+      "title": "nur für unsere kleinen Genießer",
+      "items": [
+        {
+          "name": "Chicken Nuggets",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "241",
+          "description": "mit Pommes, Ketchup oder Mayo"
+        },
+        {
+          "name": "Bhagheera Chicken",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "242",
+          "description": "Hühnerfleisch in Tomatencremesoße"
+        },
+        {
+          "name": "Portion Pommes",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "243"
+        },
+        {
+          "name": "Bhaloo Pizza",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "244",
+          "description": "Pizza in Herzform mit Käse, auf wünsch auch mit Schinken oder Salami oder Champignon"
+        }
+      ]
+    },
+    {
+      "title": "Aperitivs",
+      "items": [
+        {
+          "name": "Glas Prosecco 0,1l",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "251"
+        },
+        {
+          "name": "Martini Bianco/Rot 5cl",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "252"
+        },
+        {
+          "name": "Mango Prosecco 0,1l",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "253"
+        },
+        {
+          "name": "Campari Orange/Soda 5cl",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "254"
+        }
+      ],
+      "note": "dg €"
+    },
+    {
+      "title": "Spritz Specials",
+      "items": [
+        {
+          "name": "Spritz Aperol",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "j"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "quinine"
+          ],
+          "diet": {},
+          "ref": "261"
+        },
+        {
+          "name": "Hugo",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "262"
+        },
+        {
+          "name": "LilletWildBerry",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "263"
+        },
+        {
+          "name": "Maracuja/Erdbeer Spritz",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "264"
+        }
+      ]
+    },
+    {
+      "title": "Whisky",
+      "items": [
+        {
+          "name": "JohnnieWalker BlackLabel",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "266"
+        },
+        {
+          "name": "Glennfiddich",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "267"
+        },
+        {
+          "name": "Jameson Irish Whisky",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "268"
+        },
+        {
+          "name": "JackDaniel",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "269"
+        }
+      ],
+      "note": "(40%) 4cl mit cola/ soda/Pur"
+    },
+    {
+      "title": "Warme Getränke",
+      "items": [
+        {
+          "name": "Masala Chai²",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "270"
+        },
+        {
+          "name": "Cappuccino²",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "271"
+        },
+        {
+          "name": "Kaffee",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "272"
+        },
+        {
+          "name": "Espresso",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "273"
+        },
+        {
+          "name": "Espresso Macchiato²",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "274"
+        },
+        {
+          "name": "Doppel Espresso",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "275"
+        },
+        {
+          "name": "Tee : Schwarzer, Pfefferminz,",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "277"
+        },
+        {
+          "name": "Latte Macchiato²",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "276"
+        }
+      ]
+    },
+    {
+      "title": "Biere",
+      "items": [
+        {
+          "name": "Helles 0,5l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "281"
+        },
+        {
+          "name": "Helles 0,25l",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "282"
+        },
+        {
+          "name": "Hefe Weizen 0,5l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "283"
+        },
+        {
+          "name": "Dunkles Weizen 0,5l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "284"
+        },
+        {
+          "name": "Leichtes Weizen 0,5l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "285"
+        },
+        {
+          "name": "Cola Weizen 0,5l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "286"
+        },
+        {
+          "name": "Ruß 0,5l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "287"
+        },
+        {
+          "name": "Radler 0,5l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "288"
+        },
+        {
+          "name": "Extra Pils 0,33l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "290"
+        },
+        {
+          "name": "Indisches Bier0,33l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "289"
+        },
+        {
+          "name": "Urhell Alkoholfreie 0,5l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "291"
+        },
+        {
+          "name": "Weißbier Alkoholfreie 0,5l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "292"
+        },
+        {
+          "name": "Dunkles Bier 0,5l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "293"
+        }
+      ],
+      "note": "1 von der Brauerei Wittmann Landshut"
+    },
+    {
+      "title": "Alkoholfreie Getränke",
+      "items": [
+        {
+          "name": "Wasser Still /Spritzig",
+          "prices": [
+            {
+              "amount": 2.1,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "301"
+        },
+        {
+          "name": "Orangen Limo",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "g"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "302"
+        },
+        {
+          "name": "Weißes Limo",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "b"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {},
+          "ref": "303"
+        },
+        {
+          "name": "Spezi",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "g"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "304"
+        }
+      ]
+    },
+    {
+      "title": "Flaschen",
+      "items": [
+        {
+          "name": "Wasser Still /Spritzig Fl. 0,75l",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "310"
+        },
+        {
+          "name": "Coca Cola Fl. 0,33l",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "g"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "311"
+        },
+        {
+          "name": "Cola Zero Fl. 0,33l",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "g"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "312"
+        },
+        {
+          "name": "Schkandjmi 0,5l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a"
+          ],
+          "allergens": [],
+          "additives": [
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "313"
+        }
+      ],
+      "note": "(Glas)"
+    },
+    {
+      "title": "Saftschorlen",
+      "items": [
+        {
+          "name": "Apfelschorle",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.2,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "321"
+        },
+        {
+          "name": "Orangenschorle",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "322"
+        },
+        {
+          "name": "Mangoschorle",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "323"
+        },
+        {
+          "name": "Guavenschorle",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "324"
+        },
+        {
+          "name": "Maracujaschorle",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "325"
+        },
+        {
+          "name": "Lycheeschorle",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "326"
+        },
+        {
+          "name": "Johannisbeerschorle",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "327"
+        }
+      ],
+      "note": "b"
+    },
+    {
+      "title": "Säfte",
+      "items": [
+        {
+          "name": "Apfelsaft Saft 0,25l",
+          "prices": [
+            {
+              "amount": 2.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "331"
+        },
+        {
+          "name": "Orangensaft Saft 0,25l",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "332"
+        },
+        {
+          "name": "Mangonektar 0,25l",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "333"
+        },
+        {
+          "name": "Guavennektar 0,25l",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "334"
+        },
+        {
+          "name": "Maracujanektar 0,25l",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "335"
+        },
+        {
+          "name": "Lycheenektar 0,25l",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "336"
+        },
+        {
+          "name": "Johannisbeernektar 0,25l",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "337"
+        }
+      ]
+    },
+    {
+      "title": "Indische Joghurt Getränk",
+      "items": [
+        {
+          "name": "Lassisüß",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR",
+              "portion": "0,4l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "341"
+        },
+        {
+          "name": "Lassi Salzig",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR",
+              "portion": "0,4l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "342"
+        },
+        {
+          "name": "Mango Lassi",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR",
+              "portion": "0,4l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "343"
+        }
+      ],
+      "note": "²"
+    },
+    {
+      "title": "2cl 4cl",
+      "items": [
+        {
+          "name": "Mango Secco",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "351"
+        },
+        {
+          "name": "Old Monk TheIndianRum",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "352"
+        },
+        {
+          "name": "Averna",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "353"
+        },
+        {
+          "name": "Ramazzotti",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "354"
+        },
+        {
+          "name": "Jägermeister",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "355"
+        },
+        {
+          "name": "Williams",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "356"
+        },
+        {
+          "name": "Sambuca",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "357"
+        },
+        {
+          "name": "Marile",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "358"
+        },
+        {
+          "name": "Baileys",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "359"
+        },
+        {
+          "name": "Haselnuss",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "360"
+        }
+      ]
+    },
+    {
+      "title": "Weisswein",
+      "items": [
+        {
+          "name": "Chardonnay Trocken Chile 13%",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "361"
+        },
+        {
+          "name": "CheninBlanc Trocken S.afrika 13%",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "362"
+        },
+        {
+          "name": "RheinhessenWeiß Trocken 12%",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "363"
+        }
+      ]
+    },
+    {
+      "title": "Rotweine",
+      "items": [
+        {
+          "name": "Rheinhessen Rot Feinherb 11%",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "366"
+        },
+        {
+          "name": "CuveePuglia Italien halbtrocken15%",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "367"
+        },
+        {
+          "name": "Rose` Trocken Spanien 11%",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "368"
+        }
+      ]
+    },
+    {
+      "title": "Weinschorle",
+      "items": [
+        {
+          "name": "Weißweinschorle Süß",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "371"
+        },
+        {
+          "name": "Rotweinschorle Süß",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "376"
+        },
+        {
+          "name": "Weißweinschorle Trocken",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "372"
+        },
+        {
+          "name": "Rotweinschorle Trocken",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "377"
+        }
+      ],
+      "note": "d"
+    },
+    {
+      "title": "Flaschenweine",
+      "items": [
+        {
+          "name": "CheninBlanc Trocken Indien 12%",
+          "prices": [
+            {
+              "amount": 35.9,
+              "currency": "EUR",
+              "portion": "0,7l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "381"
+        },
+        {
+          "name": "St. Laurant* Trocken 13%",
+          "prices": [
+            {
+              "amount": 35.9,
+              "currency": "EUR",
+              "portion": "0,7l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "386"
+        },
+        {
+          "name": "GrauerBurgunder Trocken 12.5%",
+          "prices": [
+            {
+              "amount": 35.9,
+              "currency": "EUR",
+              "portion": "0,7l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "382"
+        },
+        {
+          "name": "Shiraz Trocken Indien 13.5%",
+          "prices": [
+            {
+              "amount": 35.9,
+              "currency": "EUR",
+              "portion": "0,7l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "387"
+        },
+        {
+          "name": "BardolinoRose Trocken Italy 12%",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR",
+              "portion": "0,7l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "383"
+        }
+      ],
+      "note": "0,7l Weiß"
+    },
+    {
+      "title": "Sekt",
+      "items": [
+        {
+          "name": "Prosecco Perlwein Trocken",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "391"
+        },
+        {
+          "name": "Fürst von Metternich",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "392"
+        }
+      ],
+      "note": "0,7"
+    },
+    {
+      "title": "Cognac",
+      "items": [
+        {
+          "name": "Remy Martin",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "395"
+        },
+        {
+          "name": "Hennessy",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "396"
+        }
+      ],
+      "note": "0,2cl"
+    },
+    {
+      "title": "Mocktails - alkoholfrei",
+      "items": [
+        {
+          "name": "Virgin Sunrise",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "401"
+        },
+        {
+          "name": "Ipanema",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "402"
+        }
+      ]
+    },
+    {
+      "title": "Cocktails",
+      "items": [
+        {
+          "name": "Indian Summer Delight",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "407"
+        },
+        {
+          "name": "Mojito",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "408"
+        },
+        {
+          "name": "Gin Tonic",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "409"
+        },
+        {
+          "name": "Espresso Martini",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "410"
+        },
+        {
+          "name": "Tequila Sunrise",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "411",
+          "description": "Zusatzstoffe :A-mit Konservierungsstoff, B-mit Antioxidationsmittel, gewachst, G-mit Farbstoff,H-mit Süssungsmittel ,I-mit Geschmacksverstärker, PhenylalaninquelleM-taurinhaltig. Allergene :1.Glutenhaltiges Getreide, 2.Milch, 3.Schalenfrüchte, 8. Soja, 9. Sellerie, 10. Sesam, 11. Lupine, 12. Eier, 13. Senf 14."
+        },
+        {
+          "name": "Sex on The Beach",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "412",
+          "description": "C-mit Phosphat, D-geschwefelt, E-coffeinhaltig, F- J-chininhaltig, K-geschwärzt, L-enthält eine 4. Erdnüsse, 5.Fisch,6. Weichtiere, 7. Krebstiere, Schwefeloxid / Sulfite E 220-E22"
+        }
+      ]
+    }
+  ]
+}

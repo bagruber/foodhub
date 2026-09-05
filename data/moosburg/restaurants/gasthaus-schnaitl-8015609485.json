@@ -1,0 +1,44 @@
+{
+  "id": "gasthaus-schnaitl-8015609485",
+  "name": "Gasthaus Schnaitl",
+  "city": "moosburg",
+  "osm": "node/8015609485",
+  "address": {
+    "street": "Schützenstraße 7",
+    "postalCode": "85368",
+    "city": "Wang"
+  },
+  "location": {
+    "lat": 48.495849,
+    "lon": 11.932387,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8015609485",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-05-03."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 1620",
+    "website": "https://www.gasthaus-schnaitl.de/"
+  },
+  "cuisines": [
+    "german",
+    "beer_garden"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "We-Fr 11:00-14:00,17:00-23:00; Sa,Su 11:00-23:00",
+    "osm": "We-Fr 11:00-14:00,17:00-23:00; Sa,Su 11:00-23:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8015609485",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-05-03."
+    }
+  }
+}

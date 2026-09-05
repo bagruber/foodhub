@@ -1,0 +1,33 @@
+{
+  "id": "eiscaf-la-fenice",
+  "name": "Eiscafé La Fenice",
+  "city": "moosburg",
+  "osm": "node/8032352585",
+  "address": {
+    "street": "Landshuter Straße 5",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.466399,
+    "lon": 11.938604,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8032352585",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-03-05."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 1788"
+  },
+  "cuisines": [
+    "ice_cream",
+    "cafe"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ]
+}

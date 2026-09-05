@@ -1,0 +1,2672 @@
+{
+  "restaurantId": "drei-tannen",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/drei-tannen_speisekarte_2026-08-30.pdf",
+    "retrievedAt": "2026-09-04",
+    "url": "https://www.gasthof-dreitannen.de/",
+    "createdAt": "2026-08-30"
+  },
+  "legend": {
+    "allergens": {
+      "A": "gluten",
+      "B": "crustaceans",
+      "C": "eggs",
+      "D": "fish",
+      "E": "peanuts",
+      "F": "soybeans",
+      "G": "milk",
+      "H": "nuts",
+      "I": "celery",
+      "J": "mustard",
+      "K": "sesame",
+      "L": "sulphites",
+      "M": "lupin",
+      "N": "molluscs"
+    },
+    "additives": {
+      "1": "preservative",
+      "2": "flavour_enhancer",
+      "3": "antioxidant",
+      "4": "colorant",
+      "5": "phosphate",
+      "6": "sweetener",
+      "7": "caffeine",
+      "8": "quinine",
+      "9": "blackened",
+      "10": "phenylalanine"
+    }
+  },
+  "sections": [
+    {
+      "title": "MITTAGSKARTE",
+      "items": [
+        {
+          "name": "Ofenfrischer Schweinebraten",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 16.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G",
+            "I",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "eggs",
+            "gluten",
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinebraten | Kartoffel- und Semmelknödel | Freitag, 25.09.2026 Spareribs Abend Zarte Rippchen satt! Dazu Wedges, Pommes Falls eure Begleitung keine Spareribs mag, kann All You Can Eat ab 17 Uhr. 24,90€ p.P. Samstag, 26.09.2026 Burger-Buffet Burger, Burger & noch mehr Burger! Ein besonderes neues Event erwartet euch: Stellt zusammen. Ob deftig, süß, vegetarisch oder vegan, habt die Wahl. Kombiniert mit knusprigen Pommes, auch perfekt zum Teilen mit deinen Freunden. natürlich direkt im Biergarten gegrillt. Das kann All You Can Eat ab 17 Uhr. 31,90€ p.P."
+        }
+      ]
+    },
+    {
+      "title": "Vorher",
+      "items": [
+        {
+          "name": "China Hausgemachte Frühlingsrollen",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "F",
+            "K"
+          ],
+          "allergens": [
+            "gluten",
+            "sesame",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "vegetarisch gefüllt | asiatischer Gurkensalat | Sweet"
+        }
+      ]
+    },
+    {
+      "title": "Hauptgerichte",
+      "items": [
+        {
+          "name": "Indien Hähnchen-Bananen-Curry",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Filetstücke | fruchtige Bananen-Curry-Sauce | Asiagemüse"
+        },
+        {
+          "name": "Marokko Halloumi ‚African Style‘",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "gegrillter Halloumi | Couscous-Salat | pikanter Harissa-Frischkäse-Dip"
+        },
+        {
+          "name": "Japan Lachs Teriyaki-Spieße",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "B",
+            "F",
+            "L"
+          ],
+          "allergens": [
+            "crustaceans",
+            "soybeans",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Streifen vom Lachsfilet | hausgemachte Teriyaki-Marinade"
+        }
+      ]
+    },
+    {
+      "title": "Das solltest du nicht verpassen!",
+      "items": [
+        {
+          "name": "England Warmer Apfel-Crumble",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "im Glas gebacken | saftige Apfelstückchen | knusprige"
+        },
+        {
+          "name": "Eiskaffee oder Eisschokolade",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Caffé Crema oder Kakao | Vanilleeis | Sahne Unsere Sommerdrinks:"
+        },
+        {
+          "name": "Yuzu Spritz",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "sommerlicher Drink mit exotischer Note. Der japanische Yuzu-Frucht und Sake. Aufgegossen mit Prosecco und"
+        },
+        {
+          "name": "Yuzu Spritz-Limonade",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "die erfrischenden Zitrusaromen gibt`s auch alkoholfrei! Yuzu-Fruchtsaft, aufgegossen mit Tonic und Soda (0,2l) Neu aus der Hohenthanner Schlossbrauerei: Natur-Radler Blutorange alkoholfrei Intensive Blutorange trifft auf fein abgestimmte Braukunst aus besten Zutaten. Perfekt ausbalanciert wird das ehrlichen Genuss für alle, die vollen Geschmack"
+        },
+        {
+          "name": "0,33l",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "– das ganze alkoholfrei und hergestellt Natur-Radler Blutorange alkoholfrei zu einem und pure Frische lieben.."
+        }
+      ]
+    },
+    {
+      "title": "Vorspeise und Suppe",
+      "items": [
+        {
+          "name": "Gratinierte Portobello-Pilze",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "L",
+            "H"
+          ],
+          "allergens": [
+            "gluten",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {
+            "vegan": "declared",
+            "vegetarian": "declared"
+          },
+          "description": "Ratatouille-Frischkäse-Füllung | Tomaten- Chutney | Steinofenbaguette"
+        },
+        {
+          "name": "Gulaschsuppe",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "I"
+          ],
+          "allergens": [
+            "celery",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Ungarische Art | Rindfleisch | frisches Brot"
+        },
+        {
+          "name": "Auch als Hauptgericht möglich",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Salate Jeder Salat mit Hausdressing",
+      "items": [
+        {
+          "name": "Fitness-Salat",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "J"
+          ],
+          "allergens": [
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Gegrillte Hähnchenbrust | Salat | frisches Baguette"
+        },
+        {
+          "name": "Kleiner Beilagensalat",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "J"
+          ],
+          "allergens": [
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Großer Beilagensalat",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "J"
+          ],
+          "allergens": [
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Honigziegenkäse auf Salatbett",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "J"
+          ],
+          "allergens": [
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Gebackener Ziegenkäse | gratinierter Honig | Salat | frisches Baguette"
+        }
+      ]
+    },
+    {
+      "title": "Brotzeit Jede Brotzeit mit frischem Brot",
+      "items": [
+        {
+          "name": "Bayerischer Wurstsalat",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "1"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Lyoner | Zwiebelringe | Essiggurken | Essigsud"
+        },
+        {
+          "name": "Brotzeitbrett‘l für zwei",
+          "prices": [
+            {
+              "amount": 21.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G",
+            "1",
+            "5"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Kalter Braten | Kaminwurz | Schinken | Leberkäse | Emmentaler | Obazda | Butter | auf Baumscheibe"
+        },
+        {
+          "name": "Schweizer Wurstsalat",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "1"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Lyoner | Zwiebelringe | Emmentaler | Essiggurken | Essigsud"
+        },
+        {
+          "name": "Portion Obazda",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemacht"
+        },
+        {
+          "name": "Kalter Braten",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Feine Schweinebratenscheiben | Butter | geraspelter Meerrettich"
+        },
+        {
+          "name": "Portion Emmentaler",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "150g fein aufgeschnittener Emmentaler | Butter | zwei frische Brezen (Zubereitung 15-20 min)"
+        },
+        {
+          "name": "Brotzeitteller",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G",
+            "1",
+            "5"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Kalter Braten | Kaminwurz | Schinken | Leberkäse | Emmentaler | Obazda | Butter"
+        },
+        {
+          "name": "Essigknödel-Salat",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Semmelknödel | Zwiebel | Essiggurken | Tomaten | Essigsud (ohne Brot)"
+        }
+      ]
+    },
+    {
+      "title": "Burger-Specials Sides zum Burger: Pommes",
+      "items": [
+        {
+          "name": "frites oder Wedges",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "NEU! Raging Pig Burger",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {
+            "vegan": "declared",
+            "vegetarian": "declared"
+          },
+          "description": "Erbsen-Pilz-Patty | Essiggurke | Salat hausgemachte Burgersauce | Tomaten- Chutney | Röstzwiebel | Homestyle Bun"
+        },
+        {
+          "name": "Cheese Burger classic",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderpatty (180g) | Burgersauce | Emmentaler | Zwiebel | Tomate | Gurke | Salat"
+        },
+        {
+          "name": "Crispy Chicken",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G",
+            "I"
+          ],
+          "allergens": [
+            "celery",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Hähnchenfleisch | Knusperpanade | Zwiebel | Chili Cheese Créme | Gurke | Tomate | Salat",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Chili Cheese",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderpatty (180g) | Chili Cheese Créme | Emmentaler | Zwiebel | Tomate | Gurke | Salat",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "BBQ Bacon",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderpatty (180g) | BBQ-Sauce | Bacon | Sour Cream | Emmentaler | Rostzwiebel | Essiggurke | Tomate | Salat"
+        },
+        {
+          "name": "Hamburger classic",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderpatty (180g) | Burgersauce | Zwiebel | Tomate | Gurke | Salat"
+        }
+      ]
+    },
+    {
+      "title": "Jeden Donnerstag, sowie an Sonn- und Feiertagen",
+      "items": [
+        {
+          "name": "Ofenfrischer Schweinebraten",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 16.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G",
+            "I",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "eggs",
+            "gluten",
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinebraten | Kartoffel- und Semmelknödel |"
+        },
+        {
+          "name": "Kalbsfleischpflanzerl",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G",
+            "I",
+            "J",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "milk",
+            "mustard",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Drei große Fleischpflanzerl | Pfefferrahmsauce | Kartoffel-Gurken-Salat oder Kartoffelpüree"
+        },
+        {
+          "name": "Hähnchencurry",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 18.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Filetstücke | leicht pikante Kokos-Curry- Sauce | Asiagemüse | Reis"
+        },
+        {
+          "name": "Knödelgröstl",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 17.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "I",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "eggs",
+            "gluten",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinebraten | Spiegelei | Zwiebel"
+        },
+        {
+          "name": "Drei Tannen, Wald & Weide",
+          "prices": [
+            {
+              "amount": 23.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G",
+            "I",
+            "J",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "eggs",
+            "gluten",
+            "milk",
+            "mustard",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinefiletmedaillons rosa gebraten | hausgemachte Käsespätzle | Schwammerlsauce | Speckkrusterl | Röstzwiebeln"
+        },
+        {
+          "name": "Currywurst",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1"
+          ],
+          "allergens": [],
+          "additives": [
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Rote Bratwurst | hausgemachte Currysauce | Pommes frites"
+        },
+        {
+          "name": "Zwiebelrostbraten",
+          "prices": [
+            {
+              "amount": 29.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "I",
+            "J",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "mustard",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderlende | Röstkartoffeln | Bratensauce | gemischter Salat"
+        },
+        {
+          "name": "Original Wiener Schnitzel",
+          "prices": [
+            {
+              "amount": 32.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "J"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Kalbslende | Preiselbeeren | hausgemachter Kartoffel-Gurken-Salat | gemischter Salat"
+        },
+        {
+          "name": "Hausgemachte Rinderroulade",
+          "prices": [
+            {
+              "amount": 24.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G",
+            "I",
+            "J",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "milk",
+            "mustard",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderroulade | Blaukraut | Schmelzzwiebel-Kartoffelpüree"
+        },
+        {
+          "name": "Schnitzel Wiener Art",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 16.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Vom Schwein | Pommes frites oder Kartoffelsalat"
+        },
+        {
+          "name": "Ochsenbraten Burgunder Art",
+          "prices": [
+            {
+              "amount": 24.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 23.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G",
+            "I",
+            "J",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "eggs",
+            "gluten",
+            "milk",
+            "mustard",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Scheiben aus der Ochsenschulter | hausgemachte Spätzle | Rotweinsauce | gemischter Salat"
+        },
+        {
+          "name": "Cordon bleu",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Vom Schwein | Schinken-Käse-Füllung | Pommes frites oder Kartoffelsalat Nix geht ohne Sauce?"
+        },
+        {
+          "name": "Gebackene Milzwurst",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 14.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "I",
+            "L",
+            "2",
+            "5"
+          ],
+          "allergens": [
+            "celery",
+            "eggs",
+            "gluten",
+            "sulphites"
+          ],
+          "additives": [
+            "flavour_enhancer",
+            "phosphate"
+          ],
+          "diet": {},
+          "description": "Panierte Milzwurst | hausgemachter Kartoffelsalat | auf Wunsch mit extra Bratensauce"
+        },
+        {
+          "name": "Jägersauce mit Schwammerl",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G",
+            "I",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pikante Pfefferrahmsauce",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G",
+            "I",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Fischklassiker",
+      "items": [
+        {
+          "name": "Gebackenes Seelachsfilet",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 13.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "D",
+            "G"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Panierter Seelachs | Remouladensauce | hausgemachter"
+        }
+      ]
+    },
+    {
+      "title": "Vegetarisch und vegan",
+      "items": [
+        {
+          "name": "Gebratene Nudeln",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 13.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "F",
+            "J"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared",
+            "vegan": "declared"
+          },
+          "description": "Asianudeln | gebratenes Asiagemüse | Ingwer | Sojasauce | gemischter Salat"
+        },
+        {
+          "name": "Käsespätzle",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 14.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G",
+            "J"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "description": "Hausgemachte Spätzle | Emmentaler | Röstzwiebeln | gemischter Salat"
+        },
+        {
+          "name": "Sellerie-Schnitzel",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 14.4,
+              "currency": "EUR",
+              "note": "kleine Portion"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "I",
+            "J"
+          ],
+          "allergens": [
+            "celery",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared",
+            "vegan": "declared"
+          },
+          "description": "Sellerie | knusprige Senfpanade | Bratkartoffeln | Preiselbeeren"
+        },
+        {
+          "name": "Spiegeleier",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "C",
+            "J"
+          ],
+          "allergens": [
+            "eggs",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "description": "Drei Spiegeleier | Röstkartoffeln | gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "KINDERKARTE",
+      "items": [
+        {
+          "name": "Käpt’n Blaubär",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "D",
+            "G"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachte Fischstäbchen | Remouladensauce | Pommes frites"
+        },
+        {
+          "name": "Ritteressen",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G",
+            "I",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "eggs",
+            "gluten",
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachte Spätzle | Bratensauce"
+        },
+        {
+          "name": "Mäuse-Käsetraum",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Kleine Portion Käsespätzle | ohne Röstzwiebeln"
+        },
+        {
+          "name": "Goldener Piratenschatz",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Kinderschnitzel vom Schwein | Pommes frites"
+        },
+        {
+          "name": "Zappelfritten",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Portion Pommes frites | Ketchup oder Mayo"
+        },
+        {
+          "name": "Oma’s Hühnerstall-Knuspermix",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Fünf Chicken-Nuggets | Pommes frites"
+        }
+      ]
+    },
+    {
+      "title": "Zum Abschluss",
+      "items": [
+        {
+          "name": "Eis & heiß",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Vanilleeis | warme Himbeersauce"
+        },
+        {
+          "name": "Schokokuchen",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachter warmer Schokokuchen | flüssiger"
+        },
+        {
+          "name": "Apfelkücherl",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "C",
+            "G"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Gebackene Apfelringe | Vanilleeis"
+        },
+        {
+          "name": "Apfelstrudel",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "description": "Apfelstrudel | Vanillesauce"
+        },
+        {
+          "name": "Affogato al caffé",
+          "prices": [
+            {
+              "amount": 6.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G",
+            "7"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {},
+          "description": "Vanilleeis | doppelter Espresso"
+        }
+      ]
+    },
+    {
+      "title": "Heiße Getränke",
+      "items": [
+        {
+          "name": "Espresso",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Espresso doppelt",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Cappuccino",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Tasse Kaffee",
+          "prices": [
+            {
+              "amount": 3.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Haferl Kaffee",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Milchkaffee",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Latte Macchiato",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Latte Macchiato spezial",
+          "prices": [
+            {
+              "amount": 4.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Bio Tee",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Heiße Schokolade",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Säfte und Schorlen",
+      "items": [
+        {
+          "name": "Saft nach Wahl pur 0,3l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Schorle nach Wahl 0,3l",
+          "prices": [
+            {
+              "amount": 3.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "0,5l",
+          "prices": [
+            {
+              "amount": 5.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "0",
+            "4",
+            "70"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "markersUnknown": [
+            "0",
+            "70"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alkoholfrei und Softdrinks",
+      "items": [
+        {
+          "name": "Tafelwasser",
+          "prices": [
+            {
+              "amount": 2.6,
+              "currency": "EUR",
+              "portion": "0,3l"
+            },
+            {
+              "amount": 3.7,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Tafelwasser still",
+          "prices": [
+            {
+              "amount": 2.6,
+              "currency": "EUR",
+              "portion": "0,3l"
+            },
+            {
+              "amount": 3.7,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Libella Orange",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,3l"
+            },
+            {
+              "amount": 4.7,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "4"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Libella Cola Mix",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,3l"
+            },
+            {
+              "amount": 4.7,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "7"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Libella Cola",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,3l"
+            },
+            {
+              "amount": 4.7,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "7"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Libella Brause Zitrone",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,3l"
+            },
+            {
+              "amount": 4.7,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Libella Cola Zero",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,3l"
+            },
+            {
+              "amount": 4.7,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "6",
+            "7"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "caffeine",
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Red Bull (0,25l)",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "7"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Tonic Water (0,2l von Thomas Henry)",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Bitter Lemon (0,2l)",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Biere aus der Schlossbrauerei",
+      "items": [
+        {
+          "name": "Tannen Hell vom Fass",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Tannen Hell alkoholfrei",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Märzen Festbier",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Radler Radler Russ Cola Tannen Saisonales 0,33l _ Weißbier 4,70 dunkel alkoholfrei Pils Craft",
+          "prices": [
+            {
+              "amount": 4.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "70",
+            "4",
+            "70",
+            "4",
+            "50",
+            "4",
+            "7",
+            "4",
+            "80"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant"
+          ],
+          "diet": {},
+          "markersUnknown": [
+            "70",
+            "70",
+            "50",
+            "80"
+          ]
+        },
+        {
+          "name": "Hefe Weißbier vom Fass",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hefe Weißbier alkoholfrei",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hefe Weißbier leicht",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hefe Weißbier dunkel",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Kellerbier hell",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Kellerbier dunkel vom Fass",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Radler",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Weißweine offen 0,2l",
+      "items": [
+        {
+          "name": "Grüner Veltliner Ruttenstock / Österreich, Röschitz",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, spritzig, leicht mit klassischen Fruchtnoten"
+        },
+        {
+          "name": "Riesling Bio | Vegan Gröhl / Deutschland, Rheinhessen",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, die pure Frische im Glas: Zitrus, grüner Apfel, feine Säure, ein Riesling, wie er sein soll"
+        },
+        {
+          "name": "Lugana DOC Colli Vaibó / Italien, Lombardai",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, leicht und feine Fruchtnoten, das Gefühl von Urlaub am Gardasee hier im Biergarten"
+        },
+        {
+          "name": "Sauvignon blanc Schneider Pfaffmann / Deutschland, Pfalz",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, das volle Aroma: Stachelbeere und exotische Früchte in einer seltenen Intensität"
+        },
+        {
+          "name": "Chardonnay Schneider Pfaffmann / Deutschland, Pfalz",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, begeistert sofort: Birne, Apfel, wenig Säure und einfach harmonisch"
+        }
+      ]
+    },
+    {
+      "title": "Roséwein offen 0,2l",
+      "items": [
+        {
+          "name": "Rosé ‚Nero di Troia‘ IGP Teanum / Italien, Apulien",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, der Stimmungsmacher: kräftige Farbe und tolle Fruchtaromen dank der Sonne Süditaliens"
+        }
+      ]
+    },
+    {
+      "title": "Rotweine offen 0,2l",
+      "items": [
+        {
+          "name": "Primitivo ‚chiave d‘oro’ IGP Ionis Vini / Italien, Apulien",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, der Klassiker: weich und intensiv zugleich mit Aromen von dunklen Früchten und Schokolade"
+        },
+        {
+          "name": "Böff Noir Lergenmüller / Deutschland, Pfalz",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, kräftig, würzig, ausdrucksstark: dunkle Beeren und Pfeffernoten machen diesen Wein zu unserem neuen Liebling – unbedingt probieren!"
+        },
+        {
+          "name": "Merlot IGP De Stefani / Italien, Venetien",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, einfach eine runde Sache: weich und elegant schafft dieser Merlot sofort Vertrauen und lässt Ruhe im hektischen Alltag einkehren"
+        },
+        {
+          "name": "Zweigelt Ruttenstock / Österreich, Röschitz",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "trocken, wenig Tannine, ein perfekter Alltagswein Wir halten zusätzlich ausgewählte Weine bereit. Sprich uns gerne auf unsere Weinkarte an."
+        }
+      ]
+    },
+    {
+      "title": "Von der Birne und andere Klassiker Aus Kräutern und Wurzeln",
+      "items": [
+        {
+          "name": "Prinz Alter Willi",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Lantenhammer Rote Williamsbirne (zwei Jahre"
+        },
+        {
+          "name": "Jägermeister",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Averna",
+          "prices": [
+            {
+              "amount": 3.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "in Steingut-Fässern gereift)",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Ramazotti",
+          "prices": [
+            {
+              "amount": 3.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Prinz Haselnuss",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hirschkuss",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Frangelico Haselnusslikör",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Bärwurz, Blutwurz",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Sambuca",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Von der Steinfrucht",
+      "items": [
+        {
+          "name": "Prinz Alte Marille",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Aus Hopfen",
+      "items": [
+        {
+          "name": "Prinz Alte Kirsche",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Lantenhammer Schlehengeist (im Slyrs-Fass"
+        },
+        {
+          "name": "Hallertauer Hopfengold",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "gereift)",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Whisky",
+      "items": [
+        {
+          "name": "Glenmorangie Single Malt / 10 a",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Von der Beere",
+      "items": [
+        {
+          "name": "Laphroaig Single Malt / 10 a",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Likör Créme de Cassis",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Prinz Alte Waldhimbeere",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Von der Traube",
+      "items": [
+        {
+          "name": "Botucal Reserva",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Grappa Sole Rosso",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Hausgemacht",
+      "items": [
+        {
+          "name": "Lorbeerlikör",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Schokolikör 4cl",
+          "prices": [
+            {
+              "amount": 4.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "APERITIFE",
+      "items": [
+        {
+          "name": "Lillet Wild Berry 0,2l",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hugo 0,2l",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Aperol Spritz 0,2l",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Prosecco 0,1l",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Longdrinks",
+      "items": [
+        {
+          "name": "Weinschorle rot oder weiß 0,2l",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Weinschorle rot oder weiß 0,5l",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Vodka Bull Three Sixty 4cl / Red Bull 0,3l",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Gin Tonic Bombay Sapphire 4cl / Thomas Henry 0,2l",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Rüscherl",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gin Tonic alkoholfrei Siegfried Wonderleaf 4cl Allergene: A) Glutenhaltiges Getreide B) Krebstiere C) Eier (einschließlich Laktose) H) Schalenfrüchte I) Sellerie J) Senf N) Weichtiere Zusatzstoffe: 1= mit Konservierungsstoff, 2= mit Geschmacksverstärker, mit Phosphat, 6= mit Süßungsmittel, 7= koffeinhaltig, 8= chininhaltig, Alle Preise in Euro und inklusive der gesetzlichen"
+        },
+        {
+          "name": "/ Thomas Henry 0,2l",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "D) Fisch E) Erdnüsse F) Soja G) Milch und Milchprodukte K) Sesamsamen L) Schwefeldioxid und Sulfite M) Lupinen 3= mit Antioxidationsmittel, 4= mit Farbstoff, 5= 9=geschwärzt, 10=enthält Phenylalaninquelle Mehrwertsteuer."
+        }
+      ]
+    }
+  ]
+}

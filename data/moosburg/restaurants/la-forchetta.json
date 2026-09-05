@@ -1,0 +1,45 @@
+{
+  "id": "la-forchetta",
+  "name": "La Forchetta",
+  "city": "moosburg",
+  "osm": "node/1776193641",
+  "address": {
+    "street": "Leinbergerstraße 16",
+    "postalCode": "85368",
+    "city": "Moosburg an der Isar"
+  },
+  "location": {
+    "lat": 48.468902,
+    "lon": 11.937881,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1776193641",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 70985",
+    "website": "https://www.la-forchetta.com"
+  },
+  "cuisines": [
+    "italian",
+    "pizza"
+  ],
+  "openingHours": {
+    "raw": "Tu-Su 11:30-14:00,17:30-23:00; Sa 17:30-23:00; PH 11:30-14:00,17:30-23:00",
+    "osm": "Tu-Su 11:30-14:00,17:30-23:00; Sa 17:30-23:00; PH 11:30-14:00,17:30-23:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1776193641",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-01."
+    }
+  },
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Speisekarte noch nicht eingelesen",
+    "Bewertungen noch nicht angebunden"
+  ]
+}

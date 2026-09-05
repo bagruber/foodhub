@@ -1,0 +1,44 @@
+{
+  "id": "kaemper-braeu-biergarten",
+  "name": "Kämper-Bräu Biergarten",
+  "city": "moosburg",
+  "osm": "node/8694047717",
+  "address": {
+    "street": "Isarstraße 8",
+    "postalCode": "85368",
+    "city": "Wang"
+  },
+  "location": {
+    "lat": 48.496924,
+    "lon": 11.958019,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8694047717",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-08-06."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 7246698",
+    "email": "bestellung@kaemper-braeu.de"
+  },
+  "cuisines": [
+    "bavarian",
+    "beer_garden"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Mo-Sa 16:00-23:00, Su 11:00-23:00",
+    "osm": "Mo-Sa 16:00-23:00, Su 11:00-23:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8694047717",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-08-06."
+    }
+  }
+}

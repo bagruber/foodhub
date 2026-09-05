@@ -1,0 +1,48 @@
+{
+  "id": "asia-rose",
+  "name": "Asia Rose",
+  "city": "moosburg",
+  "address": {
+    "street": "Thalbacher Straße 4",
+    "postalCode": "85368",
+    "city": "Moosburg an der Isar"
+  },
+  "contact": {
+    "phone": "+49 8761 7266585"
+  },
+  "cuisines": [
+    "vietnamese",
+    "sushi",
+    "asian"
+  ],
+  "openingHours": {
+    "raw": "Montag, Mittwoch - Samstag 11:00-14:30 und 17:00-22:00 | Sonn- und Feiertage 16:00-22:00 | Dienstag Ruhetag",
+    "osm": "Mo,We-Sa 11:00-14:30,17:00-22:00; Su,PH 16:00-22:00; Tu off",
+    "provenance": {
+      "kind": "pdf",
+      "file": "sources/moosburg/asia-rose_speisekarte_2022-04-28.pdf",
+      "retrievedAt": "2026-09-04",
+      "createdAt": "2022-04-28",
+      "note": "Steht auf Seite 2 der Speisekarte. Die Karte ist von 2022 und damit vier Jahre alt, die Zeiten sind entsprechend unsicher."
+    }
+  },
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Speisekarte noch nicht ausgelesen: das PDF hat keinen Textlayer, die Schrift ist in Kurven umgewandelt",
+    "96 freigestellte Gerichtsbilder liegen im PDF und lassen sich den Gerichten zuordnen",
+    "Kartenstand 2022, eine aktuellere Fassung wäre zu suchen",
+    "Bewertungen noch nicht angebunden"
+  ],
+  "osm": "node/8124469003",
+  "location": {
+    "lat": 48.468928,
+    "lon": 11.936102,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8124469003",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  }
+}

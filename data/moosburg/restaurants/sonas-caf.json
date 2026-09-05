@@ -1,0 +1,43 @@
+{
+  "id": "sonas-caf",
+  "name": "Sona's Café",
+  "city": "moosburg",
+  "osm": "node/2441412950",
+  "address": {
+    "street": "Herrnstraße 23",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.467968,
+    "lon": 11.9375,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/2441412950",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-04-09."
+    }
+  },
+  "contact": {},
+  "cuisines": [
+    "cake",
+    "coffee_shop",
+    "bistro",
+    "cafe"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Fr-Tu 08:30-17:00; Th 08:30-14:00",
+    "osm": "Fr-Tu 08:30-17:00; Th 08:30-14:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/2441412950",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-04-09."
+    }
+  }
+}

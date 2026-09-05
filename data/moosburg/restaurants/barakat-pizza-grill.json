@@ -1,0 +1,44 @@
+{
+  "id": "barakat-pizza-grill",
+  "name": "Barakat Pizza & Grill",
+  "city": "moosburg",
+  "osm": "node/11162697416",
+  "address": {
+    "street": "Thalbacher Straße 14",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.469812,
+    "lon": 11.93611,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/11162697416",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-09-03."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 7290666"
+  },
+  "cuisines": [
+    "turkish",
+    "pizza",
+    "fast_food"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Mo-Su 10:30-21:30",
+    "osm": "Mo-Su 10:30-21:30",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/11162697416",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-09-03."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "moosburg",
+  "name": "Moosburg an der Isar",
+  "center": { "lat": 48.4703, "lon": 11.9333 },
+  "bbox": [11.87, 48.44, 12.00, 48.50]
+}

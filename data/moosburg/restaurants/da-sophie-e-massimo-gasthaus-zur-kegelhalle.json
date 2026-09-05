@@ -1,0 +1,44 @@
+{
+  "id": "da-sophie-e-massimo-gasthaus-zur-kegelhalle",
+  "name": "Da Sophie e Massimo - Gasthaus zur Kegelhalle",
+  "city": "moosburg",
+  "osm": "node/1871379339",
+  "address": {
+    "street": "Stadtwaldstraße 115A",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.473424,
+    "lon": 11.947828,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1871379339",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-30."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 61314",
+    "email": "info@dasophiemassimo.de",
+    "website": "https://dasophiemassimo.de/speisekarte"
+  },
+  "cuisines": [
+    "italian"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "We-Mo 11:00-23:00",
+    "osm": "We-Mo 11:00-23:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/1871379339",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-30."
+    }
+  }
+}

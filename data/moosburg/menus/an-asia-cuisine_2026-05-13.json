@@ -1,0 +1,3261 @@
+{
+  "restaurantId": "an-asia-cuisine",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/an-asia-cuisine_speisekarte_2026-05-13.pdf",
+    "retrievedAt": "2026-09-04",
+    "createdAt": "2026-05-13",
+    "note": "Das PDF hat keinen Textlayer, jede Seite ist ein Bild. Der Text wurde aus den Seiten ausgelesen und liegt daneben als _extrakt.json. Die Zuordnung ist nicht Zeile fuer Zeile gegen das Original geprueft. Quell-URL noch offen."
+  },
+  "legend": {
+    "allergens": {
+      "a": "gluten",
+      "b": "crustaceans",
+      "c": "eggs",
+      "d": "fish",
+      "e": "peanuts",
+      "f": "soybeans",
+      "g": "milk",
+      "h": "nuts",
+      "i": "celery",
+      "k": "mustard",
+      "l": "sesame",
+      "m": "sulphites",
+      "n": "lupin",
+      "o": "molluscs",
+      "18": "nuts"
+    },
+    "additives": {
+      "1": "colorant",
+      "2": "preservative",
+      "3": "antioxidant",
+      "4": "flavour_enhancer",
+      "5": "sulphured",
+      "6": "blackened",
+      "7": "phosphate",
+      "8": "sweetener",
+      "9": "phenylalanine",
+      "10": "waxed",
+      "11": "nitrite_salt",
+      "12": "tartrazine",
+      "13": "genetically_modified",
+      "14": "acidifier",
+      "15": "stabiliser",
+      "16": "protein",
+      "17": "caffeine"
+    }
+  },
+  "sections": [
+    {
+      "title": "Mittagsgerichte",
+      "items": [
+        {
+          "name": "Süß-Saure Suppe",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "d"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "M1"
+        },
+        {
+          "name": "Mini-Frühlingsrolle",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M2"
+        },
+        {
+          "name": "Ente knusprig mit Gemüse und Reis, Soße nach Wahl",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M3",
+          "description": "Zur Wahl: A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k]",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Huhn knusprig mit Gemüse und Reis, Soße nach Wahl",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M4",
+          "description": "Zur Wahl: A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k]",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Hühnerfleisch mit Gemüse und Reis, Soße nach Wahl",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M5",
+          "description": "Zur Wahl: A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k]",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Rindfleisch mit Gemüse und Reis, Soße nach Wahl",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M6",
+          "description": "Zur Wahl: A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k]",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Tofu gebraten mit Gemüse und Reis, Soße nach Wahl",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M7",
+          "description": "Zur Wahl: A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k]",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Garnelen mit Gemüse und Reis, Soße nach Wahl",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M8",
+          "description": "Zur Wahl: A. Rote Curry Soße (scharf) [Allergene: b,e,k] | B. Soja-Austern Soße [Allergene: b,k] | C. Süß-Sauer Soße (scharf) [Allergene: a,b] | D. Gongpo Soße (leicht scharf) [Allergene: a,b,d] | E. Erdnuss Soße [Allergene: a,b,e,k]",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Gebratener Eierreis mit Gemüse",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "d",
+            "h"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "M9",
+          "description": "Zur Wahl: A. Hühnerfleisch 11,00 € | B. Knuspriges Huhn [Allergene: b] 11,00 € | C. Knusprige Ente [Allergene: b] 12,00 € | D. Garnelen 12,00 € | E. Tofu 10,00 € Preisangabe: 10,00 €"
+        },
+        {
+          "name": "Gebratene Nudeln mit Gemüse",
+          "prices": [],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M10",
+          "description": "Zur Wahl: A. Hühnerfleisch 11,00 € | B. Knuspriges Huhn [Allergene: b] 11,00 € | C. Knusprige Ente [Allergene: b] 12,00 € | D. Garnelen 12,00 € | E. Tofu 10,00 € Preisangabe: 10,00 €"
+        },
+        {
+          "name": "Maki Box",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M11",
+          "description": "8 Avocado Maki, 8 Sake Maki, 8 Tekka Maki"
+        },
+        {
+          "name": "Mix Box",
+          "prices": [
+            {
+              "amount": 16.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M12",
+          "description": "3 Nigiri (Lachs, Thunfisch, Ebi), 4 Sake Maki, 4 Tekka Maki, 4 Tobiko Maki, 4 Alaska Maki"
+        },
+        {
+          "name": "Inside-Out-Box",
+          "prices": [
+            {
+              "amount": 18.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "M13",
+          "description": "8 California Maki, 8 Tobiko Maki, 8 Alaska Maki"
+        }
+      ],
+      "note": "MO - FR : 11:00 - 14:30 UHR"
+    },
+    {
+      "title": "Suppen",
+      "items": [
+        {
+          "name": "Süß-sauer Suppe",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "d"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "1"
+        },
+        {
+          "name": "Curry Suppe (leicht scharf)",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "2",
+          "description": "Mit gemischtem Gemüse und Entenfleisch",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Hühner Suppe",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "3",
+          "description": "Mit Gemüse und Hühnerfleisch"
+        },
+        {
+          "name": "Wantan Suppe",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "4",
+          "description": "Mit Fleischfüllung in Teigtaschen und Gemüse, Glasnudeln"
+        },
+        {
+          "name": "Tom Yum (scharf)",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "5",
+          "description": "Mit Gemüse, Garnelen, Zitronengras",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Tom Kha (leicht scharf)",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "6",
+          "description": "Mit Gemüse, Hühnerfleisch, Kokosmilch",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Miso Suppe",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "7",
+          "description": "Mit Tofu, Seetang, Platte"
+        }
+      ]
+    },
+    {
+      "title": "Vorspeisen",
+      "items": [
+        {
+          "name": "Gyoza Chicken",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "8",
+          "description": "5 Teigtaschen mit Hühnerfleisch"
+        },
+        {
+          "name": "Gyoza Vegetarisch",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "9",
+          "description": "5 Teigtaschen mit Gemüsefüllung"
+        },
+        {
+          "name": "Große Frühlingsrolle",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "10",
+          "description": "Mit Gemüse, Hackfleisch, Glasnudeln"
+        },
+        {
+          "name": "Vietnamesische Frühlingsrollen (2 Stk.)",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "11",
+          "description": "Hausgemachte Frühlingsrollen gefüllt mit Hackfleisch, Glasnudeln, Gemüse"
+        },
+        {
+          "name": "Mini Frühlingsrolle",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "12",
+          "description": "5 Vegetarisch minirollen"
+        },
+        {
+          "name": "Wantan Gebacken",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "13",
+          "description": "5 Teigtaschen mit Fleisch und Garnelenfüllung"
+        },
+        {
+          "name": "Garnelen Tempura (5 Stk.)",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "14",
+          "description": "Garnelen im Teigmantel"
+        },
+        {
+          "name": "Sate Spieße",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "d",
+            "e",
+            "h",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten",
+            "mustard",
+            "nuts",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "15",
+          "description": "3 gegrillte Hühnerspieße mit Erdnuss-Sauce"
+        },
+        {
+          "name": "Dinsum Ha Cao",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "k"
+          ],
+          "allergens": [
+            "celery",
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "16",
+          "description": "4 Stück gedämpfte Maultaschen mit Garnelenfüllung"
+        },
+        {
+          "name": "Dinsum Xiu Mai",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "k"
+          ],
+          "allergens": [
+            "celery",
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "17",
+          "description": "4 Stück gedämpfte Maultaschen mit Fleisch und Garnelenfüllung"
+        },
+        {
+          "name": "Yaki Tori",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "e"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "18",
+          "description": "3 Stück Spezielle Hühnerspieße mit Teriyaki Sauce, Sesam"
+        },
+        {
+          "name": "Goi Cuon",
+          "prices": [],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "19",
+          "description": "2 Sommerrollen eingerollt in Reisblätter mit Salat, Kräutern und Erdnuss-Soße Zur Wahl: A. Garnelen (gekochte Garnelen) 8,00 € | B. Rind (gegrilltes Rinderhüftsteak) 7,00 € | C. Hühnerfleisch (gegrilltes Hühnerbrustfilet) 7,00 € | D. Ente (Knusprige Ente) 7,00 € | E. Tofu (gebratener Tofu) 6,00 € | F. Salmon Avo (roher Lachs, Avocado) 8,00 €"
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Edamame",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "20",
+          "description": "Japanische grüne Bohnen"
+        },
+        {
+          "name": "Hühnerfleisch Salat",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "k"
+          ],
+          "allergens": [
+            "celery",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "21",
+          "description": "Mit Gemüse und Hühnerfleisch"
+        },
+        {
+          "name": "Ente Salat",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "k"
+          ],
+          "allergens": [
+            "celery",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "22",
+          "description": "Frische Mangostreifen mit Kräutern, Erdnüssen, Schalotten"
+        },
+        {
+          "name": "Avocado Salat",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "23",
+          "description": "Mit Avocado, Wildkräutersalat"
+        },
+        {
+          "name": "Wakame Salat",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "24",
+          "description": "Seealgensalat mit erlesenem Sesam"
+        },
+        {
+          "name": "Papaya Salat",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "c",
+            "f",
+            "n"
+          ],
+          "allergens": [
+            "crustaceans",
+            "eggs",
+            "gluten",
+            "lupin",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "25",
+          "description": "Frische Papaya mit Garnelen, Kräutern, Erdnüssen, Schalotten"
+        }
+      ]
+    },
+    {
+      "title": "Gebratenes Hühnerfleisch",
+      "items": [
+        {
+          "name": "Hühnerfleisch gebraten",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "30",
+          "description": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Hühnerfleisch gebraten",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "31",
+          "description": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Hühnerfleisch gebraten",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "32",
+          "description": "Mit Gemüse in Mangosoße"
+        },
+        {
+          "name": "Hühnerfleisch gebraten",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "33",
+          "description": "Mit Gemüse in Sojasoße"
+        },
+        {
+          "name": "Hühnerfleisch gebraten",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "34",
+          "description": "Mit Gemüse in Gongpo Soße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Hühnerfleisch gebraten",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "35",
+          "description": "Mit Gemüse und Sate-Erdnuss Soße"
+        },
+        {
+          "name": "Hühnerfleisch gebraten",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "36",
+          "description": "Mit Gemüse und Süß-Sauer-Soße (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Gebratenes Rindfleisch",
+      "items": [
+        {
+          "name": "Rindfleisch",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "40",
+          "description": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Rindfleisch",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "41",
+          "description": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Rindfleisch",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "42",
+          "description": "Mit Gemüse in Mangosoße"
+        },
+        {
+          "name": "Rindfleisch",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "43",
+          "description": "Mit Gemüse in Sojasoße"
+        },
+        {
+          "name": "Rindfleisch",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "44",
+          "description": "Mit Gemüse in Gongpo Soße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Rindfleisch",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "45",
+          "description": "Mit Gemüse und Sate-Erdnuss Soße"
+        },
+        {
+          "name": "Rindfleisch",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "46",
+          "description": "Mit Gemüse und Süß-Sauer-Soße (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Ente knusprig",
+      "items": [
+        {
+          "name": "Ente Knusprig",
+          "prices": [
+            {
+              "amount": 17.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "50",
+          "description": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Ente Knusprig",
+          "prices": [
+            {
+              "amount": 17.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "51",
+          "description": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Ente Knusprig",
+          "prices": [
+            {
+              "amount": 17.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "52",
+          "description": "Mit Gemüse in Mangosoße"
+        },
+        {
+          "name": "Ente Knusprig",
+          "prices": [
+            {
+              "amount": 17.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "53",
+          "description": "Mit Gemüse in Sojasoße"
+        },
+        {
+          "name": "Ente Knusprig",
+          "prices": [
+            {
+              "amount": 17.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "54",
+          "description": "Mit Gemüse in Gongpo Soße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Ente Knusprig",
+          "prices": [
+            {
+              "amount": 17.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "55",
+          "description": "Mit Gemüse und Sate-Erdnuss Soße"
+        },
+        {
+          "name": "Ente Knusprig",
+          "prices": [
+            {
+              "amount": 17.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "56",
+          "description": "Mit Gemüse in Süß-Sauer Soße"
+        }
+      ]
+    },
+    {
+      "title": "Hähnchen knusprig",
+      "items": [
+        {
+          "name": "Knuspriges Huhn",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "60",
+          "description": "Mit Gemüse in Roter Thai Kokos-Currysoße (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Knuspriges Huhn",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "61",
+          "description": "Mit Gemüse in gelber / Kokos-Currysoße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Knuspriges Huhn",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "62",
+          "description": "Mit Gemüse in Mangosoße"
+        },
+        {
+          "name": "Knuspriges Huhn",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "63",
+          "description": "Mit Gemüse in Sojasoße"
+        },
+        {
+          "name": "Knuspriges Huhn",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "64",
+          "description": "Mit Gemüse in Gongpo Soße (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Knuspriges Huhn",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "65",
+          "description": "Mit Gemüse und Sate-Erdnuss Soße"
+        },
+        {
+          "name": "Knuspriges Huhn",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "66",
+          "description": "Mit Gemüse in Süß-Sauer Soße"
+        }
+      ]
+    },
+    {
+      "title": "Garnelen und Gemüse",
+      "items": [
+        {
+          "name": "Garnelen gebraten",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "70",
+          "description": "Mit Gemüse und Currysauce (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Garnelen gebraten",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "71",
+          "description": "Mit Gemüse und gelber Kokos-Currysauce (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Garnelen gebraten",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "72",
+          "description": "Mit Gemüse und Mangosauce"
+        },
+        {
+          "name": "Garnelen gebraten",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "73",
+          "description": "Mit Gemüse und Sojasauce"
+        },
+        {
+          "name": "Garnelen gebraten",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "74",
+          "description": "Mit Gemüse in Gongpo-Sauce (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Garnelen gebraten",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "75",
+          "description": "Mit Gemüse und Satay-Erdnusssauce"
+        },
+        {
+          "name": "Garnelen gebraten",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "76",
+          "description": "Mit Gemüse und Süß-Sauer-Soße (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Nudeln und Reis",
+      "items": [
+        {
+          "name": "Nudeln gebraten mit Gemüse",
+          "prices": [],
+          "markersRaw": [
+            "c",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "80",
+          "description": "Zur Wahl: A. Hühnerfleisch 13,00 € | B. Huhn Knusprig 15,00 € | C. Ente Knusprig 17,00 € | D. Garnelen 18,50 € | E. Tofu 12,00 € | F. Rindfleisch 15,00 €"
+        },
+        {
+          "name": "Eierreis gebraten mit Gemüse",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "81",
+          "description": "Zur Wahl: A. Hühnerfleisch 13,00 € | B. Huhn Knusprig 15,00 € | C. Ente Knusprig 17,00 € | D. Garnelen 18,50 € | E. Tofu 12,00 € | F. Rindfleisch 15,00 €"
+        },
+        {
+          "name": "Pad Thai mit Gemüse",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "k",
+            "h"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "mustard",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "82",
+          "description": "Zur Wahl: A. Hühnerfleisch 13,00 € | B. Huhn Knusprig 15,00 € | C. Ente Knusprig 17,00 € | D. Garnelen 18,50 € | E. Tofu 12,00 € | F. Rindfleisch 15,00 €"
+        }
+      ]
+    },
+    {
+      "title": "Tofu gebraten",
+      "items": [
+        {
+          "name": "Mit Gemüse, Reis und roter Thai-Kokos-Currysauce (scharf)",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "inferred"
+          },
+          "ref": "90",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Mit Gemüse, Reis und gelber Thai-Kokos-Currysauce (leicht scharf)",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "inferred"
+          },
+          "ref": "91",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Mit Gemüse, Reis und Mangosauce",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "inferred"
+          },
+          "ref": "92"
+        },
+        {
+          "name": "Mit Gemüse, Reis und Sojasauce",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "inferred"
+          },
+          "ref": "93"
+        },
+        {
+          "name": "Mit Gemüse in Gongpo-Sauce (leicht scharf)",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "inferred"
+          },
+          "ref": "94",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Mit Gemüse und Satay-Erdnusssauce",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "inferred"
+          },
+          "ref": "95"
+        },
+        {
+          "name": "Mit Gemüse und Süß-Sauer-Soße (scharf)",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "inferred"
+          },
+          "ref": "96",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Nachtisch",
+      "items": [
+        {
+          "name": "Banane",
+          "prices": [],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "97",
+          "description": "Zur Wahl: a. Banane gebacken (5 Stk.) Mit Honig und Sesam, Erdnüssen 5,00 € | b. Banane gekocht Mit Sesam und Erdnüssen in Kokosmilch 6,50 € | c. Banane und Vanilleeis Mit Honig und Erdnüssen (4 Stk. Banane, 1 Vanilleeis) 5,50 €"
+        },
+        {
+          "name": "Mochi Eis",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "98",
+          "description": "Cocos, Schoko, Mango"
+        },
+        {
+          "name": "Kem Vanilleeis",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "99",
+          "description": "Mit Erdnüssen"
+        },
+        {
+          "name": "Kem Me Den",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "100",
+          "description": "Schwarzes Sesam-Eis und Erdnüsse."
+        }
+      ]
+    },
+    {
+      "title": "Spezialitäten",
+      "items": [
+        {
+          "name": "PHO",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "h",
+            "k",
+            "b"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "mustard",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "V1",
+          "description": "Hausgemachte Suppe mit Kräutern Reisbandnudeln, Sojasprossen Zur Wahl: A. Rindfleisch 16,00 € | B. Hühnerfleisch 15,00 € | C. Tofu 15,00 €"
+        },
+        {
+          "name": "BÚN BOWLS",
+          "prices": [],
+          "markersRaw": [
+            "h",
+            "k",
+            "b"
+          ],
+          "allergens": [
+            "crustaceans",
+            "mustard",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "V2",
+          "description": "Mit Wildkräutersalat, Thai Kräutern, Reisnudeln, Erdnüssen Hausgemachter Soße und nach Wahl Zur Wahl: A. Hühnerfleisch 15,00 € | B. Huhn Knusprig 16,00 € | C. Ente Knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 € | G. Schweinefleisch 16,00 € | H. Frühlingsrolle 15,00 €"
+        },
+        {
+          "name": "UDON GEBRATEN MIT GEMÜSE",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "k",
+            "h"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "mustard",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "V3",
+          "description": "Zur Wahl: A. Hühnerfleisch 15,00 € | B. Huhn Knusprig 16,00 € | C. Ente Knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €"
+        },
+        {
+          "name": "MISO RAMEN",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "V4",
+          "description": "Zur Wahl: A. Hühnerfleisch 15,00 € | B. Huhn knusprig 16,00 € | C. Ente knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €"
+        },
+        {
+          "name": "TONKOTSU RAMEN",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "V5",
+          "description": "Zur Wahl: A. Hühnerfleisch 15,00 € | B. Huhn knusprig 16,00 € | C. Ente knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €"
+        },
+        {
+          "name": "TANTAN RAMEN (SCHARF)",
+          "prices": [],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "V6",
+          "description": "Zur Wahl: A. Hühnerfleisch 15,00 € | B. Huhn knusprig 16,00 € | C. Ente knusprig 18,00 € | D. Garnelen 19,00 € | E. Tofu 15,00 € | F. Rindfleisch 16,00 €",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Beilagen",
+      "items": [
+        {
+          "name": "Nudeln gebraten mit Gemüse",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Eierreis gebraten mit Gemüse",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Extra Reis",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Extra Soße",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Sushi: Maki",
+      "items": [
+        {
+          "name": "Sake Avocado Maki",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "101",
+          "description": "Mit Lachs, Avocado"
+        },
+        {
+          "name": "Teka Avocado Maki",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "102",
+          "description": "Mit Thunfisch, Avocado"
+        },
+        {
+          "name": "Ebi Avocado Maki",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b"
+          ],
+          "allergens": [
+            "crustaceans"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "103",
+          "description": "Mit Garnelen, Avocado"
+        },
+        {
+          "name": "Unagi Avocado Maki",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "104",
+          "description": "Mit Aal, Avocado"
+        },
+        {
+          "name": "Ebi Tempura Maki",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "105",
+          "description": "Tempura"
+        },
+        {
+          "name": "Salmonskin Maki",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "106",
+          "description": "Gegrillter Lachs, Gurken, Aal-Soße"
+        },
+        {
+          "name": "Avocado Maki",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "107",
+          "description": "Avocado Roll"
+        },
+        {
+          "name": "Kappa Maki",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "108",
+          "description": "Gurke Roll"
+        },
+        {
+          "name": "Shinko Maki",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "109",
+          "description": "Eingelegter Rettich Roll"
+        },
+        {
+          "name": "Kamin Maki",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "110",
+          "description": "Kürbis Roll"
+        },
+        {
+          "name": "Tamago Maki",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "111"
+        },
+        {
+          "name": "Surimi Maki",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "112",
+          "description": "Krebs Roll"
+        },
+        {
+          "name": "Ebi Maki",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "113",
+          "description": "Garnelen Roll"
+        },
+        {
+          "name": "Shake Maki",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "114",
+          "description": "Lachs Roll"
+        },
+        {
+          "name": "Tekka Maki",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "115",
+          "description": "Thunfisch Roll"
+        }
+      ],
+      "note": "JE 8 STK."
+    },
+    {
+      "title": "Sushi: Inside Out",
+      "items": [
+        {
+          "name": "Red Dragon",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "g",
+            "j"
+          ],
+          "allergens": [
+            "crustaceans",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "116",
+          "description": "Garnelen, Surimi, Gurke, Fischkaviar, Mayonnaise",
+          "markersUnknown": [
+            "j"
+          ]
+        },
+        {
+          "name": "California Roll",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "g",
+            "j"
+          ],
+          "allergens": [
+            "crustaceans",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "117",
+          "description": "Surimi, Avocado, Gurke, Frischkäse mit Sesam",
+          "markersUnknown": [
+            "j"
+          ]
+        },
+        {
+          "name": "Tuna Roll",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "118",
+          "description": "Thunfisch, Avocado, Gurke, Frischkäse mit Sesam"
+        },
+        {
+          "name": "Salmon Roll",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "119",
+          "description": "Lachs, Avocado, Gurke, Frischkäse mit Sesam"
+        },
+        {
+          "name": "Salmon Skin Roll",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "120",
+          "description": "Gegrillter Lachs, Gurke, Frischkäse mit Sesam"
+        },
+        {
+          "name": "Unagi Roll",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "121",
+          "description": "Aal, Gurke, Frischkäse mit Sesam, Aal-Soße"
+        },
+        {
+          "name": "Tempura Roll",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "122",
+          "description": "Garnelen Tempura, Avocado, Frischkäse mit Aal-Soße"
+        },
+        {
+          "name": "Duck's Roll",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "123",
+          "description": "Ente, Rucola, Frischkäse mit Aal-Soße"
+        },
+        {
+          "name": "Chicken Roll",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "124",
+          "description": "Hähnchen, Avocado, Gurke, Frischkäse und Sesam"
+        },
+        {
+          "name": "Rucola Roll",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "o"
+          ],
+          "allergens": [
+            "molluscs"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "125",
+          "description": "Avocado, Gurke, Frischkäse mit Rucola"
+        },
+        {
+          "name": "Monk Roll",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "o"
+          ],
+          "allergens": [
+            "molluscs"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "126",
+          "description": "Avocado, Gurke, Mango, Frischkäse mit Sesam"
+        }
+      ],
+      "note": "JE 8 STK."
+    },
+    {
+      "title": "Sushi: Crunchy",
+      "items": [
+        {
+          "name": "Crunchy Salmon Rolls",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S1",
+          "description": "Lachs, Avocado, Gurke, Frischkäse mit Unagi-Sauce und scharfe Mayonnaise"
+        },
+        {
+          "name": "Crunchy Shrimp Rolls",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S2",
+          "description": "Tempura Garnelen, Gurke, Avocado, Frischkäse, Mayonnaise"
+        },
+        {
+          "name": "Crunchy Chicken",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S3",
+          "description": "Hähnchen, Avocado, Gurke, Frischkäse, Unagi-Sauce und scharfe Mayonnaise"
+        },
+        {
+          "name": "Crunchy Veggie",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S4",
+          "description": "Avocado, Gurke, Mango, Frischkäse, Rucola, Unagi-Sauce, scharfe Mayonnaise & Sesam"
+        },
+        {
+          "name": "Special Cruchy",
+          "prices": [
+            {
+              "amount": 16.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S5",
+          "description": "Lachs, Thunfisch, Garnelen, Avocado, Frischkäse, Unagi- Sauce, scharfe Mayonnaise und Fischkaviar"
+        }
+      ],
+      "note": "JE 10 STK."
+    },
+    {
+      "title": "Sushi: Spezialitäten",
+      "items": [
+        {
+          "name": "Tempura Salmon Roll",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S6",
+          "description": "Garnelen Tempura, Avocado, Frischkäse ummantelt mit Lachs, Avocado, Unagi-Sauce, scharfer Mayonnaise"
+        },
+        {
+          "name": "Tempura Deluxe Roll",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S7",
+          "description": "Garnelen Tempura, Gurke, Frischkäse ummantelt mit Avocado, scharfer Mayonnaise, Unagi-Sauce"
+        },
+        {
+          "name": "Salmon Rucola Roll",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S8",
+          "description": "Lachs, Avocado, Frischkäse ummantelt mit flammbiertem Lachs, Rucola, scharfer Mayonnaise, Unagi-Sauce"
+        },
+        {
+          "name": "Salmon Mango Roll",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S9",
+          "description": "Gegrillte Lachs, Mango, Frischkäse ummantelt mit flammbiertem Lachs, Frühlingszwiebeln, scharfer Mayonnaise, Unagi-Sauce"
+        },
+        {
+          "name": "Moon River Roll",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S10",
+          "description": "Surimi, Avocado, Gurke, Frischkäse ummantelt mit Lachs, Rucola, scharfer Mayonnaise, Unagi-Sauce"
+        },
+        {
+          "name": "Veggie Roll",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S11",
+          "description": "Avocado, Gurke, Mango, Frischkäse ummantelt mit Avocado, Sesam, scharfer Mayonnaise"
+        }
+      ],
+      "note": "JE 8 STK."
+    },
+    {
+      "title": "Sushi: Nigiri",
+      "items": [
+        {
+          "name": "Sake Nigiri (Lachs)",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N1"
+        },
+        {
+          "name": "Maguro (Thunfisch)",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N2"
+        },
+        {
+          "name": "Ebi (Garnelen)",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N3"
+        },
+        {
+          "name": "Ika (Tintenfisch)",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N4"
+        },
+        {
+          "name": "Tako (Oktopus)",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N5"
+        },
+        {
+          "name": "Unagi (Aal)",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N6"
+        },
+        {
+          "name": "Tamago (Eierstich)",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "c"
+          ],
+          "allergens": [
+            "crustaceans",
+            "eggs"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "N7"
+        },
+        {
+          "name": "Saba (Makrele)",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N8"
+        },
+        {
+          "name": "Shiromi (Tilapia)",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N9"
+        },
+        {
+          "name": "Tobiko (Fischkaviar)",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N10"
+        },
+        {
+          "name": "Avocado (Avocado)",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "N11"
+        }
+      ],
+      "note": "JE 2 STK."
+    },
+    {
+      "title": "Sushi: Sashimi",
+      "items": [
+        {
+          "name": "Salmon Sashimi",
+          "prices": [
+            {
+              "amount": 16.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S15",
+          "description": "8 Stück Lachs, Wakame, Avocado, Wildkräutersalat"
+        },
+        {
+          "name": "Tuna Sashimi",
+          "prices": [
+            {
+              "amount": 18.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S16",
+          "description": "8 Stück Thunfisch, Wakame, Avocado, Wildkräutersalat"
+        },
+        {
+          "name": "Salmon Tuna Sashimi",
+          "prices": [
+            {
+              "amount": 18.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S17",
+          "description": "8 Stück Lachs und Thunfisch, Wakame, Avocado, Wildkräutersalat"
+        }
+      ]
+    },
+    {
+      "title": "Sushi-Menüs",
+      "items": [
+        {
+          "name": "Sapporo",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "j",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "S20",
+          "description": "8 Lachs Maki, 8 Tuna Maki, 8 Kappa Maki",
+          "markersUnknown": [
+            "j"
+          ]
+        },
+        {
+          "name": "Edo",
+          "prices": [
+            {
+              "amount": 14.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "S21",
+          "description": "8 Lachs Maki, 8 Tuna Maki, 2 Nigiri (Lachs, Thunfisch)"
+        },
+        {
+          "name": "Nara",
+          "prices": [
+            {
+              "amount": 14.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "j",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "S22",
+          "description": "8 Alaskas Maki, 3 Nigiri (Lachs, Thunfisch, Tilapia)",
+          "markersUnknown": [
+            "j"
+          ]
+        },
+        {
+          "name": "Matoi",
+          "prices": [
+            {
+              "amount": 18.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "j",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "S23",
+          "description": "4 Tobiko Maki, 4 Alaska Maki, 4 Sake Maki, 4 Tuna Maki, 3 Nigiri (Lachs, Thunfisch, Ebi)",
+          "markersUnknown": [
+            "j"
+          ]
+        },
+        {
+          "name": "Matsu",
+          "prices": [
+            {
+              "amount": 20.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "S24",
+          "description": "8 Tobiko Maki, 8 California Maki, 8 Salmonskin Maki"
+        },
+        {
+          "name": "Nagano",
+          "prices": [
+            {
+              "amount": 19.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "d",
+            "j",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "S25",
+          "description": "8 Alaska Maki, 8 Nigiri",
+          "markersUnknown": [
+            "j"
+          ]
+        },
+        {
+          "name": "Salmon mix",
+          "prices": [
+            {
+              "amount": 28.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S26",
+          "description": "8 Lachs Maki, 8 Salmon, Rucola Rolle, 10 Crunchy Salmon"
+        },
+        {
+          "name": "Sushi Platte für 2",
+          "prices": [
+            {
+              "amount": 45.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S27",
+          "description": "10 Crunchy Salmon Roll, 8 Lachs Maki, 8 Gurke Maki, 8 Tobiko Maki, 8 California Maki, 6 Nigiri"
+        },
+        {
+          "name": "Sushi Platte ab 2 Special",
+          "prices": [
+            {
+              "amount": 75.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "S28",
+          "description": "8 Tempura Salmon Rolle, 8 Red Dragon, 8 Alaska Maki, 4 Lachs Maki, 4 Avocado Maki, 10 Crunchy Chicken, 6 Nigiri, 3 Stück Lachs Sashimi"
+        }
+      ]
+    }
+  ]
+}

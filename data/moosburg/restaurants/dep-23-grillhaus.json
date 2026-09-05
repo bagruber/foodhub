@@ -1,0 +1,36 @@
+{
+  "id": "dep-23-grillhaus",
+  "name": "Depê 23 Grillhaus",
+  "city": "moosburg",
+  "osm": "node/13821120824",
+  "address": {},
+  "location": {
+    "lat": 48.477503,
+    "lon": 11.945259,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/13821120824",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  },
+  "contact": {},
+  "cuisines": [
+    "turkish"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Tu-Su,PH 11:30-22:00",
+    "osm": "Tu-Su,PH 11:30-22:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/13821120824",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  }
+}

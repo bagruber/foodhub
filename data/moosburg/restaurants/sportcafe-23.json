@@ -1,0 +1,40 @@
+{
+  "id": "sportcafe-23",
+  "name": "Sportcafe 23",
+  "city": "moosburg",
+  "osm": "node/8164044755",
+  "address": {
+    "street": "Grabensepperlweg 7 b",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.467773,
+    "lon": 11.933947,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8164044755",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-07-26."
+    }
+  },
+  "contact": {},
+  "cuisines": [
+    "bar"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Tu-Fr 14:00-24:00, Sa,Su,PH 12:00-24:00",
+    "osm": "Tu-Fr 14:00-24:00, Sa,Su,PH 12:00-24:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/8164044755",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-07-26."
+    }
+  }
+}

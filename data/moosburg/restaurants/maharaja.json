@@ -1,0 +1,46 @@
+{
+  "id": "maharaja",
+  "name": "Maharaja",
+  "city": "moosburg",
+  "address": {
+    "street": "Auf dem Plan 12",
+    "postalCode": "85368",
+    "city": "Moosburg an der Isar"
+  },
+  "contact": {
+    "phone": "+49 8761 7299403",
+    "email": "maharaja.moosburg@gmail.com",
+    "website": "https://maharaja-moosburg.com/"
+  },
+  "cuisines": [
+    "indian",
+    "punjabi"
+  ],
+  "openingHours": {
+    "raw": "Mo, Di 17:00-22:00 | Mi Ruhetag | Do, Fr, Sa 17:00-22:00 | So und Feiertage 11:00-14:00 und 17:00-22:00",
+    "osm": "Mo-Tu,Th-Sa 17:00-22:00; We off; Su,PH 11:00-14:00,17:00-22:00",
+    "provenance": {
+      "kind": "website",
+      "url": "https://maharaja-moosburg.com/",
+      "retrievedAt": "2026-09-05"
+    }
+  },
+  "ratings": [],
+  "menus": [
+    "maharaja_2026-02-06.json"
+  ],
+  "open": [
+    "Bewertungen noch nicht angebunden"
+  ],
+  "osm": "node/9088995594",
+  "location": {
+    "lat": 48.468116,
+    "lon": 11.936683,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/9088995594",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
+    }
+  }
+}

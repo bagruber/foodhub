@@ -1,0 +1,43 @@
+{
+  "id": "grundners",
+  "name": "Grundner's",
+  "city": "moosburg",
+  "osm": "node/10920003450",
+  "address": {
+    "street": "Neustadtstraße 45",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.480668,
+    "lon": 11.936758,
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/10920003450",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-09-03."
+    }
+  },
+  "contact": {
+    "phone": "+49 8761 66402",
+    "website": "https://www.grundnergmbh.de/"
+  },
+  "cuisines": [
+    "cafe"
+  ],
+  "ratings": [],
+  "menus": [],
+  "open": [
+    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  ],
+  "openingHours": {
+    "raw": "Mo-Sa 06:00-18:00; Su 07:30-17:00",
+    "osm": "Mo-Sa 06:00-18:00; Su 07:30-17:00",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/node/10920003450",
+      "retrievedAt": "2026-09-05",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-09-03."
+    }
+  }
+}
