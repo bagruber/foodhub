@@ -74,6 +74,45 @@ export type Rating = {
   provenance: Provenance;
 };
 
+/**
+ * Umriss des Gebaeudes, in dem das Haus liegt.
+ *
+ * Ergaenzt den Punkt, ersetzt ihn nicht. Die Flaeche ist das Gebaeude und
+ * nicht das Lokal: ein Wirtshaus im Erdgeschoss eines Wohnblocks bekommt den
+ * ganzen Block. Deshalb zeigt die Karte sie erst, wenn man nah genug ist, um
+ * das einordnen zu koennen, und faellt darunter auf den Punkt zurueck.
+ */
+export type Outline = {
+  /** Ringe als `[lon, lat]`, aeusserer Ring zuerst. */
+  rings: [number, number][][];
+  /** OSM-Wert von `building`, etwa `retail` oder `apartments`. */
+  building?: string;
+  provenance: Provenance;
+};
+
+/** Was ein Haus anbietet, soweit belegt. Fehlt ein Feld, ist es unbekannt. */
+export type Services = {
+  delivery?: boolean;
+  takeaway?: boolean;
+  outdoorSeating?: boolean;
+  wheelchair?: "yes" | "limited" | "no";
+};
+
+/**
+ * Ernaehrungsangebot auf Haus-Ebene, aus den OSM-Tags `diet:*`.
+ * `only` heisst ausschliesslich, `yes` heisst es gibt etwas, `no` heisst nichts.
+ * Das ist etwas anderes als das `diet` am einzelnen Gericht.
+ */
+export type HouseDiet = Partial<Record<DietFlag, "only" | "yes" | "no">>;
+
+/** Wo man bestellen oder liefern lassen kann. */
+export type Ordering = {
+  url: string;
+  /** Name des Dienstes, etwa `Lieferando`, oder `eigene Seite`. */
+  provider: string;
+  provenance: Provenance;
+};
+
 export type Restaurant = {
   /** Slug, innerhalb einer Stadt eindeutig. Zugleich der Dateiname. */
   id: string;
@@ -82,13 +121,23 @@ export type Restaurant = {
   city: string;
   address: Address;
   location?: Coordinates;
+  outline?: Outline;
   contact: {
     phone?: string;
     email?: string;
     website?: string;
   };
+  /**
+   * Art des Hauses, Slugs aus `data/vocab/kinds.json`. Getrennt von der
+   * Kueche, weil beides unabhaengig voneinander gilt: der Staudinger Keller
+   * ist Wirtshaus und Biergarten, und ein Cafe kann bayerisch kochen.
+   */
+  kinds: string[];
   /** Slugs aus `data/vocab/cuisines.json`. Ein Haus kann mehrere fuehren. */
   cuisines: string[];
+  services?: Services;
+  diet?: HouseDiet;
+  ordering?: Ordering[];
   openingHours?: OpeningHours;
   /** Leer, solange keine Bewertungsquelle angebunden ist. */
   ratings: Rating[];

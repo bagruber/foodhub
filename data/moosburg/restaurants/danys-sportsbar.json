@@ -14,16 +14,14 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/6747298613",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
     "phone": "+49 8761 759217"
   },
-  "cuisines": [
-    "bar"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
@@ -38,5 +36,104 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.931546,
+          48.471081
+        ],
+        [
+          11.931639,
+          48.471336
+        ],
+        [
+          11.9318,
+          48.471313
+        ],
+        [
+          11.931802,
+          48.471342
+        ],
+        [
+          11.931913,
+          48.471341
+        ],
+        [
+          11.931915,
+          48.471417
+        ],
+        [
+          11.931973,
+          48.47144
+        ],
+        [
+          11.93208,
+          48.471435
+        ],
+        [
+          11.932082,
+          48.471362
+        ],
+        [
+          11.932115,
+          48.471342
+        ],
+        [
+          11.932113,
+          48.471295
+        ],
+        [
+          11.932184,
+          48.471294
+        ],
+        [
+          11.932181,
+          48.471246
+        ],
+        [
+          11.932243,
+          48.47125
+        ],
+        [
+          11.932249,
+          48.471001
+        ],
+        [
+          11.931942,
+          48.471004
+        ],
+        [
+          11.93194,
+          48.471142
+        ],
+        [
+          11.931775,
+          48.471141
+        ],
+        [
+          11.931734,
+          48.471055
+        ],
+        [
+          11.931546,
+          48.471081
+        ]
+      ]
+    ],
+    "building": "retail",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/170841665",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "bar"
+  ],
+  "services": {
+    "outdoorSeating": true
   }
 }

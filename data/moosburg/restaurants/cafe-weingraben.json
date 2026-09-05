@@ -14,17 +14,15 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/1798097553",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-01."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
     "phone": "+49 8761 7568717",
     "website": "http://www.cafe-weingraben.de/"
   },
-  "cuisines": [
-    "cafe"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
@@ -40,5 +38,56 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-01."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.93785,
+          48.466862
+        ],
+        [
+          11.937861,
+          48.46682
+        ],
+        [
+          11.9379,
+          48.466823
+        ],
+        [
+          11.938047,
+          48.46685
+        ],
+        [
+          11.937981,
+          48.466983
+        ],
+        [
+          11.937824,
+          48.466968
+        ],
+        [
+          11.93785,
+          48.466862
+        ]
+      ]
+    ],
+    "building": "commercial",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/177306618",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "cafe"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "no"
+  },
+  "diet": {
+    "vegetarian": "yes"
   }
 }

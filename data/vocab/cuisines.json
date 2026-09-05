@@ -1,5 +1,5 @@
 {
-  "hinweis": "Küchen-Genres. Ein Restaurant kann mehrere führen, die Zuordnung ist M:N. Die Slugs folgen dort, wo es passt, dem OSM-Tag cuisine=*, damit sich Daten aus Overpass ohne Übersetzungstabelle einfügen.",
+  "hinweis": "Küchen-Genres. Ein Restaurant kann mehrere führen, die Zuordnung ist M:N. Die Art des Hauses steht getrennt davon in kinds.json: ein Café mit bayerischer Küche ist beides, nicht eines von beidem. Die Slugs folgen dort, wo es passt, dem OSM-Tag cuisine=*.",
   "kuechen": {
     "german": "Deutsch",
     "bavarian": "Bayerisch",
@@ -24,19 +24,9 @@
     "seafood": "Fisch und Meeresfrüchte",
     "vegetarian": "Vegetarisch",
     "vegan": "Vegan",
-    "cafe": "Café",
-    "bakery": "Bäckerei",
-    "ice_cream": "Eisdiele",
-    "bar": "Bar",
-    "beer_garden": "Biergarten",
-    "inn": "Gasthof",
     "international": "International",
     "mediterranean": "Mediterran",
-    "bistro": "Bistro",
     "cake": "Kuchen und Torten",
-    "coffee_shop": "Kaffeehaus",
-    "italian_pizza": "Italienische Pizza",
-    "fast_food": "Imbiss",
-    "pub": "Kneipe"
+    "italian_pizza": "Italienische Pizza"
   }
 }

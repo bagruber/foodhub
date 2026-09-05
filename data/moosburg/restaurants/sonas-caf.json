@@ -14,16 +14,13 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/2441412950",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-04-09."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {},
   "cuisines": [
-    "cake",
-    "coffee_shop",
-    "bistro",
-    "cafe"
+    "cake"
   ],
   "ratings": [],
   "menus": [],
@@ -39,5 +36,55 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-04-09."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.937554,
+          48.467937
+        ],
+        [
+          11.937536,
+          48.468036
+        ],
+        [
+          11.93743,
+          48.468025
+        ],
+        [
+          11.937368,
+          48.468018
+        ],
+        [
+          11.937411,
+          48.46791
+        ],
+        [
+          11.937554,
+          48.467937
+        ]
+      ]
+    ],
+    "building": "apartments",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/170619067",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "cafe",
+    "coffee_shop",
+    "bistro"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "limited"
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "no"
   }
 }

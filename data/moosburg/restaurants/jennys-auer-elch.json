@@ -14,20 +14,74 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/8016905485",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-08-06."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
     "phone": "+49 8761 9322"
   },
   "cuisines": [
-    "regional",
-    "pub"
+    "regional"
   ],
   "ratings": [],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
-  ]
+  ],
+  "outline": {
+    "rings": [
+      [
+        [
+          11.959124,
+          48.494691
+        ],
+        [
+          11.959293,
+          48.494638
+        ],
+        [
+          11.959245,
+          48.494569
+        ],
+        [
+          11.959397,
+          48.49452
+        ],
+        [
+          11.959357,
+          48.494464
+        ],
+        [
+          11.95921,
+          48.494513
+        ],
+        [
+          11.95917,
+          48.494467
+        ],
+        [
+          11.959001,
+          48.49452
+        ],
+        [
+          11.959124,
+          48.494691
+        ]
+      ]
+    ],
+    "building": "detached",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/860159972",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "pub"
+  ],
+  "services": {
+    "outdoorSeating": true
+  }
 }

@@ -14,7 +14,7 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/1762271394",
-      "retrievedAt": "2026-09-05",
+      "retrievedAt": "2026-09-06",
       "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
@@ -26,9 +26,7 @@
   "cuisines": [
     "bavarian",
     "german",
-    "regional",
-    "inn",
-    "beer_garden"
+    "regional"
   ],
   "openingHours": {
     "raw": "Mo,Tu,Th 16:00-22:00; Fr-Su 10:00-22:00; We off",
@@ -46,5 +44,75 @@
     "Speisekarte noch nicht eingelesen",
     "Bewertungen noch nicht angebunden",
     "Quell-URL der Karte laut OSM: https://www.staudinger-keller.de/speisekarte"
-  ]
+  ],
+  "outline": {
+    "rings": [
+      [
+        [
+          11.931159,
+          48.463747
+        ],
+        [
+          11.93131,
+          48.463846
+        ],
+        [
+          11.931503,
+          48.463716
+        ],
+        [
+          11.931351,
+          48.463617
+        ],
+        [
+          11.931285,
+          48.463661
+        ],
+        [
+          11.931226,
+          48.463622
+        ],
+        [
+          11.931268,
+          48.463594
+        ],
+        [
+          11.93121,
+          48.463555
+        ],
+        [
+          11.931069,
+          48.46365
+        ],
+        [
+          11.931187,
+          48.463728
+        ],
+        [
+          11.931159,
+          48.463747
+        ]
+      ]
+    ],
+    "building": "retail",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/171053652",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "restaurant",
+    "biergarten",
+    "inn"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "limited"
+  },
+  "diet": {
+    "vegetarian": "only",
+    "vegan": "no"
+  }
 }

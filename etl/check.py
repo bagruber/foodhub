@@ -40,6 +40,7 @@ def main() -> int:
     allergens = set(vocab["allergene"])
     additives = set(vocab["zusatzstoffe"])
     cuisines = set(load(DATA / "vocab/cuisines.json")["kuechen"])
+    kinds = set(load(DATA / "vocab/kinds.json")["arten"])
 
     for city_dir in sorted(p for p in DATA.iterdir() if p.is_dir() and p.name != "vocab"):
         restaurants = {}
@@ -52,6 +53,18 @@ def main() -> int:
             for c in r["cuisines"]:
                 if c not in cuisines:
                     findings.append(f"{where}: Kueche '{c}' fehlt im Vokabular")
+            for k in r.get("kinds", []):
+                if k not in kinds:
+                    findings.append(f"{where}: Art '{k}' fehlt im Vokabular")
+            if not r.get("kinds"):
+                findings.append(f"{where}: keine Art des Hauses")
+            if outline := r.get("outline"):
+                check_provenance(f"{where}/Umriss", outline.get("provenance"))
+                for ring in outline["rings"]:
+                    if len(ring) < 4:
+                        findings.append(f"{where}: Umriss mit nur {len(ring)} Punkten")
+            for order in r.get("ordering", []):
+                check_provenance(f"{where}/Bestellung", order.get("provenance"))
             if hours := r.get("openingHours"):
                 check_provenance(f"{where}/Oeffnungszeiten", hours.get("provenance"))
             for rating in r.get("ratings", []):

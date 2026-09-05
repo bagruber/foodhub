@@ -50,15 +50,84 @@ def normalise(name: str) -> str:
     return re.sub(r"[^a-z0-9äöüß]+", "", name)
 
 
-def fetch(city: dict) -> dict:
-    west, south, east, north = city["bbox"]
-    query = QUERY.format(amenities=AMENITIES, south=south, west=west, north=north, east=east)
+def post(query: str) -> dict:
     request = urllib.request.Request(
         ENDPOINT, data=query.encode("utf-8"),
         headers={"User-Agent": "foodhub/0.1 (github.com/bagruber/foodhub)"},
     )
-    with urllib.request.urlopen(request, timeout=60) as response:
+    with urllib.request.urlopen(request, timeout=90) as response:
         return json.loads(response.read().decode("utf-8"))
+
+
+def fetch(city: dict) -> dict:
+    west, south, east, north = city["bbox"]
+    return post(QUERY.format(amenities=AMENITIES, south=south, west=west,
+                             north=north, east=east))
+
+
+BUILDINGS = """[out:json][timeout:60];
+node(id:{ids});
+is_in->.a;
+way(pivot.a)["building"];
+out geom;
+"""
+
+
+def fetch_buildings(node_ids: list[str]) -> list[dict]:
+    """Die Gebäude, in denen die Häuser liegen.
+
+    `is_in` liefert die umschliessenden Flächen, aber nicht, welche zu welchem
+    Knoten gehört. Die Zuordnung entsteht deshalb unten über
+    `point_in_ring`. Von 49 Moosburger Häusern haben 42 ein Gebäude.
+    """
+    return post(BUILDINGS.format(ids=",".join(node_ids)))["elements"]
+
+
+def point_in_ring(lon: float, lat: float, ring: list[dict]) -> bool:
+    """Strahlverfahren: zählt, wie oft ein Strahl nach rechts die Kanten kreuzt.
+
+    Ungerade heisst innen. Reicht hier, weil Gebäudeumrisse einfache, nicht
+    überschlagene Polygone sind.
+    """
+    inside = False
+    for i in range(len(ring)):
+        a, b = ring[i - 1], ring[i]
+        if (a["lat"] > lat) != (b["lat"] > lat):
+            x = a["lon"] + (lat - a["lat"]) * (b["lon"] - a["lon"]) / (b["lat"] - a["lat"])
+            if lon < x:
+                inside = not inside
+    return inside
+
+
+def outline_for(lon: float, lat: float, buildings: list[dict], today: str) -> dict | None:
+    """Das kleinste Gebäude, das den Punkt enthält.
+
+    Das kleinste, weil ein Haus in einem Einkaufszentrum sonst dessen ganze
+    Grundfläche bekäme, wenn beide gemappt sind.
+    """
+    hits = [b for b in buildings
+            if b.get("geometry") and point_in_ring(lon, lat, b["geometry"])]
+    if not hits:
+        return None
+    best = min(hits, key=lambda b: bbox_area(b["geometry"]))
+    key = f"way/{best['id']}"
+    return {
+        "rings": [[[round(p["lon"], 6), round(p["lat"], 6)] for p in best["geometry"]]],
+        "building": best.get("tags", {}).get("building"),
+        "provenance": {
+            "kind": "osm",
+            "url": f"https://www.openstreetmap.org/{key}",
+            "retrievedAt": today,
+            "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, "
+                    "nicht der Gasträume.",
+        },
+    }
+
+
+def bbox_area(geometry: list[dict]) -> float:
+    lons = [p["lon"] for p in geometry]
+    lats = [p["lat"] for p in geometry]
+    return (max(lons) - min(lons)) * (max(lats) - min(lats))
 
 
 def write_json(path: Path, data: dict) -> None:
@@ -85,6 +154,10 @@ def main(city_id: str) -> int:
 
     elements = [e for e in raw["elements"] if e.get("tags", {}).get("name")]
     print(f"{len(elements)} benannte Gaststätten in OSM, gesichert in {dump.relative_to(ROOT)}")
+
+    node_ids = [str(e["id"]) for e in elements if e["type"] == "node"]
+    buildings = fetch_buildings(node_ids)
+    print(f"{len(buildings)} Gebäudeumrisse dazu")
 
     by_id = {f"{e['type']}/{e['id']}": e for e in elements}
     by_name: dict[str, list[dict]] = {}
@@ -119,11 +192,33 @@ def main(city_id: str) -> int:
                 "note": "© OpenStreetMap-Mitwirkende, ODbL",
             },
         }
+        if outline := outline_for(pos[1], pos[0], buildings, today):
+            r["outline"] = outline
+        else:
+            r.pop("outline", None)
+
+        # Art des Hauses und Dienste kommen aus OSM, auch bei den von Hand
+        # gepflegten Häusern. Die Küche nicht: die steht dort genauer, weil sie
+        # aus der gelesenen Speisekarte stammt.
+        if not r.get("kinds"):
+            r["kinds"] = kinds_of(hit["tags"])
+        # Was inzwischen die Art beschreibt, gehört nicht mehr zur Küche.
+        moved = [ALIASES.get(c, c) for c in r.get("cuisines", [])
+                 if ALIASES.get(c, c) in KIND_SLUGS]
+        if moved:
+            r["cuisines"] = [c for c in r["cuisines"]
+                             if ALIASES.get(c, c) not in KIND_SLUGS]
+            r["kinds"] = r["kinds"] + [c for c in moved if c not in r["kinds"]]
+        if services := services_of(hit["tags"]):
+            r["services"] = services
+        if diet := diet_of(hit["tags"]):
+            r["diet"] = diet
+
         if offen := r.get("open"):
             r["open"] = [x for x in offen if x != "Koordinaten fehlen"]
             if not r["open"]:
                 del r["open"]
-        path.write_text(json.dumps(r, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        write_json(path, r)
 
         tags = hit["tags"]
         extra = [k for k in ("opening_hours", "phone", "website", "cuisine") if k in tags]
@@ -136,6 +231,9 @@ def main(city_id: str) -> int:
     added = 0
     for e in sorted(rest, key=lambda e: e["tags"]["name"]):
         entry = draft(e, city_id, today)
+        if entry is not None and (pos := coordinates(e)):
+            if outline := outline_for(pos[1], pos[0], buildings, today):
+                entry["outline"] = outline
         if entry is None:
             print(f"    ? {e['tags']['name']}: ohne Koordinaten, übersprungen")
             continue
@@ -152,14 +250,70 @@ def main(city_id: str) -> int:
     return 0
 
 
-# Aus welchem `amenity` welche Küche folgt, wenn OSM keine `cuisine` führt.
-# Die Art des Hauses ist keine Küche, aber ohne Eintrag stünde ein Café ganz
-# ohne Merkmal auf der Karte und wäre über keinen Filter zu finden.
+# Die Art des Hauses folgt aus `amenity`. Sie ist keine Küche und steht
+# deshalb in einem eigenen Feld: der Staudinger Keller ist Wirtshaus und
+# Biergarten, und ein Café kann bayerisch kochen.
 FROM_AMENITY = {
-    "cafe": "cafe", "bar": "bar", "pub": "pub",
-    "biergarten": "beer_garden", "fast_food": "fast_food",
+    "restaurant": "restaurant", "cafe": "cafe", "bar": "bar", "pub": "pub",
+    "biergarten": "biergarten", "fast_food": "fast_food",
     "ice_cream": "ice_cream",
 }
+
+# Küchen-Werte, die in Wahrheit die Art des Hauses beschreiben. OSM mischt das,
+# `cuisine=ice_cream` steht an einer Eisdiele.
+# In der alten gemischten Liste hiess der Biergarten anders als jetzt.
+ALIASES = {"beer_garden": "biergarten"}
+
+KIND_SLUGS = set(json.loads(
+    (ROOT / "data/vocab/kinds.json").read_text(encoding="utf-8"))["arten"])
+
+CUISINE_IS_KIND = {
+    "ice_cream": "ice_cream", "coffee_shop": "coffee_shop", "bistro": "bistro",
+}
+
+
+def kinds_of(tags: dict) -> list[str]:
+    out = []
+    if kind := FROM_AMENITY.get(tags.get("amenity", "")):
+        out.append(kind)
+    # Ein Wirtshaus mit Biergarten ist beides. Genau dafür ist das Feld M:N.
+    if tags.get("biergarten") == "yes" and "biergarten" not in out:
+        out.append("biergarten")
+    if tags.get("tourism") == "hotel":
+        out.append("hotel")
+    if tags.get("shop") == "bakery":
+        out.append("bakery")
+    for value in tags.get("cuisine", "").split(";"):
+        if (kind := CUISINE_IS_KIND.get(value)) and kind not in out:
+            out.append(kind)
+    return out
+
+
+def services_of(tags: dict) -> dict:
+    out = {}
+    for key, field in (("delivery", "delivery"), ("takeaway", "takeaway"),
+                       ("outdoor_seating", "outdoorSeating")):
+        if tags.get(key) in ("yes", "no"):
+            out[field] = tags[key] == "yes"
+    if tags.get("wheelchair") in ("yes", "limited", "no"):
+        out["wheelchair"] = tags["wheelchair"]
+    return out
+
+
+def diet_of(tags: dict) -> dict:
+    """Ernährungsangebot des Hauses, nicht des einzelnen Gerichts.
+
+    `only` heisst ausschliesslich, `yes` es gibt etwas, `no` nichts. OSM führt
+    das für 27 der Moosburger Häuser, und es ist die einzige Angabe dieser Art
+    für die 42 ohne eingelesene Speisekarte.
+    """
+    out = {}
+    for tag, field in (("diet:vegetarian", "vegetarian"), ("diet:vegan", "vegan"),
+                       ("diet:halal", "halal"), ("diet:kosher", "kosher"),
+                       ("diet:gluten_free", "gluten_free")):
+        if tags.get(tag) in ("only", "yes", "no"):
+            out[field] = tags[tag]
+    return out
 
 
 def slugify(name: str) -> str:
@@ -187,10 +341,8 @@ def draft(element: dict, city_id: str, today: str) -> dict | None:
     prov = {"kind": "osm", "url": f"https://www.openstreetmap.org/{key}",
             "retrievedAt": today, "note": note}
 
-    cuisines = [c for c in tags.get("cuisine", "").split(";") if c]
-    if from_amenity := FROM_AMENITY.get(tags.get("amenity", "")):
-        if from_amenity not in cuisines:
-            cuisines.append(from_amenity)
+    cuisines = [c for c in tags.get("cuisine", "").split(";") if c
+                and c not in CUISINE_IS_KIND]
 
     address = {}
     if street := tags.get("addr:street"):
@@ -205,10 +357,14 @@ def draft(element: dict, city_id: str, today: str) -> dict | None:
         "id": slugify(tags["name"]), "name": tags["name"], "city": city_id,
         "osm": key, "address": address,
         "location": {"lat": round(pos[0], 6), "lon": round(pos[1], 6), "provenance": prov},
-        "contact": contact, "cuisines": cuisines,
+        "contact": contact, "kinds": kinds_of(tags), "cuisines": cuisines,
         "ratings": [], "menus": [],
         "open": ["Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"],
     }
+    if services := services_of(tags):
+        out["services"] = services
+    if diet := diet_of(tags):
+        out["diet"] = diet
     if hours := tags.get("opening_hours"):
         out["openingHours"] = {"raw": hours, "osm": hours, "provenance": dict(prov)}
     if menu_url := tags.get("website:menu"):

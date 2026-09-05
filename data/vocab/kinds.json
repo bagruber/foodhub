@@ -1,0 +1,17 @@
+{
+  "hinweis": "Art des Hauses, getrennt von der Küche. Ein Haus kann mehrere führen: der Staudinger Keller ist Wirtshaus und Biergarten, und ein Café kann abends Bar sein. Deshalb M:N wie die Küchen. Die Slugs folgen dem OSM-Tag amenity, wo es eines gibt.",
+  "arten": {
+    "restaurant": "Restaurant",
+    "inn": "Gasthof",
+    "cafe": "Café",
+    "coffee_shop": "Kaffeehaus",
+    "bistro": "Bistro",
+    "bar": "Bar",
+    "pub": "Kneipe",
+    "biergarten": "Biergarten",
+    "fast_food": "Imbiss",
+    "ice_cream": "Eisdiele",
+    "bakery": "Bäckerei",
+    "hotel": "Hotel"
+  }
+}

@@ -14,14 +14,12 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/8025962530",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-23."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {},
-  "cuisines": [
-    "fast_food"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
@@ -36,5 +34,44 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-23."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.937155,
+          48.467684
+        ],
+        [
+          11.937372,
+          48.467737
+        ],
+        [
+          11.937427,
+          48.467638
+        ],
+        [
+          11.937209,
+          48.467585
+        ],
+        [
+          11.937155,
+          48.467684
+        ]
+      ]
+    ],
+    "building": "apartments",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/177308365",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "fast_food"
+  ],
+  "services": {
+    "outdoorSeating": true
   }
 }

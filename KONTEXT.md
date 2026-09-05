@@ -1,7 +1,7 @@
 # foodhub, Projektkontext
 
 *Lebendes Arbeitsdokument. Vollständig lesen, bevor Code geschrieben wird.
-Änderungen mit Datum vermerken. Stand: 05.09.2026*
+Änderungen mit Datum vermerken. Stand: 06.09.2026*
 
 ---
 
@@ -79,6 +79,19 @@ Deshalb trägt jede Kartendatei ihre eigene `legend`, die von der gedruckten
 Karte auf das gemeinsame Vokabular in `data/vocab/` abbildet. Ohne sie ist
 `markersRaw` nicht deutbar. `markersRaw` bleibt trotzdem erhalten, damit sich
 jede Zuordnung gegen die gedruckte Karte prüfen lässt.
+
+### Zwei Achsen, nicht eine
+
+Die Art des Hauses und die Küche sind unabhängig voneinander. Der Staudinger
+Keller ist Wirtshaus **und** Biergarten, eine Bäckerei ist auch Café, und
+nichts hindert ein Café daran, bayerisch zu kochen. In einer gemeinsamen Liste
+stünde all das gleichrangig nebeneinander, und der Filter böte „Café" neben
+„Bayerisch" an, als wäre das eine Wahl zwischen zweien.
+
+Deshalb `kinds` aus `data/vocab/kinds.json` und `cuisines` aus
+`cuisines.json`, beide M:N. OSM mischt das an einer Stelle selbst, dort steht
+`cuisine=ice_cream` an einer Eisdiele; solche Werte wandern beim Einlesen
+hinüber.
 
 ### Deklariert oder geschlossen
 
@@ -173,7 +186,36 @@ Fragen aufzuwerfen.
 
 ---
 
-## 6. Technik
+## 6. Was die App daraus macht
+
+Drei Dinge, die nicht offensichtlich aus den Daten folgen:
+
+**Gleiche Produkte in einer Zeile.** Espresso, Radler und Hugo stehen auf jeder
+zweiten Karte. Untereinander gelistet ergeben sie eine Wand aus
+Wiederholungen. `lib/group.ts` fasst sie über einen normalisierten Namen
+zusammen und zeigt die Preisspanne, aufklappbar bis zum einzelnen Haus. Die
+Normalisierung ist bewusst zurückhaltend: `Chicken Curry` und `Hähnchencurry`
+bleiben getrennt. Zwei Zeilen zu viel sind harmloser als zwei Gerichte
+fälschlich verschmolzen, denn dann stünde der Preis des einen Hauses unter dem
+Namen des anderen.
+
+**Öffnungszeiten ohne fremde Bibliothek.** `lib/hours.ts` liest den Ausschnitt
+des OSM-Formats, den die Daten brauchen. `opening_hours.js` kann mehr, wiegt
+aber 250 kB gegen die 59 kB, mit denen hier die ganze Karte startet. Der
+schwierige Teil ist das Komma: es trennt mal Wochentage, mal Zeitspannen, mal
+Regeln. Statt das aufzudröseln sucht ein Muster global nach „Tagliste, dann
+Zeit" und überliest die Trenner. 40 der 41 Angaben lassen sich so lesen, die
+eine übrige lautet „nach Spielzeit".
+
+**Filter an einer Stelle.** `lib/filters.ts` hält den ganzen Zustand und beide
+Prüfungen. Verteilt lägen die Regeln in Liste, Karte und Filterblatt, und die
+Karte zeigte irgendwann etwas anderes als die Liste darunter.
+
+Diese drei sind mit `pnpm test` geprüft, gegen erfundene Fälle und gegen die
+echten Daten. Sie sind der einzige Ort im Repo, an dem ein stiller Fehler
+plausibel aussähe.
+
+## 7. Technik
 
 Wie die Geschwisterprojekte: Vite, React 19, TypeScript, Tailwind v4,
 Versionen aus `hausbasis/baseline.json`, Design aus `moosburg-design`. Die
@@ -209,7 +251,7 @@ Plattform-Kontext ausführlich in `PLATTFORM.md`.
 
 ---
 
-## 7. Ordnung im Repo
+## 8. Ordnung im Repo
 
 ```
 data/

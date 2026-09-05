@@ -14,8 +14,8 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/822968861",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
@@ -41,5 +41,63 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-11-29."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.932083,
+          48.496103
+        ],
+        [
+          11.932335,
+          48.496096
+        ],
+        [
+          11.932336,
+          48.49612
+        ],
+        [
+          11.93256,
+          48.496114
+        ],
+        [
+          11.932554,
+          48.496022
+        ],
+        [
+          11.932549,
+          48.495956
+        ],
+        [
+          11.932328,
+          48.495962
+        ],
+        [
+          11.932074,
+          48.49597
+        ],
+        [
+          11.932083,
+          48.496103
+        ]
+      ]
+    ],
+    "building": "hotel",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/180880506",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "restaurant"
+  ],
+  "services": {
+    "delivery": false,
+    "takeaway": true,
+    "outdoorSeating": true,
+    "wheelchair": "limited"
   }
 }

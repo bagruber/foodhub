@@ -17,6 +17,15 @@
 
 ## Daten
 
+- **Bestell- und Lieferlinks sind vorbereitet, aber leer.** `Restaurant.ordering`
+  nimmt sie samt Anbieter und Herkunft auf, die App zeigt sie als Knopf. OSM
+  führt nur `delivery=yes` und `takeaway=yes`, keinen Link; der muss von Hand
+  oder von der Seite des Hauses kommen. 13 Häuser haben in OSM immerhin
+  `website:menu`.
+- **Bilder zu den Gerichten fehlen ganz.** Das Schema hat `MenuItem.image`,
+  gefüllt ist nichts. Die ergiebigste Quelle liegt im Asia-Rose-PDF mit seinen
+  96 freigestellten Aufnahmen.
+
 - **45 weitere Gaststätten führt OSM in Moosburg**, mit Koordinaten, Adresse,
   `opening_hours` und `cuisine`, viele mit `website:menu`. Sie ließen sich als
   Grundstock anlegen, dann zeigte die Karte die ganze Stadt und die
@@ -58,6 +67,9 @@
   MapLibre läuft und nur der WebGL-Canvas nicht in den Screenshot gelangt,
   bewiesen ist es nicht. Ein Blick in einen echten Browser klärt es in einer
   Sekunde.
+- **Das Blatt über der Karte ist nur im Code geprüft.** Ziehen zwischen den
+  drei Rastungen und der Übergang von Ziehen zu Scrollen brauchen einen echten
+  Finger auf einem echten Gerät; headless lässt sich das nicht auslösen.
 - **Unter 548 px ist das Layout ungeprüft.** Headless-Chrome und -Edge haben
   auf diesem Rechner eine Mindestfensterbreite von 548 px und beschneiden
   schmalere Aufnahmen nur, statt schmaler zu rendern. Bei 548 px stimmt der

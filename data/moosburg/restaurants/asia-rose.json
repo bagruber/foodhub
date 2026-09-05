@@ -41,8 +41,60 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/8124469003",
-      "retrievedAt": "2026-09-05",
+      "retrievedAt": "2026-09-06",
       "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.935947,
+          48.468905
+        ],
+        [
+          11.936094,
+          48.468848
+        ],
+        [
+          11.936217,
+          48.468988
+        ],
+        [
+          11.936141,
+          48.469017
+        ],
+        [
+          11.936175,
+          48.469055
+        ],
+        [
+          11.93611,
+          48.46908
+        ],
+        [
+          11.935947,
+          48.468905
+        ]
+      ]
+    ],
+    "building": "apartments",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/170619058",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "restaurant"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "yes"
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "no"
   }
 }

@@ -15,7 +15,6 @@
   "cuisines": [
     "bavarian",
     "german",
-    "inn",
     "burger"
   ],
   "openingHours": {
@@ -44,8 +43,54 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/4317249046",
-      "retrievedAt": "2026-09-05",
+      "retrievedAt": "2026-09-06",
       "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.934012,
+          48.472091
+        ],
+        [
+          11.933778,
+          48.471958
+        ],
+        [
+          11.93366,
+          48.47205
+        ],
+        [
+          11.933893,
+          48.472183
+        ],
+        [
+          11.934012,
+          48.472091
+        ]
+      ]
+    ],
+    "building": "hotel",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/178208126",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "restaurant",
+    "hotel",
+    "inn"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "no"
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "no"
   }
 }

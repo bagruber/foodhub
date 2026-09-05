@@ -14,7 +14,7 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/1874586826",
-      "retrievedAt": "2026-09-05",
+      "retrievedAt": "2026-09-06",
       "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
@@ -25,8 +25,7 @@
   "cuisines": [
     "bavarian",
     "german",
-    "regional",
-    "inn"
+    "regional"
   ],
   "openingHours": {
     "raw": "We-Sa 17:00-23:00; Su,PH 11:00-14:00,17:00-21:30",
@@ -44,5 +43,13 @@
     "Speisekarte noch nicht eingelesen",
     "Bewertungen noch nicht angebunden",
     "Quell-URL der Karte laut OSM: https://www.westerberg-stubn.de/#speisekarte"
-  ]
+  ],
+  "kinds": [
+    "restaurant",
+    "inn"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "limited"
+  }
 }

@@ -14,20 +14,155 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/8016791185",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-06-16."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
     "phone": "+49 8761 7222541"
   },
   "cuisines": [
-    "turkish",
-    "fast_food"
+    "turkish"
   ],
   "ratings": [],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
-  ]
+  ],
+  "outline": {
+    "rings": [
+      [
+        [
+          11.962538,
+          48.464725
+        ],
+        [
+          11.962488,
+          48.464733
+        ],
+        [
+          11.961329,
+          48.464911
+        ],
+        [
+          11.961294,
+          48.464959
+        ],
+        [
+          11.961351,
+          48.465099
+        ],
+        [
+          11.961536,
+          48.46522
+        ],
+        [
+          11.961413,
+          48.465302
+        ],
+        [
+          11.96147,
+          48.465343
+        ],
+        [
+          11.961547,
+          48.465333
+        ],
+        [
+          11.96164,
+          48.465622
+        ],
+        [
+          11.961771,
+          48.465601
+        ],
+        [
+          11.961811,
+          48.465719
+        ],
+        [
+          11.962353,
+          48.465631
+        ],
+        [
+          11.962222,
+          48.465255
+        ],
+        [
+          11.96247,
+          48.465212
+        ],
+        [
+          11.96248,
+          48.465229
+        ],
+        [
+          11.962552,
+          48.465216
+        ],
+        [
+          11.962545,
+          48.465202
+        ],
+        [
+          11.962713,
+          48.465173
+        ],
+        [
+          11.962706,
+          48.46515
+        ],
+        [
+          11.962924,
+          48.465112
+        ],
+        [
+          11.962907,
+          48.465063
+        ],
+        [
+          11.962964,
+          48.465054
+        ],
+        [
+          11.962875,
+          48.464807
+        ],
+        [
+          11.962814,
+          48.464817
+        ],
+        [
+          11.962798,
+          48.464778
+        ],
+        [
+          11.962571,
+          48.464816
+        ],
+        [
+          11.962538,
+          48.464725
+        ]
+      ]
+    ],
+    "building": "retail",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/178179646",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "fast_food"
+  ],
+  "services": {
+    "takeaway": true,
+    "outdoorSeating": true
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "no"
+  }
 }

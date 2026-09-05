@@ -14,8 +14,8 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/1871379343",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-06-26."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
@@ -40,5 +40,83 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-06-26."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.945532,
+          48.479567
+        ],
+        [
+          11.945849,
+          48.479505
+        ],
+        [
+          11.945856,
+          48.47952
+        ],
+        [
+          11.945982,
+          48.479495
+        ],
+        [
+          11.945961,
+          48.47945
+        ],
+        [
+          11.945917,
+          48.47935
+        ],
+        [
+          11.945856,
+          48.479362
+        ],
+        [
+          11.94584,
+          48.479327
+        ],
+        [
+          11.94562,
+          48.47937
+        ],
+        [
+          11.945637,
+          48.479408
+        ],
+        [
+          11.945605,
+          48.479415
+        ],
+        [
+          11.945618,
+          48.479443
+        ],
+        [
+          11.945488,
+          48.479469
+        ],
+        [
+          11.945532,
+          48.479567
+        ]
+      ]
+    ],
+    "building": "kiosk",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/176948374",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "restaurant"
+  ],
+  "services": {
+    "wheelchair": "limited"
+  },
+  "diet": {
+    "vegetarian": "yes"
   }
 }

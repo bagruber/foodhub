@@ -14,17 +14,67 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/6092973192",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-04-09."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {},
-  "cuisines": [
-    "bar"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
-  ]
+  ],
+  "outline": {
+    "rings": [
+      [
+        [
+          11.937947,
+          48.467582
+        ],
+        [
+          11.938078,
+          48.467492
+        ],
+        [
+          11.938095,
+          48.467457
+        ],
+        [
+          11.937916,
+          48.467416
+        ],
+        [
+          11.937901,
+          48.467444
+        ],
+        [
+          11.937803,
+          48.467521
+        ],
+        [
+          11.937911,
+          48.467567
+        ],
+        [
+          11.937947,
+          48.467582
+        ]
+      ]
+    ],
+    "building": "commercial",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/441799727",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "bar"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "no"
+  }
 }

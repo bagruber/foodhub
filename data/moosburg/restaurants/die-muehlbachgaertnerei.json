@@ -14,17 +14,15 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/8310855117",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-07-10."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
     "email": "info@die-muehlbachgaertnerei.de",
     "website": "https://www.die-muehlbachgaertnerei.de/muehlbachcafe"
   },
-  "cuisines": [
-    "cafe"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
@@ -40,5 +38,60 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-07-10."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.936687,
+          48.463147
+        ],
+        [
+          11.936663,
+          48.463199
+        ],
+        [
+          11.936841,
+          48.463234
+        ],
+        [
+          11.936827,
+          48.463263
+        ],
+        [
+          11.936977,
+          48.463293
+        ],
+        [
+          11.936986,
+          48.463272
+        ],
+        [
+          11.937122,
+          48.463299
+        ],
+        [
+          11.93715,
+          48.463238
+        ],
+        [
+          11.936687,
+          48.463147
+        ]
+      ]
+    ],
+    "building": "retail",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/176949800",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "cafe"
+  ],
+  "services": {
+    "wheelchair": "limited"
   }
 }

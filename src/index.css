@@ -7,10 +7,25 @@
    github.com/bagruber/moosburg-design */
 @import "moosburg-design/css/theme.css";
 
+@theme {
+  /* Merkmale der Gerichte. Gruen fuer die Ernaehrungsform, warm fuer die
+     Schaerfe, beide dunkel genug fuer Text auf dem cremefarbenen Grund. */
+  --color-diet-vegan: #1f7a3d;
+  --color-diet-vegetarian: #5a7a1f;
+  --color-spice: #c2410c;
+}
+
 html,
 body,
 #root {
   height: 100%;
+}
+
+/* Hoehe des zusammengeschobenen Blatts ueber der Karte. Genug fuer Griff,
+   Umschalter, Suche und die Trefferzahl, mehr nicht: darueber liegt die
+   Karte, und jede Zeile hier nimmt ihr Platz weg. */
+:root {
+  --sheet-peek: 11.5rem;
 }
 
 body {

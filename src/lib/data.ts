@@ -4,50 +4,62 @@
  * Zwei Dateien, absichtlich getrennt: die Karte startet mit `restaurants.json`
  * und wartet nicht auf die 445 Gerichte. `dishes.json` wird erst geholt, wenn
  * jemand nach einem Gericht sucht.
+ *
+ * Die Bausteine kommen aus `schema/types.ts`, damit das Datenmodell an einer
+ * Stelle steht. Eigen ist hier nur, was das Bündeln hinzufügt: `dishCount`
+ * statt der Kartendateien, `menuProvenance` statt der Karten selbst, und am
+ * Gericht das Haus und der Abschnitt, aus dem es stammt.
  */
 
-export type Provenance = {
-  kind: "pdf" | "website" | "osm" | "google_maps" | "tripadvisor" | "manual";
-  url?: string;
-  file?: string;
-  retrievedAt: string;
-  createdAt?: string;
-  note?: string;
-};
+import type {
+  Address,
+  Allergen,
+  Basis,
+  DietFlag,
+  HouseDiet,
+  MenuItem,
+  Ordering,
+  Outline,
+  Price,
+  Provenance,
+  Services,
+} from "../../schema/types";
+
+export type { Price, Provenance };
 
 export type Restaurant = {
   id: string;
   name: string;
+  /** Art des Hauses, Slugs aus `data/vocab/kinds.json`. */
+  kinds: string[];
+  /** Küche, Slugs aus `data/vocab/cuisines.json`. */
   cuisines: string[];
+  /** Wie viele Gerichte aus eingelesenen Karten vorliegen. */
   dishCount: number;
   osm?: string;
-  address?: { street: string; postalCode: string; city: string };
+  address?: Address;
   location?: { lat: number; lon: number; provenance: Provenance };
+  outline?: Outline;
   contact?: { phone?: string; email?: string; website?: string };
   openingHours?: { raw: string; osm?: string; provenance: Provenance };
+  services?: Services;
+  diet?: HouseDiet;
+  ordering?: Ordering[];
   ratings?: unknown[];
+  /** Herkunft je eingelesener Kartenversion. */
   menuProvenance?: Provenance[];
 };
 
-export type Price = { amount: number; currency: string; portion?: string; note?: string };
-
-export type Dish = {
+export type Dish = MenuItem & {
   restaurantId: string;
   section: string;
-  name: string;
-  ref?: string;
-  description?: string;
-  prices: Price[];
-  allergens: string[];
-  additives: string[];
-  markersRaw: string[];
-  markersUnknown?: string[];
-  diet: Partial<Record<string, "declared" | "inferred">>;
-  spice?: { level: 0 | 1 | 2 | 3; basis: "declared" | "inferred" };
 };
+
+export type { Allergen, Basis, DietFlag };
 
 export type CityData = {
   city: { id: string; name: string; center: { lat: number; lon: number }; bbox: number[] };
+  kinds: Record<string, string>;
   cuisines: Record<string, string>;
   restaurants: Restaurant[];
 };

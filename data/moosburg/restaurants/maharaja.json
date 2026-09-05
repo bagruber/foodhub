@@ -39,8 +39,62 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/9088995594",
-      "retrievedAt": "2026-09-05",
+      "retrievedAt": "2026-09-06",
       "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.936839,
+          48.467958
+        ],
+        [
+          11.936777,
+          48.468153
+        ],
+        [
+          11.936469,
+          48.468124
+        ],
+        [
+          11.936513,
+          48.467932
+        ],
+        [
+          11.936703,
+          48.467941
+        ],
+        [
+          11.936735,
+          48.467944
+        ],
+        [
+          11.936839,
+          48.467958
+        ]
+      ]
+    ],
+    "building": "retail",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/170696292",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "restaurant"
+  ],
+  "services": {
+    "delivery": true,
+    "takeaway": true,
+    "outdoorSeating": true,
+    "wheelchair": "no"
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "yes"
   }
 }

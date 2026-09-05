@@ -14,20 +14,89 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/8032352585",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-03-05."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
     "phone": "+49 8761 1788"
   },
-  "cuisines": [
-    "ice_cream",
-    "cafe"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
-  ]
+  ],
+  "outline": {
+    "rings": [
+      [
+        [
+          11.938393,
+          48.466486
+        ],
+        [
+          11.938534,
+          48.466462
+        ],
+        [
+          11.938685,
+          48.466456
+        ],
+        [
+          11.938708,
+          48.466482
+        ],
+        [
+          11.938799,
+          48.466448
+        ],
+        [
+          11.938604,
+          48.46622
+        ],
+        [
+          11.938513,
+          48.466254
+        ],
+        [
+          11.938625,
+          48.466385
+        ],
+        [
+          11.938551,
+          48.466396
+        ],
+        [
+          11.938525,
+          48.466371
+        ],
+        [
+          11.938387,
+          48.466389
+        ],
+        [
+          11.938393,
+          48.466486
+        ]
+      ]
+    ],
+    "building": "apartments",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/178066730",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "cafe",
+    "ice_cream"
+  ],
+  "services": {
+    "outdoorSeating": true
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "no"
+  }
 }

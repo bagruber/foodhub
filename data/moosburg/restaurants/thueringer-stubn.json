@@ -14,8 +14,8 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/3761742509",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-06-12."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
@@ -23,8 +23,7 @@
     "website": "https://thueringerstubn.de/"
   },
   "cuisines": [
-    "german",
-    "fast_food"
+    "german"
   ],
   "ratings": [],
   "menus": [],
@@ -40,5 +39,74 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-06-12."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.964351,
+          48.470357
+        ],
+        [
+          11.964684,
+          48.470269
+        ],
+        [
+          11.964868,
+          48.470574
+        ],
+        [
+          11.964702,
+          48.470618
+        ],
+        [
+          11.964734,
+          48.470672
+        ],
+        [
+          11.964563,
+          48.470717
+        ],
+        [
+          11.964531,
+          48.470664
+        ],
+        [
+          11.964461,
+          48.470682
+        ],
+        [
+          11.964417,
+          48.470608
+        ],
+        [
+          11.964491,
+          48.470589
+        ],
+        [
+          11.964351,
+          48.470357
+        ]
+      ]
+    ],
+    "building": "commercial",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/45334641",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "fast_food"
+  ],
+  "services": {
+    "delivery": false,
+    "takeaway": true,
+    "outdoorSeating": false,
+    "wheelchair": "no"
+  },
+  "diet": {
+    "vegetarian": "no"
   }
 }

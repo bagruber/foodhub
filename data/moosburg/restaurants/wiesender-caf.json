@@ -14,16 +14,14 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/687782802",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-23."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {
     "website": "https://www.wiesender.de/"
   },
-  "cuisines": [
-    "cafe"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
@@ -38,5 +36,58 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-23."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.935595,
+          48.467137
+        ],
+        [
+          11.935433,
+          48.467158
+        ],
+        [
+          11.935301,
+          48.467184
+        ],
+        [
+          11.935244,
+          48.46707
+        ],
+        [
+          11.935515,
+          48.467002
+        ],
+        [
+          11.935587,
+          48.467122
+        ],
+        [
+          11.935595,
+          48.467137
+        ]
+      ]
+    ],
+    "building": "apartments",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/170766162",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "cafe",
+    "bakery"
+  ],
+  "services": {
+    "outdoorSeating": true,
+    "wheelchair": "limited"
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "no"
   }
 }

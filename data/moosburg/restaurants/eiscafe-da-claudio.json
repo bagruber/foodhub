@@ -14,15 +14,12 @@
     "provenance": {
       "kind": "osm",
       "url": "https://www.openstreetmap.org/node/279176239",
-      "retrievedAt": "2026-09-05",
-      "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-03-11."
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
   "contact": {},
-  "cuisines": [
-    "ice_cream",
-    "cafe"
-  ],
+  "cuisines": [],
   "ratings": [],
   "menus": [],
   "open": [
@@ -37,5 +34,50 @@
       "retrievedAt": "2026-09-05",
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2026-03-11."
     }
+  },
+  "outline": {
+    "rings": [
+      [
+        [
+          11.934788,
+          48.467214
+        ],
+        [
+          11.934847,
+          48.467329
+        ],
+        [
+          11.935144,
+          48.467262
+        ],
+        [
+          11.935059,
+          48.467118
+        ],
+        [
+          11.934788,
+          48.467214
+        ]
+      ]
+    ],
+    "building": "apartments",
+    "provenance": {
+      "kind": "osm",
+      "url": "https://www.openstreetmap.org/way/293764243",
+      "retrievedAt": "2026-09-06",
+      "note": "© OpenStreetMap-Mitwirkende, ODbL. Umriss des Gebäudes, nicht der Gasträume."
+    }
+  },
+  "kinds": [
+    "cafe",
+    "ice_cream"
+  ],
+  "services": {
+    "outdoorSeating": false,
+    "wheelchair": "yes"
+  },
+  "diet": {
+    "vegetarian": "yes",
+    "vegan": "no"
   }
 }

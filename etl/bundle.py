@@ -43,6 +43,7 @@ def main(city_id: str) -> int:
     city = load(src / "city.json")
     allergens = load(vocab_dir / "allergens.json")
     cuisines = load(vocab_dir / "cuisines.json")["kuechen"]
+    kinds = load(vocab_dir / "kinds.json")["arten"]
 
     menus = {p.name: load(p) for p in sorted((src / "menus").glob("*.json"))}
     by_restaurant: dict[str, list[dict]] = {}
@@ -55,9 +56,10 @@ def main(city_id: str) -> int:
         own = by_restaurant.get(r["id"], [])
         count = sum(len(s["items"]) for m in own for s in m["sections"])
 
-        entry = {k: r[k] for k in ("id", "name", "cuisines") if k in r}
+        entry = {k: r[k] for k in ("id", "name", "kinds", "cuisines") if k in r}
         entry["dishCount"] = count
-        for key in ("address", "location", "contact", "openingHours", "osm"):
+        for key in ("address", "location", "outline", "contact", "openingHours",
+                    "services", "diet", "ordering", "osm"):
             if r.get(key):
                 entry[key] = r[key]
         if r.get("ratings"):
@@ -74,7 +76,8 @@ def main(city_id: str) -> int:
                     dishes.append({**item, "restaurantId": r["id"], "section": section["title"]})
 
     n1 = write(out / "restaurants.json",
-               {"city": city, "cuisines": cuisines, "restaurants": restaurants})
+               {"city": city, "kinds": kinds, "cuisines": cuisines,
+                "restaurants": restaurants})
     n2 = write(out / "dishes.json",
                {"allergens": allergens["allergene"], "additives": allergens["zusatzstoffe"],
                 "dishes": dishes})
