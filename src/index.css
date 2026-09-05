@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/700.css";
+
+/* Die Grund-Tokens kommen aus dem gemeinsamen Kanon:
+   github.com/bagruber/moosburg-design */
+@import "moosburg-design/css/theme.css";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+/* Versal-Playfair wie in den Geschwisterprojekten */
+.headline {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  font-size: 0.6875rem;
+  color: var(--color-ink-muted);
+}
+
+/* Zahlen in Listen sollen untereinander stehen. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* MapLibre bringt eigene Schrift und Farben mit, die hier stoeren. */
+.maplibregl-ctrl-attrib {
+  font-family: var(--font-sans);
+  font-size: 10px;
+}
