@@ -15,6 +15,9 @@ Der Projektkontext steht in [KONTEXT.md](KONTEXT.md), was aussteht in
 [OFFENE-PUNKTE.md](OFFENE-PUNKTE.md), das Datenmodell in
 [schema/types.ts](schema/types.ts).
 
+Läuft unter
+[bagruber.github.io/foodhub](https://bagruber.github.io/foodhub/).
+
 ## App
 
 ```bash

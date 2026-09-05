@@ -62,8 +62,16 @@
   auf diesem Rechner eine Mindestfensterbreite von 548 px und beschneiden
   schmalere Aufnahmen nur, statt schmaler zu rendern. Bei 548 px stimmt der
   Umbruch. Für ein Telefon mit 390 px fehlt der Nachweis.
-- **Deploy ist noch nicht eingerichtet**, weder GitHub Pages noch moosburg.eu.
-  Die Build-Skripte stehen, die Workflows fehlen.
+- **moosburg.eu fehlt noch.** GitHub Pages läuft unter
+  [bagruber.github.io/foodhub](https://bagruber.github.io/foodhub/). Für die
+  zweite Adresse braucht es `moosburg-eu.yml` mit FTP-Deploy nach
+  `/data/foodhub/`, das Muster steht in `baumkarte/PLATTFORM.md`. Dort ist auch
+  vermerkt, warum der Deploy dieser Familie 300 s Timeout braucht und dass
+  `dangerous-clean-slate` die Geschwister-Apps mitlöschen würde.
+- **Die Zählung fehlt.** `<script src="/assets/zaehler.js" defer></script>` vor
+  `</body>`, mit absolutem Pfad, sobald die App auf moosburg.eu läuft. Auf
+  GitHub Pages läuft der Aufruf absichtlich ins Leere, damit die Zwillinge die
+  Zahlen nicht verdoppeln.
 - Der Spaltenteiler zerschneidet Zeilen, die über beide Spalten laufen. Trifft
   einzelne Fließtexthinweise. Wäre lösbar, indem solche Zeilen erkannt und
   wieder zusammengeführt werden, lohnt aber erst, wenn es stört.
