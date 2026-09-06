@@ -1,5 +1,15 @@
 import { useMemo } from "react";
 import { Herkunft } from "@/components/Herkunft";
+import {
+  Card,
+  CardChip,
+  Cash,
+  Contactless,
+  Phone,
+  QrCode,
+  Star,
+  Tag,
+} from "@/components/Icons";
 import { Marks } from "@/components/Marks";
 import {
   SOURCE_LABEL,
@@ -43,15 +53,15 @@ export function HouseDetail({
 
   return (
     <div className="min-h-0 flex-1 overflow-y-auto">
-      <div className="sticky top-0 z-10 border-b border-ink-line bg-cream px-4 py-3">
+      <div className="sticky top-0 z-10 border-b border-ink-line bg-cream px-4 py-3 lg:py-2.5">
         <button onClick={onClose} className="eyebrow hover:text-ink">
           ← zurück zur Liste
         </button>
-        <h2 className="headline mt-1 text-xl">{house.name}</h2>
-        <p className="mt-1 text-sm text-ink-soft">{tags.join(" · ")}</p>
+        <h2 className="headline mt-1 text-xl lg:text-lg">{house.name}</h2>
+        <p className="mt-1 text-sm text-ink-soft lg:mt-0.5 lg:text-xs">{tags.join(" · ")}</p>
       </div>
 
-      <div className="space-y-5 px-4 py-4">
+      <div className="space-y-5 px-4 py-4 lg:space-y-4 lg:py-3 lg:text-[0.9375rem]">
         {house.address?.street && (
           <p className="text-sm text-ink-soft">
             {house.address.street}
@@ -168,18 +178,34 @@ export function HouseDetail({
         {sections.map(([title, items]) => (
           <section key={title}>
             <h3 className="eyebrow border-b border-ink-line pb-1">{title}</h3>
-            <ul className="mt-2 space-y-2.5">
+            <ul className="mt-2 space-y-2.5 lg:mt-1.5 lg:space-y-2">
               {items.map((d, i) => (
                 <li key={`${d.ref ?? i}`}>
                   <div className="flex items-baseline justify-between gap-3">
-                    <span className="text-sm font-medium">
+                    {/* `min-w-0`, sonst wächst ein langer Gerichtsname über
+                        die Spalte hinaus statt umzubrechen: Flexkinder dürfen
+                        von sich aus nicht unter ihre Inhaltsbreite. */}
+                    <span className="min-w-0 text-sm font-medium">
                       {d.ref && <span className="tabular text-ink-muted">{d.ref} </span>}
                       {d.name}
                     </span>
-                    <span className="tabular shrink-0 text-sm text-ink-soft">
-                      {d.prices.map(formatPrice).join(" · ")}
-                    </span>
+                    {/* Nur kurze Preise stehen neben dem Namen. Trägt einer
+                        eine Anmerkung — beim Woch'nblatt `17,90 € mit 6
+                        Frischkäse-Gemüse-Röstibällchen` — steht er darunter,
+                        sonst schöbe er die Spalte auf das Doppelte. */}
+                    {!noted(d) && (
+                      <span className="tabular shrink-0 text-sm text-ink-soft">
+                        {d.prices.map(formatPrice).join(" · ")}
+                      </span>
+                    )}
                   </div>
+                  {noted(d) && (
+                    <ul className="tabular mt-0.5 space-y-0.5 text-xs text-ink-soft">
+                      {d.prices.map((price, n) => (
+                        <li key={n}>{formatPrice(price)}</li>
+                      ))}
+                    </ul>
+                  )}
                   {d.description && (
                     <p className="mt-0.5 text-xs leading-relaxed text-ink-soft">{d.description}</p>
                   )}
@@ -196,6 +222,11 @@ export function HouseDetail({
   );
 }
 
+/** Ob ein Preis eine Anmerkung trägt und deshalb eine eigene Zeile braucht. */
+function noted(dish: Dish): boolean {
+  return dish.prices.some((p) => p.note);
+}
+
 function Badge({ children }: { children: React.ReactNode }) {
   return (
     <span className="rounded bg-cream-dark px-1.5 py-0.5 text-ink-soft">{children}</span>
@@ -209,6 +240,25 @@ function Badge({ children }: { children: React.ReactNode }) {
  * keine Karte nimmt, entscheidet darüber, ob jemand vorher zum Automaten muss.
  * Was gar nicht dasteht, ist unbekannt und wird auch nicht erraten.
  */
+/**
+ * Ein Zeichen je Zahlungsart.
+ *
+ * Karte ist nicht gleich Karte, und genau da liegt der praktische Unterschied:
+ * viele Wirtshäuser nehmen die Girocard und keine Kreditkarte. Zwei Wörter
+ * nebeneinander liest niemand, zwei Zeichen unterscheidet man auf einen Blick,
+ * deshalb trägt die Kreditkarte den Chip und die Girocard den Magnetstreifen.
+ */
+const PAYMENT_ICON: Record<string, (p: { className?: string }) => React.ReactNode> = {
+  cash: Cash,
+  cards: Card,
+  debit_cards: Card,
+  credit_cards: CardChip,
+  contactless: Contactless,
+  mobile: Phone,
+  qr_code: QrCode,
+  moosburg_card: Tag,
+};
+
 function Zahlung({
   payment,
   labels,
@@ -232,19 +282,30 @@ function Zahlung({
     <section>
       <h3 className="eyebrow">Zahlung</h3>
       <div className="mt-1.5 flex flex-wrap gap-1.5 text-xs">
-        {yes.map(([slug]) => (
-          <span key={slug} className="rounded bg-diet-vegan/12 px-1.5 py-0.5 text-diet-vegan">
-            {labels[slug] ?? slug}
-          </span>
-        ))}
-        {no.map(([slug]) => (
-          <span
-            key={slug}
-            className="rounded border border-dashed border-ink-line px-1.5 py-0.5 text-ink-muted"
-          >
-            kein {labels[slug] ?? slug}
-          </span>
-        ))}
+        {yes.map(([slug]) => {
+          const Icon = PAYMENT_ICON[slug];
+          return (
+            <span
+              key={slug}
+              className="inline-flex items-center gap-1 rounded bg-diet-vegan/12 px-1.5 py-0.5 text-diet-vegan"
+            >
+              {Icon && <Icon className="h-3.5 w-3.5" />}
+              {labels[slug] ?? slug}
+            </span>
+          );
+        })}
+        {no.map(([slug]) => {
+          const Icon = PAYMENT_ICON[slug];
+          return (
+            <span
+              key={slug}
+              className="inline-flex items-center gap-1 rounded border border-dashed border-ink-line px-1.5 py-0.5 text-ink-muted line-through decoration-ink-muted/60"
+            >
+              {Icon && <Icon className="h-3.5 w-3.5" />}
+              {labels[slug] ?? slug}
+            </span>
+          );
+        })}
       </div>
       <div className="mt-2 space-y-0.5">
         {[...sources.values()].map((p, i) => (
@@ -262,14 +323,35 @@ function Zahlung({
  * keine Höflichkeit: die Zahl steht neben unserer eigenen Auskunft und wäre
  * sonst von ihr nicht zu unterscheiden.
  */
+/**
+ * Fünf Sterne, der letzte anteilig gefüllt.
+ *
+ * Eine Zahl allein liest sich nicht schnell genug: `2,2` und `4,3` stehen
+ * gleich breit da und sehen gleich aus. Die Skala steht trotzdem daneben, denn
+ * die Sterne sagen nicht, worauf sie sich beziehen.
+ *
+ * Die Kennung der Schnittmaske trägt die Quelle im Namen. Zwei Sternreihen auf
+ * einer Seite hätten sonst dieselbe `id`, und im SVG gewinnt die erste.
+ */
+function Sterne({ value, scale, source }: { value: number; scale: number; source: string }) {
+  const filled = (value / scale) * 5;
+  return (
+    <span className="flex text-spice" title={`${value} von ${scale}`} aria-hidden="true">
+      {[0, 1, 2, 3, 4].map((i) => (
+        <Star key={i} id={`stern-${source}-${i}`} fill={Math.max(0, Math.min(1, filled - i))} />
+      ))}
+    </span>
+  );
+}
+
 function Bewertungen({ reviews }: { reviews?: Review[] }) {
   if (!reviews?.length) return null;
   return (
     <section>
       <h3 className="eyebrow">Bewertungen anderswo</h3>
-      <ul className="mt-1.5 space-y-1 text-sm">
+      <ul className="mt-1.5 space-y-1.5 text-sm">
         {reviews.map((r) => (
-          <li key={r.source} className="flex items-baseline justify-between gap-3">
+          <li key={r.source} className="flex items-center justify-between gap-3">
             <a
               href={r.url}
               target="_blank"
@@ -279,11 +361,13 @@ function Bewertungen({ reviews }: { reviews?: Review[] }) {
               {SOURCE_LABEL[r.source]}
             </a>
             {r.rating ? (
-              <span className="tabular shrink-0 text-ink-soft">
-                {r.rating.value.toLocaleString("de-DE", { minimumFractionDigits: 1 })} von{" "}
-                {r.rating.scale}
+              <span className="flex shrink-0 items-center gap-1.5">
+                <Sterne value={r.rating.value} scale={r.rating.scale} source={r.source} />
+                <span className="tabular text-ink-soft">
+                  {r.rating.value.toLocaleString("de-DE", { minimumFractionDigits: 1 })}
+                </span>
                 {r.rating.count !== undefined && (
-                  <span className="text-ink-muted"> · {r.rating.count} Stimmen</span>
+                  <span className="tabular text-xs text-ink-muted">({r.rating.count})</span>
                 )}
               </span>
             ) : (

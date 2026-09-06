@@ -1,0 +1,387 @@
+{
+  "restaurantId": "rosenhof-lichtspiele",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/rosenhof_speisekarte_2026.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.rosenhof-lichtspiele.de/",
+    "createdAt": "2026-08-07",
+    "note": "Die Karte verweist für Allergene auf eine separate Allergikerkarte; die Nummern bleiben hier ohne Deutung. Die Variationen mit Aufpreis sind nicht erfasst."
+  },
+  "legend": {
+    "allergens": {},
+    "additives": {}
+  },
+  "sections": [
+    {
+      "title": "Salate",
+      "note": "serviert mit unserem Hausdressing",
+      "items": [
+        {
+          "name": "Große gemischte Salatplatte",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "name": "Ofenkartoffel",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Kräuterquark und Salatgesteck Unsere Kartoffeln beziehen wir vom Kartoffelhof Weichselgartner aus der Schapolterau bei Eching.",
+          "markersUnknown": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "name": "Kleiner gemischter Salatteller",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "3",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schmankerl",
+      "items": [
+        {
+          "name": "Buntes Wokgemüse",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Jasminreis in leicht pikanter Thai-Curry-Soße"
+        },
+        {
+          "name": "Hausgemachte Käsespätzle",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Röstzwiebeln, frische Petersilie, kleiner Salat",
+          "markersUnknown": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "name": "Schweinelendchen mit frischen Rahmschwammerln",
+          "prices": [
+            {
+              "amount": 17.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachte Spätzle, gemischter Salat, wahlweise Preiselbeeren",
+          "markersUnknown": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "name": "Schnitzel „Wiener Art“ aus der Schweinelende",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pommes frites, kleiner Salatteller",
+          "markersUnknown": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "name": "Cordon Bleu",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5",
+            "14"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gefüllt mit Schinken/ Käse, Pommes frites, kleiner Salat",
+          "markersUnknown": [
+            "3",
+            "5",
+            "14"
+          ]
+        },
+        {
+          "name": "Münchener Cordon Bleu",
+          "prices": [
+            {
+              "amount": 18.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5",
+            "14"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gefüllt mit Schinken/ Käse/ süßem Senf/ Meerrettich, Pommes frites, Salatteller",
+          "markersUnknown": [
+            "3",
+            "5",
+            "14"
+          ]
+        },
+        {
+          "name": "Schaschlikspieß aus der Schweinelende",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5",
+            "7",
+            "14"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gebratene Speckstreifen, Zucchini, Paprika, würzige hausgemachte Soße, rote Zwiebeln, Pommes frites, kleiner Salat",
+          "markersUnknown": [
+            "3",
+            "5",
+            "7",
+            "14"
+          ]
+        },
+        {
+          "name": "Currywurst",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "7"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachte Soße, Pommes frites",
+          "markersUnknown": [
+            "3",
+            "7"
+          ]
+        },
+        {
+          "name": "„Rosenhof“ Burger mit Pommes frites",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderpatty (180g), gebratene Speckstreifen, hausgemachte Röstzwiebeln, Tomaten, Gurken, Salat",
+          "markersUnknown": [
+            "3",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kinderkarte",
+      "note": "für unsere kleinen Gäste",
+      "items": [
+        {
+          "name": "„Schnitzel aus dem Dschungelbuch“ – Kleines Schnitzel „Wiener Art“",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Ein knuspriges Schnitzel, das selbst Mogli zum Staunen bringt, serviert mit goldenen Pommes!"
+        },
+        {
+          "name": "„Lendchen aus dem Königreich“ – Kleines Schweinelendchen",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Zarte Schweinelendchen, die mit einer cremigen Schwammerlsoße und Spätzle verzaubern – ein Festmahl für kleine Abenteurer!"
+        },
+        {
+          "name": "„Käse-Express“ – Kleine Käsespätzle",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Diese leckeren Käsespätzle mit Röstzwiebeln sind so gut, dass sie direkt aus dem Film „Die Unglaublichen“ kommen könnten!"
+        },
+        {
+          "name": "„Spätzle-Sause“ – Spätzle mit Soße",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Ein einfaches, aber köstliches Gericht, das die kleinen Filmfans in die Welt von „Toy Story“ entführt!"
+        },
+        {
+          "name": "„Pommes-Piraten“ – Portion Pommes klein / groß",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            },
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Knusprige Pommes, die perfekt für kleine Piraten sind, die auf der Suche nach dem nächsten großen Abenteuer sind!"
+        },
+        {
+          "name": "„Dino-Nuggets“ – Chicken Nuggets (6 Stk.)",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Diese knusprigen Chicken Nuggets sind so lecker, dass selbst die Dinosaurier aus „Jurassic Park“ neidisch werden würden!"
+        },
+        {
+          "name": "„Olafs Schokotraum“ – Eine Kugel Vanilleeis mit Schokoladensoße",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "So lecker, dass sogar ein Schneemann dahinschmilzt!"
+        }
+      ]
+    }
+  ]
+}

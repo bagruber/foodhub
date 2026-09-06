@@ -1,0 +1,912 @@
+{
+  "restaurantId": "da-sophie-e-massimo-gasthaus-zur-kegelhalle",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/da-sophie-e-massimo_speisekarte_2026-09-06.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://pizza-bestellen-moosburg.de/",
+    "createdAt": "2026-09-06",
+    "note": "Die Zeichen für vegan, vegetarisch und Schärfe stehen als Grafik in der Karte und fehlen hier."
+  },
+  "legend": {
+    "allergens": {
+      "A": "gluten",
+      "B": "crustaceans",
+      "C": "eggs",
+      "D": "fish",
+      "E": "peanuts",
+      "F": "soybeans",
+      "G": "milk",
+      "H": "nuts",
+      "L": "celery",
+      "M": "mustard",
+      "N": "sesame",
+      "O": "sulphites",
+      "P": "lupin",
+      "R": "molluscs"
+    },
+    "additives": {
+      "1": "preservative",
+      "2": "antioxidant",
+      "3": "flavour_enhancer",
+      "4": "colorant",
+      "5": "sweetener",
+      "6": "phosphate",
+      "7": "caffeine",
+      "8": "quinine",
+      "9": "sulphured",
+      "10": "waxed"
+    }
+  },
+  "sections": [
+    {
+      "title": "Antipasto",
+      "items": [
+        {
+          "name": "Caprese",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "10",
+          "description": "Frische Tomaten mit cremigem Mozzarella, verfeinert mit aromatischem Basilikum und einem Hauch Olivenöl"
+        },
+        {
+          "name": "Cocktail di Gamberini",
+          "prices": [
+            {
+              "amount": 10.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "B",
+            "C",
+            "G",
+            "M"
+          ],
+          "allergens": [
+            "crustaceans",
+            "eggs",
+            "milk",
+            "mustard"
+          ],
+          "additives": [
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "12",
+          "description": "Zarte Garnelen in cremiger Cocktailsauce serviert auf Zarte Garnelen in cremiger Cocktailsauce, serviert auf knackigem Salat mit einem Hauch Zitrone"
+        },
+        {
+          "name": "Antipasto Mare",
+          "prices": [
+            {
+              "amount": 13.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "B",
+            "D",
+            "R"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "molluscs"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "13",
+          "description": "Feine Auswahl mediterraner Meeresfrüchte, mariniert mit Zitrone, Kräutern und bestem Olivenöl"
+        },
+        {
+          "name": "Carpaccio di Manzo",
+          "prices": [
+            {
+              "amount": 12.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "G"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "14",
+          "description": "Hauchdünn geschnittenes Rinderfilet, serviert mit Rucola, Parmesan und frischer Zitrone"
+        },
+        {
+          "name": "Bruschetta",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "15",
+          "description": "Knusprig gebackener Pizzateig, belegt mit frischen Tomaten, Rucola, gehobeltem Parmesan, Knoblauch und einem Hauch Olivenöl"
+        }
+      ]
+    },
+    {
+      "title": "Insalata",
+      "items": [
+        {
+          "name": "Pomodoro",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "22",
+          "description": "Saftige Tomaten und feine Zwiebeln, serviert auf frischem grünem Salat"
+        },
+        {
+          "name": "Mista",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "23",
+          "description": "Bunte Auswahl aus Gurken, Tomaten, Zwiebeln, Paprika, Karotten und grünem Salat"
+        },
+        {
+          "name": "Casa",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "6",
+            "A",
+            "C",
+            "D",
+            "G"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "24",
+          "description": "Knackiger Mischsalat mit Thunfisch, Schinken, Mozzarellasticks, Ei und Oliven und knackigem Gemüse"
+        },
+        {
+          "name": "Pollo",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "25",
+          "description": "Frischer Mischsalat mit zarten Putenstreifen und knackigem Gemüse"
+        },
+        {
+          "name": "Scampi",
+          "prices": [
+            {
+              "amount": 15.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "B"
+          ],
+          "allergens": [
+            "crustaceans"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "26",
+          "description": "Frischer Mischsalat mit saftigen Riesengarnelen und knackigem Gemüse"
+        }
+      ]
+    },
+    {
+      "title": "Pasta",
+      "items": [
+        {
+          "name": "Rigatoni Napoli",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "30",
+          "description": "Klassische Tomatensoße mit aromatischen Kräutern"
+        },
+        {
+          "name": "Spaghetti Bolognese",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "31",
+          "description": "Sauce aus gemischtem Hackfleisch, mit Tomaten und aromatischen Kräutern"
+        },
+        {
+          "name": "Tagliatelle Scampi",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "B"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "32",
+          "description": "Saftige Riesengarnelen mit Rucola und süßen Cocktailtomaten"
+        },
+        {
+          "name": "Spaghetti Mare",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "B",
+            "D",
+            "R"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten",
+            "molluscs"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "34",
+          "description": "Feine Meeresfrüchte mit Knoblauch in aromatischer Tomatensauce"
+        },
+        {
+          "name": "Tagliatelle Emiliana",
+          "prices": [],
+          "markersRaw": [
+            "G"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "36",
+          "description": "Sahnesoße mit Erbsen, Schinken, Champignons"
+        }
+      ]
+    },
+    {
+      "title": "Pasta Al Forno",
+      "items": [
+        {
+          "name": "Rigatoni al Forno",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "6",
+            "A",
+            "G",
+            "L"
+          ],
+          "allergens": [
+            "celery",
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "50",
+          "description": "Überbackene Rigatoni mit Hackfleisch, Schinken, Erbsen und Champignons in cremiger Tomaten-Sahnesauce, verfeinert mit geschmolzenem Käse"
+        }
+      ]
+    },
+    {
+      "title": "Pizza",
+      "items": [
+        {
+          "name": "Margherita",
+          "prices": [
+            {
+              "amount": 8.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "60"
+        },
+        {
+          "name": "Salami",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "61",
+          "description": "Pizzasalami"
+        },
+        {
+          "name": "Prosciutto",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "6",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "62",
+          "description": "Schinken"
+        },
+        {
+          "name": "Funghi",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "63",
+          "description": "Champignons Champignons"
+        },
+        {
+          "name": "Regina",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "6",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "64",
+          "description": "Schinken, Champignons"
+        },
+        {
+          "name": "Tonno",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "D",
+            "G"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "66",
+          "description": "Thunfisch, Zwiebeln"
+        },
+        {
+          "name": "Calabrese",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "68",
+          "description": "Scharfe Salami"
+        },
+        {
+          "name": "Vegetale",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "71",
+          "description": "Champignons, Peperoni, Paprika, Zwiebeln, Oliven"
+        },
+        {
+          "name": "Mare",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "B",
+            "D",
+            "G",
+            "R"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten",
+            "milk",
+            "molluscs"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "73",
+          "description": "Meeresfrüchte, Knoblauch"
+        },
+        {
+          "name": "4 Stagioni",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "6",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "75",
+          "description": "Schinken, Champignons, Peperoni, Oliven"
+        },
+        {
+          "name": "4 Formaggi",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "76",
+          "description": "Vier Käsesorten"
+        },
+        {
+          "name": "Parma",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "77",
+          "description": "Parmaschinken, Rucola, Parmesan"
+        },
+        {
+          "name": "Capricciosa",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "A",
+            "D",
+            "G"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "78",
+          "description": "Salami, Champignons, Sardellen, Peperoni, Oliven"
+        },
+        {
+          "name": "Belvedere",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "B",
+            "G"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "79",
+          "description": "Shrimps, Gorgonzola"
+        },
+        {
+          "name": "Rustica",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "80",
+          "description": "Scharfe Salami, Rucola, Parmesan"
+        },
+        {
+          "name": "Popeye",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "81",
+          "description": "Spinat, Gorgonzola"
+        },
+        {
+          "name": "Tre colore",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "82",
+          "description": "Spinat, Gorgonzola, Tomatenscheiben"
+        },
+        {
+          "name": "Pizza Pane",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "A"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "83",
+          "description": "Pizzabrot mit Tomatensoße, Rosmarin & Meersalz"
+        },
+        {
+          "name": "Da Sophie e Massimo",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "6",
+            "A",
+            "G"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "phosphate",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "84",
+          "description": "Scharfe Salami, Schinken, Zwiebeln, Gorgonzola, Parmesan"
+        }
+      ]
+    },
+    {
+      "title": "Dessert",
+      "items": [
+        {
+          "name": "Tartufo Nero",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "110"
+        },
+        {
+          "name": "Tartufo Bianco",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "111"
+        },
+        {
+          "name": "Tartufo Limoncello",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "112"
+        }
+      ]
+    }
+  ]
+}

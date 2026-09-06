@@ -1,0 +1,48 @@
+{
+  "hinweis": "Gänge über alle Häuser hinweg. Jede Karte hat eigene Überschriften: was bei den Drei Tannen „Schmankerl“ heißt, heißt bei Alexander „FLEISCHGERICHTE VOM GRILL“ und bei Necmi „Grill Gerichte“. Gemeint ist dasselbe. Diese Datei ordnet die gedruckte Überschrift einem Gang zu, damit sich Gerichte über Häuser hinweg sortieren und filtern lassen.",
+  "regel": "Zuerst gilt, was unter `abschnitte` mit vollem Wortlaut steht. Danach greifen die `regeln` der Reihe nach, die erste passende gewinnt; geprüft wird auf Wortanfänge im kleingeschriebenen Titel, damit `suppe` auch `Suppen` trifft und `eis` trotzdem nicht das `Reis`. Was nichts trifft, wird `andere` und bleibt sichtbar: `python etl/gaenge.py` zeigt, welche Überschriften keine Regel trifft.",
+  "gaenge": {
+    "vorspeise": { "label": "Vorspeisen", "bereich": "essen", "rang": 1 },
+    "suppe": { "label": "Suppen", "bereich": "essen", "rang": 2 },
+    "salat": { "label": "Salate", "bereich": "essen", "rang": 3 },
+    "hauptgericht": { "label": "Hauptgerichte", "bereich": "essen", "rang": 4 },
+    "beilage": { "label": "Beilagen", "bereich": "essen", "rang": 5 },
+    "nachspeise": { "label": "Nachspeisen", "bereich": "essen", "rang": 6 },
+    "kinder": { "label": "Für Kinder", "bereich": "essen", "rang": 7 },
+    "alkoholfrei": { "label": "Alkoholfrei", "bereich": "trinken", "rang": 8 },
+    "heissgetraenk": { "label": "Kaffee und Tee", "bereich": "trinken", "rang": 9 },
+    "bier": { "label": "Bier", "bereich": "trinken", "rang": 10 },
+    "wein": { "label": "Wein und Sekt", "bereich": "trinken", "rang": 11 },
+    "bar": { "label": "Bar und Spirituosen", "bereich": "trinken", "rang": 12 },
+    "getraenk": { "label": "Weitere Getränke", "bereich": "trinken", "rang": 13 },
+    "andere": { "label": "Ohne Zuordnung", "rang": 14 }
+  },
+  "abschnitte": {
+    "Vorher": "vorspeise",
+    "Das solltest du nicht verpassen!": "andere",
+    "Hausgemacht": "bar",
+    "Flaschen": "alkoholfrei",
+    "Getränk des Monats": "bar",
+    "Jeden Donnerstag, sowie an Sonn- und Feiertagen": "hauptgericht",
+    "Sonn- und Feiertage": "hauptgericht",
+    "Die Woch´nblatt-Wochenendkarte": "hauptgericht",
+    "DIE WOCH´NBLATT-SAISONKARTE": "hauptgericht",
+    "Gerichts auf Anfrage": "hauptgericht",
+    "Toasts und kleine Gerichte · Kartoffel mit Sauerrahm und Salatgarnitur (a,d) wahlweise mit": "hauptgericht"
+  },
+  "regeln": [
+    ["nachspeise", ["dessert", "nachspeise", "nachtisch", "süßspeise", "süsses", "abschluss", "kuchen", "eis"]],
+    ["kinder", ["kinder", "kleinen gäste", "kleine genießer", "kleinen genießer"]],
+    ["vorspeise", ["vorspeise", "antipasti", "antipasto"]],
+    ["suppe", ["suppe", "soup"]],
+    ["salat", ["salat", "salate", "insalata", "insalate"]],
+    ["beilage", ["beilage", "beilagen", "extra portion", "snack", "snacks"]],
+    ["bar", ["cocktail", "cocktails", "longdrink", "longdrinks", "drinks", "aperitif", "aperitife", "aperitifs", "aperitivs", "digestif", "schnaps", "whisky", "cognac", "likör", "spritz", "2cl", "birne", "beere", "steinfrucht", "mocktails"]],
+    ["wein", ["wein", "weine", "weisswein", "weißwein", "rotwein", "rotweine", "roséwein", "rosewein", "rosè", "weinschorle", "weinschorlen", "sekt", "prosecco", "vinibianchi", "traube", "flaschenwein"]],
+    ["bier", ["bier", "biere", "weißbier", "hopfen", "radler"]],
+    ["heissgetraenk", ["kaffee", "kaffeespezialitäten", "tee", "warme", "heiße"]],
+    ["alkoholfrei", ["alkoholfrei", "alkoholfreie", "softdrink", "softdrinks", "saft", "säfte", "saftschorle", "saftschorlen", "schorle", "schorlen", "limo", "wasser", "joghurt"]],
+    ["getraenk", ["getränk", "getränke", "drink"]],
+    ["hauptgericht", ["hauptgericht", "hauptgerichte", "hauptspeise", "hauptspeisen", "pizza", "pizzen", "pizze", "pasta", "nudel", "nudeln", "nudelgerichte", "sushi", "maki", "nigiri", "sashimi", "temaki", "grill", "lavasteingrill", "fisch", "fischgerichte", "fischfilet", "fischklassiker", "fleisch", "fleischgerichte", "hähnchen", "huhn", "hühnerfleisch", "hähnchengerichte", "ente", "enten", "entengerichte", "lamm", "lammgerichte", "rind", "kalb", "schnitzel", "burger", "gyros", "biryani", "tandoori", "curry", "schmankerl", "spezialität", "spezialitäten", "brotzeit", "brotzeiten", "pfanne", "backofen", "toast", "toasts", "wurst", "wurstküche", "lahmacun", "pide", "drehspieß", "wrap", "sandwich", "falafel", "mittag", "mittagskarte", "mittagsmenü", "mittagsgerichte", "vegetarisch", "vegetarische", "vegetarisches", "vegan", "veggie", "gericht", "gerichte", "tofu", "garnelen", "platten", "bayerische", "reis"]]
+  ]
+}

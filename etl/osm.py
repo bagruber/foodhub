@@ -252,7 +252,7 @@ def main(city_id: str, cached: bool = False) -> int:
         extra = [k for k in ("opening_hours", "phone", "website", "cuisine") if k in tags]
         print(f"  + {r['name']:26} {key:16} {pos[0]:.5f}, {pos[1]:.5f}  hat: {', '.join(extra) or '-'}")
 
-    rest = [e for k, e in by_id.items() if k not in matched]
+    rest = [e for k, e in by_id.items() if k not in matched and k not in ABGELOEST]
     print()
     print(f"{len(rest)} weitere Gaststätten in OSM ohne eigenen Eintrag:")
     taken = {p.stem for p in (city_dir / "restaurants").glob("*.json")}
@@ -384,6 +384,18 @@ def slugify(name: str) -> str:
     for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss"), ("´", ""), ("'", "")):
         out = out.replace(a, b)
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", out)).strip("-")
+
+
+# Objekte, die in OSM noch unter dem Namen des Vorgängers stehen. Ohne diese
+# Liste legte jeder Lauf den geschlossenen Betrieb wieder an, denn OSM meldet
+# ihn weiter. Der Nachfolger steht mit eigener Datei daneben und bleibt
+# bewusst ohne `osm`: die Öffnungszeiten und die Ernährungsangaben an diesem
+# Knoten beschreiben den Vorgänger, nicht ihn.
+#
+# Das ist eine Krücke. Der eigentliche Ort für diese Korrektur ist OSM selbst.
+ABGELOEST = {
+    "node/7725213368": "Tattva, seit 2026 Amrutham (data/moosburg/restaurants/amrutham.json)",
+}
 
 
 def draft(element: dict, city_id: str, today: str) -> dict | None:

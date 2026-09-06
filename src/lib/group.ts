@@ -123,10 +123,45 @@ function longestName(items: Dish[]): string {
 }
 
 /**
- * Gruppen mit mehreren Häusern nach oben ist falsch, nach unten auch: gesucht
- * ist meist ein Gericht, nicht ein Getränk. Sortiert wird deshalb nach Preis
- * wie zuvor, die Bündelung ändert nur die Zeilenzahl.
+ * Der Gang einer Gruppe: der häufigste unter ihren Gerichten.
+ *
+ * Meist sind alle gleich, aber nicht immer. Der Espresso steht bei einem Haus
+ * unter `Warme Getränke` und beim nächsten unter `Zum Abschluss`, und dann
+ * entscheidet die Mehrheit. Bei Gleichstand gewinnt der frühere Rang, damit
+ * dieselbe Gruppe nicht je nach Ladereihenfolge woanders landet.
  */
-export function sortByPrice(groups: DishGroup[]): DishGroup[] {
-  return [...groups].sort((a, b) => (a.low ?? 1e9) - (b.low ?? 1e9));
+export function courseOf(group: DishGroup, rank: (c: string) => number): string {
+  const tally = new Map<string, number>();
+  for (const d of group.items) {
+    const c = d.course ?? "andere";
+    tally.set(c, (tally.get(c) ?? 0) + 1);
+  }
+  return [...tally].sort((a, b) => b[1] - a[1] || rank(a[0]) - rank(b[0]))[0][0];
+}
+
+/**
+ * Nach Gang, dann nach Verbreitung, dann nach Namen.
+ *
+ * Nach Preis zu sortieren war die erste Fassung und die falsche: sie stellte
+ * die Knoblauchsauce für 40 Cent vor den Schweinebraten. Der Gang ist die
+ * Ordnung, die eine Speisekarte selbst verwendet, und innerhalb eines Gangs
+ * steht vorn, was es in den meisten Häusern gibt.
+ */
+export function sortByCourse(
+  groups: DishGroup[],
+  rank: (course: string) => number,
+): { course: string; groups: DishGroup[] }[] {
+  const buckets = new Map<string, DishGroup[]>();
+  for (const g of groups) {
+    const course = courseOf(g, rank);
+    buckets.set(course, [...(buckets.get(course) ?? []), g]);
+  }
+  return [...buckets.entries()]
+    .sort((a, b) => rank(a[0]) - rank(b[0]))
+    .map(([course, list]) => ({
+      course,
+      groups: list.sort(
+        (a, b) => b.houses.length - a.houses.length || a.label.localeCompare(b.label, "de"),
+      ),
+    }));
 }

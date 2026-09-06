@@ -1,7 +1,7 @@
 # foodhub, Projektkontext
 
 *Lebendes Arbeitsdokument. Vollständig lesen, bevor Code geschrieben wird.
-Änderungen mit Datum vermerken. Stand: 06.09.2026*
+Änderungen mit Datum vermerken. Stand: 06.09.2026, abends*
 
 ---
 
@@ -53,14 +53,28 @@ verschiedenen Quellen stammen. `etl/check.py` prüft, dass keine davon fehlt.
 
 | Restaurant | Kartenstand | Textlayer | Stand |
 |---|---|---|---|
+| Amrutham, indisch | 06.09.2026 | ja | 210 Gerichte |
 | AN Asia Cuisine & Sushi | 13.05.2026 | **nein**, 20 Seiten je ein Bild | 157 Gerichte, außerhalb ausgelesen |
 | Maharaja, indisch | 06.02.2026 | ja | 149 Gerichte |
 | Gasthof Drei Tannen, bayerisch | 30.08.2026 | ja | 143 Gerichte |
+| Asia Rose, vietnamesisch | 28.04.2022 | **nein**, Schrift in Kurven | 131 Gerichte, außerhalb ausgelesen |
+| Necmi's Pizza and More | 06.09.2026 | ja, Shopausdruck | 131 Gerichte |
+| Café Woch'nblatt | 06.09.2026 | ja, Seitenausdruck | 129 Gerichte |
+| Mythos im Moosburger Hof | 06.09.2026 | ja | 121 Gerichte |
 | Staudinger Keller, bayerisch | 01.06.2026 | ja | 117 Gerichte |
+| Alexander The Great, griechisch | 06.09.2026 | ja | 98 Gerichte |
 | La Forchetta, italienisch | 23.09.2025 | ja | 78 Gerichte |
 | Westerberg-Stub'n, Getränke | 27.06.2026 | ja | 78 Getränke |
+| Balkan-Restaurant Avlija | 24.01.2024 | ja, über speisekarte.de | 43 Gerichte |
+| Da Sophie e Massimo | 06.09.2026 | ja, Seitenausdruck | 38 Gerichte |
 | Westerberg-Stub'n, Speisen | 29.07.2026 | ja | 31 Gerichte |
-| Asia Rose, vietnamesisch | 28.04.2022 | **nein**, Schrift in Kurven | offen |
+| Rosenhof-Lichtspiele | 07.08.2026 | ja | 19 Gerichte |
+
+Zusammen 1673 Gerichte aus sechzehn Karten in fünfzehn Häusern, von 49
+erfassten. Zwei Karten kommen aus einem Ausdruck der Bestellseite, eine über
+ein fremdes Portal; das steht jeweils in der Herkunft, denn es ist ein
+Unterschied, ob der Wirt eine Fassung veröffentlicht hat oder ein Dritter sie
+erfasst hat.
 
 Zwei Karten haben keinen Textlayer. Das ist kein Randfall, sondern der
 Normalfall bei Gastronomie-PDFs aus Canva und CorelDRAW, und es bestimmt, wie
@@ -74,6 +88,15 @@ Die Allergenkennzeichnung ist gesetzlich vorgeschrieben, ihre Notation nicht:
 - **Drei Tannen**: genau umgekehrt, Buchstaben A–N für Allergene
 - **AN**: Buchstaben a–o für Allergene, ohne j, Zahlen 1–18 für Zusatzstoffe
 - **Asia Rose**: a–n mit Unterstufen, h1 Mandeln, h2 Haselnüsse
+- **Alexander**: A–N für Allergene, aber nicht in der Reihenfolge der LMIV,
+  und zwei Zeichen doppelt vergeben
+- **Woch'nblatt und Rosenhof**: erklären nichts. Die Zeichenerklärung liegt
+  auf einer eigenen Seite beziehungsweise einer separaten Allergikerkarte,
+  beim Woch'nblatt hinter einem Pfad, den die `robots.txt` des Hauses sperrt.
+  Die Marker bleiben als `markersRaw` stehen, gedeutet wird nichts. Das ist
+  die Stelle, an der Raten am nächsten läge und am teuersten wäre: die
+  Buchstaben sehen aus wie die übliche Reihe a bis n, sind es aber nicht. Auf
+  `Kugel Eis` steht `(d)`, und in der Standardreihe wäre das Fisch.
 
 Deshalb trägt jede Kartendatei ihre eigene `legend`, die von der gedruckten
 Karte auf das gemeinsame Vokabular in `data/vocab/` abbildet. Ohne sie ist
@@ -189,7 +212,7 @@ bewegt und die Schwellen gehören nachgemessen.
 
 ---
 
-## 5. Bewertungen (Recherchestand 04.09.2026, noch nichts angebunden)
+## 5. Bewertungen (angebunden am 06.09.2026)
 
 Aggregierte Bewertungen sind Teil des Ziels, aber die Rechtslage passt nicht
 ohne Weiteres zu einer statischen, cookiefreien Seite.
@@ -202,16 +225,40 @@ ohne Weiteres zu einer statischen, cookiefreien Seite.
 | **werkenntdenbesten, Golocal** | Keine öffentliche API. Nur Scraping, und damit das rechtlich wackeligste Feld. |
 | **OpenStreetMap über Overpass** | Keine Bewertungen, aber ohne Key, ohne Kosten und ohne Cookies: Koordinaten, Adresse, `opening_hours`, `cuisine`, `diet:vegan`, Website, Telefon. |
 
-**Entschieden am 04.09.2026:** zurückgestellt. Das Schema hält mit `Rating` und
-`Restaurant.ratings` den Platz frei, `ratings` bleibt vorerst leer. OSM ist der
-naheliegende erste Anschluss, weil es Stammdaten liefert, ohne eine dieser
-Fragen aufzuwerfen.
+| **Restaurant Guru** | `robots.txt` erlaubt die Stadtlisten, `Crawl-delay: 1`. Note und Stimmenzahl stehen als `schema.org/AggregateRating` in der Seite. |
+
+**Entschieden am 06.09.2026:** angebunden, aber nur dort, wo es sauber geht.
+
+- **Restaurant Guru**: Note, Stimmen und Link für 25 Häuser, über
+  `etl/reviews.py`, mit der verlangten Pause von einer Sekunde und unter
+  eigenem User-Agent.
+- **Google Maps**: nur der Suchlink, für alle 49 Häuser. `robots.txt` sperrt
+  `/maps/`, erlaubt aber ausdrücklich `/maps/?q=`. Für Werte bräuchte es die
+  Places API, und deren Bedingungen verbieten das dauerhafte Speichern —
+  genau das, wofür dieses Repo da ist.
+- **Tripadvisor**: gar nicht abgefragt. Antwortet auf jede
+  nicht-Browser-Anfrage mit HTTP 403, und die Bedingungen untersagen
+  automatisierten Zugriff unabhängig von der Menge. Links müssen von Hand
+  kommen; `merge()` in `etl/reviews.py` lässt fremde Einträge stehen, damit
+  sie jeden Lauf überleben.
+
+Zuordnung über den Namen, exakt oder eindeutig enthalten. Zwei Kandidaten
+heißt nicht zugeordnet: eine falsch angehängte Note steht unter dem Namen des
+falschen Hauses, und das ist schlimmer als eine fehlende. Drei Fälle waren
+von Hand zu klären, weil Guru sie unter dem Vorgängernamen führt: LariFari als
+`BB-Lounge`, Necmi's als `Necmis-Catering`, das Wiesender Café als
+`Naturbackstube Wiesender`. Beim letzten hat die Anschrift entschieden,
+Stadtpl. 17 mit denselben Öffnungszeiten. Solche Fälle stehen in `OVERRIDE`.
+
+In der App tragen die Bewertungen eine Sternreihe, den Link zur Quelle, das
+Abrufdatum und den Hinweis, dass es fremde Meinungen sind und wer dafür
+verantwortlich ist.
 
 ---
 
 ## 6. Was die App daraus macht
 
-Drei Dinge, die nicht offensichtlich aus den Daten folgen:
+Vier Dinge, die nicht offensichtlich aus den Daten folgen:
 
 **Gleiche Produkte in einer Zeile.** Espresso, Radler und Hugo stehen auf jeder
 zweiten Karte. Untereinander gelistet ergeben sie eine Wand aus
@@ -234,6 +281,29 @@ Unterschied eine Sorte ist, zwischen der ein Gast wählt: hell und dunkel, süß
 und trocken, mit und ohne Alkohol. Was dort nicht steht, bleibt für sich. Aus
 753 Gerichten werden so 603 Zeilen, 59 Produkte stehen in mehreren Häusern.
 
+**Gänge statt Preis als Ordnung.** Die Gerichtsliste war nach Preis sortiert
+und begann deshalb mit der Knoblauchsauce für 40 Cent; wer ein Hauptgericht
+suchte, kam an dreißig Getränken vorbei. Jetzt gliedert sie nach Gang, und der
+kommt aus der Überschrift der gedruckten Karte.
+
+Das ist dasselbe Problem wie beim Produktkatalog, eine Stufe höher: was bei
+den Drei Tannen „Schmankerl" heißt, heißt bei Alexander „FLEISCHGERICHTE VOM
+GRILL" und bei Necmi „Grill Gerichte". 203 verschiedene Überschriften stehen
+im Bestand. `data/vocab/gaenge.json` ordnet sie dreizehn Gängen zu, erst über
+den vollen Wortlaut, dann über geordnete Wortregeln; geprüft wird auf
+Wortanfänge, damit `suppe` auch `Suppen` trifft und `eis` trotzdem nicht das
+`Reis`. Was nichts trifft, wird `andere` und bleibt sichtbar:
+`python etl/gaenge.py` zeigt die Verteilung und jede Überschrift ohne Regel.
+Stand heute trifft eine einzige keine Regel, und die ist bewusst so gesetzt
+(„Das solltest du nicht verpassen!" bei den Drei Tannen mischt Nachspeise und
+Getränk).
+
+Anders als beim Produktkatalog wird hier also mit Regeln gearbeitet und nicht
+mit einer vollständigen Liste. Der Grund ist der Einsatz: eine falsch
+zugeordnete Überschrift stellt ein Gericht in den falschen Abschnitt, eine
+falsch zusammengefasste Zeile stellt den Preis des einen Hauses unter den
+Namen des anderen.
+
 **Öffnungszeiten ohne fremde Bibliothek.** `lib/hours.ts` liest den Ausschnitt
 des OSM-Formats, den die Daten brauchen. `opening_hours.js` kann mehr, wiegt
 aber 250 kB gegen die 59 kB, mit denen hier die ganze Karte startet. Der
@@ -246,7 +316,7 @@ eine übrige lautet „nach Spielzeit".
 Prüfungen. Verteilt lägen die Regeln in Liste, Karte und Filterblatt, und die
 Karte zeigte irgendwann etwas anderes als die Liste darunter.
 
-Diese drei sind mit `pnpm test` geprüft, gegen erfundene Fälle und gegen die
+Diese vier sind mit `pnpm test` geprüft, gegen erfundene Fälle und gegen die
 echten Daten. Sie sind der einzige Ort im Repo, an dem ein stiller Fehler
 plausibel aussähe.
 

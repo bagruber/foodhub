@@ -135,7 +135,8 @@
       "schreibweisen": [
         "pils",
         "tannen pils",
-        "pils graf ignaz"
+        "pils graf ignaz",
+        "extra pils"
       ]
     },
     "maerzen": {
@@ -224,6 +225,60 @@
       "schreibweisen": [
         "ramazzotti",
         "ramazzotti mit eis und zitrone"
+      ]
+    },
+    "apfelsaft": {
+      "label": "Apfelsaft",
+      "schreibweisen": [
+        "apfelsaft",
+        "apfelsaft saft"
+      ]
+    },
+    "pommes": {
+      "label": "Pommes",
+      "schreibweisen": [
+        "pommes",
+        "pommes frites",
+        "große pommes",
+        "kleine pommes",
+        "portion pommes"
+      ]
+    },
+    "kartoffelsalat": {
+      "label": "Kartoffelsalat",
+      "schreibweisen": [
+        "kartoffelsalat",
+        "portion kartoffelsalat"
+      ]
+    },
+    "gemischter-salat": {
+      "label": "Gemischter Salat",
+      "schreibweisen": [
+        "gemischter salat",
+        "gemischter salat groß",
+        "gemischter salat klein"
+      ]
+    },
+    "beilagensalat": {
+      "label": "Beilagensalat",
+      "schreibweisen": [
+        "beilagensalat",
+        "großer beilagensalat",
+        "kleiner beilagensalat"
+      ]
+    },
+    "cheeseburger": {
+      "label": "Cheeseburger",
+      "schreibweisen": [
+        "cheeseburger",
+        "cheese burger"
+      ]
+    },
+    "fruehlingsrolle-vietnamesisch": {
+      "label": "Vietnamesische Frühlingsrolle",
+      "schreibweisen": [
+        "vietnamesische frühlingsrolle",
+        "vietnamesische frühlingsrollen"
       ]
     }
   }

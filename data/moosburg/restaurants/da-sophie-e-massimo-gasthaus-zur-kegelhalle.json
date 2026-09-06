@@ -53,9 +53,11 @@
       }
     }
   ],
-  "menus": [],
+  "menus": [
+    "da-sophie-e-massimo_2026-09-06.json"
+  ],
   "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+    "Zeichen für vegan, vegetarisch und Schärfe stehen als Grafik in der Karte"
   ],
   "openingHours": {
     "raw": "We-Mo 11:00-23:00",

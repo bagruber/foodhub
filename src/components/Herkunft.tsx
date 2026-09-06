@@ -28,6 +28,15 @@ export function Herkunft({
   const relevant = provenance.createdAt ?? provenance.retrievedAt;
   const { label, stale } = age(relevant);
 
+  // In der kurzen Form steht bei einer Website der Gastgeber statt der
+  // Gattung. Beim Woch'nblatt kommen zwei Angaben von zwei verschiedenen
+  // Seiten, und zweimal `Website des Hauses` untereinander sieht aus wie eine
+  // Wiederholung statt wie zwei Quellen.
+  const quelle =
+    kurz && provenance.kind === "website" && provenance.url
+      ? new URL(provenance.url).hostname.replace(/^www\./, "")
+      : SOURCE_LABEL[provenance.kind];
+
   if (kurz) {
     return (
       <p className={`text-xs text-ink-muted ${className}`}>
@@ -38,10 +47,10 @@ export function Herkunft({
             rel="noreferrer"
             className="underline decoration-ink-line underline-offset-2 hover:decoration-ink"
           >
-            {SOURCE_LABEL[provenance.kind]}
+            {quelle}
           </a>
         ) : (
-          SOURCE_LABEL[provenance.kind]
+          quelle
         )}
         <span className="tabular"> · abgerufen am {formatDate(provenance.retrievedAt)}</span>
         {stale && <span className="text-red-700"> · {label}</span>}

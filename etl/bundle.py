@@ -22,6 +22,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from common import ROOT
+from gaenge import course_of
 
 
 def load(path: Path) -> dict:
@@ -45,6 +46,7 @@ def main(city_id: str) -> int:
     cuisines = load(vocab_dir / "cuisines.json")["kuechen"]
     kinds = load(vocab_dir / "kinds.json")["arten"]
     payment = load(vocab_dir / "zahlung.json")["zahlungsarten"]
+    courses = load(vocab_dir / "gaenge.json")["gaenge"]
 
     menus = {p.name: load(p) for p in sorted((src / "menus").glob("*.json"))}
     by_restaurant: dict[str, list[dict]] = {}
@@ -72,14 +74,15 @@ def main(city_id: str) -> int:
         for menu in own:
             for section in menu["sections"]:
                 for item in section["items"]:
-                    dishes.append({**item, "restaurantId": r["id"], "section": section["title"]})
+                    dishes.append({**item, "restaurantId": r["id"], "section": section["title"],
+                                   "course": course_of(section["title"])})
 
     n1 = write(out / "restaurants.json",
                {"city": city, "kinds": kinds, "cuisines": cuisines,
                 "payment": payment, "restaurants": restaurants})
     n2 = write(out / "dishes.json",
                {"allergens": allergens["allergene"], "additives": allergens["zusatzstoffe"],
-                "dishes": dishes})
+                "courses": courses, "dishes": dishes})
 
     with_menu = sum(1 for r in restaurants if r["dishCount"])
     print(f"  restaurants.json  {len(restaurants):4} Häuser, davon {with_menu} mit Karte"

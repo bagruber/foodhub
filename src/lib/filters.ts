@@ -13,6 +13,8 @@ export type Filters = {
   kinds: string[];
   cuisines: string[];
   diet: ("vegetarian" | "vegan")[];
+  /** Gänge, Slugs aus `data/vocab/gaenge.json`. Leer heisst alle. */
+  courses: string[];
   spicy: boolean;
   /** Allergene, die nicht vorkommen dürfen. */
   without: string[];
@@ -29,6 +31,7 @@ export const EMPTY: Filters = {
   kinds: [],
   cuisines: [],
   diet: [],
+  courses: [],
   spicy: false,
   without: [],
   services: [],
@@ -43,6 +46,7 @@ export function countActive(f: Filters): number {
     f.kinds.length +
     f.cuisines.length +
     f.diet.length +
+    f.courses.length +
     f.without.length +
     f.services.length +
     f.payment.length +
@@ -96,6 +100,7 @@ export function matchesHouse(house: Restaurant, f: Filters): boolean {
 }
 
 export function matchesDish(dish: Dish, f: Filters, house: Restaurant | undefined): boolean {
+  if (f.courses.length && !f.courses.includes(dish.course)) return false;
   if (f.diet.length && !f.diet.some((d) => dish.diet[d])) return false;
   if (f.spicy && !dish.spice) return false;
   // Ueber ein Set statt `includes`, weil die Filterliste aus dem Vokabular

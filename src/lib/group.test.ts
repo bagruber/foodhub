@@ -1,19 +1,34 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { catalogueSpellings, groupDishes, normaliseName } from "./group";
+import { catalogueSpellings, groupDishes, normaliseName, sortByCourse } from "./group";
 import type { Dish } from "./data";
 
-const dish = (name: string, restaurantId: string, amount: number): Dish =>
+const dish = (
+  name: string,
+  restaurantId: string,
+  amount: number,
+  course = "hauptgericht",
+): Dish =>
   ({
     name,
     restaurantId,
     section: "Test",
+    course,
     prices: [{ amount, currency: "EUR" }],
     markersRaw: [],
     allergens: [],
     additives: [],
     diet: {},
   }) as Dish;
+
+const RANG: Record<string, number> = {
+  vorspeise: 1,
+  hauptgericht: 4,
+  nachspeise: 6,
+  bier: 10,
+  andere: 14,
+};
+const rang = (course: string) => RANG[course] ?? 99;
 
 describe("normaliseName", () => {
   it("raeumt weg, was dasselbe Produkt verschieden aussehen laesst", () => {
@@ -99,5 +114,49 @@ describe("groupDishes", () => {
     const total = groups.reduce((n, g) => n + g.items.length, 0);
     expect(total).toBe(all.dishes.length);
     expect(groups.length).toBeLessThan(all.dishes.length);
+  });
+});
+
+describe("sortByCourse", () => {
+  it("ordnet nach Gang und nicht nach Preis", () => {
+    // Der eigentliche Anlass: nach Preis stand die Beilage fuer 40 Cent vor
+    // dem Schweinebraten, und die Getraenke standen mitten in den Speisen.
+    const out = sortByCourse(
+      groupDishes([
+        dish("Helles", "a", 4.2, "bier"),
+        dish("Schweinebraten", "b", 16.9),
+        dish("Vitello Tonnato", "c", 12.5, "vorspeise"),
+      ]),
+      rang,
+    );
+    expect(out.map((s) => s.course)).toEqual(["vorspeise", "hauptgericht", "bier"]);
+  });
+
+  it("stellt innerhalb eines Gangs das Verbreitete nach vorn", () => {
+    const out = sortByCourse(
+      groupDishes([
+        dish("Cordon Bleu", "a", 17.9),
+        dish("Schnitzel", "a", 15.5),
+        dish("Schnitzel", "b", 16.5),
+        dish("Schnitzel", "c", 14.9),
+      ]),
+      rang,
+    );
+    expect(out[0].groups.map((g) => g.label)).toEqual(["Schnitzel", "Cordon Bleu"]);
+  });
+
+  it("nimmt bei uneinigen Gaengen den haeufigeren", () => {
+    // Espresso steht bei einem Haus unter `Warme Getraenke`, beim naechsten
+    // unter `Zum Abschluss`. Die Mehrheit entscheidet, damit dieselbe Gruppe
+    // nicht je nach Ladereihenfolge woanders landet.
+    const out = sortByCourse(
+      groupDishes([
+        dish("Espresso", "a", 2.4, "nachspeise"),
+        dish("Espresso", "b", 2.6, "andere"),
+        dish("Espresso", "c", 2.5, "nachspeise"),
+      ]),
+      rang,
+    );
+    expect(out.map((s) => s.course)).toEqual(["nachspeise"]);
   });
 });

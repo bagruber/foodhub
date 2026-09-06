@@ -9,10 +9,13 @@ Tausendertrennung, sondern die englische Schreibweise, und muss vor dem
 Umrechnen ersetzt werden.
 
 Die Karte kennt Zeichen fuer vegan, vegetarisch und drei Schaerfegrade, aber
-sie stehen als Grafik in der Seite. Anders als bei der Westerberg-Stub'n sind
-es hier neun Seiten mit weit ueber hundert Gerichten; von Hand abzulesen waere
-das eine andere Groessenordnung. Sie fehlen deshalb, und das steht in der
-Herkunft.
+sie stehen als Grafik in der Seite und kommen deshalb nicht mit. Das steht in
+der Herkunft.
+
+Die Nummern springen: 10 bis 15, dann 22 bis 26, 30 bis 36, 50, 60 bis 84,
+110 bis 112. Das sah zunaechst nach einem unvollstaendigen Ausdruck aus. Es
+ist keiner, die Seite zeigt nicht mehr: die Nummerierung ist in Bloecken
+vergeben, und innerhalb der Bloecke sind Luecken.
 """
 
 from __future__ import annotations

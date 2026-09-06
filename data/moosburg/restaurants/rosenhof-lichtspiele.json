@@ -52,9 +52,11 @@
       }
     }
   ],
-  "menus": [],
+  "menus": [
+    "rosenhof-lichtspiele_2026-08-07.json"
+  ],
   "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+    "Allergene nicht erfasst: die Karte verweist auf eine separate Allergikerkarte"
   ],
   "openingHours": {
     "raw": "\"nach Spielzeit\"",

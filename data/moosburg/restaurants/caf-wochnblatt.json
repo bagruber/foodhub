@@ -21,7 +21,7 @@
   "contact": {
     "phone": "+49 8761 1027",
     "email": "wochnblatt@t-online.de",
-    "website": "https://www.cafe-bistro-wochnblatt.de"
+    "website": "https://www.cafe-bistro-wochnblatt.de/"
   },
   "cuisines": [
     "german"
@@ -53,10 +53,11 @@
       }
     }
   ],
-  "menus": [],
+  "menus": [
+    "caf-wochnblatt_2026-09-06.json"
+  ],
   "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
-    "Karte laut OSM unter https://www.cafe-bistro-wochnblatt.de/speisekarten/"
+    "Zeichenerklärung nicht erfasst: /allergiker-im-woch-nblatt/ ist in der robots.txt gesperrt"
   ],
   "openingHours": {
     "raw": "PH,We-Su 10:30-24:00",
@@ -134,10 +135,10 @@
     "debit_cards": {
       "accepted": true,
       "provenance": {
-        "kind": "osm",
-        "url": "https://www.openstreetmap.org/node/687782818",
+        "kind": "website",
+        "url": "https://www.cafe-bistro-wochnblatt.de/speisekarten/",
         "retrievedAt": "2026-09-06",
-        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+        "note": "Auf der Seite: „Bei uns kannst du kontaktlos bezahlen! Neben girocard und Woch´nblatt-VIP-Card akzeptieren wir auch …“"
       }
     },
     "credit_cards": {
@@ -147,6 +148,15 @@
         "url": "https://www.openstreetmap.org/node/687782818",
         "retrievedAt": "2026-09-06",
         "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "contactless": {
+      "accepted": true,
+      "provenance": {
+        "kind": "website",
+        "url": "https://www.cafe-bistro-wochnblatt.de/speisekarten/",
+        "retrievedAt": "2026-09-06",
+        "note": "Auf der Seite: „Bei uns kannst du kontaktlos bezahlen! Neben girocard und Woch´nblatt-VIP-Card akzeptieren wir auch …“"
       }
     }
   }

@@ -1,0 +1,55 @@
+{
+  "id": "amrutham",
+  "name": "Amrutham Indisches Restaurant",
+  "city": "moosburg",
+  "address": {
+    "street": "Neustadtstraße 22",
+    "postalCode": "85368",
+    "city": "Moosburg a.d. Isar"
+  },
+  "location": {
+    "lat": 48.476458,
+    "lon": 11.936979,
+    "provenance": {
+      "kind": "google_maps",
+      "url": "https://maps.app.goo.gl/uVvEHXRAFYPZ7Kd96",
+      "retrievedAt": "2026-09-06",
+      "note": "Ortsangabe des Eintrags, vom Betreiber des Repos gemeldet"
+    }
+  },
+  "contact": {},
+  "kinds": [
+    "restaurant"
+  ],
+  "cuisines": [
+    "indian",
+    "italian_pizza",
+    "italian",
+    "thai"
+  ],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://maps.app.goo.gl/uVvEHXRAFYPZ7Kd96",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://maps.app.goo.gl/uVvEHXRAFYPZ7Kd96",
+        "retrievedAt": "2026-09-06",
+        "note": "Link zum Eintrag, keine Bewertung abgerufen"
+      }
+    }
+  ],
+  "menus": [
+    "amrutham_2026-09-06.json"
+  ],
+  "provenance": {
+    "kind": "manual",
+    "retrievedAt": "2026-09-06",
+    "note": "Nachfolger von Tattva an derselben Anschrift. Angelegt aus dem Eintrag bei Google Maps und der übergebenen Speisekarte; OpenStreetMap führt den Ort noch unter dem alten Namen."
+  },
+  "open": [
+    "Öffnungszeiten unbekannt: die in OpenStreetMap hinterlegten gehören zu Tattva",
+    "Zahlungsarten unbekannt",
+    "In OpenStreetMap steht node/7725213368 noch unter dem Namen Tattva"
+  ]
+}

@@ -72,11 +72,12 @@ MIN_STEM = 6
 # noch unter dem alten Adressschnipsel (`BB-Lounge`, `Necmis-Catering`). Das
 # sieht falsch aus und ist es nicht.
 OVERRIDE: dict[str, str | None] = {
-    # Wiesender hat in Moosburg mehrere Haeuser: die Bäckerei in der Neuen
-    # Industriestrasse, das Café am Stadtplatz und die Naturbackstube. Guru
-    # fuehrt die dritte, und welche der beiden anderen damit gemeint waere,
-    # ist nicht zu entscheiden. Also keine.
-    "wiesender-caf": None,
+    # Wiesender hat in Moosburg mehrere Haeuser, und Guru fuehrt eines davon
+    # unter `Naturbackstube Wiesender`. Zunaechst blieb der Eintrag deshalb
+    # leer. Aufgeloest hat es die Anschrift: Guru nennt Stadtpl. 17 und die
+    # Zeiten Mo-Sa 07:00-18:00, So 07:30-18:00 — das ist Zeichen fuer Zeichen
+    # das Café am Stadtplatz, nicht die Bäckerei in der Neuen Industriestrasse.
+    "wiesender-caf": "https://de.restaurantguru.com/Naturbackstube-Wiesender-Moosburg-3",
 }
 
 

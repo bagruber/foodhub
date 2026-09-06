@@ -18,8 +18,15 @@
       "note": "© OpenStreetMap-Mitwirkende, ODbL"
     }
   },
-  "contact": {},
-  "cuisines": [],
+  "contact": {
+    "phone": "+49 8761 7222651",
+    "email": "necmis-catering@web.de",
+    "website": "https://www.necmis-pizza.de/"
+  },
+  "cuisines": [
+    "turkish",
+    "italian_pizza"
+  ],
   "reviews": [
     {
       "source": "google_maps",
@@ -42,9 +49,11 @@
       }
     }
   ],
-  "menus": [],
+  "menus": [
+    "necmis-pizza-and-more_2026-09-06.json"
+  ],
   "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+    "Allergene fehlen: der Shop führt sie hinter „Produktinfos“, nicht im Ausdruck"
   ],
   "openingHours": {
     "raw": "Tu-Su 11:00-22:00",
@@ -114,5 +123,23 @@
         "note": "© OpenStreetMap-Mitwirkende, ODbL"
       }
     }
+  },
+  "ordering": [
+    {
+      "url": "https://www.necmis-pizza.de/",
+      "provider": "eigener Shop",
+      "provenance": {
+        "kind": "website",
+        "url": "https://www.necmis-pizza.de/",
+        "retrievedAt": "2026-09-06",
+        "note": "Bestellseite des Hauses, Anbieter der Software ist SIDES"
+      }
+    }
+  ],
+  "provenance": {
+    "kind": "website",
+    "url": "https://www.necmis-pizza.de/",
+    "retrievedAt": "2026-09-06",
+    "note": "Anschrift, Telefon und E-Mail aus dem Impressum des Bestellshops; Ort und Öffnungszeiten aus OpenStreetMap."
   }
 }

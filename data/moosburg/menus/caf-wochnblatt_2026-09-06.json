@@ -1,0 +1,2909 @@
+{
+  "restaurantId": "caf-wochnblatt",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/caf-wochnblatt_speisekarte_2026-09-06.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.cafe-bistro-wochnblatt.de/speisekarten/",
+    "createdAt": "2026-09-06",
+    "note": "Ausdruck der Seite mit vier Karten. Die Zeichenerklärung liegt unter /allergiker-im-woch-nblatt/, und diesen Pfad sperrt die robots.txt des Hauses; die Marker bleiben deshalb ohne Deutung."
+  },
+  "legend": {
+    "allergens": {},
+    "additives": {}
+  },
+  "sections": [
+    {
+      "title": "Die \"Schmankerl der Woche\"",
+      "note": "gültig vom 02. - 06.09.2026",
+      "items": [
+        {
+          "name": "Bayrischer Wurstsalat mit Brez´n",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Schweizer Wurstsalat mit Brez´n",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die \"Schmankerl der Woche\" · Käsegriller vom Haslacher",
+      "note": "gültig vom 02. - 06.09.2026",
+      "items": [
+        {
+          "name": "1 Paar Käsegriller vom Grill mit Senf und Brez´n",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "1 Paar Käsegriller vom Grill mit Pommes",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Veggie-Tipp: Brez´nknödel mit Spiegelei",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "In Butterschmalz gebratene Brez´nknödel mit Champignonsauce, zwei Spiegeleiern und kleinem gemischten Salat",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Souffle Al Pistacchio",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pistazien Souffle mit Vanilleeis und Sahne"
+        },
+        {
+          "name": "Kuchen aus der Bäckerei/Konditorei „Günthner“",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Erdbeerroulade/Käsesahne/Heidelbeerstreusel je"
+        }
+      ]
+    },
+    {
+      "title": "Die Woch´nblatt-Wochenendkarte",
+      "note": "gültig vom 04. - 06.09.2026",
+      "items": [
+        {
+          "name": "Bayrischer Wurstsalat",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Zwiebeln, Essiggurken und Brez´n",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Schweizer Wurstsalat",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Zwiebeln, Essiggurken, Emmentaler und Brez´n",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Hirschbraten",
+          "prices": [
+            {
+              "amount": 23.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Im eigenen Saft geschmorter Hirsch aus heimischer Jagd, dazu Preiselbeeren, hausgemachte Brez´nknödel und Spätzle",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Wildschweinrücken",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Rosa gebratener Wildschweinrücken auf Wildpfeffersauce, mit Mandelkroketten und Blattsalat in Kräutervinaigrette",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Wiener Backhendl",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Oberkeule, Brust ausgelöst, Unterkeule am Knochen, paniert und Gebacken, dazu gibt´s Butterkartoffeln und Remoulade",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Double Rösti Burger",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Zweimal 100g Rösti, zweimal 100g Rinderhacksteak, Cheadderkäse, gebratener Speck, Tomaten und Zwiebelscheiben, Salat und Burgersauce, serviert mit Pommes (ohne Bun)",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Woch´nblatt-Wochenendkarte · Unsere Veggie-Tipps",
+      "note": "gültig vom 04. - 06.09.2026",
+      "items": [
+        {
+          "name": "Geröstete Kürbiskerne auf frischem Herbstsalat",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            },
+            {
+              "amount": 17.9,
+              "currency": "EUR",
+              "note": "mit 6 Frischkäse-Gemüse-Röstibällchen (Veggie)"
+            },
+            {
+              "amount": 17.9,
+              "currency": "EUR",
+              "note": "mit 6 Bergkäse-Speck-Röstibällchen (kein Veggie!)"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Joghurtdressing und kleinen Pizzabrot",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Brez´nknödel mit Spiegelei",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "In Butterschmalz gebratene Brez´nknödel mit Pfifferlingsauce, zwei Spiegeleiern und kleinem gemischten Salat",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Woch´nblatt-Wochenendkarte · Dessert-Tipp",
+      "note": "gültig vom 04. - 06.09.2026",
+      "items": [
+        {
+          "name": "Kuchen aus der Bäckerei/Konditorei „Günthner“",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Erdbeerroulade/Käsesahne/Heidelbeerstreusel je"
+        }
+      ]
+    },
+    {
+      "title": "DIE WOCH´NBLATT-SAISONKARTE",
+      "items": [
+        {
+          "name": "Pfifferling-Cremesuppe unter der Sahnehaube",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Pfifferling-Toast",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Toast mit zwei Putenmedaillons, gebratenen frischen Pfifferlingen, Soße und Blattsalat in Kräutervinaigrette",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "„Schweinelendchen Pfifferling“",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinelendchen mit Pfifferlingsauce, dazu servieren wir hausgemachte Brez´nknödel",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "„Schweinefilet Pfifferling“",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinefilet in Pfifferlingrahmsoße, dazu servieren wir zwei kleine Semmelknödel",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Ochsengulasch mit Pfifferlingen",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gulasch vom „Charolais-Rind aus Langenpreising“, mit frischen Pfifferlingen, dazu gibt´s hausgemachte Brez´nknödel und Blattsalat in Kräutervinaigrette",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DIE WOCH´NBLATT-SAISONKARTE · Eierschwammerl-Veggie-Tipps",
+      "items": [
+        {
+          "name": "„Tagliatelle Pfifferlinge“",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Frische Pfifferlinge in Rahm, verfeinert mit frisch gehackter Petersilie",
+          "markersUnknown": [
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Frische Pfifferlinge in Rahm",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit zwei kleinen Semmelknödeln",
+          "markersUnknown": [
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Gebratene Pfifferlinge auf Ofenkartoffel",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Sauerrahm, an Salatgarnitur",
+          "markersUnknown": [
+            "a",
+            "e",
+            "l"
+          ]
+        },
+        {
+          "name": "Salat „Pfifferling-Zucchini“",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gebratene Pfifferling und gebackene Zucchini auf frischem Marktsalat, in Kräutervinaigrette, dazu kleines Pizzabrot",
+          "markersUnknown": [
+            "a",
+            "e",
+            "l"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suppen",
+      "items": [
+        {
+          "name": "Klare Rinderbrühe",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "e"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "e"
+          ]
+        },
+        {
+          "name": "Tomatensuppe mit Sahnehäubchen",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "e",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "und Croutons",
+          "markersUnknown": [
+            "5",
+            "e",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Pfannkuchensuppe je",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Bratnockerlsuppe je",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Leberspätzlesuppe je",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Hochzeitssuppe",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "6",
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "5",
+            "6",
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "XXL-Gulaschsuppe",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachte Gulaschsuppe mit Semmel",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hauptgerichte",
+      "items": [
+        {
+          "name": "Hausgemachte Ćevapčići",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit, Djuvec-Reis, Pommes frites und Ajvar"
+        },
+        {
+          "name": "Schweinelendchen „Rahmschwammerl“",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit hausgem. Spätzle und Preiselbeeren",
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Putensteak „Natur“",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Kräuterbutter, Röstinchen u. buntem Gemüse",
+          "markersUnknown": [
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Pfefferlendchen",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinelendchen in Pfeffer-Rahmsoße, mit Kroketten",
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Schnitzel „Wiener Art“",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Pommes frites",
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Cordon Bleu",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "vom Schwein mit Pommes frites",
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Grillteller „Art des Hauses“",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinelende, Schweinefilet, Ćevapčići, Pute, Speck, Würst´l, Pommes, Djuvec-Reis und Ajvar",
+          "markersUnknown": [
+            "5",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Schwabenteller",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Schweinefilet, Käsespätzle und Champignonsauce",
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Schweizerteller",
+          "prices": [
+            {
+              "amount": 20.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Schweinefilet, Hinterschinken, Champignons, Kroketten und buntem Gemüse - mit Käse überbacken,",
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Pfefferfilet",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Schweinefilet in Pfefferrahmsoße, dazu gibt´s Röstinchen und frisches Gemüse",
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Rheinischer Sauerbraten",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Semmelknödel u. hausgem. Blaukraut"
+        },
+        {
+          "name": "Rinderrahmbraten",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Spätzle, hausgem. Blaukraut u. Preiselbeeren"
+        },
+        {
+          "name": "Ochsenbackerl",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Semmelknödel und kl. gem. Salat"
+        }
+      ]
+    },
+    {
+      "title": "Burger",
+      "items": [
+        {
+          "name": "Woch´nblatt-Veggie-Burger",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Veganes Patty, Salat, Tomate, Salatgurke, Burgersauce und Sour Crème, serviert mit Country-Steak-Potatoes",
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Woch`nblatt-Hambuger",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit 180 g Rinderhacksteak, Salat, Tomate, Gurke, Zwiebeln und Burgersauce, serviert mit Country-Steak-Potatoes",
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Woch`nblatt-Cheesebuger",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit 180 g Rinderhacksteak, Käse, Salat, Tomate, Gurke, Zwiebeln und Burgersauce, serviert mit Country-Steak-Potatoes",
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Rüd’s BBQ-Burger",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit 180 g Rinderhacksteak, gebratenem Speck, Tomate, Zwiebeln und BBQ-Sauce, serviert mit Country-Steak-Potatoes",
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Double-Cheeseburger",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "2 x 100g Rinderhacksteaks, Gurke, Zwiebeln und Burgersauce, serviert mit Country-Steak-Potatoes",
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Chili-Cheeseburger",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit 180 g Rinderhacksteak, Käse, Jalapenos, Salat, Tomate, Gurke, Zwiebeln, Burgersauce und Chili-Honig-Senfsauce, serviert mit Country- Steak-Potatoes (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          },
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Woch`nblatt-Special-Giant-Burger",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit 180 g Rinderhacksteak, Käse, Bacon, Spiegelei, Salat, Tomate, Gurke, Zwiebeln und Burgersauce, serviert mit Country-Steak- Potatoes",
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Fisch-Burger",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Rotbarschfilet, Käse, Salat Burgersauce und Remoulade, serviert mit Country-Steak-Potatoes",
+          "markersUnknown": [
+            "a",
+            "i",
+            "l"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unsere Pizzen - besser als beim Italiener!",
+      "items": [
+        {
+          "name": "Pizzabrot",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "5",
+            "i"
+          ]
+        },
+        {
+          "name": "Pizzabrot “Special”",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Knoblauch und Parmesan",
+          "markersUnknown": [
+            "5",
+            "i"
+          ]
+        },
+        {
+          "name": "“Margarita”",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "i",
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Tomaten, Käse",
+          "markersUnknown": [
+            "5",
+            "i",
+            "d"
+          ]
+        },
+        {
+          "name": "“Funghi“",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Tomaten, Käse, frische Champignons (5,i,d)",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Cipolle“"
+        },
+        {
+          "name": "Tomaten, Käse, Zwiebeln (5,i,d)",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Prosciutto“"
+        },
+        {
+          "name": "Tomaten, Käse, Hinterschinken (3,4,5,i,d)",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pizza Mexicana",
+          "markersUnknown": [
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Hackfleisch, Kidneybohnen, Mais, Zwiebel, Jalapenos, Käse",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Salami”"
+        },
+        {
+          "name": "Tomaten, Käse, Salami (1,3,4,5,i,d)",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Milano“"
+        },
+        {
+          "name": "Tomaten, Käse, Hinterschinken, Salami (1,3,4,5,i,d)",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Regina“"
+        },
+        {
+          "name": "Tomaten, Käse, Hinterschinken, frische Champignons (3,4,5,i,d)",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Hawaii“"
+        },
+        {
+          "name": "Tomaten, Käse, Hinterschinken, Ananas (3,4,5,i,d)",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Calzone“"
+        },
+        {
+          "name": "Tomaten, Käse, Hinterschinken, Salami, Peperoni (1,3,4,5,i,d)",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Vulcano“ (scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Tomaten, Käse, Hinterschinken, Salami, Tabasco und Jalapenos",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "(1,3,4,5,i,d) „Mozzarella“"
+        },
+        {
+          "name": "Tomatensauce, Käse, frische Tomaten, Mozzarella (5,i,d)",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Quatro Stagione“"
+        },
+        {
+          "name": "Tomaten, Käse, Salami, Hinterschinken, frische Champignons, Oliven,",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Peperoni (3,4,5,8,i,d) „Vegetarisch“"
+        },
+        {
+          "name": "Tomaten, Käse, frische Champignons, Gemüse, Oliven, Peperoni, Zwiebeln",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "(5,8,i,d) „Contantina“"
+        },
+        {
+          "name": "Tomaten, Käse, Thunfisch, Zwiebeln, gek. Ei (5,a,b,i,d)",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Marinara“"
+        },
+        {
+          "name": "Tomaten, Käse, Knoblauch, Meeresfrüchte (5,b,c,i,d,n)",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "„Woch´nblatt“"
+        },
+        {
+          "name": "Tomaten, Käse, Hinterschinken, Salami, Peperoni, frische Champignons,",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Oliven, Zwiebeln und gebackenes Ei (1,3,4,5,8,a,d,i) „Speziale“"
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Gemischter Salat klein",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Gemischter Salat groß",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Tomatensalat",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Gurkensalat",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Chefsalat mit Hinterschinken, Käse",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Salat „Nizza“ mit Thunfisch und Oliven",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "8",
+            "a",
+            "b",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "8",
+            "a",
+            "b",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Griechischer Bauernsalat",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "8",
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Schafskäse, Peperoni, Oliven",
+          "markersUnknown": [
+            "8",
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Putenbrustsalat",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Salatvariation mit Scampi",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "c",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Salat „Jäger Art“",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Schweinefilet und gebr. Champignons",
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Salat „Woch´nblatt“ mit Schweinefilet, Putenfleisch, Scampi u. Speck vom",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Grill",
+          "markersUnknown": [
+            "a",
+            "c",
+            "d",
+            "l"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toasts und kleine Gerichte",
+      "items": [
+        {
+          "name": "Chili con Carne mit Semmel",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Schinken-Käse-Toast (mit Hinterschinken)",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "und Salat",
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Toast „Hawaii“ mit Salat",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "“Lady Toast”",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Putensteak, überb. Mozzarella, Tomaten u. Salat",
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Toast „Woch´nblatt“ mit Hinterschinken, Schweinelende, Champignons, mit",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Käse überbacken, serviert mit Salat",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Käsespätzle mit Röstzwiebeln und Salat",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i",
+            "l"
+          ]
+        },
+        {
+          "name": "Camembert gebacken",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Toast, Preiselbeeren, Butter und Salat",
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "Schafskäse gebacken",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Toast, Butter, Preiselbeeren und Salat",
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        },
+        {
+          "name": "1 Paar Wiener Würstchen mit Brez´n und Senf",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "2 Paar Wiener Würstchen mit Brez´n und Senf",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Kartoffeln mit Sauerrahm und Salatgarnitur",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "l"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "l"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toasts und kleine Gerichte · Kartoffel mit Sauerrahm und Salatgarnitur (a,d) wahlweise mit",
+      "items": [
+        {
+          "name": "…Hinterschinken-/Käsestreifen",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "d"
+          ]
+        },
+        {
+          "name": "…gebratenen Putenbruststreifen",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "…Scampi vom Grill",
+          "prices": [
+            {
+              "amount": 17.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "c"
+          ]
+        },
+        {
+          "name": "Gemüseteller mit Ofenkartoffel, (a,d,l) wahlweise…",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "…gefüllt mit gebratenen Champignons und Sauerrahm",
+          "markersUnknown": [
+            "d"
+          ]
+        },
+        {
+          "name": "…gefüllt mit Tomaten, überbacken mit Emmentaler",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "d"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nudelgerichte",
+      "items": [
+        {
+          "name": "Schinkennudeln mit Ei",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Spaghetti Bolognese mit Fleischsauce",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "5",
+            "a",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "4",
+            "5",
+            "a",
+            "i"
+          ]
+        },
+        {
+          "name": "Spaghetti aglio olio",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Knoblauch, Pfefferschoten und Olivenöl",
+          "markersUnknown": [
+            "a",
+            "i"
+          ]
+        },
+        {
+          "name": "Spaghetti Carbonara",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Hinterschinken, Ei und Sahnesauce",
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Spaghetti Marinara",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "c",
+            "i",
+            "n"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Meeresfrüchten und Knoblauch",
+          "markersUnknown": [
+            "a",
+            "b",
+            "c",
+            "i",
+            "n"
+          ]
+        },
+        {
+          "name": "Tagliatelle „Fit vor Fun“",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Olivenöl und Gemüse",
+          "markersUnknown": [
+            "a",
+            "i"
+          ]
+        },
+        {
+          "name": "Tagliatelle „Vegetaria“",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Gemüse, Champignons u. Sahnesauce",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Tagliatelle Emiliana",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Hinterschinken, Erbsen, Champignons",
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Tagliatelle Garnelen",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Olivenöl, Kräutern und Knoblauch",
+          "markersUnknown": [
+            "a",
+            "c",
+            "i"
+          ]
+        },
+        {
+          "name": "Rigatoni Napoli mit Tomatensauce",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Rigatoni Arrabiata (scharf)",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          },
+          "markersUnknown": [
+            "5",
+            "a",
+            "d",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "name": "Rigatoni al forno (überbacken)",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Lasagne al forno",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "3",
+            "4",
+            "5",
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Lasagne “Vegetaria”",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "d",
+            "i",
+            "e"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit frischem Gemüse u. Tomatensauce",
+          "markersUnknown": [
+            "5",
+            "d",
+            "i",
+            "e"
+          ]
+        },
+        {
+          "name": "Lasagne “Con Chili”",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "d",
+            "i",
+            "e"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kombi aus Chili con Carne und Lasagne",
+          "markersUnknown": [
+            "5",
+            "d",
+            "i",
+            "e"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Was Süßes geht immer! · Eis",
+      "items": [
+        {
+          "name": "Kugel Eis: Schoko, Erdbeere oder Vanille",
+          "prices": [
+            {
+              "amount": 1.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "d"
+          ]
+        },
+        {
+          "name": "Vanilleeis mit heißen Himbeeren und Sahne",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "d"
+          ]
+        },
+        {
+          "name": "Gemischtes Eis",
+          "prices": [
+            {
+              "amount": 5.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "d"
+          ]
+        },
+        {
+          "name": "Gemischtes Eis mit Sahne",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "d"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Was Süßes geht immer! · Desserts",
+      "items": [
+        {
+          "name": "Schokotötchen mit Vanilleeis und Sahne",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Topfen-Birnenstrudel mit heißen Himbeeren",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Topfen-Birnenstrudel mit Vanilleeis und Sahne",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Hausgemachte Palatschinken mit Vanilleeis",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "und leckerer Füllung",
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Eiskaffee Filterkaffee, Vanilleeis, Sahne",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d"
+          ]
+        },
+        {
+          "name": "Eisschokolade kalte Schokolade, Vanilleeis, Sahne",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Sanfter Engel Orangensaft, Vanilleeis",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d"
+          ]
+        },
+        {
+          "name": "Kaiserschmarrn mit Apfelmus",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Apfelstrudel mit Vanilleeis und Sahne",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        },
+        {
+          "name": "Apfelkücherl mit Vanilleeis und Sahne",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d",
+            "i"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "markersUnknown": [
+            "a",
+            "d",
+            "i"
+          ]
+        }
+      ]
+    }
+  ]
+}

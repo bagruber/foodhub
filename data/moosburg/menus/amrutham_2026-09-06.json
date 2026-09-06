@@ -1,0 +1,4223 @@
+{
+  "restaurantId": "amrutham",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/amrutham_speisekarte_2026-09-06.pdf",
+    "retrievedAt": "2026-09-06",
+    "note": "Karte des Nachfolgers von Tattva am selben Ort. Als Datei übergeben, eine Seite des Hauses ist nicht bekannt."
+  },
+  "legend": {
+    "allergens": {
+      "A": "gluten",
+      "B": "crustaceans",
+      "C": "eggs",
+      "D": "fish",
+      "E": "peanuts",
+      "F": "soybeans",
+      "G": "milk",
+      "H": "nuts",
+      "I": "celery",
+      "J": "mustard",
+      "K": "sesame",
+      "L": "sulphites",
+      "M": "lupin",
+      "N": "molluscs"
+    },
+    "additives": {
+      "1": "colorant",
+      "2": "caffeine",
+      "3": "antioxidant",
+      "4": "flavour_enhancer",
+      "5": "sulphured",
+      "6": "blackened",
+      "7": "waxed",
+      "8": "phosphate",
+      "9": "sweetener",
+      "10": "milk_protein",
+      "11": "quinine",
+      "12": "taurine",
+      "13": "preservative"
+    }
+  },
+  "sections": [
+    {
+      "title": "SUPPEN / SOUPS",
+      "items": [
+        {
+          "name": "Linsensuppe / Dal (Lentil) Soup",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "8"
+          ],
+          "allergens": [],
+          "additives": [
+            "phosphate"
+          ],
+          "diet": {},
+          "ref": "1",
+          "description": "Cremige Suppe aus passierten indischen Linsen"
+        },
+        {
+          "name": "Tomatensuppe / Tomato Soup",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "2",
+          "description": "Cremige Suppe aus passierten Tomaten"
+        },
+        {
+          "name": "Lahsun Suppe / Indische Knoblauchsuppe / Indian Garlic Soup",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "8"
+          ],
+          "allergens": [],
+          "additives": [
+            "phosphate"
+          ],
+          "diet": {},
+          "ref": "3"
+        },
+        {
+          "name": "Zitrone-Koriander Suppe / Lemon Coriander Soup",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "4"
+        },
+        {
+          "name": "Sweet Corn Suppe",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "8"
+          ],
+          "allergens": [],
+          "additives": [
+            "phosphate"
+          ],
+          "diet": {},
+          "ref": "5",
+          "description": "Ihre Wahl mit Hähnchen oder Gemüse"
+        },
+        {
+          "name": "Hühnersuppe scharf-sauer / Chicken Hot & Sour Soup",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "6",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "VORSPEISEN (VEGETARISCHES)",
+      "items": [
+        {
+          "name": "Papad",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "7",
+          "description": "2 Stück Linsenwaffeln mit 2 verschiedenen schmackhaften Saucen."
+        },
+        {
+          "name": "Masala Papad",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "8",
+          "description": "2 Stück Linsenwaffeln mit Zwiebeln, Tomaten und 2 verschiedenen schmackhaften Saucen."
+        },
+        {
+          "name": "Vegetable Pakora",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "9",
+          "description": "Frisches gemischtes Gemüse / Fresh mixed vegetables"
+        },
+        {
+          "name": "Onions Bhaji",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "10",
+          "description": "Zwiebelringe kräftig gewürzt / Chopped stuffed onions (Vegan möglich)"
+        },
+        {
+          "name": "Paneer-Pakora",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "11",
+          "description": "Frischer hausgemachter Käse / Fresh home made cheese"
+        },
+        {
+          "name": "Vegetable Samosa",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "12",
+          "description": "2 Pastetchen mit frischem Gemüse gefüllt / 2 pastries filled with vegetables (Vegan möglich)"
+        },
+        {
+          "name": "Crispy Corn",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "f"
+          ],
+          "allergens": [
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "13",
+          "description": "Frittierte, gewürzte Maiskörner"
+        },
+        {
+          "name": "Veg Manchuria",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "f"
+          ],
+          "allergens": [
+            "gluten",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "14",
+          "description": "Gebratene Gemüsebällchen in einer würzigen Manchurian-Sauce."
+        },
+        {
+          "name": "Gobi 65",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "f",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "sesame",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "15",
+          "description": "Blumenkohl, in Ei und Mehl gebacken an einer würzigen Soja-Soße mit Knoblauch, Ingwer, Senf und Joghurt."
+        },
+        {
+          "name": "Chilli Paneer",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "f",
+            "g"
+          ],
+          "allergens": [
+            "gluten",
+            "milk",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "16",
+          "description": "Indischer Käse, ausgebacken in einem Teig aus Weizen- und Maismehl in einer würzigen süß-salzigen Soße aus grüner Paprika, Ingwer, grünen Chilis und Soja Soße."
+        },
+        {
+          "name": "Egg Manchuria",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "f"
+          ],
+          "allergens": [
+            "eggs",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "17",
+          "description": "Eier in einer würzigen Manchurian Saucen."
+        },
+        {
+          "name": "Gemischter Vorspeisenteller",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "18",
+          "description": "Für 2 Personen / various appetizers for two (Vegan möglich)"
+        },
+        {
+          "name": "Chilli Paneer (Für 2 Personen)",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "f",
+            "g"
+          ],
+          "allergens": [
+            "gluten",
+            "milk",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "19",
+          "description": "Indischer Käse, ausgebacken in einem Teig aus Weizen- und Maismehl in einer würzigen süß-salzigen Soße aus grüner Paprika, Ingwer, grünen Chilis und Soja Soße."
+        }
+      ]
+    },
+    {
+      "title": "VORSPEISEN (FLEISCHGERICHTE)",
+      "items": [
+        {
+          "name": "Chicken Pakora (6 Stück)",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "20",
+          "description": "Frittiertes Hähnchenfleisch im Kichererbsenmehl"
+        },
+        {
+          "name": "Chicken Wings (8 Stück) mit Chilli-Soße",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "21"
+        },
+        {
+          "name": "Fish Pakora",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d"
+          ],
+          "allergens": [
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "22",
+          "description": "Frittierter Fisch im Kichererbsenteigmantel"
+        },
+        {
+          "name": "Chicken 65",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "e",
+            "f",
+            "l"
+          ],
+          "allergens": [
+            "gluten",
+            "peanuts",
+            "soybeans",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "23",
+          "description": "Hühnerfleisch, in Ei und Mehl gebacken an einer würzigen Soja-Soße mit Knoblauch, Ingwer, Senf und Joghurt"
+        },
+        {
+          "name": "Chilli Chicken",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "f",
+            "l"
+          ],
+          "allergens": [
+            "soybeans",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "24",
+          "description": "Hühnerfleisch, in Ei und Mehl gebacken an einer Soße aus Soja-Soße, Zwiebeln, Paprika und scharfer Chilli-Soße"
+        },
+        {
+          "name": "Chicken Lollipop",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "25",
+          "description": "Hühnerflügel mariniert in Jogurt-Sauce mit indischen Gewürzen und frittiert"
+        }
+      ]
+    },
+    {
+      "title": "SALATE",
+      "items": [
+        {
+          "name": "Garten Salat",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "26",
+          "description": "Frischer gemischter Salat"
+        },
+        {
+          "name": "Paneer Salat",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "27",
+          "description": "Gerösteter Hüttenkäse, Paprika und Salat in einem speziellen Dressing"
+        },
+        {
+          "name": "Salat Goa",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "28",
+          "description": "Gemischter Salat mit gebratenem Lachsfilet, Zucchini, Champignons und Ei"
+        },
+        {
+          "name": "Hähnchen Salat",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "29",
+          "description": "Gemischter Salat mit Hühnchen"
+        },
+        {
+          "name": "Salat Mexicana",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "30",
+          "description": "Gem. Salat mit Mais, roten Bohnen, Paprika, Oliven und Peperoni"
+        },
+        {
+          "name": "Salat Nizza",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "31",
+          "description": "Klassischer Salat mit Thunfisch, Ei, Oliven, frischem Gemüse und Dressing"
+        },
+        {
+          "name": "Fisch Salat",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "32",
+          "description": "Gemischter Salat mit gebratenem Lachsfilet, Zucchini, Champignons und Ei"
+        },
+        {
+          "name": "Amrutham Special Chicken Salat",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "33",
+          "description": "Hähnchen-Tikka, Oliven, Paprika und Salat in einem speziellen Dressing"
+        }
+      ]
+    },
+    {
+      "title": "BEILAGEN",
+      "items": [
+        {
+          "name": "Pommes",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "1"
+        },
+        {
+          "name": "Pommes Wedges",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "2"
+        },
+        {
+          "name": "Süßkartoffeln Pommes",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "3"
+        },
+        {
+          "name": "Chicken Nuggets (6 Stück) mit Soße",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "4"
+        },
+        {
+          "name": "Mini-Frühlingsrollen mit Soße (6 Stück) + Gemüse",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "k"
+          ],
+          "allergens": [
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "5"
+        },
+        {
+          "name": "Mozzarella Sticks",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "6"
+        }
+      ]
+    },
+    {
+      "title": "PIZZEN",
+      "items": [
+        {
+          "name": "Pizza Brot",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 4.0,
+              "currency": "EUR",
+              "portion": "Groß"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "1"
+        },
+        {
+          "name": "Pizza-Brot mit Knoblauch",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 4.0,
+              "currency": "EUR",
+              "portion": "Groß"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "2"
+        },
+        {
+          "name": "Pizza Margherita mit Tomaten und Käse",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 18.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 23.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "3"
+        },
+        {
+          "name": "Pizza Funghi mit Tomaten und Käse",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 19.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 23.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "4"
+        },
+        {
+          "name": "Pizza Vorderschinken",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 20.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 24.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "5"
+        },
+        {
+          "name": "Pizza Salami mit Champignons",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 21.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 25.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "6"
+        },
+        {
+          "name": "Pizza Vorderschinken mit Champignons, Peperoni, Oliven",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "7"
+        },
+        {
+          "name": "Pizza Salami mit Champignons, Peperoni, Oliven",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "8"
+        },
+        {
+          "name": "Pizza Thunfisch mit Zwiebeln",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "9"
+        },
+        {
+          "name": "Pizza Hawaii Vorderschinken, Ananas",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "10"
+        },
+        {
+          "name": "Pizza Vegetarisch mit Gemüse",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 21.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 25.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "g",
+            "c"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "11"
+        },
+        {
+          "name": "Pizza Mexikanisch mit Bohnen, Speck, Mais, Zwiebeln",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "g",
+            "c"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "12"
+        },
+        {
+          "name": "Pizza Americana mit Hühnerfleisch, Paprika, Peperoni, Zwiebeln",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "g",
+            "c"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "13"
+        },
+        {
+          "name": "Pizza Sucuk mit Tomaten, Käse, türkische Knoblauchwurst (Sucuk)",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "14"
+        },
+        {
+          "name": "Pizza Amrutham Veg mit Paneer-Tikka, Zwiebeln, Knoblauch",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 11.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 23.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 27.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "15"
+        },
+        {
+          "name": "Pizza Amrutham mit Chicken-Tikka, Zwiebeln, Knoblauch",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR",
+              "portion": "Normal"
+            },
+            {
+              "amount": 12.9,
+              "currency": "EUR",
+              "portion": "Groß"
+            },
+            {
+              "amount": 23.9,
+              "currency": "EUR",
+              "portion": "Family"
+            },
+            {
+              "amount": 27.9,
+              "currency": "EUR",
+              "portion": "Party"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "16"
+        }
+      ]
+    },
+    {
+      "title": "ITALIENISCHE NUDELGERICHTE · Tagliatelle",
+      "items": [
+        {
+          "name": "Tagliatelle Gorgonzola",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "17",
+          "description": "mit Spinat und Sahnesoße"
+        },
+        {
+          "name": "Tagliatelle a la Chef",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "18",
+          "description": "mit Vorderschinken, Erbsen, Champignons in Tomaten-Sahnesoße"
+        },
+        {
+          "name": "Tagliatelle a la Panna",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "19",
+          "description": "mit Vorderschinken und Sahnesoße"
+        },
+        {
+          "name": "Tagliatelle Carbonara",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "20",
+          "description": "mit Speck, Eier und Sahnesoße"
+        },
+        {
+          "name": "Tagliatelle mit Lachs und Sahnesoße",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "21"
+        },
+        {
+          "name": "Tagliatelle mit Riesengarnelen (5 Stück) und Sahnesoße",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "22"
+        }
+      ]
+    },
+    {
+      "title": "ITALIENISCHE NUDELGERICHTE · Spaghetti",
+      "items": [
+        {
+          "name": "Spaghetti Napoli",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "s"
+          ],
+          "allergens": [
+            "eggs"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "23",
+          "description": "mit Tomatensoße",
+          "markersUnknown": [
+            "s"
+          ]
+        },
+        {
+          "name": "Spaghetti Bologna",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "24",
+          "description": "mit Hackfleisch"
+        },
+        {
+          "name": "Spaghetti a la Panna",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "25",
+          "description": "mit Vorderschinken und Sahnesoße"
+        },
+        {
+          "name": "Spaghetti a la Chef",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "26",
+          "description": "mit Vorderschinken, Erbsen, Champignons und Tomaten-Sahnesoße"
+        },
+        {
+          "name": "Spaghetti Carbonara",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "27",
+          "description": "mit Speck, Ei und Sahne"
+        },
+        {
+          "name": "Spaghetti mit Meeresfrüchten",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "28",
+          "description": "in Tomatensoße"
+        }
+      ]
+    },
+    {
+      "title": "ITALIENISCHE NUDELGERICHTE · Tortellini / Rigatoni / Gnocchi",
+      "items": [
+        {
+          "name": "Tortellini a la Panna",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "29",
+          "description": "mit Schinken und Sahnesoße"
+        },
+        {
+          "name": "Tortellini a la Chef",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "30",
+          "description": "mit Schinken, Erbsen, Champignons in Tomaten-Sahnesoße"
+        },
+        {
+          "name": "Tortellini Gorgonzola",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "31",
+          "description": "mit Spinat und Sahnesoße"
+        },
+        {
+          "name": "Rigatoni a la Panna",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "32"
+        },
+        {
+          "name": "Rigatoni Mozzarella",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "33",
+          "description": "mit Basilikum und Tomatensoße"
+        },
+        {
+          "name": "Rigatoni Gemüse",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "34",
+          "description": "mit Gemüse in Tomatensoße"
+        },
+        {
+          "name": "Rigatoni Gorgonzola",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "35",
+          "description": "mit Spinat und Sahnesoße"
+        },
+        {
+          "name": "Rigatoni a la Chef",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "36"
+        },
+        {
+          "name": "Rigatoni Quattro Formaggi",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "37",
+          "description": "mit 4 verschiedenen Käsesorten"
+        },
+        {
+          "name": "Rigatoni Tonno",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "38",
+          "description": "mit Thunfisch und Zwiebeln in Tomatensoße"
+        },
+        {
+          "name": "Rigatoni Arrabiata",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "39",
+          "description": "mit Tomatensoße und Knoblauch (Scharf)",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Gnocchi Goa",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "40",
+          "description": "mit Hackfleisch, Paprika, Champignons, Erbsen, Tomatensoße"
+        },
+        {
+          "name": "Gnocchi Napoli",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "41",
+          "description": "mit Tomatensoße"
+        },
+        {
+          "name": "Gnocchi Gorgonzola",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "42",
+          "description": "mit Spinatsoße"
+        },
+        {
+          "name": "Gnocchi a la Chef",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "43",
+          "description": "mit Schinken, Erbsen, Champignons und Tomaten-Sahnesoße"
+        }
+      ]
+    },
+    {
+      "title": "ITALIENISCHE NUDELGERICHTE · Al Forno (Mit Käse überbacken)",
+      "items": [
+        {
+          "name": "Rigatoni Amrutham",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "44",
+          "description": "mit Hühnerfleisch, Paprika, Champignons in Currysoße überbacken"
+        },
+        {
+          "name": "Rigatoni Quattro Formaggi",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "g"
+          ],
+          "allergens": [
+            "eggs",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "45"
+        },
+        {
+          "name": "Rigatoni Broccoli",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "46",
+          "description": "mit Broccoli-Sahnesoße, Mozzarella und Käse überbacken"
+        },
+        {
+          "name": "Rigatoni a la Chef",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "47",
+          "description": "mit Chefsoße und Käse überbacken"
+        },
+        {
+          "name": "Tortellini a la Chef",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "48",
+          "description": "mit Chefsoße und Käse überbacken"
+        },
+        {
+          "name": "Spaghetti Napoli",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "49",
+          "description": "mit Tomatensoße und Mozzarella überbacken"
+        },
+        {
+          "name": "Spaghetti Gorgonzola",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "50",
+          "description": "mit Spinat und Käse überbacken"
+        }
+      ]
+    },
+    {
+      "title": "GYROS (PUTEN) & KARTOFFELGERICHTE",
+      "items": [
+        {
+          "name": "Gyros",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "51",
+          "description": "mit gemischtem Salat, Pommes, Zaziki"
+        },
+        {
+          "name": "Gyros Spezial",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "52",
+          "description": "mit Champignons, Zwiebeln in Tomatensoße, Käse überbacken mit Reis oder Nudeln"
+        },
+        {
+          "name": "Gyros-Pfanne",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "53",
+          "description": "mit Paprika, Champignons, Zwiebeln in Tomatensoße, pikant, mit Pommes und Salat",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Gyros mit Kartoffeln",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "54",
+          "description": "Tomatensoße, Knoblauch, pikant mit Käse überbacken",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Kartoffeln",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "55",
+          "description": "mit Butter, Sahne, Schnittlauch und Käse überbacken"
+        },
+        {
+          "name": "Kartoffeln Bolognese",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "56",
+          "description": "mit Hackfleischsahnesoße und Schnittlauch"
+        },
+        {
+          "name": "Vegetarische Kartoffeln",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "gluten",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "57",
+          "description": "mit Spinat, Broccoli, Zucchini, Tomaten-Sahnesoße, Schnittlauch"
+        },
+        {
+          "name": "Kartoffeln mit Hühnerfleisch",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "58",
+          "description": "Erbsen, Champignons mit Chefsoße"
+        }
+      ]
+    },
+    {
+      "title": "SCHNITZEL & BURGER",
+      "items": [
+        {
+          "name": "Schnitzel",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "59",
+          "description": "mit Käsespätzle und Salat"
+        },
+        {
+          "name": "Champignon-Rahmsoße Schnitzel",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "60",
+          "description": "mit Pommes und Salat"
+        },
+        {
+          "name": "Paprika-Rahmsoße Schnitzel",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "61",
+          "description": "mit Nudeln und Salat"
+        },
+        {
+          "name": "Cordon Bleu vom Hähnchen",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "62",
+          "description": "mit Pommes Frites und Salat"
+        },
+        {
+          "name": "Big Crispy Chicken Burger",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "63",
+          "description": "200g paniertes Hühnerfleisch mit Tomaten, Zwiebeln, Gurken, Salat und Pommes"
+        },
+        {
+          "name": "Veggie Burger",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "64",
+          "description": "180g Veggie Patty mit Tomaten, Zwiebeln, Gurken, Salat und Pommes"
+        }
+      ]
+    },
+    {
+      "title": "THAILÄNDISCHE SPEZIALITÄTEN & HUMMERKRABBEN",
+      "items": [
+        {
+          "name": "Gebratene Nudeln mit Gemüse",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "65"
+        },
+        {
+          "name": "Gebratene Nudeln mit Hühnerfleisch und Gemüse",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "66"
+        },
+        {
+          "name": "Gebratene Nudeln mit Krabben und Gemüse",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "67"
+        },
+        {
+          "name": "Gebratene Nudeln mit Ente und Gemüse",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "68"
+        },
+        {
+          "name": "Gebratener Reis mit Gemüse",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "69"
+        },
+        {
+          "name": "Gebratener Reis mit Hühnerfleisch und Gemüse",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "c"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "70"
+        },
+        {
+          "name": "Kanton-Hummerkrabben",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "71",
+          "description": "Knoblauch gebraten mit Gemüse und Reis"
+        },
+        {
+          "name": "Hummerkrabben pikant",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "72",
+          "description": "mit Kokosmilch, Bambus, Gemüse und chinesischem rotem Curry",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Hummerkrabben Süß-Sauer",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "73",
+          "description": "mit Ananas, Gemüse in süß-sauer Soße"
+        }
+      ]
+    },
+    {
+      "title": "ENTE- & HUHN-SPEZIALITÄTEN (ASIATISCH)",
+      "items": [
+        {
+          "name": "Kanton-Ente",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "74",
+          "description": "Knusprige Ente mit gebratenem Gemüse"
+        },
+        {
+          "name": "Peking-Ente",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "75",
+          "description": "mit chinesischem rotem Curry, Kokosmilch und Bambus"
+        },
+        {
+          "name": "Ente Süß-Sauer",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "76",
+          "description": "mit Ananas und Gemüse in süß-sauer Soße"
+        },
+        {
+          "name": "Paniertes Hühnerfleisch",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "77",
+          "description": "mit chinesischem rotem Curry, Kokosmilch und Bambus"
+        },
+        {
+          "name": "Huhn Süß-Sauer",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "78",
+          "description": "mit Ananas und Gemüse in süß-sauer Soße"
+        },
+        {
+          "name": "Kanton-Hühnerfleisch",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "79",
+          "description": "mit Gemüse und Knoblauch"
+        },
+        {
+          "name": "Paniertes Hühnerfleisch mit Erdnussoße",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "80"
+        }
+      ]
+    },
+    {
+      "title": "INDISCHE SPEZIALITÄTEN — TANDOORI",
+      "items": [
+        {
+          "name": "Paneer Tikka",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "81",
+          "description": "Gegrillter indischer Käse in Joghurt und ausgewählten Gewürzen mariniert und im Lehmofen gebacken"
+        },
+        {
+          "name": "Halbes Tandoori-Chicken",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "82",
+          "description": "Hühnerkeulen mariniert, gewürzt nach nordindischen Rezepten und im Lehmofen gegrillt."
+        },
+        {
+          "name": "Chicken Tikka",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "83",
+          "description": "Zartes Hühnerfleisch in Joghurt und ausgewählten Gewürzen mariniert und im Lehmofen gebacken"
+        },
+        {
+          "name": "Tangri Kebab",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "84",
+          "description": "Hähnchen-Sticks werden in indischen Aromen und Gewürzen gut mariniert und dann im Lehmofen gekocht"
+        },
+        {
+          "name": "Murg Malai Tikka",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "85",
+          "description": "Hühnerbrustfilet mariniert in Käse und Cashewnüssen in Buttercremesoße im Lehmofen gegrillt, mit feinen Gewürzen"
+        },
+        {
+          "name": "Lamb Tikka",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "86",
+          "description": "Zart marinierte Lammfleischstücke, Lehmofen gegrillt"
+        },
+        {
+          "name": "Lamb Seekh Kebab",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "87",
+          "description": "Kebab von gehacktem Lammfleisch in Joghurt und Gewürzen eingelegt aus dem Lehmofen."
+        },
+        {
+          "name": "Fish Tikka",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "d",
+            "l"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "88",
+          "description": "Zart mariniertes Seelachsfilet in Joghurt und ausgewählten Gewürzen mariniert und im Lehmofen gebacken"
+        },
+        {
+          "name": "Tandoori Prawns",
+          "prices": [
+            {
+              "amount": 21.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "g",
+            "l"
+          ],
+          "allergens": [
+            "crustaceans",
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "89",
+          "description": "Garnelen in Joghurt und Gewürzen eingelegt aus dem Lehmofen"
+        },
+        {
+          "name": "Mix Grill Platter",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "b",
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "crustaceans",
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "90",
+          "description": "Grillplatte mit Hähnchen Tikka, Hähnchen Malai Tikka, Lamm & Hähnchen vom Spieß und Hähnchenfleisch aus dem Lehmofen."
+        }
+      ]
+    },
+    {
+      "title": "VEGETARISCHE INDISCHE GERICHTE",
+      "items": [
+        {
+          "name": "Dal Tadka",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "91",
+          "description": "(Vegan möglich) Gelbe Linsen mit in Butter gerösteten Zwiebeln und Knoblauch"
+        },
+        {
+          "name": "Dal Makhni",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "92",
+          "description": "Reichhaltiges cremiges Gericht aus ganzen schwarzen Linsen mit einer besonderen Mischung von indischen Gewürzen und Zwiebeln, mit Butter verfeinert"
+        },
+        {
+          "name": "Chana Masala",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "93",
+          "description": "(Vegan möglich) Kichererbsen mit Tomaten, Zwiebeln und Cashewnüssen in Masalasoße"
+        },
+        {
+          "name": "Bhindi Masala",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "94",
+          "description": "(Vegan möglich) Okra mit Tomaten, Zwiebeln und Cashewnüssen in Masalasoße."
+        },
+        {
+          "name": "Kadai Paneer",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "95",
+          "description": "Hausgemachter Käse mit Paprika, Zwiebeln, Ingwer, Tomaten und rotem Chilli"
+        },
+        {
+          "name": "Palak Paneer",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "96",
+          "description": "Kräftiger Rahmspinat mit hausgemachtem Käse"
+        },
+        {
+          "name": "Paneer Tikka Masala",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "97",
+          "description": "Gegrillter hausgemachter indischer Käse in würziger Tomatensoße"
+        },
+        {
+          "name": "Paneer Butter Masala",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "98",
+          "description": "Hausgemachter indischer Käse in einer reichhaltigen cremigen Tomatensoße mit milden Gewürzen verfeinert"
+        },
+        {
+          "name": "Vegetable Kofta Curry",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "99",
+          "description": "Gemüseknödel in einer würzigen Zwiebel-Tomatensoße gekocht"
+        },
+        {
+          "name": "Vegetable Chettinad",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "100",
+          "description": "(Vegan möglich) Verschiedenes Gemüse, Ingwer, Knoblauch, Kokos in Gewürzen nach südindischer Chettinad-Art (Scharf).",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Vegetable Korma",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "101",
+          "description": "(Vegan möglich) Verschiedenes Gemüse, Tomaten in Cashew-Sauce nach Moghlai-Art."
+        },
+        {
+          "name": "Mixed Veg",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "102",
+          "description": "(Vegan möglich) Verschiedene Gemüse mit Paprika, Zwiebeln, Ingwer, Tomaten und rotem Chilli."
+        },
+        {
+          "name": "Malai Kofta",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "103",
+          "description": "Käsebällchen mit Nüssen in Curry-Cashewnuss-Sahnesoße"
+        },
+        {
+          "name": "Amrutham Vegetarisch",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "104",
+          "description": "Gemüse-Curry mit hausgemachten Gewürzen nach südindischer Art (Telugu)"
+        }
+      ]
+    },
+    {
+      "title": "HÄHNCHENGERICHTE",
+      "items": [
+        {
+          "name": "Chicken Tikka Masala",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "105",
+          "description": "Zartes Hühnerfleisch in Joghurt und ausgewählten Gewürzen mariniert und im Tandoor-Ofen gebacken, in Masalasoße"
+        },
+        {
+          "name": "Chicken Korma",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "106",
+          "description": "Zartes Hühnerfleisch mit einer cremigen Soße aus Cashewnüssen und Kokos"
+        },
+        {
+          "name": "Butter Chicken",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "107",
+          "description": "Hühnerbruststückchen aus dem Tandoor-Ofen, gekocht in einer cremigen Soße aus Tomaten, Cashews und milden Gewürzen"
+        },
+        {
+          "name": "Kadai Chicken",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "108",
+          "description": "Hühnerfleisch in einer scharfen Soße mit frisch gemahlenen Gewürzen (Sternanis, Kardamom, Pfeffer und Chili-Flocken)"
+        },
+        {
+          "name": "Mango Chicken",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "109",
+          "description": "Hühnerfleisch in einer milden cremigen Mango-Curry-Soße"
+        },
+        {
+          "name": "Chicken Jalfrezi",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "110",
+          "description": "Zartes Hühnerfleisch in einer scharfen Tomatensoße mit Paprika und Zwiebeln"
+        },
+        {
+          "name": "Chicken Vindaloo",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "111",
+          "description": "Zartes Hühnerfleisch in einer sehr scharfen Vindaloo-Soße mit Kartoffeln"
+        },
+        {
+          "name": "Chicken Kolhapuri",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "e",
+            "k",
+            "g"
+          ],
+          "allergens": [
+            "milk",
+            "peanuts",
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "112",
+          "description": "Hähnchen mit Erdnussbutter und Senfkörnern in pikanter Soße"
+        },
+        {
+          "name": "Chicken Chettinad",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "113",
+          "description": "Hähnchen mit Ingwer, Knoblauch, Kokos und Gewürzen nach südindischer Chettinad-Art."
+        },
+        {
+          "name": "Chicken Amrutham (Special)",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "114",
+          "description": "Hähnchen mit hausgemachten Gewürzen nach südindischer Art (Telugu)"
+        }
+      ]
+    },
+    {
+      "title": "ENTENGERICHTE",
+      "items": [
+        {
+          "name": "Duck Khumb Wala",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "115",
+          "description": "Knusprige Ente mit frischen Champignons, Knoblauch und Ingwer in Mandel-Soße"
+        },
+        {
+          "name": "Duck Red Curry",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "116",
+          "description": "(leicht scharf) Knusprige Ente in Kokosnuss-Soße",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Duck Jalfrezi",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "117",
+          "description": "(scharf) Knusprige Ente mit Paprika, Zwiebeln, Tomaten, grünem Chili",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Duck Amrutham",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "118",
+          "description": "Knusprige Ente in Mughlaisoße (mit Früchten)"
+        },
+        {
+          "name": "Duck Mango",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "119",
+          "description": "Knusprige Ente mit frischer Mango in Mango-Sahne-Cashewnuss-Soße, fein gewürzt"
+        }
+      ]
+    },
+    {
+      "title": "LAMMGERICHTE",
+      "items": [
+        {
+          "name": "Mutton Korma",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "120",
+          "description": "Zartes Lammfleisch mit einer cremigen Soße aus Cashewnüssen und Kokos"
+        },
+        {
+          "name": "Kadai Mutton",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "121",
+          "description": "Lammfleisch in einer scharfen Soße mit frisch gemahlenen Gewürzen (Sternanis, Kardamom, Pfeffer und Chili Flocken)"
+        },
+        {
+          "name": "Mutton Jalfrezi",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "122",
+          "description": "Zartes Lammfleisch in einer scharfen Tomatensoße mit Paprika und Zwiebeln"
+        },
+        {
+          "name": "Mutton Mango",
+          "prices": [
+            {
+              "amount": 18.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "123",
+          "description": "Lammfleisch mit feiner Mangocremesoße"
+        },
+        {
+          "name": "Mutton Vindaloo",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "124",
+          "description": "Zartes Lammfleisch in sehr scharfer Vindaloo-Soße"
+        },
+        {
+          "name": "Mutton Chettinad",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "125",
+          "description": "Lammfleisch mit Ingwer, Knoblauch, Kokos und Gewürzen nach südindischer Chettinad Art"
+        },
+        {
+          "name": "Mutton Amrutham (Special)",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "126",
+          "description": "Lammfleisch mit hausgemachten Gewürzen nach südindischer Art (Telugu)"
+        }
+      ]
+    },
+    {
+      "title": "FISCHGERICHTE",
+      "items": [
+        {
+          "name": "Fisch Curry",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "d"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "127",
+          "description": "Seelachsfilet mit Tomaten, Zwiebeln, Paprika und Koriander in würziger Currysoße"
+        },
+        {
+          "name": "Fisch Masala",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "d"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "128",
+          "description": "Seelachsfilet, Tomaten, Zwiebeln and Masalasauce"
+        },
+        {
+          "name": "Goan Fish Curry",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "h",
+            "j",
+            "l"
+          ],
+          "allergens": [
+            "fish",
+            "mustard",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "129",
+          "description": "Fischcurry mit einer Soße aus Zwiebeln und Kokosmilch"
+        },
+        {
+          "name": "Prawns Masala",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "130",
+          "description": "Garnelen in feiner Currysoße aus Tomaten, Zwiebeln, Cashews und Gewürzen"
+        },
+        {
+          "name": "Kadai Prawns",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "131",
+          "description": "Garnelen mit Paprika, Zwiebel, Ingwer, Knoblauch, Koriander, Tomaten und rotem Chili"
+        }
+      ]
+    },
+    {
+      "title": "BIRYANI & REISSPEZIALITÄTEN",
+      "items": [
+        {
+          "name": "Veg Dum Biryani",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h"
+          ],
+          "allergens": [
+            "milk",
+            "nuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "132",
+          "description": "Basmati Reis mit mariniertem Gemüse und reicher Gewürzmischung"
+        },
+        {
+          "name": "Hyderabad Chicken Dum Biryani",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "133",
+          "description": "Hühnerfleisch mariniert in Joghurt und aromatischen Gewürzen, mit Reis geschichtet"
+        },
+        {
+          "name": "Special Chicken Biryani",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "h",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "nuts",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "134",
+          "description": "Hähnchenbrustfilet mariniert in Joghurt und aromatischen Gewürzen, mit Reis geschichtet"
+        },
+        {
+          "name": "Fry-Piece Biryani",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "135",
+          "description": "Hähnchenschenkel mariniert in Joghurt und aromatischen Gewürzen, mit Reis geschichtet"
+        },
+        {
+          "name": "Veg Fried Rice",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "136",
+          "description": "(Vegan) Gebratener Reis mit Karotten, Bohnen und Blumenkohl, dazu Chilisauce"
+        },
+        {
+          "name": "Egg Fried Rice",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "f"
+          ],
+          "allergens": [
+            "milk",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "137",
+          "description": "Gebratener Reis mit Ei"
+        },
+        {
+          "name": "Chicken Fried Rice",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "f",
+            "l"
+          ],
+          "allergens": [
+            "milk",
+            "soybeans",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "138",
+          "description": "Gebratener Reis mit Hühnerfleisch, Ei, Karotten, Bohnen und Blumenkohl"
+        },
+        {
+          "name": "Schezwan Chicken Fried Rice",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "f",
+            "l"
+          ],
+          "allergens": [
+            "eggs",
+            "soybeans",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "139",
+          "description": "Würzig gebratener Reis mit Huhn, Ei und Gemüse nach Schezwan-Art"
+        },
+        {
+          "name": "Amrutham Special Fried Rice",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "d",
+            "f"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "140",
+          "description": "Gebratener Reis mit Garnelen, Ei dazu Chilisauce"
+        },
+        {
+          "name": "Curd Rice",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "milk",
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "141",
+          "description": "Joghurtreis mit Senfkörnern, Linsen und Curryblättern"
+        }
+      ]
+    },
+    {
+      "title": "KINDERGERICHTE & INDISCHES BROT",
+      "items": [
+        {
+          "name": "Amrutham Paneer mit Reis oder Naan",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "142",
+          "description": "Zarter hausgemachter Käse gewürzgerollt in Kartoffeln"
+        },
+        {
+          "name": "Amrutham Chicken mit Reis oder Naan",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "l"
+          ],
+          "allergens": [
+            "eggs",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "143",
+          "description": "Zartes Hühnerfleisch gewürzgerollt in Kartoffeln"
+        },
+        {
+          "name": "Chapati",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "144",
+          "description": "(Vegan) Dünnes Fladenbrot in der Pfanne gebacken"
+        },
+        {
+          "name": "Tandoori Roti",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "145",
+          "description": "(Vegan) Dünnes indisches Fladenbrot aus dem Lehmofen"
+        },
+        {
+          "name": "Plain Naan",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "146",
+          "description": "Fladenbrot aus Hefeteig aus dem Lehmofen"
+        },
+        {
+          "name": "Butter Naan",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "147",
+          "description": "Fladenbrot aus Hefeteig aus dem Lehmofen mit Butter bestrichen"
+        },
+        {
+          "name": "Garlic Butter Naan",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "148",
+          "description": "Fladenbrot aus Hefeteig aus dem Lehmofen mit Knoblauchbutter bestrichen"
+        },
+        {
+          "name": "Aloo Parantha",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "149",
+          "description": "Fladenbrot gefüllt mit Kartoffeln"
+        },
+        {
+          "name": "Paneer Kulcha",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "150",
+          "description": "Fladenbrot mit indischem Käse gefüllt"
+        },
+        {
+          "name": "Kheema Naan",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "8"
+          ],
+          "allergens": [],
+          "additives": [
+            "phosphate"
+          ],
+          "diet": {},
+          "ref": "151",
+          "description": "Naan gefüllt mit Lammhackfleisch"
+        }
+      ]
+    },
+    {
+      "title": "SÜSSSPEISEN / DESSERTS",
+      "items": [
+        {
+          "name": "Gulab Jamoon",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "152",
+          "description": "Bällchen aus Milchpulver in Zuckersirup"
+        },
+        {
+          "name": "Gulab Jamoon mit Eis",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "153",
+          "description": "Bällchen aus Milchpulver in Zuckersirup mit 1 Kugel Vanilleeis"
+        },
+        {
+          "name": "Mango Creme",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "154",
+          "description": "Frisches Mango-Püree und Sahne"
+        },
+        {
+          "name": "Tiramisu",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "155"
+        },
+        {
+          "name": "Rockslide Brownie",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "156",
+          "description": "mit 1 Kugel Vanilleeis und Sahne"
+        },
+        {
+          "name": "New York Cheesecake",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "157",
+          "description": "mit 1 Kugel Vanilleeis und Sahne"
+        }
+      ]
+    },
+    {
+      "title": "ALKOHOLFREIE GETRÄNKE",
+      "items": [
+        {
+          "name": "Schweppes Bitter Lemon / Ginger Ale / Tonic Water",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Coca-Cola / Light / Zero / Fanta / Sprite / Mezzo Mix",
+          "prices": [
+            {
+              "amount": 4.75,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Säfte & Schorlen (Mango, Orangen, Johannisbeer, Ananas, Guava, Litschi, Maracuja)",
+          "prices": [
+            {
+              "amount": 5.25,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Franziskaner Alkoholfrei Weißbier",
+          "prices": [
+            {
+              "amount": 4.42,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Sweet Lassi / Salt Lassi",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            },
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Mango Lassi",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            },
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Lemon Soda (Sweet / Salt / Mixed)",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            },
+            {
+              "amount": 7.9,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "ALKOHOLISCHE GETRÄNKE",
+      "items": [
+        {
+          "name": "Becks / Heineken",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR",
+              "portion": "0,33l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Augustiner Hell / Löwenbräu Dunkel / Radler",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Franziskaner Weißbier (Hefe / Dunkel / Leicht) / Paulaner Dunkel",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Kingfisher Indisches Bier",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,33l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Weine: Merlot / Zweigelt / Grüner Veltliner /",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            },
+            {
+              "amount": 16.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Sula Indischer Rotwein / Weißwein",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Old Monk (Indian Rum)",
+          "prices": [
+            {
+              "amount": 29.9,
+              "currency": "EUR",
+              "portion": "0,7l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "ANGABEN ZU ZUSATZSTOFFEN UND ALLERGENEN A = glutenhaltiges Getreide, B = Krebstiere- und -erzeugnisse, C = Eier und daraus gewonnene Erzeugnisse, D = Fisch- und Fischerzeugnisse, E = Erdnüsse und -erzeugnisse, F = Soja und -erzeugnisse, G = Milch und Milcherzeugnisse (inkl. Laktose), H = Schalenfrüchte, I = Sellerie, J = Senf, K = Sesamsamen, L = Schwefeldioxid und Sulfite, M = Lupinen, N = Weichtiere. 1 = mit Farbstoff, 2 = koffeinhaltig, 3 = mit Antioxidationsmittel, 4 = mit Geschmacksverstärker, 5 = geschwefelt, 6 = geschwärzt, 7 = gewachst, 8 = mit Phosphat, 9 = mit Süßungsmittel, 10 = Milcheiweiß, 11 = chininhaltig, 12 = taurinhaltig, 13 = mit Konservierungsstoffen."
+        }
+      ]
+    }
+  ]
+}

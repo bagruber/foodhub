@@ -2,7 +2,7 @@
  * Die Zeichen der Oberfläche, als Pfade statt als Schriftart.
  *
  * Ein Icon-Paket wäre bequemer, brächte aber ein weiteres Abhängigkeitspaar
- * und für sechzehn Zeichen ein Vielfaches an Gewicht. Alle sind auf demselben
+ * und für neunzehn Zeichen ein Vielfaches an Gewicht. Alle sind auf demselben
  * Raster von 16 gezeichnet, mit derselben Strichstärke, und nehmen ihre Farbe
  * vom Text darüber.
  *
@@ -147,6 +147,78 @@ export function Tag({ className }: Props) {
     <Svg className={className}>
       <path d="M2.5 2.5h5l6 6-5 5-6-6Z" {...STROKE} />
       <circle cx="5.3" cy="5.3" r="1" fill="currentColor" />
+    </Svg>
+  );
+}
+
+export function CardChip({ className }: Props) {
+  return (
+    <Svg className={className}>
+      <rect x="1.5" y="3.5" width="13" height="9" rx="1.5" {...STROKE} />
+      <rect x="3.5" y="6" width="3.5" height="2.8" rx="0.6" {...STROKE} />
+      <path d="M10 10.5h3" {...STROKE} />
+    </Svg>
+  );
+}
+
+export function Contactless({ className }: Props) {
+  return (
+    <Svg className={className}>
+      <path d="M5 3.2a7 7 0 0 1 0 9.6M8 4.8a4.6 4.6 0 0 1 0 6.4M11 6.4a2.2 2.2 0 0 1 0 3.2" {...STROKE} />
+    </Svg>
+  );
+}
+
+export function Cash({ className }: Props) {
+  return (
+    <Svg className={className}>
+      <rect x="1.5" y="4" width="13" height="8" rx="1.2" {...STROKE} />
+      <circle cx="8" cy="8" r="1.9" {...STROKE} />
+      <path d="M4 8h.01M12 8h.01" {...STROKE} />
+    </Svg>
+  );
+}
+
+export function Phone({ className }: Props) {
+  return (
+    <Svg className={className}>
+      <rect x="4.5" y="1.5" width="7" height="13" rx="1.5" {...STROKE} />
+      <path d="M7 12.5h2" {...STROKE} />
+    </Svg>
+  );
+}
+
+export function QrCode({ className }: Props) {
+  return (
+    <Svg className={className}>
+      <rect x="2" y="2" width="4.5" height="4.5" rx="0.8" {...STROKE} />
+      <rect x="9.5" y="2" width="4.5" height="4.5" rx="0.8" {...STROKE} />
+      <rect x="2" y="9.5" width="4.5" height="4.5" rx="0.8" {...STROKE} />
+      <path d="M9.5 9.5h2v2h-2Zm4.5 4.5h-2v-2" {...STROKE} />
+    </Svg>
+  );
+}
+
+/**
+ * Der Stern der Bewertungen, wahlweise teilweise gefüllt.
+ *
+ * `fill` ist der Anteil von 0 bis 1. Gefüllt wird über ein `clipPath` und
+ * nicht über zwei übereinandergelegte Sterne: bei 4,3 von 5 ist der fünfte
+ * Stern zu 30 Prozent gefüllt, und das soll man sehen.
+ */
+export function Star({ className = "h-3.5 w-3.5", fill = 1, id }: Props & { fill?: number; id: string }) {
+  const d = "M8 1.6l1.9 4 4.3.6-3.1 3 .8 4.3L8 11.4 4.1 13.5l.8-4.3-3.1-3 4.3-.6Z";
+  return (
+    <Svg className={className}>
+      <path d={d} fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
+      {fill > 0 && (
+        <>
+          <clipPath id={id}>
+            <rect x="0" y="0" width={16 * Math.min(fill, 1)} height="16" />
+          </clipPath>
+          <path d={d} fill="currentColor" clipPath={`url(#${id})`} />
+        </>
+      )}
     </Svg>
   );
 }

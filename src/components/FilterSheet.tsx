@@ -1,4 +1,4 @@
-import { Bag, Book, Card, Chilli, Clock, House, Leaf, Tag, Truck, Umbrella, Wheat } from "@/components/Icons";
+import { Bag, Book, Card, Chilli, Clock, Cutlery, House, Leaf, Tag, Truck, Umbrella, Wheat } from "@/components/Icons";
 import { EMPTY, countActive, now, toggle, type Filters } from "@/lib/filters";
 import { WEEKDAY_LABEL, clock } from "@/lib/hours";
 
@@ -26,6 +26,8 @@ type Props = {
   kinds: Record<string, string>;
   cuisines: Record<string, string>;
   allergens: Record<string, string>;
+  /** Gänge, aus `data/vocab/gaenge.json`. Fehlen, solange keine Gerichte geladen sind. */
+  courses?: Record<string, { label: string; rang: number }>;
   /** Beschriftung der Zahlungsarten, aus `data/vocab/zahlung.json`. */
   payment: Record<string, string>;
   /** Wie viele Häuser je Art und Küche. Bestimmt Reihenfolge und Zahl. */
@@ -118,6 +120,22 @@ export function FilterSheet(p: Props) {
             onPick={(c) => set({ cuisines: toggle(f.cuisines, c) })}
           />
         </Section>
+
+        {p.courses && (
+          <Section
+            title="Gang"
+            icon={<Cutlery />}
+            note="Wirkt nur auf die Gerichtsicht. Zugeordnet über die Überschrift der gedruckten Karte."
+          >
+            <ChipList
+              entries={Object.entries(p.courses)
+                .sort((a, b) => a[1].rang - b[1].rang)
+                .map(([slug, c]) => [slug, c.label] as [string, string])}
+              selected={f.courses}
+              onPick={(c) => set({ courses: toggle(f.courses, c) })}
+            />
+          </Section>
+        )}
 
         <Section title="Ernährung" icon={<Leaf className="h-4 w-4" />}>
           <div className="flex flex-wrap gap-1.5">

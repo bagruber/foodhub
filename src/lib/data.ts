@@ -55,7 +55,17 @@ export type Restaurant = {
 
 export type Dish = MenuItem & {
   restaurantId: string;
+  /** Überschrift im Wortlaut der Karte, aus der das Gericht stammt. */
   section: string;
+  /** Gang, aus dem Abschnitt zugeordnet. Slug aus `data/vocab/gaenge.json`. */
+  course: string;
+};
+
+/** Ein Gang, wie ihn `data/vocab/gaenge.json` beschreibt. */
+export type Course = {
+  label: string;
+  bereich?: "essen" | "trinken";
+  rang: number;
 };
 
 export type { Allergen, Basis, DietFlag };
@@ -72,6 +82,7 @@ export type CityData = {
 export type DishData = {
   allergens: Record<string, string>;
   additives: Record<string, string>;
+  courses: Record<string, Course>;
   dishes: Dish[];
 };
 

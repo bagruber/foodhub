@@ -1,0 +1,2139 @@
+{
+  "restaurantId": "necmis-pizza-and-more",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/necmis-pizza-and-more_speisekarte_2026-09-06.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.necmis-pizza.de/",
+    "createdAt": "2026-09-06",
+    "note": "Ausdruck des Bestellshops. Allergene liegen dort hinter „Produktinfos“ und stehen nicht im Ausdruck. Bei einigen Pizzen führt der Shop zwei Preise unter derselben Größe."
+  },
+  "legend": {
+    "allergens": {},
+    "additives": {}
+  },
+  "sections": [
+    {
+      "title": "Drehspieß",
+      "items": [
+        {
+          "name": "Drehspieß Sandwich",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachtes Brot mit Eissalat, Tomate, Zwiebel und Knoblauchsoße"
+        },
+        {
+          "name": "Drehspieß Dürüm",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachter Dürüm mit Eissalat, Tomate, Zwiebel und Knoblauchsoße"
+        },
+        {
+          "name": "Drehspieß Box",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Pommes, Reis, Bulgur oder Salat"
+        },
+        {
+          "name": "Drehspieß Teller",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Pommes, Reis oder Bulgur mit Beilagen Salat Auf Wunsch auch nur mit Salat"
+        },
+        {
+          "name": "Fleisch Box",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Box nur mit Drehspießfleisch"
+        }
+      ]
+    },
+    {
+      "title": "Hausgemachte Falafel",
+      "items": [
+        {
+          "name": "Falafel Sandwich",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachtes Brot und Falafel mit Eissalat, Tomate und Zwiebel"
+        },
+        {
+          "name": "Falafel Dürüm",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachter Dürüm und Falafel mit Eissalat, Tomate und Zwiebel"
+        },
+        {
+          "name": "Falafel Box",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachte Falafel mit Pommes, Reis, Salat oder Bulgur"
+        },
+        {
+          "name": "Falafel Teller",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachte Falafel mit Pommes, Reis oder Bulgur mit Beilagen Salat Auf Wunsch auch nur mit Salat"
+        }
+      ]
+    },
+    {
+      "title": "Grill Gerichte",
+      "items": [
+        {
+          "name": "Köfte Teller mit Bulgur",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Bulgur & Beilagen Salat"
+        },
+        {
+          "name": "Rinderwurst gegrillt mit Pommes",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Currysoße"
+        },
+        {
+          "name": "2x Rinderwurst gegrillt mit Pommes",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Currysoße"
+        },
+        {
+          "name": "Adana Teller mit Bulgur & Beilagen Salat",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kalbshackfleischspieß mit Bulgur & Beilagen Salat"
+        },
+        {
+          "name": "Adana Teller mit Pommes & Beilagen Salat",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kalbshackfleischspieß mit Pommes & Beilagen Salat"
+        },
+        {
+          "name": "Hähnchenbrustspieß mit Bulgur & Beilagen Salat",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hähnchenspieß mit Bulgur & Beilagen Salat"
+        },
+        {
+          "name": "Lammspieß Teller mit Bulgur & Beilagen Salat",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Lammspieß mit Bulgur & Beilagen Salat"
+        },
+        {
+          "name": "Hähnchenflügel mit Bulgur & Beilagen Salat",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hähnchenflügel mit Bulgur & Beilagen Salat"
+        }
+      ]
+    },
+    {
+      "title": "Wrap / Sandwich",
+      "items": [
+        {
+          "name": "Köfte Sandwich",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachtes Brot mit Coban Salat"
+        },
+        {
+          "name": "Köfte Dürüm",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachter Dürüm mit Coban Salat"
+        },
+        {
+          "name": "Crispy Chicken Wrap",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachter Dürüm mit Eissalat, Tomate, Zwiebel, Hirtenkäse, Jalapenos"
+        },
+        {
+          "name": "Hähnchenspieß Dürüm",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachter Dürüm mit Hähchenspieß & Cobansalat"
+        },
+        {
+          "name": "Lammspieß Dürüm",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachter Dürüm mit Cobansalat"
+        },
+        {
+          "name": "Adana Dürüm",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachter Dürüm mit Coban Salat"
+        },
+        {
+          "name": "Sucuk Sandwich",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Paprika-Tomatensauce mit Zwiebel, Tomate, Rucola und gebratenem Gemüse"
+        },
+        {
+          "name": "Haloumi Sandwich",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachter Brot mit Eissalat, Tomate und Zwiebel"
+        },
+        {
+          "name": "Haloumi Dürüm",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachter Dürüm mit Eissalat, Tomate und Zwiebel"
+        }
+      ]
+    },
+    {
+      "title": "Burger",
+      "items": [
+        {
+          "name": "Classic Burger",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat, Tomaten, Zwiebel und Sauergurke"
+        },
+        {
+          "name": "Cheese Burger",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat, Tomate, Käse, Sauergurke und Zwiebel"
+        },
+        {
+          "name": "Falafel Burger & Pommes",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat, Tomate, Zwiebel und Saure Gurke"
+        },
+        {
+          "name": "Garnelen Burger & Pommes",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Fleisch, Garnelen, Salat, Tomate, Zwiebel und Saure Gurke"
+        },
+        {
+          "name": "Hawai Burger & Pommes",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat, Tomaten, Käse, Sauergurke, Zwiebel und Ananas"
+        },
+        {
+          "name": "Nugget Burger & Pommes",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat"
+        },
+        {
+          "name": "Spicy Burger",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat, Tomaten, Käse, Sauergurke, Zwiebel und Jalapenos"
+        },
+        {
+          "name": "Crispy Burger",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Hähnchenfleisch, Salat, Tomaten, Zwiebel und Sauergurke"
+        },
+        {
+          "name": "Schniken Burger",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat, Tomaten, Zwiebel Schinken"
+        }
+      ]
+    },
+    {
+      "title": "Burger Menü",
+      "items": [
+        {
+          "name": "Classic Burger & Pommes",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rindfleisch gegrillt im Holzkohlegrill mit Salat, Tomaten, Sauergurke und Zwiebel"
+        },
+        {
+          "name": "Cheese Burger & Pommes",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rindfleisch gegrillt im Holzkohlegrill mit Salat, Tomate, Käse, Sauergurke und Zwiebel"
+        },
+        {
+          "name": "Spicy Burger & Pommes",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rindfleisch gegrillt im Holzkohlegrill mit Salat, Tomaten, Käse, Sauergurke, Zwiebel und Jalapenos"
+        },
+        {
+          "name": "Crispy Burger & Pommes",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Hähnchenfleisch, Salat, Tomaten, Zwiebel und Käse"
+        },
+        {
+          "name": "Schniken Burger & Pommes",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Salat, Tomaten, Zwiebel Schinken und Käse"
+        }
+      ]
+    },
+    {
+      "title": "Lahmacun",
+      "items": [
+        {
+          "name": "Lahmacun",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Türkische Hackfleischpizza"
+        },
+        {
+          "name": "Lahmacun mit Salat",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Türkische Hackfleischpizza mit Salat"
+        },
+        {
+          "name": "Lahmacun mit Salat und Drehspieß",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Türkische Hackfleischpizza mit Salat und Drehspieß"
+        }
+      ]
+    },
+    {
+      "title": "Pizza",
+      "items": [
+        {
+          "name": "Pizzabrot mit Knoblauch",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 8.0,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Tomatensauce und Knoblauch"
+        },
+        {
+          "name": "Pizzabrot mit Fetakäse",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Margherita",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 10.0,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 19.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Quattro Formaggi",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 23.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Mozzarella",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 11.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Funghi",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 12.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 21.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Tonno",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 23.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Salami",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.0,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 23.5,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Sucuk",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.0,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 23.5,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Hawaii",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.5,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 23.5,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Frutti di Mare",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 14.5,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 26.0,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Gamberi",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 15.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 26.5,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Capricciosa",
+          "prices": [
+            {
+              "amount": 10.3,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 14.2,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 24.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Tomatensauce, Rindersalami, Artischocken, frischen Champingons und Mozzarella"
+        },
+        {
+          "name": "Pizza Rucola",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.5,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 20.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Vegetarisch",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 24.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Tomatensauce, Champingons, Aubergine, Zucchini, Paprika und Peperoni"
+        },
+        {
+          "name": "Pizza Rimini",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 25.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Piccante",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 24.9,
+              "currency": "EUR",
+              "portion": "Ø50cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Neco´s Spezial",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 15.5,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 26.0,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Schinken",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.0,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 23.5,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Duo",
+          "prices": [
+            {
+              "amount": 9.8,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 24.5,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 13.0,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizza Regina",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR",
+              "portion": "Ø29cm"
+            },
+            {
+              "amount": 13.9,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            },
+            {
+              "amount": 23.5,
+              "currency": "EUR",
+              "portion": "Ø33cm"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Pide",
+      "items": [
+        {
+          "name": "Pide Käse",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Käse"
+        },
+        {
+          "name": "Pide Champignons",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Champignons"
+        },
+        {
+          "name": "Gemischte Pide",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Sucuk, Salami, Paprika & Champignons"
+        },
+        {
+          "name": "Pide Sucuk",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Sucuk"
+        },
+        {
+          "name": "Pide Gemüse",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pide mit Gemüse und Käse"
+        },
+        {
+          "name": "Pide Hackfleisch",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Hackfleisch"
+        },
+        {
+          "name": "Pide Drehspieß",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Hähnchen Drehspieß"
+        }
+      ]
+    },
+    {
+      "title": "Pasta",
+      "items": [
+        {
+          "name": "Pasta Gorgonzola",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Sahnesauce & Gorgonzola"
+        },
+        {
+          "name": "Pasta Napoli",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Tomatensauce"
+        },
+        {
+          "name": "Pasta Schinken",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Sahnesauce, Putenschinken & Champignons"
+        },
+        {
+          "name": "Pasta Arrabbiata",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Tomatensauce mit Knoblauch & Chili"
+        },
+        {
+          "name": "Pasta Neco´s Spezial",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Tomatensauce mit Drehspießfleisch und Champignons"
+        },
+        {
+          "name": "Pasta Bolognese",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Rinderhackfleischsauce mit Petersilie und Knoblauch"
+        },
+        {
+          "name": "Pasta Frutti di Mare",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Tomatensauce mit Meeresfrüchten und Knoblauch"
+        },
+        {
+          "name": "Pasta Garnelen",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "in Sahnesauce mit Kirschtomaten und Garnelen"
+        },
+        {
+          "name": "Lasagne Vegetarisch",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Saisonalem Gemüse"
+        },
+        {
+          "name": "Lasagne",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Tomatensauce Hackfleisch mit Käse überbacken"
+        },
+        {
+          "name": "Manti",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Türkische Teigtaschen mit Hackfleisch Knoblauch Jogurt und Chili Öl"
+        },
+        {
+          "name": "Manti vegetarisch",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "türkische Teigtaschen mit Spinatfüllung Knoblauch Jogurt und Chili Öl"
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Bauernsalat",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gemischter Salat mit Tomate, Zwiebel, Oliven und Feta"
+        },
+        {
+          "name": "Coban Salat",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Tomate, Gurke, Zwiebel & Petersilie"
+        },
+        {
+          "name": "Halloumi Salat",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gemischter Salat mit Tomate, Gurke, Zwiebel & Halloumi"
+        },
+        {
+          "name": "Mozzarella Salat",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Tomate, Mozzarella, Rucola & Balsamico"
+        },
+        {
+          "name": "Tonno Salat",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gemischter Salat mit Tomate, Zwiebel, Oliven, Peperoni &Thunfisch"
+        },
+        {
+          "name": "Chicken Salat",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gemischter Salat mit Tomaten, Gurke, Zwiebeln, Oliven, Peperoni & Hähnchenbrustfilet"
+        }
+      ]
+    },
+    {
+      "title": "Snacks",
+      "items": [
+        {
+          "name": "Portion Konblauchsauce",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Große Portion Konblauchsauce"
+        },
+        {
+          "name": "Weintraubenblätte 5 Stück",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weintraubenblätter gefühlt mit Reis 5 Stück"
+        },
+        {
+          "name": "Falafel 6 Stück",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Frische Falafel 6 Stück"
+        },
+        {
+          "name": "Portion Gebratenes Gemüse",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Portion Kartoffelsalat",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Portion Kartoffelsalat"
+        },
+        {
+          "name": "Portion Tursu",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Eingelegte Gemüse"
+        },
+        {
+          "name": "Kleine Pommes",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "kleine Portion Pommes"
+        },
+        {
+          "name": "Große Pommes",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "große Portion Pommes"
+        },
+        {
+          "name": "Frühlingsrollen",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "8 Stück"
+        },
+        {
+          "name": "Käsesticks",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Käsesticks 6 Stück"
+        },
+        {
+          "name": "Nuggets",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Nuggets 6 Stück"
+        },
+        {
+          "name": "Chicken Wings",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "6 Stück"
+        },
+        {
+          "name": "Bulgur Reis Reis",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Bulgur Reis Portion"
+        },
+        {
+          "name": "Türkischer Bulgur",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "türkischer Bulgur Portion"
+        },
+        {
+          "name": "Türkischer Reis",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "türkischer Reis Portion"
+        },
+        {
+          "name": "Hausgemachtes Brot",
+          "prices": [
+            {
+              "amount": 1.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachtes"
+        },
+        {
+          "name": "Hausgemachtes Dürüm",
+          "prices": [
+            {
+              "amount": 1.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachtes Dürüm"
+        },
+        {
+          "name": "Dips",
+          "prices": [
+            {
+              "amount": 0.5,
+              "currency": "EUR",
+              "portion": "Ketchup"
+            },
+            {
+              "amount": 0.5,
+              "currency": "EUR",
+              "portion": "Mayonnaise"
+            },
+            {
+              "amount": 0.5,
+              "currency": "EUR",
+              "portion": "Curry"
+            },
+            {
+              "amount": 0.5,
+              "currency": "EUR",
+              "portion": "Süß-Sauer-Soße"
+            },
+            {
+              "amount": 0.5,
+              "currency": "EUR",
+              "portion": "Knoblauchsoße"
+            },
+            {
+              "amount": 0.5,
+              "currency": "EUR",
+              "portion": "scharfe Cocktailsoße"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Ketchup, Mayonnaise, Curry, Süß-Sauer-Soße, Knoblauchsauce oder scharfe Cocktail-Sauce"
+        }
+      ]
+    },
+    {
+      "title": "Nachspeise",
+      "items": [
+        {
+          "name": "Baklava 3 Stück",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "3 Stück Blätterteig Gebäck mit Pistazien auf türkische Art mit Zuckersirup"
+        },
+        {
+          "name": "Sütlac",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "türkischer Milchreis"
+        },
+        {
+          "name": "Sütlac überbacken",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "türkischer Milchreis überbacken"
+        }
+      ]
+    },
+    {
+      "title": "Getränke",
+      "items": [
+        {
+          "name": "Eis Tee Green Tea 0,5l",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Eis Tee Kirsche 0,5l",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Eis Tee Pfirsich 0,5l",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Eis Tee Zitrone 0,5l",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Mezzo Mix",
+          "prices": [
+            {
+              "amount": 2.75,
+              "currency": "EUR",
+              "portion": "0,33l"
+            },
+            {
+              "amount": 3.75,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Coca-Cola Light 1,0l",
+          "prices": [
+            {
+              "amount": 3.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "12,25 € pro Lieter"
+        },
+        {
+          "name": "Coca-Cola",
+          "prices": [
+            {
+              "amount": 3.75,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "12,25 € pro Lieter"
+        },
+        {
+          "name": "Paulaner Orange 0,33l",
+          "prices": [
+            {
+              "amount": 2.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Fritz Cola Flasche 0,33l",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Paulaner Flasche 0,33l",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Paulaner Spezi 0,33l",
+          "prices": [
+            {
+              "amount": 2.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Paulaner Zitrone 0,33l",
+          "prices": [
+            {
+              "amount": 2.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Uludag 0,33l",
+          "prices": [
+            {
+              "amount": 2.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Uludag Orange 0,33l",
+          "prices": [
+            {
+              "amount": 2.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Uludag Zero 0,33l",
+          "prices": [
+            {
+              "amount": 2.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Fanta",
+          "prices": [
+            {
+              "amount": 3.75,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Sprite",
+          "prices": [
+            {
+              "amount": 3.75,
+              "currency": "EUR",
+              "portion": "1,0l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Red Bull 0,25l",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Wasser Still 1,0l",
+          "prices": [
+            {
+              "amount": 3.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Wasser Spritzig 1,0l",
+          "prices": [
+            {
+              "amount": 3.75,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Ayran 0,25l",
+          "prices": [
+            {
+              "amount": 1.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    }
+  ]
+}
