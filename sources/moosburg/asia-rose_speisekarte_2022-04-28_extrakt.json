@@ -1,0 +1,732 @@
+{
+  "restaurant": {
+    "name": "ASIA ROSE SUSHI & VIETNAMESISCHE KÜCHE[cite: 2]",
+    "adresse": "Thalbacher Straße 4, 85368 Moosburg an der Isar[cite: 2]",
+    "telefon": "08761 72 66 585[cite: 2]",
+    "oeffnungszeiten": [
+      "Montag, Mittwoch - Samstag: 11.00 Uhr - 14.30 Uhr, 17.00 Uhr - 22.00 Uhr[cite: 2]",
+      "Sonn- und Feiertage: 16.00 Uhr - 22.00 Uhr[cite: 2]",
+      "Dienstag Ruhetag[cite: 2]"
+    ],
+    "angebote_und_hinweise": [
+      "MITTAGSANGEBOT: MONTAG bis SAMSTAG von 11:00 Uhr bis 14:30 Uhr[cite: 2]",
+      "Für alle Gerichte von 30 bis 78 gibt es 6x Mini Frühlingsrolle oder eine Miso-Suppe Gratis im Restaurant zum Essen[cite: 2]",
+      "Für unsere Gerichte verwenden wir KEIN GLUTAMAT.[cite: 2]",
+      "Bei Allergien oder Unverträglichkeiten wenden Sie sich bitte an unsere Mitarbeiter.[cite: 2]",
+      "Zu jedem Sushi Gericht servieren wir eingelegten Ingwer 2,11, Wasabi 1,16, Sojasoße.[cite: 2]"
+    ]
+  },
+  "speisekarte": [
+    {
+      "kategorie": "SUPPEN[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "01[cite: 2]",
+          "name": "MISO-SUPPE[cite: 2]",
+          "allergene_zusatzstoffe": "4[cite: 2]",
+          "beschreibung": "mit Tofu, Seetang und Frühlingszwiebeln[cite: 2]",
+          "preis": "3,90 €[cite: 2]"
+        },
+        {
+          "nummer": "02[cite: 2]",
+          "name": "CHICKEN-SUPPE[cite: 2]",
+          "allergene_zusatzstoffe": "4,g[cite: 2]",
+          "eigenschaften": ["leicht scharf[cite: 2]"],
+          "beschreibung": "mit Hühnerfleisch, Gemüse, Pilzen und Kokosmilch[cite: 2]",
+          "preis": "4,50 €[cite: 2]"
+        },
+        {
+          "nummer": "03[cite: 2]",
+          "name": "LACHS-SUPPE[cite: 2]",
+          "allergene_zusatzstoffe": "4,d[cite: 2]",
+          "beschreibung": "mit Lachsfilet, Seetang und Frühlingzwiebeln[cite: 2]",
+          "preis": "4,50 €[cite: 2]"
+        },
+        {
+          "nummer": "04[cite: 2]",
+          "name": "SCAMPI-SUPPE[cite: 2]",
+          "allergene_zusatzstoffe": "4,b,g[cite: 2]",
+          "eigenschaften": ["leicht scharf[cite: 2]"],
+          "beschreibung": "mit Garnelen, Gemüse, Pilzen und Kokosmilch[cite: 2]",
+          "preis": "4,90 €[cite: 2]"
+        }
+      ]
+    },
+    {
+      "kategorie": "VORSPEISEN[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "11[cite: 2]",
+          "name": "KRUPUK[cite: 2]",
+          "allergene_zusatzstoffe": "a[cite: 2]",
+          "beschreibung": "Krabbenchips[cite: 2]",
+          "preis": "2,90 €[cite: 2]"
+        },
+        {
+          "nummer": "12[cite: 2]",
+          "name": "MINI-FRÜHLINGSROLLE[cite: 2]",
+          "beschreibung": "(8 Stück) mit Gemüsefüllung[cite: 2]",
+          "preis": "3,50 €[cite: 2]"
+        },
+        {
+          "nummer": "13[cite: 2]",
+          "name": "VIETNAMESISCHE FRÜHLINGSROLLE[cite: 2]",
+          "beschreibung": "(2 Stück) mit Hühnerfleisch, Gemüse, Glasnudeln, Morcheln[cite: 2]",
+          "preis": "4,50 €[cite: 2]"
+        },
+        {
+          "nummer": "14[cite: 2]",
+          "name": "WANTAN CHIEN[cite: 2]",
+          "allergene_zusatzstoffe": "4,a[cite: 2]",
+          "beschreibung": "[5 Stück] Aus Reisblättern mit Hühnerhackfleisch gebacken[cite: 2]",
+          "preis": "4,90 €[cite: 2]"
+        },
+        {
+          "nummer": "15[cite: 2]",
+          "name": "GA XIEN SATE[cite: 2]",
+          "allergene_zusatzstoffe": "4,e,k[cite: 2]",
+          "beschreibung": "[2 Stück] Gebratene Hähnchenspieße mit Satesoße[cite: 2]",
+          "preis": "5,50 €[cite: 2]"
+        },
+        {
+          "nummer": "16[cite: 2]",
+          "name": "EBI TEMPURA[cite: 2]",
+          "allergene_zusatzstoffe": "4,a,b[cite: 2]",
+          "beschreibung": "(3 Stück) Garnelen gebacken in Rice Flake[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "17[cite: 2]",
+          "name": "SCALLOPS XIEN[cite: 2]",
+          "allergene_zusatzstoffe": "4,k,n[cite: 2]",
+          "beschreibung": "(4 Stück) Gebratene Jakobsmuschelspieße mit Yakitorisoße[cite: 2]",
+          "preis": "7,50 €[cite: 2]"
+        },
+        {
+          "nummer": "18[cite: 2]",
+          "name": "EDAMAME[cite: 2]",
+          "beschreibung": "Japanische grüne Bohnen[cite: 2]",
+          "preis": "5,50 €[cite: 2]"
+        }
+      ]
+    },
+    {
+      "kategorie": "SALATE[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "21[cite: 2]",
+          "name": "WAKAME-SALAT[cite: 2]",
+          "allergene_zusatzstoffe": "10,f,k[cite: 2]",
+          "beschreibung": "mit grüner Algensalat[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "22[cite: 2]",
+          "name": "OKTOPUS-SALAT[cite: 2]",
+          "allergene_zusatzstoffe": "f,k,n[cite: 2]",
+          "beschreibung": "Oktopus, Gurken, Avocado mit Kimchisoße[cite: 2]",
+          "preis": "7,50 €[cite: 2]"
+        },
+        {
+          "nummer": "23[cite: 2]",
+          "name": "AVOCADO-SALAT[cite: 2]",
+          "allergene_zusatzstoffe": "c,f,k[cite: 2]",
+          "beschreibung": "mit Eisbergsalat, Avocado, Gurken, Eier, Paprika, Tomaten und Rote Zwiebeln[cite: 2]",
+          "preis": "7,50 €[cite: 2]"
+        }
+      ]
+    },
+    {
+      "kategorie": "SPEZIALITÄTEN HAUPTSPEISEN[cite: 2]",
+      "hinweis": "Alle Gerichte (30 bis 36 und 39 bis 45) mit Reis als Beilagen[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "30[cite: 2]",
+          "name": "CHICKEN NUSS[cite: 2]",
+          "allergene_zusatzstoffe": "4,8,8,g[cite: 2]",
+          "beschreibung": "Zartes Hühnerfleisch mit Saisongemüse in Erdnuss-Soße[cite: 2]",
+          "preis": "11,90 €[cite: 2]"
+        },
+        {
+          "nummer": "31[cite: 2]",
+          "name": "CHICKEN CURRY[cite: 2]",
+          "allergene_zusatzstoffe": "4,8.9[cite: 2]",
+          "eigenschaften": ["scharf[cite: 2]"],
+          "beschreibung": "Zartes Hühnerfleisch in roter Curry-Kokosmilch-Soße mit verschiedenem Gemüse[cite: 2]",
+          "preis": "11,90 €[cite: 2]"
+        },
+        {
+          "nummer": "32[cite: 2]",
+          "name": "CHICKEN MANGO[cite: 2]",
+          "allergene_zusatzstoffe": "4,11,a[cite: 2]",
+          "beschreibung": "Zartes Hühnerfleisch mit Saisongemüse, exotischen Früchten in Mango-Soße[cite: 2]",
+          "preis": "11,90 €[cite: 2]"
+        },
+        {
+          "nummer": "33[cite: 2]",
+          "name": "CHICKEN QUEEN[cite: 2]",
+          "allergene_zusatzstoffe": "4,8[cite: 2]",
+          "beschreibung": "Knusprige Hähnchenkeule ohne Knochen auf gebraten Gemüse[cite: 2]",
+          "preis": "12,90 €[cite: 2]",
+          "optionen": [
+            "a. Austern-Soße f,n[cite: 2]",
+            "b. Roter-Curry-Soße d,g[cite: 2]",
+            "c. Erdnuss-Soße 8,9[cite: 2]"
+          ]
+        },
+        {
+          "nummer": "34[cite: 2]",
+          "name": "HOT & SPICY[cite: 2]",
+          "eigenschaften": ["sehr scharf[cite: 2]"],
+          "beschreibung": "Gebratene Fleischsorten mit Zucchini, Paprika, Sojasprossen, Zitronengras, Zwiebel und Chili[cite: 2]",
+          "preis": "12,90 €[cite: 2]",
+          "optionen": [
+            "a. Hühner[cite: 2]",
+            "b. Rinder[cite: 2]"
+          ]
+        },
+        {
+          "nummer": "36[cite: 2]",
+          "name": "DIZZY BEEF[cite: 2]",
+          "allergene_zusatzstoffe": "4,a, ,n[cite: 2]",
+          "eigenschaften": ["leicht scharf[cite: 2]"],
+          "beschreibung": "Gebratenes Rindfleisch mit verschiedenem Gemüse, Ingwer, Knoblauch, Chili in einer Austern-Soße[cite: 2]",
+          "preis": "12,90 €[cite: 2]"
+        },
+        {
+          "nummer": "37[cite: 2]",
+          "name": "GOODMORNING VIETNAM (PHO BO)[cite: 2]",
+          "allergene_zusatzstoffe": "4,d[cite: 2]",
+          "beschreibung": "Reisbandnudelsuppe mit Rindfleisch und Kräutern noch vietnamesischem Rezept[cite: 2]",
+          "preis": "12,90 €[cite: 2]"
+        },
+        {
+          "nummer": "38[cite: 2]",
+          "name": "SWIMMING DUCK[cite: 2]",
+          "allergene_zusatzstoffe": "4,d[cite: 2]",
+          "eigenschaften": ["leicht scharf[cite: 2]"],
+          "beschreibung": "Ramennudelsuppe mit Entenfleisch, Pak-Choi, Chinakohl, Karotten, Chili, Sojasprossen, asiatischen Kräutern[cite: 2]",
+          "preis": "14,90 €[cite: 2]"
+        },
+        {
+          "nummer": "39[cite: 2]",
+          "name": "DUCK KING[cite: 2]",
+          "allergene_zusatzstoffe": "4,8[cite: 2]",
+          "beschreibung": "Knusprige Entenbrust mit verschiedenem Gemüse[cite: 2]",
+          "preis": "14,90 €[cite: 2]",
+          "optionen": [
+            "a. Austern-Soße f,n[cite: 2]",
+            "b. Roter-Curry-Soße d,g[cite: 2]",
+            "c. Erdnuss-Soße 8,9[cite: 2]"
+          ]
+        },
+        {
+          "nummer": "40[cite: 2]",
+          "name": "DUCK MANGO[cite: 2]",
+          "allergene_zusatzstoffe": "4,11,a[cite: 2]",
+          "beschreibung": "Knusprige Entenbrust mit Saisongemüse, exotischen Früchten in Mango-Soße[cite: 2]",
+          "preis": "14,90 €[cite: 2]"
+        },
+        {
+          "nummer": "41[cite: 2]",
+          "name": "SCAMPI CURRY[cite: 2]",
+          "allergene_zusatzstoffe": "4,a,b,g[cite: 2]",
+          "eigenschaften": ["scharf[cite: 2]"],
+          "beschreibung": "Gebratene Garnelen mit verschiedenem Gemüse in roter Curry-Kokosmilch-Soße[cite: 2]",
+          "preis": "16,90 €[cite: 2]"
+        },
+        {
+          "nummer": "42[cite: 2]",
+          "name": "SAMURAI[cite: 2]",
+          "allergene_zusatzstoffe": "4,a,f,g[cite: 2]",
+          "eigenschaften": ["scharf[cite: 2]"],
+          "beschreibung": "Frittiertes Lachssteak mit buntem Gemüse in roter Curry-Kokosmilch-Soße[cite: 2]",
+          "preis": "16,90 €[cite: 2]"
+        },
+        {
+          "nummer": "43[cite: 2]",
+          "name": "MISS CITY[cite: 2]",
+          "allergene_zusatzstoffe": "4,8,9[cite: 2]",
+          "eigenschaften": ["vegetarisch[cite: 2]", "scharf[cite: 2]"],
+          "beschreibung": "Saisongemüse im Wok mit Tofu in roter Curry-Kokosmilch-Soße[cite: 2]",
+          "preis": "11,90 €[cite: 2]"
+        },
+        {
+          "nummer": "44[cite: 2]",
+          "name": "MISS DREAM[cite: 2]",
+          "allergene_zusatzstoffe": "4,a,k,n[cite: 2]",
+          "eigenschaften": ["leicht scharf[cite: 2]"],
+          "beschreibung": "Pak-Choi, Brokkoli, Zucchini, Chinakohl, Sojasprossen, Karotten, Lauchzwiebeln, Ingwer im Wok geschwenkt mit Sesamöl-Austern-Soße[cite: 2]",
+          "preis": "11,90 €[cite: 2]"
+        },
+        {
+          "nummer": "45[cite: 2]",
+          "name": "MISS TEEN[cite: 2]",
+          "allergene_zusatzstoffe": "4,11,a[cite: 2]",
+          "eigenschaften": ["vegan[cite: 2]"],
+          "beschreibung": "Saisongemüse im Wok mit Mango-Soße[cite: 2]",
+          "preis": "11,90 €[cite: 2]"
+        },
+        {
+          "nummer": "47[cite: 2]",
+          "name": "GEBRATENER REIS[cite: 2]",
+          "allergene_zusatzstoffe": "4,a,c,d,f[cite: 2]",
+          "beschreibung": "mit Ei, verschiedenem Gemüse und Fleischsorten[cite: 2]",
+          "optionen": [
+            "a. Hühner 11,90 €[cite: 2]",
+            "b. Rinder 11,90 €[cite: 2]",
+            "c. Vegetarisch 10,90 €[cite: 2]",
+            "d. Enten 14,90 €[cite: 2]"
+          ]
+        },
+        {
+          "nummer": "48[cite: 2]",
+          "name": "GEBRATENE NUDELN[cite: 2]",
+          "allergene_zusatzstoffe": "4,a,c,d,f[cite: 2]",
+          "beschreibung": "mit Ei, verschiedenem Gemüse und Fleischsorten[cite: 2]",
+          "optionen": [
+            "a. Hühner 11,90 €[cite: 2]",
+            "b. Rinder 11,90 €[cite: 2]",
+            "c. Vegetarisch 10,90 €[cite: 2]",
+            "d. Enten 14,90 €[cite: 2]"
+          ]
+        }
+      ]
+    },
+    {
+      "kategorie": "BEILAGE[cite: 2]",
+      "gerichte": [
+        { "nummer": "53[cite: 2]", "name": "Jasmin Reis[cite: 2]", "preis": "1,50 €[cite: 2]" },
+        { "nummer": "54[cite: 2]", "name": "Gebratener Reis[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "55[cite: 2]", "name": "Gebratene Nudeln[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "56[cite: 2]", "name": "Garnelen[cite: 2]", "preis": "3,50 €[cite: 2]" },
+        { "nummer": "57[cite: 2]", "name": "Hähnchen[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "58[cite: 2]", "name": "Soße[cite: 2]", "preis": "3,00 €[cite: 2]" }
+      ]
+    },
+    {
+      "kategorie": "SUSHI MENÜ[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "60[cite: 2]",
+          "name": "NAHA[cite: 2]",
+          "allergene_zusatzstoffe": "1,11[cite: 2]",
+          "beschreibung": "6x Avocado Maki, 6x Gurken Maki, 6x Rettich Maki, 6x Kürbis Maki[cite: 2]",
+          "preis": "12,50 €[cite: 2]"
+        },
+        {
+          "nummer": "61[cite: 2]",
+          "name": "MITO[cite: 2]",
+          "allergene_zusatzstoffe": "1,11,g,k[cite: 2]",
+          "beschreibung": "4x Avocado Philadelphia Maki, 4x Kapa Philadelphia Maki, 3x Avocado Maki, 3x Gurken Maki, 2x Nigiri Avocado, 2x Nigiri Rettich[cite: 2]",
+          "preis": "14,50 €[cite: 2]"
+        },
+        {
+          "nummer": "62[cite: 2]",
+          "name": "SAGA[cite: 2]",
+          "allergene_zusatzstoffe": "1,d,g,k[cite: 2]",
+          "beschreibung": "8x Alaska Maki, 6x Lachs Maki, 6x Avocado Maki[cite: 2]",
+          "preis": "13,50 €[cite: 2]"
+        },
+        {
+          "nummer": "63[cite: 2]",
+          "name": "OSAKA[cite: 2]",
+          "allergene_zusatzstoffe": "1,2,18,d[cite: 2]",
+          "beschreibung": "8x California Maki, 6x Lachs Maki, 6x Thunfisch Maki[cite: 2]",
+          "preis": "13,50 €[cite: 2]"
+        },
+        {
+          "nummer": "64[cite: 2]",
+          "name": "TOKIO[cite: 2]",
+          "allergene_zusatzstoffe": "1,d,g,k[cite: 2]",
+          "beschreibung": "8x Alaska Maki, 6x Lachs Maki, 4x Nigiri Lachs[cite: 2]",
+          "preis": "15,50 €[cite: 2]"
+        },
+        {
+          "nummer": "65[cite: 2]",
+          "name": "SAPPORO[cite: 2]",
+          "allergene_zusatzstoffe": "1,b,d,g,k[cite: 2]",
+          "beschreibung": "8x Alaska Maki, 3x Lachs Maki, 3x Avocado Maki, 5x Nigiri [Lachs, Thunfisch, Ebi, Tintenfisch, Eierstich][cite: 2]",
+          "preis": "16,50 €[cite: 2]"
+        },
+        {
+          "nummer": "66[cite: 2]",
+          "name": "FUKUOKA[cite: 2]",
+          "allergene_zusatzstoffe": "1,18,b,d[cite: 2]",
+          "beschreibung": "8x California Maki mit Lachs-Mantel, 5x Futo Maki, 1x Alaska Temaki, 1 Rosenlachs[cite: 2]",
+          "preis": "18,50 €[cite: 2]"
+        },
+        {
+          "nummer": "67[cite: 2]",
+          "name": "KYOTO[cite: 2]",
+          "allergene_zusatzstoffe": "1,18,b,d[cite: 2]",
+          "beschreibung": "8x California Maki mit Lachs-Mantel, 4x Scheibe Lachssashimi, 5x Nigiri (Lachs, Thunfisch, Ebi, Tobiko, Jakobsmuschel)[cite: 2]",
+          "preis": "18,50 €[cite: 2]"
+        },
+        {
+          "nummer": "71[cite: 2]",
+          "name": "SALAT SASHIMI[cite: 2]",
+          "allergene_zusatzstoffe": "1,b,d,k[cite: 2]",
+          "beschreibung": "8x Scheibe Sashimi [4x Lachs, 4x Thunfisch], 2x Jakobsmuschel, 2x Tintenfisch, Avocado und Algensalat[cite: 2]",
+          "preis": "19,50 €[cite: 2]"
+        },
+        {
+          "nummer": "72[cite: 2]",
+          "name": "BENTO BOX[cite: 2]",
+          "allergene_zusatzstoffe": "1,b,d,k[cite: 2]",
+          "beschreibung": "3x Lachs Maki, 3x Avocado Maki, 3x Nigiri (Lachs, Thunfisch, Ebi), gegrilltes Lachs in Teriyaki-Soße mit Reis, Algensalat[cite: 2]",
+          "preis": "19,50 €[cite: 2]"
+        },
+        {
+          "nummer": "73[cite: 2]",
+          "name": "HAPPY DAY[cite: 2]",
+          "allergene_zusatzstoffe": "1,18,b,d,g,k[cite: 2]",
+          "beschreibung": "8x Alaska Maki, 8x California Maki, 3x Lachs Maki, 3x Thunfisch Maki, 3x Avocado Maki, 3x Gurken Maki, 12x Nigiri (2x Lachs, 2x Thunfisch, 2x Ebi, 2x Tobiko, 2x Jakobsmuschel, 2x Oktopus), 2x Miso-Suppe[cite: 2]",
+          "preis": "44,50 €[cite: 2]"
+        },
+        {
+          "nummer": "74[cite: 2]",
+          "name": "HAPPY NIGHT[cite: 2]",
+          "allergene_zusatzstoffe": "1,18,b,d,g,k[cite: 2]",
+          "beschreibung": "(nur auf Vorbestellung erhältlich) Sushi-Torte für jeden Anlass (für 4 Personen)[cite: 2]",
+          "preis": "74,50 €[cite: 2]"
+        },
+        {
+          "nummer": "76[cite: 2]",
+          "name": "LACHS SASHIMI[cite: 2]",
+          "beschreibung": "[8 Stück][cite: 2]",
+          "preis": "15,50 €[cite: 2]"
+        },
+        {
+          "nummer": "77[cite: 2]",
+          "name": "THUNFISCH SASHIMI[cite: 2]",
+          "allergene_zusatzstoffe": "d[cite: 2]",
+          "beschreibung": "[8 Stück][cite: 2]",
+          "preis": "18,50 €[cite: 2]"
+        },
+        {
+          "nummer": "78[cite: 2]",
+          "name": "GEMISCH SASHIMI[cite: 2]",
+          "allergene_zusatzstoffe": "18,b,d,n[cite: 2]",
+          "beschreibung": "(verschiedene Fischarten)[cite: 2]",
+          "preis": "19,50 €[cite: 2]"
+        }
+      ]
+    },
+    {
+      "kategorie": "KNUSPRIGE SUSHI[cite: 2]",
+      "hinweis": "Je Portion 8 Stück[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "80[cite: 2]",
+          "name": "CRUNCHY TEMPURA PANADE LACHS[cite: 2]",
+          "allergene_zusatzstoffe": "a,d[cite: 2]",
+          "beschreibung": "Lachs, Avocado, Gurken, mit Soße[cite: 2]",
+          "preis": "8,90 €[cite: 2]"
+        },
+        {
+          "nummer": "81[cite: 2]",
+          "name": "CRUNCHY TEMPURA PANADE GREEN[cite: 2]",
+          "allergene_zusatzstoffe": "a[cite: 2]",
+          "beschreibung": "Spargel, Avocado, Gurken, mit Soße[cite: 2]",
+          "preis": "8,90 €[cite: 2]"
+        },
+        {
+          "nummer": "82[cite: 2]",
+          "name": "CRUNCHY TEMPURA PANADE EBI[cite: 2]",
+          "allergene_zusatzstoffe": "18,a,b[cite: 2]",
+          "beschreibung": "Garnelen, Surimi, Gurken, mit Soße[cite: 2]",
+          "preis": "8,90 €[cite: 2]"
+        },
+        {
+          "nummer": "83[cite: 2]",
+          "name": "CRUNCHY RICE FLAKE MIX[cite: 2]",
+          "allergene_zusatzstoffe": "a,d[cite: 2]",
+          "beschreibung": "Lachs, Avocado, Gurken, mit Soße[cite: 2]",
+          "preis": "8,90 €[cite: 2]"
+        },
+        {
+          "nummer": "84[cite: 2]",
+          "name": "CRUNCHY RICE FLAKE VEGGIE[cite: 2]",
+          "beschreibung": "Spargel, Paprika, Gurken, mit Soße[cite: 2]",
+          "preis": "8,90 €[cite: 2]"
+        },
+        {
+          "nummer": "85[cite: 2]",
+          "name": "CRUNCHY RICE FLAKE EBI[cite: 2]",
+          "allergene_zusatzstoffe": "18,8,6[cite: 2]",
+          "beschreibung": "Garnelen, Surimi, Gurken, mit Soße[cite: 2]",
+          "preis": "8,90 €[cite: 2]"
+        },
+        {
+          "nummer": "86[cite: 2]",
+          "name": "BIG SALMON TEMPURA[cite: 2]",
+          "allergene_zusatzstoffe": "18,8,b,c,d[cite: 2]",
+          "beschreibung": "Lachshaut, Surimi, Eierstich, Spargel, Gurken, Mayonnaise, mit Soße[cite: 2]",
+          "preis": "10,90 €[cite: 2]"
+        }
+      ]
+    },
+    {
+      "kategorie": "NIGIRI SUSHI[cite: 2]",
+      "hinweis": "Je Portion 1 Stück[cite: 2]",
+      "gerichte": [
+        { "nummer": "90[cite: 2]", "name": "AVOCADO[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "91[cite: 2]", "name": "EIERTICH[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "92[cite: 2]", "name": "TINTENFISCH[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "93[cite: 2]", "name": "OKTOPUS[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "94[cite: 2]", "name": "AAL-UNAGI[cite: 2]", "allergene_zusatzstoffe": "d[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "95[cite: 2]", "name": "LACHS[cite: 2]", "allergene_zusatzstoffe": "d[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "96[cite: 2]", "name": "THUNFISCH[cite: 2]", "allergene_zusatzstoffe": "d[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "97[cite: 2]", "name": "EBI[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "98[cite: 2]", "name": "JAKOBSMUSCHEL[cite: 2]", "allergene_zusatzstoffe": "d[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "99[cite: 2]", "name": "TOBIKO[cite: 2]", "allergene_zusatzstoffe": "1,0[cite: 2]", "preis": "3,00 €[cite: 2]" }
+      ]
+    },
+    {
+      "kategorie": "TEMAKI SUSHI[cite: 2]",
+      "hinweis": "Je Portion 1 Stück[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "106[cite: 2]",
+          "name": "ALASKA TEMAKI[cite: 2]",
+          "allergene_zusatzstoffe": "d,k[cite: 2]",
+          "beschreibung": "Lachs, Avocado[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "107[cite: 2]",
+          "name": "CALIFORNIA TEMAKI[cite: 2]",
+          "allergene_zusatzstoffe": "1,18,b,d[cite: 2]",
+          "beschreibung": "Surimi, Avocado[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "108[cite: 2]",
+          "name": "TUNA TEMAKI[cite: 2]",
+          "allergene_zusatzstoffe": "1,6[cite: 2]",
+          "beschreibung": "Gehackter Thunfisch, Chili, Mayonnaise[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "109[cite: 2]",
+          "name": "VEGGIE TEMAKI[cite: 2]",
+          "allergene_zusatzstoffe": "K[cite: 2]",
+          "beschreibung": "Avocado, Gurken, Spargel, Paprika[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        }
+      ]
+    },
+    {
+      "kategorie": "NORI MAKI[cite: 2]",
+      "hinweis": "Je Portion 6 Stück[cite: 2]",
+      "gerichte": [
+        { "nummer": "111[cite: 2]", "name": "GURKEN MAKI[cite: 2]", "preis": "3,50 €[cite: 2]" },
+        { "nummer": "112[cite: 2]", "name": "KÜRBIS MAKI[cite: 2]", "allergene_zusatzstoffe": "1,11[cite: 2]", "preis": "3,50 €[cite: 2]" },
+        { "nummer": "113[cite: 2]", "name": "RETTICH MAKI[cite: 2]", "allergene_zusatzstoffe": "1,11[cite: 2]", "preis": "3,50 €[cite: 2]" },
+        { "nummer": "114[cite: 2]", "name": "SPARGEL MAKI[cite: 2]", "allergene_zusatzstoffe": "1,11[cite: 2]", "preis": "3,50 €[cite: 2]" },
+        { "nummer": "115[cite: 2]", "name": "MANGO MAKI[cite: 2]", "preis": "3,50 €[cite: 2]" },
+        { "nummer": "116[cite: 2]", "name": "AVOCADO MAKI[cite: 2]", "preis": "4,00 €[cite: 2]" },
+        { "nummer": "117[cite: 2]", "name": "LACHS MAKI[cite: 2]", "preis": "4,50 €[cite: 2]" },
+        { "nummer": "118[cite: 2]", "name": "THUNFISCH MAKI[cite: 2]", "allergene_zusatzstoffe": "a[cite: 2]", "preis": "4,50 €[cite: 2]" },
+        { "nummer": "119[cite: 2]", "name": "ENTE MAKI[cite: 2]", "preis": "4,50 €[cite: 2]" },
+        { "nummer": "120[cite: 2]", "name": "FUTO MIX MAKI[cite: 2]", "allergene_zusatzstoffe": "1,b,d[cite: 2]", "preis": "6,00 €[cite: 2]" }
+      ]
+    },
+    {
+      "kategorie": "INSIDE-OUT MAKI[cite: 2]",
+      "hinweis": "Je Portion 8 Stück[cite: 2]",
+      "gerichte": [
+        {
+          "nummer": "131[cite: 2]",
+          "name": "KAPPA PHILADELPHIA MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "9[cite: 2]",
+          "beschreibung": "Gurken, Frischkäse, Sesam-Mantel[cite: 2]",
+          "preis": "6,00 €[cite: 2]"
+        },
+        {
+          "nummer": "132[cite: 2]",
+          "name": "AVOCADO PHILADELPHIA MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "9[cite: 2]",
+          "beschreibung": "Avocado, Frischkäse, Sesam-Mantel[cite: 2]",
+          "preis": "6,00 €[cite: 2]"
+        },
+        {
+          "nummer": "133[cite: 2]",
+          "name": "SPARGEL PHILADELPHIA MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "9,k[cite: 2]",
+          "beschreibung": "Spargel, Frischkäse, Sesam-Mantel[cite: 2]",
+          "preis": "6,00 €[cite: 2]"
+        },
+        {
+          "nummer": "134[cite: 2]",
+          "name": "ERDBEEREN MAKI / MANGO MAKI[cite: 2]",
+          "beschreibung": "(Erdbeeren nur im Sommer) Erdbeeren/Mango, Frischkäse, Erdbeeren-Mantel[cite: 2]",
+          "preis": "6,00 €[cite: 2]"
+        },
+        {
+          "nummer": "135[cite: 2]",
+          "name": "CALIFORNIA MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "1,18,6,d[cite: 2]",
+          "beschreibung": "Surimi, Avocado, Tobiko-Mantel[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "136[cite: 2]",
+          "name": "ALASKA MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "d,g,k[cite: 2]",
+          "beschreibung": "Lachs, Avocado, Frischkäse, Sesam-Mantel[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "137[cite: 2]",
+          "name": "HAWAII MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "d,g,k[cite: 2]",
+          "beschreibung": "Lachs, Rucola, Frischkäse, Sesam-Mantel[cite: 2]",
+          "preis": "6,50 €[cite: 2]"
+        },
+        {
+          "nummer": "138[cite: 2]",
+          "name": "BOSTON MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "1,d,g[cite: 2]",
+          "beschreibung": "Thunfisch, Avocado, Frischkäse, Tobiko-Mantel[cite: 2]",
+          "preis": "7,00 €[cite: 2]"
+        },
+        {
+          "nummer": "139[cite: 2]",
+          "name": "ATLANTIK MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "1,d,g[cite: 2]",
+          "beschreibung": "Lachs, Thunfisch, Avocado, Frischkäse, Tobiko-Mantel[cite: 2]",
+          "preis": "7,00 €[cite: 2]"
+        },
+        {
+          "nummer": "140[cite: 2]",
+          "name": "REGENBOGEN MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "1,18,b,d[cite: 2]",
+          "beschreibung": "Surimi, Avocado, Lachs-Ebi-Mantel, Kresse[cite: 2]",
+          "preis": "7,00 €[cite: 2]"
+        },
+        {
+          "nummer": "141[cite: 2]",
+          "name": "SPICY TUNA MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "4,0[cite: 2]",
+          "beschreibung": "Gehackter Thunfisch, Chili, Mayonnaise, Tobiko-Mantel[cite: 2]",
+          "preis": "7,50 €[cite: 2]"
+        },
+        {
+          "nummer": "142[cite: 2]",
+          "name": "CRISPY DUCK MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "4,a,k[cite: 2]",
+          "beschreibung": "Knusprige Entenbrust mit Gurken, Mayonnaise, Sesam-Mantel[cite: 2]",
+          "preis": "7,50 €[cite: 2]"
+        },
+        {
+          "nummer": "143[cite: 2]",
+          "name": "EBI TEMPURA MAKI[cite: 2]",
+          "allergene_zusatzstoffe": "a,b,c,k[cite: 2]",
+          "beschreibung": "Gebackener Garnele mit Gurken, Mayonnaise, Sesam-Mantel[cite: 2]",
+          "preis": "7,50 €[cite: 2]"
+        }
+      ]
+    },
+    {
+      "kategorie": "NACHSPEISE[cite: 2]",
+      "gerichte": [
+        { "nummer": "25[cite: 2]", "name": "GEBACKENE BANANE[cite: 2]", "beschreibung": "(4 Stück)[cite: 2]", "preis": "4,50 €[cite: 2]" },
+        { "nummer": "26[cite: 2]", "name": "SESAM-BÄLLCHEN[cite: 2]", "beschreibung": "(4 Stück)[cite: 2]", "preis": "4,50 €[cite: 2]" },
+        { "nummer": "27[cite: 2]", "name": "MOCHI-BÄLLCHEN[cite: 2]", "beschreibung": "(3 Stück)[cite: 2]", "preis": "4,50 €[cite: 2]" },
+        { "nummer": "28[cite: 2]", "name": "KOKOS-BÄLLCHEN[cite: 2]", "beschreibung": "(4 Stück)[cite: 2]", "preis": "4,50 €[cite: 2]" }
+      ]
+    },
+    {
+      "kategorie": "ALKOHOLFREIE GETRÄNKE[cite: 2]",
+      "gerichte": [
+        { "nummer": "201[cite: 2]", "name": "JASMIN TEE[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "202[cite: 2]", "name": "GRÜNER TEE[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "203[cite: 2]", "name": "INGWER TEE[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "204[cite: 2]", "name": "MINZE TEE[cite: 2]", "preis": "2,50 €[cite: 2]" },
+        { "nummer": "206[cite: 2]", "name": "SAN PELLEGRINO STILLWASSER[cite: 2]", "menge": "FLASCHE 0,5 L[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "207[cite: 2]", "name": "SAN PELLEGRINO MEDIUMWASSER[cite: 2]", "menge": "FLASCHE 0,5 L[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "208[cite: 2]", "name": "COCA-COLA[cite: 2]", "allergene_zusatzstoffe": "1,3,8,11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "209[cite: 2]", "name": "COCA-COLA LIGHT[cite: 2]", "allergene_zusatzstoffe": "1,3,8,11,12[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "210[cite: 2]", "name": "SPEZI[cite: 2]", "allergene_zusatzstoffe": "13.8.11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "211[cite: 2]", "name": "FANTA[cite: 2]", "allergene_zusatzstoffe": "13,11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "212[cite: 2]", "name": "SPRITE[cite: 2]", "allergene_zusatzstoffe": "1.8, 11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,00 €[cite: 2]" },
+        { "nummer": "213[cite: 2]", "name": "APFELSCHORLE[cite: 2]", "allergene_zusatzstoffe": "1.11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,20 €[cite: 2]" },
+        { "nummer": "214[cite: 2]", "name": "MANGOSCHORLE[cite: 2]", "allergene_zusatzstoffe": "14.11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,20 €[cite: 2]" },
+        { "nummer": "215[cite: 2]", "name": "LYCHEESCHORLE[cite: 2]", "allergene_zusatzstoffe": "10[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,20 €[cite: 2]" },
+        { "nummer": "216[cite: 2]", "name": "GUAVENSCHORLE[cite: 2]", "allergene_zusatzstoffe": "1.11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,20 €[cite: 2]" },
+        { "nummer": "217[cite: 2]", "name": "MARACUJASCHORLE[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,20 €[cite: 2]" },
+        { "nummer": "218[cite: 2]", "name": "JOHANNISBEERSCHORLE[cite: 2]", "allergene_zusatzstoffe": "1,11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,20 €[cite: 2]" },
+        { "nummer": "219[cite: 2]", "name": "APFELSAFT[cite: 2]", "allergene_zusatzstoffe": "1,11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,80 €[cite: 2]" },
+        { "nummer": "220[cite: 2]", "name": "MANGOSAFT[cite: 2]", "allergene_zusatzstoffe": "1,11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,80 €[cite: 2]" },
+        { "nummer": "221[cite: 2]", "name": "LYCHEESAFT[cite: 2]", "allergene_zusatzstoffe": "111[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,80 €[cite: 2]" },
+        { "nummer": "222[cite: 2]", "name": "GUAVENSAFT[cite: 2]", "allergene_zusatzstoffe": "1.11[cite: 2]", "menge": "0,4 L[cite: 2]", "preis": "3,80 €[cite: 2]" }
+      ]
+    },
+    {
+      "kategorie": "ALKOHOLISCHE GETRÄNKE[cite: 2]",
+      "gerichte": [
+        { "nummer": "231[cite: 2]", "name": "HELLES BIER[cite: 2]", "menge": "0,5 L[cite: 2]", "preis": "3,30 €[cite: 2]" },
+        { "nummer": "232[cite: 2]", "name": "HELLES BIER - ALKOHOLFREI[cite: 2]", "menge": "0,5 L[cite: 2]", "preis": "3,30 €[cite: 2]" },
+        { "nummer": "233[cite: 2]", "name": "WEIßBIER HELL a, DUNKEL a[cite: 2]", "menge": "0,5 L[cite: 2]", "preis": "3,30 €[cite: 2]" },
+        { "nummer": "235[cite: 2]", "name": "RADLER[cite: 2]", "menge": "0,5 L[cite: 2]", "preis": "3,30 €[cite: 2]" },
+        { "nummer": "236[cite: 2]", "name": "PILS a[cite: 2]", "menge": "0,33 L[cite: 2]", "preis": "3,30 €[cite: 2]" },
+        { "nummer": "237[cite: 2]", "name": "ASIA BIER (ASIHI, KIRIN)[cite: 2]", "menge": "0,33 L[cite: 2]", "preis": "3,30 €[cite: 2]" },
+        { "nummer": "238[cite: 2]", "name": "SAKE[cite: 2]", "menge": "0,2 L[cite: 2]", "preis": "4,90 €[cite: 2]" },
+        { "nummer": "240[cite: 2]", "name": "WEIßWEIN (CHADONNAY, WEISSBURGUNDER)[cite: 2]", "menge": "0,2 L[cite: 2]", "preis": "4,90 €[cite: 2]" },
+        { "nummer": "241[cite: 2]", "name": "ROTWEIN (CHIANTI, MERLOT)[cite: 2]", "menge": "0,2 L[cite: 2]", "preis": "4,90 €[cite: 2]" }
+      ]
+    }
+  ],
+  "legende": {
+    "allergene": {
+      "a": "enthält glutenhaltiges Getreide sowie daraus hergestellte Erzeugnisse[cite: 2]",
+      "al": "enthält Weizen (wie Dinkel und Khorasan-Weizen)[cite: 2]",
+      "a2": "enthält Rogen[cite: 2]",
+      "a3": "enhält Gerste[cite: 2]",
+      "a4": "enthält Hafer[cite: 2]",
+      "b": "enthält Krebstiere und daraus gewonnene Erzeugnisse[cite: 2]",
+      "c": "enthält Eier und daraus gewonnene Erzeugnisse[cite: 2]",
+      "d": "enthält Fische und daraus gewonnene Erzeugnisse[cite: 2]",
+      "e": "enthält Erdnüsse und daraus gewonnene Erzeugnisse[cite: 2]",
+      "f": "enthält Sojabohnen und daraus gewonnene Erzeugnisse[cite: 2]",
+      "g": "enthält Milch und daraus gewonnene Erzeugnisse (einschließlich Laktose)[cite: 2]",
+      "h": "enthält Schalenfrüchte sowie daraus gewonnene Erzeugnisse[cite: 2]",
+      "h1": "enthält Mandeln[cite: 2]",
+      "h2": "enthält Haselnüsse[cite: 2]",
+      "h3": "enthält Walnüsse[cite: 2]",
+      "h4": "enthält Kaschunüsse[cite: 2]",
+      "h5": "enthält Pecanüsse[cite: 2]",
+      "h6": "Paranüsse[cite: 2]",
+      "h": "enthält Pistazien[cite: 2]",
+      "h8": "enthält Macadamianüsse[cite: 2]",
+      "i": "enthält Sellerie und daraus gewonnene Erzeugnisse[cite: 2]",
+      "j": "enthält Senf und daraus gewonnene Erzeugnisse[cite: 2]",
+      "k": "enthält Sesamsamen und daraus gewonnene Erzeugnisse[cite: 2]",
+      "l": "enthält Schwefeldioxid und Sulphite[cite: 2]",
+      "m": "enthält Lupinen und daraus gewonnene Erzeugnisse[cite: 2]",
+      "n": "enthält Weichtiere und daraus gewonnene Erzeugnisse[cite: 2]"
+    },
+    "zusatzstoffe": {
+      "1": "mit Farbstoff[cite: 2]",
+      "2": "mit Konservierungsstoff[cite: 2]",
+      "3": "mit Antioxidationsmittel[cite: 2]",
+      "4": "mit Geschmacksverstärker[cite: 2]",
+      "5": "mit Schwefeldioxid[cite: 2]",
+      "6": "mit Schwärzungsmittel[cite: 2]",
+      "7": "mit Phosphat[cite: 2]",
+      "8": "mit Milchweiß[cite: 2]",
+      "9": "mit Koffeinhaltig[cite: 2]",
+      "10": "mit Chininhaltig[cite: 2]",
+      "11": "mit Süßungsmittel[n][cite: 2]",
+      "12": "mit enthält eine Phenylalaninquelle[cite: 2]",
+      "13": "gewachst[cite: 2]",
+      "14": "Nitripoõkelsalz[cite: 2]",
+      "15": "Taurinhaltig[cite: 2]",
+      "16": "Säuerungsmittel[n][cite: 2]",
+      "17": "Tartrazin (kann die Aktivität und Aufmerksamkeit von Kindern beeinflussen][cite: 2]",
+      "18": "Surimi Krebsfleischimitat aus Fischmuskeleiweiß[cite: 2]"
+    }
+  }
+}

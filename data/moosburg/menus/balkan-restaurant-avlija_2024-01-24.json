@@ -1,0 +1,663 @@
+{
+  "restaurantId": "balkan-restaurant-avlija",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/balkan-restaurant-avlija_speisekarte_2024-01-24.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.speisekarte.de/moosburg-an-der-isar/restaurant/balkan_restaurant_avlija/speisekarte",
+    "createdAt": "2024-01-24",
+    "note": "Über speisekarte.de erfasst, nicht von der Seite des Hauses. Die Karte selbst ist vom 24.01.2024."
+  },
+  "legend": {
+    "allergens": {},
+    "additives": {}
+  },
+  "sections": [
+    {
+      "title": "Dessert",
+      "items": [
+        {
+          "name": "Baklava",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "HAUSGEMACHTES in Zuckersirup getränktes Gebäckbestehend aus Blätterteig und einer Walnussfüllung"
+        },
+        {
+          "name": "Hurmasice",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "HAUSGEMACHTE in Zuckersirup getränkte Kekse"
+        },
+        {
+          "name": "Pfannkuchen-Palacinci",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Schokofüllung, Eis, Keks, Marmelade sa eurokremom, sladoledom, keksom ili marmeladom"
+        }
+      ]
+    },
+    {
+      "title": "Fleischspezialitäten vom Lavasteingrill",
+      "items": [
+        {
+          "name": "Gemischte Fleischplatte Avlija - Mješana plata Avlija für 1 Person",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Platten können je nach Wunsch für mehrere Personen serviert werden. Ohne Schwein - Verschiedene Fleischsorten vom Grill dazu jede menge beilagen"
+        },
+        {
+          "name": "Cevapcici kleine Portion-Cevapi mala porcija",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "5 Cevapcici nach HAUSEIGENEM REZEPT im hausg. Brot, Zwiebel, hausg. Frischkäsecreme"
+        },
+        {
+          "name": "Cevapcici große Portion-Cevapi velika porcija",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "10 Cevapcici nach HAUSEIGENEM REZEPT im hausg. Brot, Zwiebel hausg. Frischkäsecreme"
+        },
+        {
+          "name": "Cevapcici Avlija",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "10 Cevapcici nach HAUSEIGENEM REZEPT mit Pommes, Djuvecreis,Ajvar, Zwiebel, kl Salat"
+        },
+        {
+          "name": "Cevapcici Little Avlija",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "10 Cevapcici nach HAUSEIGENEM REZEPTim Kajmak dazu paprikachote gefüllt mit Käse, hausg.Brot"
+        },
+        {
+          "name": "Gefülltes Rinderhacksteak-Punjena pljeskavica",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gefüllt mit Käse und getrocknetem Rinderschinken, Pommes, Ajvar, Zwiebel, kl. Salat"
+        },
+        {
+          "name": "Rinderhacksteak-Pljeskavica",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pommes Ajvar, Zwiebel, kl. Salat"
+        },
+        {
+          "name": "Balkanburger",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Rinderhacksteakim hausg. BrotPommes, Soße, Ajvar, Zwiebel, Krautsalat"
+        },
+        {
+          "name": "Kalbsleber- Teleća dzigerica",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Bratkartoffel, Knoblauchsoße, kl Salat"
+        },
+        {
+          "name": "Kalbspieß- Teleći raznjići Pommes, Djuvecreis K.Salat",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hänchenspieß-Pileci raznjić",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pommes, Djuvecreis, Kl.Salat"
+        },
+        {
+          "name": "Halb Halb-Pola Pola Cevapcici",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hänchenspieß, Djuvecreis, Zwiebel Ajvar, kl. Salat"
+        },
+        {
+          "name": "Putensteak.Pureci steak",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pommes, Djuvecreis, kl.Salat"
+        },
+        {
+          "name": "Hänchensteak. Pileči steak",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pommes, Djuvecreis, Kl.Salat"
+        },
+        {
+          "name": "Rindersteak mit Pommes",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Wiener Schnitzel-Bečka Šniclasses",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "vom Kalb, Pommes, kl. Salat"
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Krautsalat-Kupus salat",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Sopska salata",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Tomaten, Gurken, gelbe Spitzpaprika, Zwiebel, Schafskäse"
+        },
+        {
+          "name": "Kleiner gem. Salat- Mala mjesana salatajac",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Großer gemischter Salat -Velika mjesana Salatarac",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Großer gemischter Salat mit Pute, Hanchen oder Kalamari",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Beilagen",
+      "items": [
+        {
+          "name": "Grillgemüse",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Somuna",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "1/2 hausg Brot"
+        },
+        {
+          "name": "Kajmak",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "(Frischkäsecreme)"
+        },
+        {
+          "name": "AJVAR",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Djuvecreis",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pommes",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Gerichts auf Anfrage",
+      "items": [
+        {
+          "name": "Lamm vom Spieß-Jagnjetina",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausg. Brot. Kl. Salat"
+        },
+        {
+          "name": "1kg Lammfleisch",
+          "prices": [
+            {
+              "amount": 45.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "ohne Beilagen"
+        },
+        {
+          "name": "Kalbsfleisch unter Peka - Teletina ispod saca",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kartoffel hausg.Brot, Kl. Salat"
+        },
+        {
+          "name": "Kalbsfleisch unter Peka für 4 Personen",
+          "prices": [
+            {
+              "amount": 99.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Teigschnecken unter Peka",
+          "prices": [
+            {
+              "amount": 20.0,
+              "currency": "EUR"
+            },
+            {
+              "amount": 60.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gefüllt mit fein gehacktem Kalbsfleisch Burek ispod saca sa sjecanim mesom Ø 20/50 cm"
+        },
+        {
+          "name": "Teigschnecken unter Peka",
+          "prices": [
+            {
+              "amount": 18.0,
+              "currency": "EUR"
+            },
+            {
+              "amount": 50.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gefüllt mit Frischkäse Sirnica ispod saca Ø 20/50cm"
+        },
+        {
+          "name": "Teigschnecken unter Peka",
+          "prices": [
+            {
+              "amount": 18.0,
+              "currency": "EUR"
+            },
+            {
+              "amount": 50.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gefüllt mit Spinat Zeljanica ispod saca Ø 20/50cm"
+        },
+        {
+          "name": "Teigschnecken unter Peka",
+          "prices": [
+            {
+              "amount": 18.0,
+              "currency": "EUR"
+            },
+            {
+              "amount": 50.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gefüllt mit Kartoffeln Krompirusa ispod saca Ø 20/50cm"
+        }
+      ]
+    },
+    {
+      "title": "VEGETARISCHES GERICHT",
+      "items": [
+        {
+          "name": "Lassen Sie sich überraschen",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Vorspeise",
+      "items": [
+        {
+          "name": "Bosnische Platte - Bosanska plata",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Salzkrapfen-Ustipci mit getrocknetem Rinderschinken, Rinder-Sucuk, Käse, Oliven und hausg. Frischkäsecreme (Kajmak) Platten können je nach Wunsch für mehrere Personen serviert werden."
+        }
+      ]
+    },
+    {
+      "title": "Fischgerichte vom Lavasteingrill",
+      "items": [
+        {
+          "name": "Dorade",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Ganze Dorade, Kartoffelpommes, Knoblauchsoße, Kl. Salat"
+        },
+        {
+          "name": "Kalamari vom Grill-Lignje sa Grila",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pommes, Soße, Kl. Salat"
+        },
+        {
+          "name": "Panierte Kalamari-Pohovane",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pommes, Soßes Kl. Salat"
+        }
+      ]
+    }
+  ]
+}

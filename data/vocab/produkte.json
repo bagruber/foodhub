@@ -4,115 +4,227 @@
   "produkte": {
     "wasser-still": {
       "label": "Stilles Wasser",
-      "schreibweisen": ["stilles wasser", "tafelwasser still", "adelholzener naturell", "adelholzener still"]
+      "schreibweisen": [
+        "stilles wasser",
+        "tafelwasser still",
+        "adelholzener naturell",
+        "adelholzener still",
+        "san pellegrino stillwasser"
+      ]
     },
     "wasser-spritzig": {
       "label": "Wasser mit Kohlensäure",
-      "schreibweisen": ["tafelwasser", "adelholzener spritzig"]
+      "schreibweisen": [
+        "tafelwasser",
+        "adelholzener spritzig"
+      ]
     },
     "cola": {
       "label": "Cola",
-      "schreibweisen": ["coca cola", "libella cola"]
+      "schreibweisen": [
+        "coca cola",
+        "libella cola"
+      ]
     },
     "cola-zuckerfrei": {
       "label": "Cola zuckerfrei",
-      "schreibweisen": ["coca cola light", "cola zero", "libella cola zero"]
+      "schreibweisen": [
+        "coca cola light",
+        "cola zero",
+        "libella cola zero"
+      ]
     },
     "cola-mix": {
       "label": "Spezi",
-      "schreibweisen": ["spezi", "libella cola mix", "flötzinger cola mix"]
+      "schreibweisen": [
+        "spezi",
+        "libella cola mix",
+        "flötzinger cola mix"
+      ]
     },
     "cola-weizen": {
       "label": "Colaweizen",
-      "schreibweisen": ["cola weizen", "cola weisse", "cola weiße", "cola weißbier"]
+      "schreibweisen": [
+        "cola weizen",
+        "cola weisse",
+        "cola weiße",
+        "cola weißbier"
+      ]
     },
     "limo-zitrone": {
       "label": "Zitronenlimonade",
-      "schreibweisen": ["limo zitrone", "weißes limo", "libella brause zitrone", "flötzinger zitronen limonade"]
+      "schreibweisen": [
+        "limo zitrone",
+        "weißes limo",
+        "libella brause zitrone",
+        "flötzinger zitronen limonade"
+      ]
     },
     "limo-orange": {
       "label": "Orangenlimonade",
-      "schreibweisen": ["limo orange", "orangen limo", "flötzinger orangen limonade"]
+      "schreibweisen": [
+        "limo orange",
+        "orangen limo",
+        "flötzinger orangen limonade"
+      ]
     },
     "apfelschorle": {
       "label": "Apfelschorle",
-      "schreibweisen": ["apfelschorle", "apfelsaftschorle"]
+      "schreibweisen": [
+        "apfelschorle",
+        "apfelsaftschorle"
+      ]
     },
     "orangenschorle": {
       "label": "Orangenschorle",
-      "schreibweisen": ["orangenschorle", "orangensaftschorle"]
+      "schreibweisen": [
+        "orangenschorle",
+        "orangensaftschorle"
+      ]
     },
     "maracujaschorle": {
       "label": "Maracujaschorle",
-      "schreibweisen": ["maracujaschorle", "maracujasaftschorle"]
+      "schreibweisen": [
+        "maracujaschorle",
+        "maracujasaftschorle"
+      ]
     },
     "kaffee": {
       "label": "Kaffee",
-      "schreibweisen": ["kaffee", "tasse kaffee", "haferl kaffee"]
+      "schreibweisen": [
+        "kaffee",
+        "tasse kaffee",
+        "haferl kaffee"
+      ]
     },
     "espresso-doppelt": {
       "label": "Doppelter Espresso",
-      "schreibweisen": ["doppelter espresso", "doppel espresso", "espresso doppelt"]
+      "schreibweisen": [
+        "doppelter espresso",
+        "doppel espresso",
+        "espresso doppelt"
+      ]
     },
     "tee": {
       "label": "Tee",
-      "schreibweisen": ["bio tee", "ronnefeldt tee", "tee schwarzer pfefferminz"]
+      "schreibweisen": [
+        "bio tee",
+        "ronnefeldt tee",
+        "tee schwarzer pfefferminz"
+      ]
     },
     "helles": {
       "label": "Helles",
-      "schreibweisen": ["helles", "hell vom fass", "tannen hell vom fass", "hells erdinger vom fass"]
+      "schreibweisen": [
+        "helles",
+        "hell vom fass",
+        "tannen hell vom fass",
+        "hells erdinger vom fass"
+      ]
     },
     "helles-alkoholfrei": {
       "label": "Helles alkoholfrei",
-      "schreibweisen": ["hell alkoholfrei", "tannen hell alkoholfrei", "urhell alkoholfreie"]
+      "schreibweisen": [
+        "hell alkoholfrei",
+        "tannen hell alkoholfrei",
+        "urhell alkoholfreie"
+      ]
     },
     "pils": {
       "label": "Pils",
-      "schreibweisen": ["pils", "tannen pils", "pils graf ignaz"]
+      "schreibweisen": [
+        "pils",
+        "tannen pils",
+        "pils graf ignaz"
+      ]
     },
     "maerzen": {
       "label": "Märzen",
-      "schreibweisen": ["märzen festbier", "rosenheimer märzen"]
+      "schreibweisen": [
+        "märzen festbier",
+        "rosenheimer märzen"
+      ]
     },
     "weissbier": {
       "label": "Weißbier",
-      "schreibweisen": ["hefe weizen", "hefe weißbier vom fass", "hefe weiße vom fass", "weißbier hell", "erdinger original weisse", "huber weisse"]
+      "schreibweisen": [
+        "hefe weizen",
+        "hefe weißbier vom fass",
+        "hefe weiße vom fass",
+        "weißbier hell",
+        "erdinger original weisse",
+        "huber weisse"
+      ]
     },
     "weissbier-dunkel": {
       "label": "Weißbier dunkel",
-      "schreibweisen": ["dunkles weizen", "hefe weißbier dunkel", "weißbier dunkel", "erdinger dunkle weisse"]
+      "schreibweisen": [
+        "dunkles weizen",
+        "hefe weißbier dunkel",
+        "weißbier dunkel",
+        "erdinger dunkle weisse"
+      ]
     },
     "weissbier-leicht": {
       "label": "Weißbier leicht",
-      "schreibweisen": ["leichtes weizen", "hefe weißbier leicht", "weißbier leicht", "erdinger leichte weisse"]
+      "schreibweisen": [
+        "leichtes weizen",
+        "hefe weißbier leicht",
+        "weißbier leicht",
+        "erdinger leichte weisse"
+      ]
     },
     "weissbier-alkoholfrei": {
       "label": "Weißbier alkoholfrei",
-      "schreibweisen": ["hefe weißbier alkoholfrei", "weißbier alkoholfrei", "weißbier alkoholfreie", "erdinger alkoholfrei"]
+      "schreibweisen": [
+        "hefe weißbier alkoholfrei",
+        "weißbier alkoholfrei",
+        "weißbier alkoholfreie",
+        "erdinger alkoholfrei"
+      ]
     },
     "radler": {
       "label": "Radler",
-      "schreibweisen": ["radler", "natur radler"]
+      "schreibweisen": [
+        "radler",
+        "natur radler"
+      ]
     },
     "russ": {
       "label": "Russ",
-      "schreibweisen": ["russ", "russ n"]
+      "schreibweisen": [
+        "russ",
+        "russ n"
+      ]
     },
     "prosecco": {
       "label": "Prosecco",
-      "schreibweisen": ["prosecco", "glas prosecco"]
+      "schreibweisen": [
+        "prosecco",
+        "glas prosecco"
+      ]
     },
     "aperol-spritz": {
       "label": "Aperol Spritz",
-      "schreibweisen": ["aperol spritz", "spritz aperol"]
+      "schreibweisen": [
+        "aperol spritz",
+        "spritz aperol"
+      ]
     },
     "lillet-wild-berry": {
       "label": "Lillet Wild Berry",
-      "schreibweisen": ["lillet wild berry", "lilletwildberry", "lillet rose wild berry"]
+      "schreibweisen": [
+        "lillet wild berry",
+        "lilletwildberry",
+        "lillet rose wild berry"
+      ]
     },
     "ramazzotti": {
       "label": "Ramazzotti",
-      "schreibweisen": ["ramazzotti", "ramazzotti mit eis und zitrone"]
+      "schreibweisen": [
+        "ramazzotti",
+        "ramazzotti mit eis und zitrone"
+      ]
     }
   }
 }

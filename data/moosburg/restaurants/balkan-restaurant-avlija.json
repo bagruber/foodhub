@@ -36,9 +36,8 @@
       }
     }
   ],
-  "menus": [],
-  "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+  "menus": [
+    "balkan-restaurant-avlija_2024-01-24.json"
   ],
   "outline": {
     "rings": [

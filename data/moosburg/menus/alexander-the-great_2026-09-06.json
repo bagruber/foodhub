@@ -1,0 +1,2204 @@
+{
+  "restaurantId": "alexander-the-great",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/alexander-the-great_speisekarte_2026-09-06.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.alexander-the-great.de/",
+    "createdAt": "2025-10-29"
+  },
+  "legend": {
+    "allergens": {
+      "A": "gluten",
+      "B": "crustaceans",
+      "C": "eggs",
+      "D": "peanuts",
+      "E": "soybeans",
+      "F": "milk",
+      "G": "nuts",
+      "H": "celery",
+      "I": "mustard",
+      "J": "sesame",
+      "K": "sulphites",
+      "L": "lupin",
+      "M": "molluscs",
+      "N": "fish",
+      "5": "sulphites",
+      "16": "gluten"
+    },
+    "additives": {
+      "1": "colorant",
+      "2": "preservative",
+      "3": "antioxidant",
+      "4": "flavour_enhancer",
+      "6": "blackened",
+      "7": "phosphate",
+      "8": "milk_protein",
+      "9": "caffeine",
+      "10": "quinine",
+      "11": "sweetener",
+      "12": "phenylalanine",
+      "13": "waxed",
+      "14": "taurine",
+      "15": "flavouring"
+    }
+  },
+  "sections": [
+    {
+      "title": "ALEXANDERs KALTE VORSPEISEN",
+      "items": [
+        {
+          "name": "TSATSIKI",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "1",
+          "description": "Joghurtcreme mit Gurken und Knoblauch Unser Tsatsiki schmeckt, wie ein Tstasiki schmecken soll, hinterlässt aber keinen Nachgeschmack."
+        },
+        {
+          "name": "TARAMOSALATA",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "N"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "2",
+          "description": "Fischrogencreme"
+        },
+        {
+          "name": "MELITSANOSALATA",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F",
+            "C"
+          ],
+          "allergens": [
+            "eggs",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "3",
+          "description": "Auberginencreme"
+        },
+        {
+          "name": "TYROSALATA",
+          "prices": [
+            {
+              "amount": 5.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "4",
+          "description": "hausgemachte Schafskäsecreme"
+        },
+        {
+          "name": "FETA ELIES PIPERIES",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "5",
+          "description": "Feta, Oliven, Pepperoni"
+        },
+        {
+          "name": "KÄSEPLATTE",
+          "prices": [
+            {
+              "amount": 27.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "7",
+          "description": "Köstliche Käseplatte mit verschiedenen Henri Willig Käsesorten Eine Kombination aus Kuh, Ziegen und Schafsmilch. mit Käsedip und frische Obst"
+        },
+        {
+          "name": "SALATA TALASSINON",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "N"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "8",
+          "description": "Meeresfrüchtesalat"
+        },
+        {
+          "name": "PEPONI ZAMPON",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "7",
+            "4"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer",
+            "phosphate"
+          ],
+          "diet": {},
+          "ref": "9",
+          "description": "Melone mit Schinken"
+        },
+        {
+          "name": "PIKILIA",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "10",
+          "description": "gemischte Vorspeise für 1 Person"
+        },
+        {
+          "name": "PIKILIA",
+          "prices": [
+            {
+              "amount": 26.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "ref": "11",
+          "description": "gemischte Vorspeise für 2 Personen"
+        }
+      ]
+    },
+    {
+      "title": "ALEXANDERs WARME VORSPEISEN",
+      "items": [
+        {
+          "name": "DOLMADES",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "5"
+          ],
+          "allergens": [
+            "sulphites"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "12",
+          "description": "gefüllte Weinblätter mit Reis mit Sauce Hollandaise"
+        },
+        {
+          "name": "FLORINIS",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "13",
+          "description": "gegrillte Paprika gefüllt mit Fetakäse"
+        },
+        {
+          "name": "FETA SAGANAKI",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "14",
+          "description": "gebackener Schafskäse"
+        },
+        {
+          "name": "HALLOUMI GEGRILLT",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "15",
+          "description": "zypriotische Käsespezialität mit Salatgarnitur"
+        },
+        {
+          "name": "SAGANAKI SUSAMI",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F",
+            "J"
+          ],
+          "allergens": [
+            "gluten",
+            "milk",
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "16",
+          "description": "Schafskäse mit Sesam und Honig"
+        },
+        {
+          "name": "PEPERONI",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "17",
+          "description": "gegrillt mit Knoblauch"
+        },
+        {
+          "name": "TYROPITAKIA",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "18",
+          "description": "Käsetaschen mit Joghurt"
+        },
+        {
+          "name": "FETA FOURNOU",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "8",
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "19",
+          "description": "überbackener Schafskäse, pikant",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "FETA METAXA",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "20",
+          "description": "Feta überbacken, mit Metaxasauce"
+        },
+        {
+          "name": "GARIDES SAGANAKI",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "B"
+          ],
+          "allergens": [
+            "crustaceans"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "21",
+          "description": "Scampi in Tomaten Weinsauce nach Art des Hauses"
+        },
+        {
+          "name": "MELITZANES TIGANITES",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "22",
+          "description": "gebackene Auberginen mit Tsatsiki"
+        },
+        {
+          "name": "KOLOKYTHIA TIGANITA",
+          "prices": [
+            {
+              "amount": 8.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "23",
+          "description": "gebackene Zucchini mit Tsatsiki"
+        },
+        {
+          "name": "PIKILIA",
+          "prices": [
+            {
+              "amount": 29.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "24",
+          "description": "vegetarische Vorspeisenplatte für 2 Personen"
+        },
+        {
+          "name": "SKORDOPSOMO",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "25",
+          "description": "Knoblauchbrot mit Tsatsiki"
+        }
+      ]
+    },
+    {
+      "title": "SALATE",
+      "items": [
+        {
+          "name": "HORIATIKI",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "26",
+          "description": "griechischer Bauernsalat"
+        },
+        {
+          "name": "CHEFSALAT",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "C",
+            "F"
+          ],
+          "allergens": [
+            "eggs",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "27",
+          "description": "gemischter Salat mit Putenstreifen"
+        },
+        {
+          "name": "ALEXANDERSALAT",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "11",
+            "15",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "antioxidant",
+            "flavouring",
+            "preservative",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "28",
+          "description": "mit Hühnerfleisch, Parmesankäse, Speck, Rucola und Croutons"
+        },
+        {
+          "name": "TONOSALATA",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "C",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "29",
+          "description": "gemischter Salat mit Thunfisch und Ei"
+        },
+        {
+          "name": "BEILAGENSALAT",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "30"
+        }
+      ]
+    },
+    {
+      "title": "BEILAGEN",
+      "items": [
+        {
+          "name": "REIS in Tomatensauce",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "31"
+        },
+        {
+          "name": "KARTOFFELN gebraten nach Art des Hauses",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "32"
+        },
+        {
+          "name": "POMMES FRITES",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "33"
+        },
+        {
+          "name": "GIGANTES Riesenbohnen auf Tomatensauce",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5"
+          ],
+          "allergens": [
+            "sulphites"
+          ],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {},
+          "ref": "34"
+        },
+        {
+          "name": "PRIAM Gemüse nach Art des Hauses",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "35"
+        },
+        {
+          "name": "FOLIENKARTOFFEL mit Tsatsiki",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "36"
+        },
+        {
+          "name": "PITA griechisches Fladenbrot",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "37"
+        }
+      ]
+    },
+    {
+      "title": "SUPPEN",
+      "items": [
+        {
+          "name": "KOTOSUPA",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "38",
+          "description": "Hühnersuppe nach Art des Hauses"
+        },
+        {
+          "name": "GIUWARLAKIA",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "C"
+          ],
+          "allergens": [
+            "eggs"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "39",
+          "description": "Fleischklöschensuppe nach Art des Hauses"
+        },
+        {
+          "name": "FASOLADA",
+          "prices": [
+            {
+              "amount": 5.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "40",
+          "description": "Bohnensuppe"
+        }
+      ]
+    },
+    {
+      "title": "ALEXANDERs FISCHGERICHTE",
+      "items": [
+        {
+          "name": "KALAMARIA",
+          "prices": [
+            {
+              "amount": 21.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "41",
+          "description": "gebackener Tintenfisch mit Reis, Kartoffeln, Fischsauce und gemischtem Salat"
+        },
+        {
+          "name": "SCAMPI vom Grill",
+          "prices": [
+            {
+              "amount": 24.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "B",
+            "F"
+          ],
+          "allergens": [
+            "crustaceans",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "42",
+          "description": "mit Reis, Kartoffeln, und gemischtem Salat"
+        },
+        {
+          "name": "LACHSFILET vom Grill mit Reis, Kartoffeln,",
+          "prices": [
+            {
+              "amount": 22.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "43",
+          "description": "Fischsauce und gemischtem Salat"
+        },
+        {
+          "name": "LACHSFILET vom Grill mit Senfsauce, Reis,",
+          "prices": [
+            {
+              "amount": 23.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F",
+            "I",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "mustard"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "44",
+          "description": "Kartoffeln, Fischsauce und gemischtem Salat"
+        },
+        {
+          "name": "PANGASIUSFILET vom Grill mit Reis, Kartoffeln,",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "45",
+          "description": "Fischsauce und gemischtem Salat"
+        },
+        {
+          "name": "SEEZUNGENFILET vom Grill mit Reis, Kartoffeln,",
+          "prices": [
+            {
+              "amount": 23.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "47",
+          "description": "Fischsauce und gemischtem Salat"
+        },
+        {
+          "name": "GANZE DORADE ROYALE vom Grill mit Reis",
+          "prices": [
+            {
+              "amount": 26.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "48",
+          "description": "Rosmarinkartoffeln, Fischsauce und gem. Salat"
+        },
+        {
+          "name": "FISCHPLATTE",
+          "prices": [
+            {
+              "amount": 26.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "B",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "49",
+          "description": "Scampi, Kalamari, Seezungenfilet, Sardellen mit Reis, Gemüse und gemischtem Salat"
+        },
+        {
+          "name": "FISCHPLATTE für 2 Personen",
+          "prices": [
+            {
+              "amount": 54.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "B",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "50",
+          "description": "Scampi, Kalamari, Seezungenfilet, Sardellen, Pangasiusfilet, mit Knoblauchsauce, Reis, Gemüse und gemischtem Salat"
+        }
+      ]
+    },
+    {
+      "title": "ALEXANDERs FLEISCHGERICHTE VOM GRILL",
+      "items": [
+        {
+          "name": "GYROS",
+          "prices": [
+            {
+              "amount": 14.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "51",
+          "description": "mit Tsatsiki, Reis und gemischtem Salat"
+        },
+        {
+          "name": "GYROS PITA",
+          "prices": [
+            {
+              "amount": 15.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "52",
+          "description": "mit Tsatsiki und gemischtem Salat"
+        },
+        {
+          "name": "GYROSPLATTE für 2 Personen",
+          "prices": [
+            {
+              "amount": 30.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "53",
+          "description": "mit Tsatsiki, Reis, Kartoffeln nach Art des Hauses und gemischtem Salat"
+        },
+        {
+          "name": "GYROS KALAMARIA",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F",
+            "N"
+          ],
+          "allergens": [
+            "fish",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "54",
+          "description": "mit Tsatsiki, Reis und gemischtem Salat"
+        },
+        {
+          "name": "SOUFLAKI",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "55",
+          "description": "2 Schweinefleischspieße mit Reis und gemischtem Salat"
+        },
+        {
+          "name": "LEBER vom Rind",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "56",
+          "description": "mit Röstzwiebeln, Reis und gemischtem Salat"
+        },
+        {
+          "name": "BIFTEKI",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "C",
+            "F"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "57",
+          "description": "Hacksteak mit Schafskäse gefüllt, Reis und gemischtem Salat"
+        },
+        {
+          "name": "LAMMKOTELETTS",
+          "prices": [
+            {
+              "amount": 23.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "5",
+            "F"
+          ],
+          "allergens": [
+            "milk",
+            "sulphites"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "58",
+          "description": "mit Tsatsiki, Rosmarinkartoffeln und Bauernsalat"
+        },
+        {
+          "name": "BAUERNSPIESS",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "60",
+          "description": "mit Schafskäse, Knoblauch und Kartoffeln nach Art des Hauses und gemischtem Salat"
+        },
+        {
+          "name": "AKROPOLIS-SPIESS mit Schafskäse gefüllt,",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "61",
+          "description": "mit Reis und gemischtem Salat"
+        },
+        {
+          "name": "SPEZIAL-SPIESS",
+          "prices": [
+            {
+              "amount": 19.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "62",
+          "description": "Schweinefilet mit Reis, Kartoffeln nach Art des Hauses, Käse und gemischtem Salat"
+        }
+      ]
+    },
+    {
+      "title": "ALEXANDERs FLEISCHGERICHTE VOM GRILL",
+      "items": [
+        {
+          "name": "DORFTELLER",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "63",
+          "description": "Gyros, 1 Steak, 1 Souflaki, Tsatsiki, Reis, gemischter Salat"
+        },
+        {
+          "name": "ALEXANDER GRILLPLATE",
+          "prices": [
+            {
+              "amount": 23.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "64",
+          "description": "Gyros, Leber, Lammkotelett, Suzuki, Souflaki, Folienkartoffel mit Tsatsiki und Bauernsalat"
+        },
+        {
+          "name": "RHODOSPLATTE für 2 Personen",
+          "prices": [
+            {
+              "amount": 51.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "65",
+          "description": "Gyros, Lamkoteletts, Suzuki, Leber, Souflaki, Tsatsiki, Reis und Bauernsalat"
+        }
+      ]
+    },
+    {
+      "title": "AUS DEM BACKOFEN",
+      "items": [
+        {
+          "name": "MOUSSAKA traditionelles Familienrezept von Konstantin",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "C",
+            "F"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "66",
+          "description": "Auberginen, Hackfleisch und Kartoffeln, überbacken mit feiner Bechamelsauce und gemischtem Salat"
+        },
+        {
+          "name": "LAMMHAXE",
+          "prices": [
+            {
+              "amount": 20.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "67",
+          "description": "mit Spaghetti, Parmesan und gemischtem Salat"
+        },
+        {
+          "name": "LAMMHAXE traditionelles Familienrezept von Aris",
+          "prices": [
+            {
+              "amount": 21.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "68",
+          "description": "mit Kritaraki (griechische Reisnudeln), Parmesan und gemischtem Salat"
+        },
+        {
+          "name": "LAMMHAXE",
+          "prices": [
+            {
+              "amount": 20.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "69",
+          "description": "mit Auberginen und gemischtem Salat"
+        },
+        {
+          "name": "LAMMHAXE",
+          "prices": [
+            {
+              "amount": 20.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3",
+            "5",
+            "F"
+          ],
+          "allergens": [
+            "milk",
+            "sulphites"
+          ],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {},
+          "ref": "70",
+          "description": "mit Gigantes (Bohnen) und gemischtem Salat"
+        },
+        {
+          "name": "LAMMHAXE mit Priam (hausgemachtes Gemüse),",
+          "prices": [
+            {
+              "amount": 22.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "71",
+          "description": "Feta und gemischtem Salat"
+        }
+      ]
+    },
+    {
+      "title": "AUS DER PFANNE",
+      "items": [
+        {
+          "name": "GYROSPFANNE",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "72",
+          "description": "mit Metaxasauce , Käse, Kartoffeln nach Art des Hauses und gemischtem Salat"
+        },
+        {
+          "name": "SUZUKI",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "73",
+          "description": "Hacksteak mit Metaxasauce , Käse, Kartoffeln nach Art des Hauses und gemischtem Salat"
+        },
+        {
+          "name": "SCHWEINEMEDAILLONS",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "74",
+          "description": "mit Metaxasauce , Käse, Kartoffeln nach Art des Hauses und gemischtem Salat"
+        },
+        {
+          "name": "HÜHNERBRUSTFILET traditionelles Familienrezept von Aris",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "75",
+          "description": "in Sahnesauce mit Austernpilzen, Lauch, Rosmarinkartoffeln und gemischtem Salat"
+        },
+        {
+          "name": "SCHNITZEL vom Schwein, paniert",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            },
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "C",
+            "F"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "76",
+          "description": "mit Pommes Frites und gemischtem Salat auf Wunsch auch von der Pute"
+        }
+      ]
+    },
+    {
+      "title": "VON RIND UND KALB",
+      "items": [
+        {
+          "name": "GIUVETSI",
+          "prices": [
+            {
+              "amount": 21.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "77",
+          "description": "Kalbfleisch aus dem Backofen mit Reisnudeln Parmesan, und gemischtem Salat"
+        },
+        {
+          "name": "GIUVETSI",
+          "prices": [
+            {
+              "amount": 20.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "78",
+          "description": "Kalbfleisch aus dem Backofen mit Spaghetti und Parmesan und gemischtem Salat"
+        },
+        {
+          "name": "STIFADO",
+          "prices": [
+            {
+              "amount": 20.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "79",
+          "description": "Kalbfleisch aus dem Backofen mit ganzen gekochten Zwiebeln und gemischtem Salat"
+        },
+        {
+          "name": "RUMPSTEAK",
+          "prices": [
+            {
+              "amount": 27.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "80",
+          "description": "mit Röstzwiebeln, Kräuterbutter, Folienkartoffel und gemischtem Salat"
+        }
+      ]
+    },
+    {
+      "title": "NUDELGERICHTE",
+      "items": [
+        {
+          "name": "SPAGHETTI",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "81",
+          "description": "aus dem Backofen mit Hackfleisch und Parmesan"
+        },
+        {
+          "name": "KRITARAKI",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "82",
+          "description": "griechische Reisnudeln aus dem Backofen mit Hackfleisch und Parmesan"
+        },
+        {
+          "name": "GARIDOMAKARONADA eines von Aris Lieblingsgerichten",
+          "prices": [
+            {
+              "amount": 19.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "B"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "83",
+          "description": "Scampis mit Spaghetti in Tomaten Weinsauce nach Art des Hauses"
+        },
+        {
+          "name": "TORTELLINI",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "F"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "84",
+          "description": "mit Spinat, Sahnesauce und Parmesan"
+        }
+      ]
+    },
+    {
+      "title": "FÜR UNSERE KLEINEN GÄSTE",
+      "items": [
+        {
+          "name": "GYROS",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "85",
+          "description": "mit Pommes Frites und Reis"
+        },
+        {
+          "name": "SOUFLAKI",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "86",
+          "description": "mit Pommes Frites und Reis"
+        },
+        {
+          "name": "KALAMARIA",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "N"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "87",
+          "description": "mit Pommes Frites und Reis"
+        },
+        {
+          "name": "FISCHTÄBCHEN",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "N"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "88",
+          "description": "mit Pommes Frites und Reis"
+        },
+        {
+          "name": "SCHWEINESCHNITZEL",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "16",
+            "C",
+            "F"
+          ],
+          "allergens": [
+            "eggs",
+            "gluten",
+            "milk"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "89",
+          "description": "mit Pommes Frites und Reis"
+        }
+      ]
+    },
+    {
+      "title": "ALEXANDERs FEINE NACHSPEISEN",
+      "items": [
+        {
+          "name": "GEMISCHTES EIS",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "90"
+        },
+        {
+          "name": "VANILLEEIS mit heißer Schokolade",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "91"
+        },
+        {
+          "name": "VANILLEEIS mit heißen Himbeeren",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "92"
+        },
+        {
+          "name": "BANANENSPLIT",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "93"
+        },
+        {
+          "name": "GALAKTOBURIKO nach einem Rezept von Konstantins Mutter",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "D",
+            "F"
+          ],
+          "allergens": [
+            "milk",
+            "peanuts"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "95",
+          "description": "Blätterteig mit feiner Griescreme gefüllt, mit Vanilleeis"
+        },
+        {
+          "name": "BAKLAVAS",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "D",
+            "F"
+          ],
+          "allergens": [
+            "milk",
+            "peanuts"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "96",
+          "description": "Blätterteig gefüllt mit Nüssen, mit Vanilleeis"
+        },
+        {
+          "name": "JOGHURT mit Honig und Nüssen",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "D",
+            "F"
+          ],
+          "allergens": [
+            "milk",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "97"
+        },
+        {
+          "name": "JOGHURT mit Honig und frischem Obst",
+          "prices": [
+            {
+              "amount": 7.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "D",
+            "F"
+          ],
+          "allergens": [
+            "milk",
+            "peanuts"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "98"
+        },
+        {
+          "name": "HALVAS, Sesamgebäck",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "J"
+          ],
+          "allergens": [
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "99"
+        },
+        {
+          "name": "DESSERTPLATTE SPEZIAL",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "D",
+            "F"
+          ],
+          "allergens": [
+            "milk",
+            "peanuts"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "101",
+          "description": "frische Früchte, Blätterteig und Vanilleeis"
+        },
+        {
+          "name": "FRAPPE oder EISKAFFEE mit Vanilleeis",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "102"
+        },
+        {
+          "name": "EISSCHOKOLADE mit Vanilleeis",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "15",
+            "F"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "colorant",
+            "flavouring",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "103"
+        }
+      ]
+    }
+  ]
+}

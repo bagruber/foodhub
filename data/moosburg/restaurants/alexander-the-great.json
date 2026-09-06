@@ -52,10 +52,8 @@
       }
     }
   ],
-  "menus": [],
-  "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
-    "Karte laut OSM unter https://www.alexander-moosburg.com/_files/ugd/40e28a_12377cc6e168498ebf0b653894258e36.pdf"
+  "menus": [
+    "alexander-the-great_2026-09-06.json"
   ],
   "openingHours": {
     "raw": "Th-Tu,PH 11:30-14:30,17:00-24:00",

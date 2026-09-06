@@ -1,0 +1,2784 @@
+{
+  "restaurantId": "asia-rose",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/asia-rose_speisekarte_2022-04-28.pdf",
+    "retrievedAt": "2026-09-06",
+    "createdAt": "2022-04-28",
+    "note": "Das PDF hat keinen Textlayer, die Schrift ist in Kurven umgewandelt. Der Text wurde aus den Seiten ausgelesen und liegt daneben als _extrakt.json. Die Zuordnung ist nicht Zeile für Zeile gegen das Original geprüft. Die Karte ist von 2022, Preise entsprechend unsicher. Quell-URL offen."
+  },
+  "legend": {
+    "allergens": {
+      "a": "gluten",
+      "al": "gluten",
+      "a1": "gluten",
+      "a2": "gluten",
+      "a3": "gluten",
+      "a4": "gluten",
+      "b": "crustaceans",
+      "c": "eggs",
+      "d": "fish",
+      "e": "peanuts",
+      "f": "soybeans",
+      "g": "milk",
+      "h": "nuts",
+      "h1": "nuts",
+      "h2": "nuts",
+      "h3": "nuts",
+      "h4": "nuts",
+      "h5": "nuts",
+      "h6": "nuts",
+      "h7": "nuts",
+      "h8": "nuts",
+      "i": "celery",
+      "j": "mustard",
+      "k": "sesame",
+      "l": "sulphites",
+      "m": "lupin",
+      "n": "molluscs"
+    },
+    "additives": {
+      "1": "colorant",
+      "2": "preservative",
+      "3": "antioxidant",
+      "4": "flavour_enhancer",
+      "5": "sulphured",
+      "6": "blackened",
+      "7": "phosphate",
+      "8": "milk_protein",
+      "9": "caffeine",
+      "10": "quinine",
+      "11": "sweetener",
+      "12": "phenylalanine",
+      "13": "waxed",
+      "14": "nitrite_salt",
+      "15": "taurine",
+      "16": "acidifier",
+      "17": "tartrazine",
+      "18": "surimi"
+    }
+  },
+  "sections": [
+    {
+      "title": "Suppen",
+      "items": [
+        {
+          "name": "MISO-SUPPE",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "01",
+          "description": "mit Tofu, Seetang und Frühlingszwiebeln"
+        },
+        {
+          "name": "CHICKEN-SUPPE",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "02",
+          "description": "mit Hühnerfleisch, Gemüse, Pilzen und Kokosmilch",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "LACHS-SUPPE",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "03",
+          "description": "mit Lachsfilet, Seetang und Frühlingzwiebeln"
+        },
+        {
+          "name": "SCAMPI-SUPPE",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "b",
+            "g"
+          ],
+          "allergens": [
+            "crustaceans",
+            "milk"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "04",
+          "description": "mit Garnelen, Gemüse, Pilzen und Kokosmilch",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Vorspeisen",
+      "items": [
+        {
+          "name": "KRUPUK",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "11",
+          "description": "Krabbenchips"
+        },
+        {
+          "name": "MINI-FRÜHLINGSROLLE",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "12",
+          "description": "(8 Stück) mit Gemüsefüllung"
+        },
+        {
+          "name": "VIETNAMESISCHE FRÜHLINGSROLLE",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "13",
+          "description": "(2 Stück) mit Hühnerfleisch, Gemüse, Glasnudeln, Morcheln"
+        },
+        {
+          "name": "WANTAN CHIEN",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "14",
+          "description": "[5 Stück] Aus Reisblättern mit Hühnerhackfleisch gebacken"
+        },
+        {
+          "name": "GA XIEN SATE",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "e",
+            "k"
+          ],
+          "allergens": [
+            "peanuts",
+            "sesame"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "15",
+          "description": "[2 Stück] Gebratene Hähnchenspieße mit Satesoße"
+        },
+        {
+          "name": "EBI TEMPURA",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "a",
+            "b"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "16",
+          "description": "(3 Stück) Garnelen gebacken in Rice Flake"
+        },
+        {
+          "name": "SCALLOPS XIEN",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "k",
+            "n"
+          ],
+          "allergens": [
+            "molluscs",
+            "sesame"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "17",
+          "description": "(4 Stück) Gebratene Jakobsmuschelspieße mit Yakitorisoße"
+        },
+        {
+          "name": "EDAMAME",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "18",
+          "description": "Japanische grüne Bohnen"
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "WAKAME-SALAT",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "10",
+            "f",
+            "k"
+          ],
+          "allergens": [
+            "sesame",
+            "soybeans"
+          ],
+          "additives": [
+            "quinine"
+          ],
+          "diet": {},
+          "ref": "21",
+          "description": "mit grüner Algensalat"
+        },
+        {
+          "name": "OKTOPUS-SALAT",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "f",
+            "k",
+            "n"
+          ],
+          "allergens": [
+            "molluscs",
+            "sesame",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "22",
+          "description": "Oktopus, Gurken, Avocado mit Kimchisoße"
+        },
+        {
+          "name": "AVOCADO-SALAT",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "c",
+            "f",
+            "k"
+          ],
+          "allergens": [
+            "eggs",
+            "sesame",
+            "soybeans"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "23",
+          "description": "mit Eisbergsalat, Avocado, Gurken, Eier, Paprika, Tomaten und Rote Zwiebeln"
+        }
+      ]
+    },
+    {
+      "title": "Spezialitäten Hauptspeisen",
+      "items": [
+        {
+          "name": "CHICKEN NUSS",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "8",
+            "8",
+            "g"
+          ],
+          "allergens": [
+            "milk"
+          ],
+          "additives": [
+            "flavour_enhancer",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "30",
+          "description": "Zartes Hühnerfleisch mit Saisongemüse in Erdnuss-Soße"
+        },
+        {
+          "name": "CHICKEN CURRY",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "8",
+            "9"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "flavour_enhancer",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "31",
+          "description": "Zartes Hühnerfleisch in roter Curry-Kokosmilch-Soße mit verschiedenem Gemüse",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "CHICKEN MANGO",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "11",
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [
+            "flavour_enhancer",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "32",
+          "description": "Zartes Hühnerfleisch mit Saisongemüse, exotischen Früchten in Mango-Soße"
+        },
+        {
+          "name": "CHICKEN QUEEN",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "8"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "33",
+          "description": "Knusprige Hähnchenkeule ohne Knochen auf gebraten Gemüse"
+        },
+        {
+          "name": "HOT & SPICY",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "34",
+          "description": "Gebratene Fleischsorten mit Zucchini, Paprika, Sojasprossen, Zitronengras, Zwiebel und Chili",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "DIZZY BEEF",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "a",
+            "n"
+          ],
+          "allergens": [
+            "gluten",
+            "molluscs"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "36",
+          "description": "Gebratenes Rindfleisch mit verschiedenem Gemüse, Ingwer, Knoblauch, Chili in einer Austern-Soße",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "GOODMORNING VIETNAM (PHO BO)",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "37",
+          "description": "Reisbandnudelsuppe mit Rindfleisch und Kräutern noch vietnamesischem Rezept"
+        },
+        {
+          "name": "SWIMMING DUCK",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "38",
+          "description": "Ramennudelsuppe mit Entenfleisch, Pak-Choi, Chinakohl, Karotten, Chili, Sojasprossen, asiatischen Kräutern",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "DUCK KING",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "8"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer",
+            "milk_protein"
+          ],
+          "diet": {},
+          "ref": "39",
+          "description": "Knusprige Entenbrust mit verschiedenem Gemüse"
+        },
+        {
+          "name": "DUCK MANGO",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "11",
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [
+            "flavour_enhancer",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "40",
+          "description": "Knusprige Entenbrust mit Saisongemüse, exotischen Früchten in Mango-Soße"
+        },
+        {
+          "name": "SCAMPI CURRY",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "a",
+            "b",
+            "g"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten",
+            "milk"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "41",
+          "description": "Gebratene Garnelen mit verschiedenem Gemüse in roter Curry-Kokosmilch-Soße",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "SAMURAI",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "a",
+            "f",
+            "g"
+          ],
+          "allergens": [
+            "gluten",
+            "milk",
+            "soybeans"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "42",
+          "description": "Frittiertes Lachssteak mit buntem Gemüse in roter Curry-Kokosmilch-Soße",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "MISS CITY",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "8",
+            "9"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "flavour_enhancer",
+            "milk_protein"
+          ],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "ref": "43",
+          "description": "Saisongemüse im Wok mit Tofu in roter Curry-Kokosmilch-Soße",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "MISS DREAM",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "a",
+            "k",
+            "n"
+          ],
+          "allergens": [
+            "gluten",
+            "molluscs",
+            "sesame"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "44",
+          "description": "Pak-Choi, Brokkoli, Zucchini, Chinakohl, Sojasprossen, Karotten, Lauchzwiebeln, Ingwer im Wok geschwenkt mit Sesamöl-Austern-Soße",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "MISS TEEN",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "11",
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [
+            "flavour_enhancer",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "45",
+          "description": "Saisongemüse im Wok mit Mango-Soße"
+        },
+        {
+          "name": "GEBRATENER REIS",
+          "prices": [],
+          "markersRaw": [
+            "4",
+            "a",
+            "c",
+            "d",
+            "f"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "soybeans"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "47",
+          "description": "mit Ei, verschiedenem Gemüse und Fleischsorten"
+        },
+        {
+          "name": "GEBRATENE NUDELN",
+          "prices": [],
+          "markersRaw": [
+            "4",
+            "a",
+            "c",
+            "d",
+            "f"
+          ],
+          "allergens": [
+            "eggs",
+            "fish",
+            "gluten",
+            "soybeans"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "48",
+          "description": "mit Ei, verschiedenem Gemüse und Fleischsorten"
+        }
+      ]
+    },
+    {
+      "title": "Beilage",
+      "items": [
+        {
+          "name": "Jasmin Reis",
+          "prices": [
+            {
+              "amount": 1.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "53"
+        },
+        {
+          "name": "Gebratener Reis",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "54"
+        },
+        {
+          "name": "Gebratene Nudeln",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "55"
+        },
+        {
+          "name": "Garnelen",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "56"
+        },
+        {
+          "name": "Hähnchen",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "57"
+        },
+        {
+          "name": "Soße",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "58"
+        }
+      ]
+    },
+    {
+      "title": "Sushi Menü",
+      "items": [
+        {
+          "name": "NAHA",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "60",
+          "description": "6x Avocado Maki, 6x Gurken Maki, 6x Rettich Maki, 6x Kürbis Maki"
+        },
+        {
+          "name": "MITO",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "milk",
+            "sesame"
+          ],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "61",
+          "description": "4x Avocado Philadelphia Maki, 4x Kapa Philadelphia Maki, 3x Avocado Maki, 3x Gurken Maki, 2x Nigiri Avocado, 2x Nigiri Rettich"
+        },
+        {
+          "name": "SAGA",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "d",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "sesame"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "62",
+          "description": "8x Alaska Maki, 6x Lachs Maki, 6x Avocado Maki"
+        },
+        {
+          "name": "OSAKA",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "18",
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [
+            "colorant",
+            "preservative",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "63",
+          "description": "8x California Maki, 6x Lachs Maki, 6x Thunfisch Maki"
+        },
+        {
+          "name": "TOKIO",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "d",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "sesame"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "64",
+          "description": "8x Alaska Maki, 6x Lachs Maki, 4x Nigiri Lachs"
+        },
+        {
+          "name": "SAPPORO",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "b",
+            "d",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "milk",
+            "sesame"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "65",
+          "description": "8x Alaska Maki, 3x Lachs Maki, 3x Avocado Maki, 5x Nigiri [Lachs, Thunfisch, Ebi, Tintenfisch, Eierstich]"
+        },
+        {
+          "name": "FUKUOKA",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "18",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish"
+          ],
+          "additives": [
+            "colorant",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "66",
+          "description": "8x California Maki mit Lachs-Mantel, 5x Futo Maki, 1x Alaska Temaki, 1 Rosenlachs"
+        },
+        {
+          "name": "KYOTO",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "18",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish"
+          ],
+          "additives": [
+            "colorant",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "67",
+          "description": "8x California Maki mit Lachs-Mantel, 4x Scheibe Lachssashimi, 5x Nigiri (Lachs, Thunfisch, Ebi, Tobiko, Jakobsmuschel)"
+        },
+        {
+          "name": "SALAT SASHIMI",
+          "prices": [
+            {
+              "amount": 19.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "b",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "sesame"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "71",
+          "description": "8x Scheibe Sashimi [4x Lachs, 4x Thunfisch], 2x Jakobsmuschel, 2x Tintenfisch, Avocado und Algensalat"
+        },
+        {
+          "name": "BENTO BOX",
+          "prices": [
+            {
+              "amount": 19.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "b",
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "sesame"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "72",
+          "description": "3x Lachs Maki, 3x Avocado Maki, 3x Nigiri (Lachs, Thunfisch, Ebi), gegrilltes Lachs in Teriyaki-Soße mit Reis, Algensalat"
+        },
+        {
+          "name": "HAPPY DAY",
+          "prices": [
+            {
+              "amount": 44.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "18",
+            "b",
+            "d",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "milk",
+            "sesame"
+          ],
+          "additives": [
+            "colorant",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "73",
+          "description": "8x Alaska Maki, 8x California Maki, 3x Lachs Maki, 3x Thunfisch Maki, 3x Avocado Maki, 3x Gurken Maki, 12x Nigiri (2x Lachs, 2x Thunfisch, 2x Ebi, 2x Tobiko, 2x Jakobsmuschel, 2x Oktopus), 2x Miso-Suppe"
+        },
+        {
+          "name": "HAPPY NIGHT",
+          "prices": [
+            {
+              "amount": 74.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "18",
+            "b",
+            "d",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "milk",
+            "sesame"
+          ],
+          "additives": [
+            "colorant",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "74",
+          "description": "(nur auf Vorbestellung erhältlich) Sushi-Torte für jeden Anlass (für 4 Personen)"
+        },
+        {
+          "name": "LACHS SASHIMI",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "76",
+          "description": "[8 Stück]"
+        },
+        {
+          "name": "THUNFISCH SASHIMI",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "77",
+          "description": "[8 Stück]"
+        },
+        {
+          "name": "GEMISCH SASHIMI",
+          "prices": [
+            {
+              "amount": 19.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "18",
+            "b",
+            "d",
+            "n"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish",
+            "molluscs"
+          ],
+          "additives": [
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "78",
+          "description": "(verschiedene Fischarten)"
+        }
+      ]
+    },
+    {
+      "title": "Knusprige Sushi",
+      "items": [
+        {
+          "name": "CRUNCHY TEMPURA PANADE LACHS",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d"
+          ],
+          "allergens": [
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "80",
+          "description": "Lachs, Avocado, Gurken, mit Soße"
+        },
+        {
+          "name": "CRUNCHY TEMPURA PANADE GREEN",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "81",
+          "description": "Spargel, Avocado, Gurken, mit Soße"
+        },
+        {
+          "name": "CRUNCHY TEMPURA PANADE EBI",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "18",
+            "a",
+            "b"
+          ],
+          "allergens": [
+            "crustaceans",
+            "gluten"
+          ],
+          "additives": [
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "82",
+          "description": "Garnelen, Surimi, Gurken, mit Soße"
+        },
+        {
+          "name": "CRUNCHY RICE FLAKE MIX",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "d"
+          ],
+          "allergens": [
+            "fish",
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "83",
+          "description": "Lachs, Avocado, Gurken, mit Soße"
+        },
+        {
+          "name": "CRUNCHY RICE FLAKE VEGGIE",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "84",
+          "description": "Spargel, Paprika, Gurken, mit Soße"
+        },
+        {
+          "name": "CRUNCHY RICE FLAKE EBI",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "18",
+            "8",
+            "6"
+          ],
+          "allergens": [],
+          "additives": [
+            "blackened",
+            "milk_protein",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "85",
+          "description": "Garnelen, Surimi, Gurken, mit Soße"
+        },
+        {
+          "name": "BIG SALMON TEMPURA",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "18",
+            "8",
+            "b",
+            "c",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "eggs",
+            "fish"
+          ],
+          "additives": [
+            "milk_protein",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "86",
+          "description": "Lachshaut, Surimi, Eierstich, Spargel, Gurken, Mayonnaise, mit Soße"
+        }
+      ]
+    },
+    {
+      "title": "Nigiri Sushi",
+      "items": [
+        {
+          "name": "AVOCADO",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "90"
+        },
+        {
+          "name": "EIERTICH",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "91"
+        },
+        {
+          "name": "TINTENFISCH",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "92"
+        },
+        {
+          "name": "OKTOPUS",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "93"
+        },
+        {
+          "name": "AAL-UNAGI",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "94"
+        },
+        {
+          "name": "LACHS",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "95"
+        },
+        {
+          "name": "THUNFISCH",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "96"
+        },
+        {
+          "name": "EBI",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "97"
+        },
+        {
+          "name": "JAKOBSMUSCHEL",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "98"
+        },
+        {
+          "name": "TOBIKO",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "0"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "99",
+          "markersUnknown": [
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Temaki Sushi",
+      "items": [
+        {
+          "name": "ALASKA TEMAKI",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "106",
+          "description": "Lachs, Avocado"
+        },
+        {
+          "name": "CALIFORNIA TEMAKI",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "18",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish"
+          ],
+          "additives": [
+            "colorant",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "107",
+          "description": "Surimi, Avocado"
+        },
+        {
+          "name": "TUNA TEMAKI",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "6"
+          ],
+          "allergens": [],
+          "additives": [
+            "blackened",
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "108",
+          "description": "Gehackter Thunfisch, Chili, Mayonnaise"
+        },
+        {
+          "name": "VEGGIE TEMAKI",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "k"
+          ],
+          "allergens": [
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "109",
+          "description": "Avocado, Gurken, Spargel, Paprika"
+        }
+      ]
+    },
+    {
+      "title": "Nori Maki",
+      "items": [
+        {
+          "name": "GURKEN MAKI",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "111"
+        },
+        {
+          "name": "KÜRBIS MAKI",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "112"
+        },
+        {
+          "name": "RETTICH MAKI",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "113"
+        },
+        {
+          "name": "SPARGEL MAKI",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "114"
+        },
+        {
+          "name": "MANGO MAKI",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "115"
+        },
+        {
+          "name": "AVOCADO MAKI",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "116"
+        },
+        {
+          "name": "LACHS MAKI",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "117"
+        },
+        {
+          "name": "THUNFISCH MAKI",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "118"
+        },
+        {
+          "name": "ENTE MAKI",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "119"
+        },
+        {
+          "name": "FUTO MIX MAKI",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "120"
+        }
+      ]
+    },
+    {
+      "title": "Inside-Out Maki",
+      "items": [
+        {
+          "name": "KAPPA PHILADELPHIA MAKI",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "9"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {},
+          "ref": "131",
+          "description": "Gurken, Frischkäse, Sesam-Mantel"
+        },
+        {
+          "name": "AVOCADO PHILADELPHIA MAKI",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "9"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {},
+          "ref": "132",
+          "description": "Avocado, Frischkäse, Sesam-Mantel"
+        },
+        {
+          "name": "SPARGEL PHILADELPHIA MAKI",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "9",
+            "k"
+          ],
+          "allergens": [
+            "sesame"
+          ],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {},
+          "ref": "133",
+          "description": "Spargel, Frischkäse, Sesam-Mantel"
+        },
+        {
+          "name": "ERDBEEREN MAKI / MANGO MAKI",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "134",
+          "description": "(Erdbeeren nur im Sommer) Erdbeeren/Mango, Frischkäse, Erdbeeren-Mantel"
+        },
+        {
+          "name": "CALIFORNIA MAKI",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "18",
+            "6",
+            "d"
+          ],
+          "allergens": [
+            "fish"
+          ],
+          "additives": [
+            "blackened",
+            "colorant",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "135",
+          "description": "Surimi, Avocado, Tobiko-Mantel"
+        },
+        {
+          "name": "ALASKA MAKI",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "136",
+          "description": "Lachs, Avocado, Frischkäse, Sesam-Mantel"
+        },
+        {
+          "name": "HAWAII MAKI",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "d",
+            "g",
+            "k"
+          ],
+          "allergens": [
+            "fish",
+            "milk",
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "137",
+          "description": "Lachs, Rucola, Frischkäse, Sesam-Mantel"
+        },
+        {
+          "name": "BOSTON MAKI",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "d",
+            "g"
+          ],
+          "allergens": [
+            "fish",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "138",
+          "description": "Thunfisch, Avocado, Frischkäse, Tobiko-Mantel"
+        },
+        {
+          "name": "ATLANTIK MAKI",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "d",
+            "g"
+          ],
+          "allergens": [
+            "fish",
+            "milk"
+          ],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {},
+          "ref": "139",
+          "description": "Lachs, Thunfisch, Avocado, Frischkäse, Tobiko-Mantel"
+        },
+        {
+          "name": "REGENBOGEN MAKI",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "18",
+            "b",
+            "d"
+          ],
+          "allergens": [
+            "crustaceans",
+            "fish"
+          ],
+          "additives": [
+            "colorant",
+            "surimi"
+          ],
+          "diet": {},
+          "ref": "140",
+          "description": "Surimi, Avocado, Lachs-Ebi-Mantel, Kresse"
+        },
+        {
+          "name": "SPICY TUNA MAKI",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "0"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "141",
+          "description": "Gehackter Thunfisch, Chili, Mayonnaise, Tobiko-Mantel",
+          "markersUnknown": [
+            "0"
+          ]
+        },
+        {
+          "name": "CRISPY DUCK MAKI",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "a",
+            "k"
+          ],
+          "allergens": [
+            "gluten",
+            "sesame"
+          ],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "ref": "142",
+          "description": "Knusprige Entenbrust mit Gurken, Mayonnaise, Sesam-Mantel"
+        },
+        {
+          "name": "EBI TEMPURA MAKI",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "a",
+            "b",
+            "c",
+            "k"
+          ],
+          "allergens": [
+            "crustaceans",
+            "eggs",
+            "gluten",
+            "sesame"
+          ],
+          "additives": [],
+          "diet": {},
+          "ref": "143",
+          "description": "Gebackener Garnele mit Gurken, Mayonnaise, Sesam-Mantel"
+        }
+      ]
+    },
+    {
+      "title": "Nachspeise",
+      "items": [
+        {
+          "name": "GEBACKENE BANANE",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "25",
+          "description": "(4 Stück)"
+        },
+        {
+          "name": "SESAM-BÄLLCHEN",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "26",
+          "description": "(4 Stück)"
+        },
+        {
+          "name": "MOCHI-BÄLLCHEN",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "27",
+          "description": "(3 Stück)"
+        },
+        {
+          "name": "KOKOS-BÄLLCHEN",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "28",
+          "description": "(4 Stück)"
+        }
+      ]
+    },
+    {
+      "title": "Alkoholfreie Getränke",
+      "items": [
+        {
+          "name": "JASMIN TEE",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "201"
+        },
+        {
+          "name": "GRÜNER TEE",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "202"
+        },
+        {
+          "name": "INGWER TEE",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "203"
+        },
+        {
+          "name": "MINZE TEE",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "204"
+        },
+        {
+          "name": "SAN PELLEGRINO STILLWASSER",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "206"
+        },
+        {
+          "name": "SAN PELLEGRINO MEDIUMWASSER",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "207"
+        },
+        {
+          "name": "COCA-COLA",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "3",
+            "8",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "colorant",
+            "milk_protein",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "208"
+        },
+        {
+          "name": "COCA-COLA LIGHT",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "3",
+            "8",
+            "11",
+            "12"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "colorant",
+            "milk_protein",
+            "phenylalanine",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "209"
+        },
+        {
+          "name": "SPEZI",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "13",
+            "8",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "milk_protein",
+            "sweetener",
+            "waxed"
+          ],
+          "diet": {},
+          "ref": "210"
+        },
+        {
+          "name": "FANTA",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "13",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "sweetener",
+            "waxed"
+          ],
+          "diet": {},
+          "ref": "211"
+        },
+        {
+          "name": "SPRITE",
+          "prices": [
+            {
+              "amount": 3.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "8",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "milk_protein",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "212"
+        },
+        {
+          "name": "APFELSCHORLE",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "213"
+        },
+        {
+          "name": "MANGOSCHORLE",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "14",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "nitrite_salt",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "214"
+        },
+        {
+          "name": "LYCHEESCHORLE",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "10"
+          ],
+          "allergens": [],
+          "additives": [
+            "quinine"
+          ],
+          "diet": {},
+          "ref": "215"
+        },
+        {
+          "name": "GUAVENSCHORLE",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "216"
+        },
+        {
+          "name": "MARACUJASCHORLE",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "217"
+        },
+        {
+          "name": "JOHANNISBEERSCHORLE",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "218"
+        },
+        {
+          "name": "APFELSAFT",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "219"
+        },
+        {
+          "name": "MANGOSAFT",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "220"
+        },
+        {
+          "name": "LYCHEESAFT",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "111"
+          ],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "221",
+          "markersUnknown": [
+            "111"
+          ]
+        },
+        {
+          "name": "GUAVENSAFT",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {},
+          "ref": "222"
+        }
+      ]
+    },
+    {
+      "title": "Alkoholische Getränke",
+      "items": [
+        {
+          "name": "HELLES BIER",
+          "prices": [
+            {
+              "amount": 3.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "231"
+        },
+        {
+          "name": "HELLES BIER - ALKOHOLFREI",
+          "prices": [
+            {
+              "amount": 3.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "232"
+        },
+        {
+          "name": "WEIßBIER HELL a, DUNKEL a",
+          "prices": [
+            {
+              "amount": 3.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "233"
+        },
+        {
+          "name": "RADLER",
+          "prices": [
+            {
+              "amount": 3.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "235"
+        },
+        {
+          "name": "PILS a",
+          "prices": [
+            {
+              "amount": 3.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "236"
+        },
+        {
+          "name": "ASIA BIER (ASIHI, KIRIN)",
+          "prices": [
+            {
+              "amount": 3.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "237"
+        },
+        {
+          "name": "SAKE",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "238"
+        },
+        {
+          "name": "WEIßWEIN (CHADONNAY, WEISSBURGUNDER)",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "240"
+        },
+        {
+          "name": "ROTWEIN (CHIANTI, MERLOT)",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "241"
+        }
+      ]
+    }
+  ]
+}

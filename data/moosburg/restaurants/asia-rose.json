@@ -53,12 +53,8 @@
       }
     }
   ],
-  "menus": [],
-  "open": [
-    "Speisekarte noch nicht ausgelesen: das PDF hat keinen Textlayer, die Schrift ist in Kurven umgewandelt",
-    "96 freigestellte Gerichtsbilder liegen im PDF und lassen sich den Gerichten zuordnen",
-    "Kartenstand 2022, eine aktuellere Fassung wäre zu suchen",
-    "Bewertungen noch nicht angebunden"
+  "menus": [
+    "asia-rose_2022-04-28.json"
   ],
   "osm": "node/8124469003",
   "location": {

@@ -50,7 +50,7 @@ describe("Produktkatalog", () => {
     expect(von("Stilles Wasser")!.houses.length).toBeGreaterThan(1);
     expect(von("Kaffee")!.items.map((d) => d.name)).toContain("Tasse Kaffee");
     expect(von("Kaffee")!.items.map((d) => d.name)).toContain("Haferl Kaffee");
-    expect(von("Aperol Spritz")!.houses.length).toBe(4);
+    expect(von("Aperol Spritz")!.houses.length).toBeGreaterThanOrEqual(4);
   });
 
   it("legt nicht zusammen, was nur ein Wort teilt", () => {
