@@ -20,6 +20,7 @@ export type SourceKind =
   | "osm"          // OpenStreetMap, ueber Overpass
   | "google_maps"
   | "tripadvisor"
+  | "restaurantguru"
   | "manual";      // vor Ort erfasst, telefonisch, aus einem Aushang
 
 export type Provenance = {
@@ -63,16 +64,49 @@ export type OpeningHours = {
   provenance: Provenance;
 };
 
-export type Rating = {
-  source: SourceKind;
-  value: number;
-  /** Obergrenze der Skala, praktisch immer 5. */
-  scale: number;
-  count?: number;
-  /** Link zur Bewertungsseite. Mehrere Anbieter verlangen ihn als Attribution. */
-  url?: string;
+/**
+ * Was ein Bewertungsportal ueber ein Haus fuehrt.
+ *
+ * Link und Bewertung stehen bewusst in einem Objekt und nicht getrennt. Eine
+ * Zahl ohne den Weg zu ihrer Quelle ist wertlos: wer 3,5 von 5 liest, will
+ * sehen, worauf sich das stuetzt, und mehrere Anbieter verlangen die
+ * Verlinkung ohnehin als Bedingung. `rating` fehlt, solange nur der Link
+ * bekannt ist.
+ *
+ * Diese Bewertungen sind fremde Meinungen. Weder das Repo noch die App macht
+ * sie sich zu eigen; die Oberflaeche sagt das an der Stelle, an der sie
+ * stehen.
+ */
+export type Review = {
+  source: Extract<SourceKind, "google_maps" | "tripadvisor" | "restaurantguru">;
+  url: string;
+  rating?: {
+    value: number;
+    /** Obergrenze der Skala, praktisch immer 5. */
+    scale: number;
+    count?: number;
+  };
   provenance: Provenance;
 };
+
+/**
+ * Zahlungsarten, Slugs aus `data/vocab/zahlung.json`.
+ *
+ * Dreiwertig, und das ist der Punkt: `true` heisst angenommen, `false` heisst
+ * ausdruecklich nicht, und ein fehlender Schluessel heisst unbekannt. Wer die
+ * drei zusammenwirft, schickt jemanden ohne Bargeld in ein Wirtshaus, das nur
+ * Bargeld nimmt.
+ *
+ * Die Herkunft haengt an der einzelnen Angabe, nicht am Haus: die Kartenfelder
+ * kommen aus OpenStreetMap, die MoosburgCard von der Liste der
+ * Akzeptanzstellen. Beides veraltet unabhaengig voneinander.
+ */
+export type PaymentClaim = {
+  accepted: boolean;
+  provenance: Provenance;
+};
+
+export type Payment = Record<string, PaymentClaim>;
 
 /**
  * Umriss des Gebaeudes, in dem das Haus liegt.
@@ -137,10 +171,11 @@ export type Restaurant = {
   cuisines: string[];
   services?: Services;
   diet?: HouseDiet;
+  payment?: Payment;
   ordering?: Ordering[];
   openingHours?: OpeningHours;
-  /** Leer, solange keine Bewertungsquelle angebunden ist. */
-  ratings: Rating[];
+  /** Leer, solange kein Bewertungsportal angebunden ist. */
+  reviews: Review[];
   /** Dateinamen der Kartenversionen unter `menus/`, neueste zuerst. */
   menus: string[];
   /** Herkunft der Stammdaten. Einzelne Felder duerfen davon abweichen. */

@@ -25,7 +25,18 @@
     "turkish",
     "pizza"
   ],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Barakat%20Pizza%20%26%20Grill%20Thalbacher%20Stra%C3%9Fe%2014%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Barakat%20Pizza%20%26%20Grill%20Thalbacher%20Stra%C3%9Fe%2014%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
@@ -84,5 +95,25 @@
   "diet": {
     "vegetarian": "yes",
     "vegan": "no"
+  },
+  "payment": {
+    "debit_cards": {
+      "accepted": false,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/11162697416",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "credit_cards": {
+      "accepted": false,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/11162697416",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    }
   }
 }

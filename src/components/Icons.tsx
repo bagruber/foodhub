@@ -133,6 +133,15 @@ export function Book({ className }: Props) {
   );
 }
 
+export function Card({ className }: Props) {
+  return (
+    <Svg className={className}>
+      <rect x="1.5" y="3.5" width="13" height="9" rx="1.5" {...STROKE} />
+      <path d="M1.5 6.5h13M4 10h3" {...STROKE} />
+    </Svg>
+  );
+}
+
 export function Tag({ className }: Props) {
   return (
     <Svg className={className}>

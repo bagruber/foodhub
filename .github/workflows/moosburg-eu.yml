@@ -1,0 +1,66 @@
+name: Deploy auf moosburg.eu/data/foodhub/
+
+# Läuft neben dem GitHub-Pages-Workflow in pages.yml auf demselben Branch.
+# Die beiden stören sich nicht: Pages nutzt kein FTP.
+#
+# Unterschiedliche base-Pfade, deshalb ein eigener Build-Befehl: Pages liegt
+# unter /foodhub/ (Repo-Name), auf moosburg.eu hängt die App als Unterpunkt am
+# Data Hub, also unter /data/foodhub/.
+#
+# Anders als die Baumkarte hat diese App keinen täglichen Cron, der die Daten
+# fortschreibt. Ein workflow_run-Trigger ist deshalb nicht nötig: die
+# Speisekarten ändern sich, wenn jemand eine neue einliest und pusht.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-data-foodhub
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      # Node 22 ist Pflicht, nicht Geschmack: pnpm 11 laedt node:sqlite, das
+      # es erst ab 22 gibt. Unter 20 bricht schon setup-node.
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build:hostinger
+
+      # Der Basispfad steckt in den Verweisen von index.html. Stimmt er nicht,
+      # laedt auf moosburg.eu kein Skript, und zwar ohne Fehlermeldung im Log.
+      - name: Basispfad im Build pruefen
+        run: |
+          grep -q '/data/foodhub/assets/' dist/index.html || {
+            echo "index.html zeigt nicht auf /data/foodhub/"; exit 1; }
+          ls -la dist dist/data/moosburg
+
+      - name: Nach data/foodhub/ spiegeln
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: data/foodhub/
+
+          # Alle Projekte teilen sich ein FTP-Konto, und die Repos können ihre
+          # Läufe nicht koordinieren (concurrency-Gruppen gelten je Repo).
+          # Läuft parallel ein datahub- oder baumkarte-Deploy, nimmt Hostinger
+          # die Verbindung erst nach Minuten an; mit 120 s endete der Lauf dort
+          # schon einmal mit "Timeout (control socket)".
+          timeout: 300000
+
+          # `dangerous-clean-slate` waere hier verheerend: unter /data/ liegt
+          # der Data Hub selbst, und die Option loescht vor dem Hochladen alles
+          # im Zielverzeichnis. Die Action ueberträgt ohnehin nur Geaendertes.

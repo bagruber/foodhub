@@ -69,7 +69,14 @@ export function App() {
       for (const h of houses) for (const s of pick(h)) map.set(s, (map.get(s) ?? 0) + 1);
       return map;
     };
-    return { kinds: tally((h) => h.kinds ?? []), cuisines: tally((h) => h.cuisines) };
+    return {
+      kinds: tally((h) => h.kinds ?? []),
+      cuisines: tally((h) => h.cuisines),
+      // Nur die Ja-Angaben: nach `kein Kreditkarte` filtert niemand.
+      payment: tally((h) =>
+        Object.entries(h.payment ?? {}).filter(([, c]) => c.accepted).map(([m]) => m),
+      ),
+    };
   }, [houses]);
 
   const visibleHouses = useMemo(
@@ -202,6 +209,7 @@ export function App() {
           kinds={city.kinds}
           cuisines={city.cuisines}
           allergens={dishData?.allergens ?? {}}
+          payment={city.payment}
           counts={counts}
           hits={hits}
         />

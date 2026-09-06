@@ -17,6 +17,8 @@ export type Filters = {
   /** Allergene, die nicht vorkommen dürfen. */
   without: string[];
   services: ("delivery" | "takeaway" | "outdoorSeating")[];
+  /** Zahlungsarten, die angenommen werden muessen. Slugs aus dem Vokabular. */
+  payment: string[];
   onlyWithMenu: boolean;
   /** Wochentag 0 bis 6 und Minute seit Mitternacht, oder aus. */
   openAt: { day: number; minute: number } | null;
@@ -30,6 +32,7 @@ export const EMPTY: Filters = {
   spicy: false,
   without: [],
   services: [],
+  payment: [],
   onlyWithMenu: false,
   openAt: null,
 };
@@ -42,6 +45,7 @@ export function countActive(f: Filters): number {
     f.diet.length +
     f.without.length +
     f.services.length +
+    f.payment.length +
     (f.spicy ? 1 : 0) +
     (f.onlyWithMenu ? 1 : 0) +
     (f.openAt ? 1 : 0)
@@ -76,6 +80,10 @@ export function matchesHouse(house: Restaurant, f: Filters): boolean {
   if (f.kinds.length && !f.kinds.some((k) => house.kinds?.includes(k))) return false;
   if (f.cuisines.length && !f.cuisines.some((c) => house.cuisines.includes(c))) return false;
   if (f.services.length && !f.services.every((s) => house.services?.[s])) return false;
+  // Nur ein ausdrückliches Ja zählt. Wo nichts steht, wissen wir es nicht, und
+  // ein Haus in die Trefferliste zu nehmen, weil eine Angabe fehlt, hiesse
+  // jemanden mit der falschen Karte in der Tasche hinschicken.
+  if (f.payment.length && !f.payment.every((m) => house.payment?.[m]?.accepted)) return false;
   if (f.openAt && !openNow(house, f.openAt)) return false;
   // Ernährung greift am Haus nur, wo keine Karte gelesen ist. Wo eine da ist,
   // entscheidet das einzelne Gericht, und das prüft `matchesDish`.
@@ -99,6 +107,7 @@ export function matchesDish(dish: Dish, f: Filters, house: Restaurant | undefine
   if (f.kinds.length && !f.kinds.some((k) => house?.kinds?.includes(k))) return false;
   if (f.cuisines.length && !f.cuisines.some((c) => house?.cuisines.includes(c))) return false;
   if (f.services.length && !f.services.every((s) => house?.services?.[s])) return false;
+  if (f.payment.length && !f.payment.every((m) => house?.payment?.[m]?.accepted)) return false;
   if (f.openAt && (!house || !openNow(house, f.openAt))) return false;
   if (f.query) {
     const needle = f.query.trim().toLowerCase();

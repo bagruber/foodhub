@@ -24,7 +24,18 @@
   "cuisines": [
     "balkan"
   ],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Balkan-Restaurant%20Avlija%20St.-Georg-Stra%C3%9Fe%203%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Balkan-Restaurant%20Avlija%20St.-Georg-Stra%C3%9Fe%203%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"

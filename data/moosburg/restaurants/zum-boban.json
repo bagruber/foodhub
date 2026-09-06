@@ -24,7 +24,33 @@
   "cuisines": [
     "balkan"
   ],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Zum%20Boban%20Landshuter%20Stra%C3%9Fe%206%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Zum%20Boban%20Landshuter%20Stra%C3%9Fe%206%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    },
+    {
+      "source": "restaurantguru",
+      "url": "https://de.restaurantguru.com/Zum-Boban-Moosburg",
+      "provenance": {
+        "kind": "restaurantguru",
+        "url": "https://de.restaurantguru.com/Zum-Boban-Moosburg",
+        "retrievedAt": "2026-09-06",
+        "note": "Fremde Bewertung, von Restaurant Guru übernommen"
+      },
+      "rating": {
+        "value": 2.9,
+        "scale": 5,
+        "count": 304
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"

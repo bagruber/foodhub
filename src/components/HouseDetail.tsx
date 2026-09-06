@@ -1,7 +1,15 @@
 import { useMemo } from "react";
 import { Herkunft } from "@/components/Herkunft";
 import { Marks } from "@/components/Marks";
-import { formatPrice, type CityData, type Dish, type Restaurant } from "@/lib/data";
+import {
+  SOURCE_LABEL,
+  formatPrice,
+  type CityData,
+  type Dish,
+  type Provenance,
+  type Restaurant,
+  type Review,
+} from "@/lib/data";
 import { now } from "@/lib/filters";
 import { WEEKDAY_LABEL, formatDay, isOpenAt, parseHours } from "@/lib/hours";
 
@@ -138,6 +146,9 @@ export function HouseDetail({
           </section>
         )}
 
+        <Zahlung payment={house.payment} labels={names.payment} />
+        <Bewertungen reviews={house.reviews} />
+
         {house.menuProvenance?.map((p, i) => (
           <section key={i}>
             <h3 className="eyebrow">Speisekarte</h3>
@@ -188,5 +199,108 @@ export function HouseDetail({
 function Badge({ children }: { children: React.ReactNode }) {
   return (
     <span className="rounded bg-cream-dark px-1.5 py-0.5 text-ink-soft">{children}</span>
+  );
+}
+
+/**
+ * Womit man zahlen kann, und womit ausdrücklich nicht.
+ *
+ * Das Nein steht mit dabei, weil es die nützlichere Hälfte ist: dass ein Haus
+ * keine Karte nimmt, entscheidet darüber, ob jemand vorher zum Automaten muss.
+ * Was gar nicht dasteht, ist unbekannt und wird auch nicht erraten.
+ */
+function Zahlung({
+  payment,
+  labels,
+}: {
+  payment?: Record<string, { accepted: boolean; provenance: Provenance }>;
+  labels: Record<string, string>;
+}) {
+  const entries = Object.entries(payment ?? {});
+  if (!entries.length) return null;
+  const yes = entries.filter(([, c]) => c.accepted);
+  const no = entries.filter(([, c]) => !c.accepted);
+
+  // Je Quelle eine Herkunftszeile. Die Kartenfelder kommen aus OSM, die
+  // MoosburgCard von der Liste der Akzeptanzstellen.
+  const sources = new Map<string, Provenance>();
+  for (const [, claim] of entries) {
+    sources.set(`${claim.provenance.kind}|${claim.provenance.url ?? ""}`, claim.provenance);
+  }
+
+  return (
+    <section>
+      <h3 className="eyebrow">Zahlung</h3>
+      <div className="mt-1.5 flex flex-wrap gap-1.5 text-xs">
+        {yes.map(([slug]) => (
+          <span key={slug} className="rounded bg-diet-vegan/12 px-1.5 py-0.5 text-diet-vegan">
+            {labels[slug] ?? slug}
+          </span>
+        ))}
+        {no.map(([slug]) => (
+          <span
+            key={slug}
+            className="rounded border border-dashed border-ink-line px-1.5 py-0.5 text-ink-muted"
+          >
+            kein {labels[slug] ?? slug}
+          </span>
+        ))}
+      </div>
+      <div className="mt-2 space-y-0.5">
+        {[...sources.values()].map((p, i) => (
+          <Herkunft key={i} provenance={p} kurz />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/**
+ * Bewertungen anderer Portale.
+ *
+ * Fremde Meinungen, unter fremdem Namen erhoben. Der Hinweis darunter ist
+ * keine Höflichkeit: die Zahl steht neben unserer eigenen Auskunft und wäre
+ * sonst von ihr nicht zu unterscheiden.
+ */
+function Bewertungen({ reviews }: { reviews?: Review[] }) {
+  if (!reviews?.length) return null;
+  return (
+    <section>
+      <h3 className="eyebrow">Bewertungen anderswo</h3>
+      <ul className="mt-1.5 space-y-1 text-sm">
+        {reviews.map((r) => (
+          <li key={r.source} className="flex items-baseline justify-between gap-3">
+            <a
+              href={r.url}
+              target="_blank"
+              rel="noreferrer nofollow"
+              className="underline decoration-ink-line underline-offset-2 hover:decoration-ink"
+            >
+              {SOURCE_LABEL[r.source]}
+            </a>
+            {r.rating ? (
+              <span className="tabular shrink-0 text-ink-soft">
+                {r.rating.value.toLocaleString("de-DE", { minimumFractionDigits: 1 })} von{" "}
+                {r.rating.scale}
+                {r.rating.count !== undefined && (
+                  <span className="text-ink-muted"> · {r.rating.count} Stimmen</span>
+                )}
+              </span>
+            ) : (
+              <span className="shrink-0 text-xs text-ink-muted">nur Link</span>
+            )}
+          </li>
+        ))}
+      </ul>
+      <p className="mt-2 text-xs leading-relaxed text-ink-muted">
+        Fremde Bewertungen, mit Quelle und Abrufdatum weitergegeben. Für ihren Inhalt sind die
+        jeweiligen Portale und ihre Verfasser verantwortlich, nicht diese Seite.
+      </p>
+      <div className="mt-2 space-y-0.5">
+        {reviews.map((r) => (
+          <Herkunft key={r.source} provenance={r.provenance} kurz />
+        ))}
+      </div>
+    </section>
   );
 }

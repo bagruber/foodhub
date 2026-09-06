@@ -23,7 +23,18 @@
     "website": "https://www.grundnergmbh.de/"
   },
   "cuisines": [],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Grundner%27s%20Neustadtstra%C3%9Fe%2045%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Grundner%27s%20Neustadtstra%C3%9Fe%2045%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"

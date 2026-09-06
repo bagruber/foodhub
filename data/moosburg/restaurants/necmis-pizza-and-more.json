@@ -20,7 +20,28 @@
   },
   "contact": {},
   "cuisines": [],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Necmi%27s%20Pizza%20and%20More%20Stadtwaldstra%C3%9Fe%2035%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Necmi%27s%20Pizza%20and%20More%20Stadtwaldstra%C3%9Fe%2035%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    },
+    {
+      "source": "restaurantguru",
+      "url": "https://de.restaurantguru.com/Necmis-Catering-Moosburg",
+      "provenance": {
+        "kind": "restaurantguru",
+        "url": "https://de.restaurantguru.com/Necmis-Catering-Moosburg",
+        "retrievedAt": "2026-09-06",
+        "note": "Fremde Bewertung, von Restaurant Guru übernommen"
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
@@ -73,5 +94,25 @@
   ],
   "services": {
     "outdoorSeating": false
+  },
+  "payment": {
+    "debit_cards": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/12357510338",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "credit_cards": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/12357510338",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    }
   }
 }

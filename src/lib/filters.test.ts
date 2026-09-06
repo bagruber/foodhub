@@ -72,6 +72,39 @@ describe("Gerichtefilter", () => {
   });
 });
 
+describe("Zahlungsfilter", () => {
+  it("nimmt nur das ausdrueckliche Ja", () => {
+    const mitKarte = houses.filter((h) =>
+      matchesHouse(h, { ...EMPTY, payment: ["debit_cards"] }),
+    );
+    expect(mitKarte.length).toBeGreaterThan(0);
+    expect(mitKarte.every((h) => h.payment?.debit_cards?.accepted === true)).toBe(true);
+
+    // Ein Haus, das EC ausdruecklich verneint, faellt heraus, und ein Haus
+    // ohne jede Angabe auch: fehlende Angabe ist kein Ja.
+    const verneint = houses.find((h) => h.payment?.debit_cards?.accepted === false);
+    const ohne = houses.find((h) => !h.payment);
+    expect(verneint && mitKarte.includes(verneint)).toBeFalsy();
+    expect(ohne && mitKarte.includes(ohne)).toBeFalsy();
+  });
+
+  it("findet die Haeuser mit MoosburgCard", () => {
+    const karte = houses.filter((h) => matchesHouse(h, { ...EMPTY, payment: ["moosburg_card"] }));
+    expect(karte.length).toBeGreaterThanOrEqual(6);
+    expect(karte.map((h) => h.name)).toContain("La Forchetta");
+  });
+});
+
+describe("Bewertungen", () => {
+  it("traegt zu jeder Bewertung Link und Herkunft", () => {
+    const alle = houses.flatMap((h) => h.reviews ?? []);
+    expect(alle.length).toBeGreaterThan(0);
+    expect(alle.every((r) => r.url && r.provenance?.retrievedAt)).toBe(true);
+    // Eine Note ohne Skala liesse sich nicht einordnen.
+    expect(alle.every((r) => !r.rating || r.rating.scale > 0)).toBe(true);
+  });
+});
+
 describe("Hausfilter", () => {
   it("greift auf die Art des Hauses und auf die Kueche getrennt", () => {
     const cafes = houses.filter((h) => matchesHouse(h, { ...EMPTY, kinds: ["cafe"] }));

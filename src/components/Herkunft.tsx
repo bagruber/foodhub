@@ -9,11 +9,45 @@ import { SOURCE_LABEL, age, formatDate, type Provenance } from "@/lib/data";
  * wenn das Dokument es hergibt, von wann die Karte selbst ist. Die Karte von
  * Asia Rose stammt von 2022 und ist heute abgerufen worden.
  */
-export function Herkunft({ provenance, className = "" }: { provenance: Provenance; className?: string }) {
+export function Herkunft({
+  provenance,
+  className = "",
+  kurz = false,
+}: {
+  provenance: Provenance;
+  className?: string;
+  /**
+   * Eine Zeile statt eines Blocks. Fuer Nebenangaben wie Zahlungsart und
+   * Bewertung: dort stehen drei, vier Herkuenfte untereinander, und in voller
+   * Laenge erschlagen sie das, worauf sie sich beziehen.
+   */
+  kurz?: boolean;
+}) {
   // Das Alter zählt ab dem Erstelldatum, wo es eines gibt. Wann wir eine vier
   // Jahre alte Karte gefunden haben, sagt über ihre Gültigkeit nichts.
   const relevant = provenance.createdAt ?? provenance.retrievedAt;
   const { label, stale } = age(relevant);
+
+  if (kurz) {
+    return (
+      <p className={`text-xs text-ink-muted ${className}`}>
+        {provenance.url ? (
+          <a
+            href={provenance.url}
+            target="_blank"
+            rel="noreferrer"
+            className="underline decoration-ink-line underline-offset-2 hover:decoration-ink"
+          >
+            {SOURCE_LABEL[provenance.kind]}
+          </a>
+        ) : (
+          SOURCE_LABEL[provenance.kind]
+        )}
+        <span className="tabular"> · abgerufen am {formatDate(provenance.retrievedAt)}</span>
+        {stale && <span className="text-red-700"> · {label}</span>}
+      </p>
+    );
+  }
 
   return (
     <div className={`text-xs leading-relaxed text-ink-soft ${className}`}>

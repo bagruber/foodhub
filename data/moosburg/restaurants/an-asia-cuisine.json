@@ -26,7 +26,18 @@
       "note": "Steht auf Seite 1 der Speisekarte."
     }
   },
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=AN%20Asia%20Cuisine%20%26%20Sushi%20Landshuter%20Stra%C3%9Fe%2014%20Moosburg%20an%20der%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=AN%20Asia%20Cuisine%20%26%20Sushi%20Landshuter%20Stra%C3%9Fe%2014%20Moosburg%20an%20der%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    }
+  ],
   "menus": [
     "an-asia-cuisine_2026-05-13.json"
   ],

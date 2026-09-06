@@ -36,7 +36,33 @@
       "note": "© OpenStreetMap-Mitwirkende, ODbL. Zuletzt in OSM bestätigt am 2025-12-01."
     }
   },
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=La%20Forchetta%20Leinbergerstra%C3%9Fe%2016%20Moosburg%20an%20der%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=La%20Forchetta%20Leinbergerstra%C3%9Fe%2016%20Moosburg%20an%20der%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    },
+    {
+      "source": "restaurantguru",
+      "url": "https://de.restaurantguru.com/La-Forchetta-Moosburg",
+      "provenance": {
+        "kind": "restaurantguru",
+        "url": "https://de.restaurantguru.com/La-Forchetta-Moosburg",
+        "retrievedAt": "2026-09-06",
+        "note": "Fremde Bewertung, von Restaurant Guru übernommen"
+      },
+      "rating": {
+        "value": 4.8,
+        "scale": 5,
+        "count": 470
+      }
+    }
+  ],
   "menus": [
     "la-forchetta_2025-09-23.json"
   ],
@@ -106,5 +132,16 @@
   },
   "diet": {
     "vegetarian": "yes"
+  },
+  "payment": {
+    "moosburg_card": {
+      "accepted": true,
+      "provenance": {
+        "kind": "website",
+        "url": "https://meinmoosburg.de/einkaufen/m-card/",
+        "retrievedAt": "2026-09-06",
+        "note": "Liste der Akzeptanzstellen bei Moosburg Marketing"
+      }
+    }
   }
 }

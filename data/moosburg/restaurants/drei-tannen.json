@@ -29,7 +29,33 @@
       "note": "Steht auf Seite 1 der Speisekarte."
     }
   },
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Gasthof%20Drei%20Tannen%20Thalbacher%20Stra%C3%9Fe%2053%20Moosburg%20an%20der%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Gasthof%20Drei%20Tannen%20Thalbacher%20Stra%C3%9Fe%2053%20Moosburg%20an%20der%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    },
+    {
+      "source": "restaurantguru",
+      "url": "https://de.restaurantguru.com/Drei-Tannen-Moosburg",
+      "provenance": {
+        "kind": "restaurantguru",
+        "url": "https://de.restaurantguru.com/Drei-Tannen-Moosburg",
+        "retrievedAt": "2026-09-06",
+        "note": "Fremde Bewertung, von Restaurant Guru übernommen"
+      },
+      "rating": {
+        "value": 4.8,
+        "scale": 5,
+        "count": 1022
+      }
+    }
+  ],
   "menus": [
     "drei-tannen_2026-08-30.json"
   ],
@@ -92,5 +118,16 @@
   "diet": {
     "vegetarian": "yes",
     "vegan": "no"
+  },
+  "payment": {
+    "moosburg_card": {
+      "accepted": true,
+      "provenance": {
+        "kind": "website",
+        "url": "https://meinmoosburg.de/einkaufen/m-card/",
+        "retrievedAt": "2026-09-06",
+        "note": "Liste der Akzeptanzstellen bei Moosburg Marketing"
+      }
+    }
   }
 }

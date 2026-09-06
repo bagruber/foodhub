@@ -1,0 +1,14 @@
+{
+  "hinweis": "Zahlungsarten. Slug ist der Wert in den Daten, label die Beschriftung in der App. Dreiwertig: true heisst angenommen, false ausdruecklich nicht, ein fehlender Schluessel unbekannt.",
+  "quellen": "cash bis mobile stammen aus den OpenStreetMap-Tags payment:*. moosburg_card kommt von der Liste der Akzeptanzstellen bei Moosburg Marketing und gilt nur fuer diese Stadt; eine zweite Stadt braucht ihren eigenen Eintrag, kein Umbau des Modells.",
+  "zahlungsarten": {
+    "cash": "Bargeld",
+    "cards": "Karte",
+    "debit_cards": "EC- oder Girocard",
+    "credit_cards": "Kreditkarte",
+    "contactless": "kontaktlos",
+    "mobile": "Handy",
+    "qr_code": "QR-Code",
+    "moosburg_card": "MoosburgCard"
+  }
+}

@@ -26,7 +26,33 @@
   "cuisines": [
     "german"
   ],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Caf%C3%A9%20Woch%27nblatt%20M%C3%BCnchener%20Stra%C3%9Fe%201%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Caf%C3%A9%20Woch%27nblatt%20M%C3%BCnchener%20Stra%C3%9Fe%201%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    },
+    {
+      "source": "restaurantguru",
+      "url": "https://de.restaurantguru.com/Wochnblatt-Moosburg",
+      "provenance": {
+        "kind": "restaurantguru",
+        "url": "https://de.restaurantguru.com/Wochnblatt-Moosburg",
+        "retrievedAt": "2026-09-06",
+        "note": "Fremde Bewertung, von Restaurant Guru übernommen"
+      },
+      "rating": {
+        "value": 4.8,
+        "scale": 5,
+        "count": 1067
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
@@ -94,5 +120,34 @@
   "diet": {
     "vegetarian": "yes",
     "vegan": "no"
+  },
+  "payment": {
+    "moosburg_card": {
+      "accepted": true,
+      "provenance": {
+        "kind": "website",
+        "url": "https://meinmoosburg.de/einkaufen/m-card/",
+        "retrievedAt": "2026-09-06",
+        "note": "Liste der Akzeptanzstellen bei Moosburg Marketing"
+      }
+    },
+    "debit_cards": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/687782818",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "credit_cards": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/687782818",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    }
   }
 }

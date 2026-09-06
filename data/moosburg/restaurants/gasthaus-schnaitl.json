@@ -26,7 +26,18 @@
     "german",
     "regional"
   ],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Gasthaus%20Schnaitl%20Sch%C3%BCtzenstra%C3%9Fe%207%20Wang",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Gasthaus%20Schnaitl%20Sch%C3%BCtzenstra%C3%9Fe%207%20Wang",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
@@ -99,5 +110,25 @@
     "takeaway": true,
     "outdoorSeating": true,
     "wheelchair": "limited"
+  },
+  "payment": {
+    "debit_cards": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/822968861",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "credit_cards": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/822968861",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    }
   }
 }

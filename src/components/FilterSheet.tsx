@@ -1,4 +1,4 @@
-import { Bag, Book, Chilli, Clock, House, Leaf, Tag, Truck, Umbrella, Wheat } from "@/components/Icons";
+import { Bag, Book, Card, Chilli, Clock, House, Leaf, Tag, Truck, Umbrella, Wheat } from "@/components/Icons";
 import { EMPTY, countActive, now, toggle, type Filters } from "@/lib/filters";
 import { WEEKDAY_LABEL, clock } from "@/lib/hours";
 
@@ -26,8 +26,11 @@ type Props = {
   kinds: Record<string, string>;
   cuisines: Record<string, string>;
   allergens: Record<string, string>;
+  /** Beschriftung der Zahlungsarten, aus `data/vocab/zahlung.json`. */
+  payment: Record<string, string>;
   /** Wie viele Häuser je Art und Küche. Bestimmt Reihenfolge und Zahl. */
-  counts: { kinds: Map<string, number>; cuisines: Map<string, number> };
+  counts: { kinds: Map<string, number>; cuisines: Map<string, number>;
+            payment: Map<string, number> };
   hits: number;
 };
 
@@ -148,6 +151,19 @@ export function FilterSheet(p: Props) {
             entries={Object.entries(p.allergens)}
             selected={f.without}
             onPick={(a) => set({ without: toggle(f.without, a) })}
+          />
+        </Section>
+
+        <Section
+          title="Zahlung"
+          icon={<Card />}
+          note="Nur Häuser, für die das ausdrücklich belegt ist. Wo nichts hinterlegt ist, wissen wir es nicht."
+        >
+          <ChipList
+            entries={byCount(p.payment, p.counts.payment)}
+            selected={f.payment}
+            counts={p.counts.payment}
+            onPick={(m) => set({ payment: toggle(f.payment, m) })}
           />
         </Section>
 

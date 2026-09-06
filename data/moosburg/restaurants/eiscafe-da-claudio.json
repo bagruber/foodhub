@@ -20,7 +20,18 @@
   },
   "contact": {},
   "cuisines": [],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Eiscafe%20da%20Claudio%20Stadtplatz%2020%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Eiscafe%20da%20Claudio%20Stadtplatz%2020%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
@@ -79,5 +90,25 @@
   "diet": {
     "vegetarian": "yes",
     "vegan": "no"
+  },
+  "payment": {
+    "debit_cards": {
+      "accepted": false,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/279176239",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "credit_cards": {
+      "accepted": false,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/279176239",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    }
   }
 }

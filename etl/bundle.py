@@ -44,6 +44,7 @@ def main(city_id: str) -> int:
     allergens = load(vocab_dir / "allergens.json")
     cuisines = load(vocab_dir / "cuisines.json")["kuechen"]
     kinds = load(vocab_dir / "kinds.json")["arten"]
+    payment = load(vocab_dir / "zahlung.json")["zahlungsarten"]
 
     menus = {p.name: load(p) for p in sorted((src / "menus").glob("*.json"))}
     by_restaurant: dict[str, list[dict]] = {}
@@ -59,11 +60,9 @@ def main(city_id: str) -> int:
         entry = {k: r[k] for k in ("id", "name", "kinds", "cuisines") if k in r}
         entry["dishCount"] = count
         for key in ("address", "location", "outline", "contact", "openingHours",
-                    "services", "diet", "ordering", "osm"):
+                    "services", "diet", "payment", "ordering", "reviews", "osm"):
             if r.get(key):
                 entry[key] = r[key]
-        if r.get("ratings"):
-            entry["ratings"] = r["ratings"]
         # Woher die Karte stammt und wie alt sie ist. Ohne das stünde in der
         # App ein Preis ohne Datum, und genau das soll hier nicht passieren.
         if own:
@@ -77,7 +76,7 @@ def main(city_id: str) -> int:
 
     n1 = write(out / "restaurants.json",
                {"city": city, "kinds": kinds, "cuisines": cuisines,
-                "restaurants": restaurants})
+                "payment": payment, "restaurants": restaurants})
     n2 = write(out / "dishes.json",
                {"allergens": allergens["allergene"], "additives": allergens["zusatzstoffe"],
                 "dishes": dishes})

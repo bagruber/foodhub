@@ -2,7 +2,7 @@
  * Die gebündelten Daten einer Stadt, wie `etl/bundle.py` sie ablegt.
  *
  * Zwei Dateien, absichtlich getrennt: die Karte startet mit `restaurants.json`
- * und wartet nicht auf die 445 Gerichte. `dishes.json` wird erst geholt, wenn
+ * und wartet nicht auf die 753 Gerichte. `dishes.json` wird erst geholt, wenn
  * jemand nach einem Gericht sucht.
  *
  * Die Bausteine kommen aus `schema/types.ts`, damit das Datenmodell an einer
@@ -20,12 +20,14 @@ import type {
   MenuItem,
   Ordering,
   Outline,
+  Payment,
   Price,
   Provenance,
+  Review,
   Services,
 } from "../../schema/types";
 
-export type { Price, Provenance };
+export type { Payment, Price, Provenance, Review };
 
 export type Restaurant = {
   id: string;
@@ -44,8 +46,9 @@ export type Restaurant = {
   openingHours?: { raw: string; osm?: string; provenance: Provenance };
   services?: Services;
   diet?: HouseDiet;
+  payment?: Payment;
   ordering?: Ordering[];
-  ratings?: unknown[];
+  reviews?: Review[];
   /** Herkunft je eingelesener Kartenversion. */
   menuProvenance?: Provenance[];
 };
@@ -61,6 +64,8 @@ export type CityData = {
   city: { id: string; name: string; center: { lat: number; lon: number }; bbox: number[] };
   kinds: Record<string, string>;
   cuisines: Record<string, string>;
+  /** Beschriftung der Zahlungsarten, aus `data/vocab/zahlung.json`. */
+  payment: Record<string, string>;
   restaurants: Restaurant[];
 };
 
@@ -128,5 +133,6 @@ export const SOURCE_LABEL: Record<Provenance["kind"], string> = {
   osm: "OpenStreetMap",
   google_maps: "Google Maps",
   tripadvisor: "Tripadvisor",
+  restaurantguru: "Restaurant Guru",
   manual: "vor Ort erfasst",
 };

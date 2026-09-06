@@ -27,7 +27,33 @@
     "italian_pizza",
     "italian"
   ],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Tattva%20Indisches%20Restaurant%20Neustadtstra%C3%9Fe%2022%20Moosburg%20a.d.%20Isar",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Tattva%20Indisches%20Restaurant%20Neustadtstra%C3%9Fe%2022%20Moosburg%20a.d.%20Isar",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    },
+    {
+      "source": "restaurantguru",
+      "url": "https://de.restaurantguru.com/Tattva-Indisches-Restaurant-mit-Thai-und-Italienische-Kuche-Moosburg",
+      "provenance": {
+        "kind": "restaurantguru",
+        "url": "https://de.restaurantguru.com/Tattva-Indisches-Restaurant-mit-Thai-und-Italienische-Kuche-Moosburg",
+        "retrievedAt": "2026-09-06",
+        "note": "Fremde Bewertung, von Restaurant Guru übernommen"
+      },
+      "rating": {
+        "value": 3.5,
+        "scale": 5,
+        "count": 100
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
@@ -85,5 +111,34 @@
     "vegetarian": "yes",
     "vegan": "yes",
     "halal": "yes"
+  },
+  "payment": {
+    "cash": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/7725213368",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "debit_cards": {
+      "accepted": true,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/7725213368",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    },
+    "credit_cards": {
+      "accepted": false,
+      "provenance": {
+        "kind": "osm",
+        "url": "https://www.openstreetmap.org/node/7725213368",
+        "retrievedAt": "2026-09-06",
+        "note": "© OpenStreetMap-Mitwirkende, ODbL"
+      }
+    }
   }
 }

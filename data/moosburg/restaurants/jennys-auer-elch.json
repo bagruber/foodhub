@@ -24,7 +24,18 @@
   "cuisines": [
     "regional"
   ],
-  "ratings": [],
+  "reviews": [
+    {
+      "source": "google_maps",
+      "url": "https://www.google.com/maps/?q=Jenny%27s%20Auer%20Elch%20Fichtenstra%C3%9Fe%208%20Wang",
+      "provenance": {
+        "kind": "google_maps",
+        "url": "https://www.google.com/maps/?q=Jenny%27s%20Auer%20Elch%20Fichtenstra%C3%9Fe%208%20Wang",
+        "retrievedAt": "2026-09-06",
+        "note": "Suchlink aus Name und Anschrift, keine Bewertung abgerufen"
+      }
+    }
+  ],
   "menus": [],
   "open": [
     "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"

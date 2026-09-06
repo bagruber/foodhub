@@ -18,6 +18,10 @@ DATA = ROOT / "data"
 
 findings: list[str] = []
 
+# Die Portale, deren Bewertungen wir weitergeben. Siehe etl/reviews.py, dort
+# steht, warum es nicht mehr sind.
+REVIEW_SOURCES = {"google_maps", "tripadvisor", "restaurantguru"}
+
 
 def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -41,6 +45,7 @@ def main() -> int:
     additives = set(vocab["zusatzstoffe"])
     cuisines = set(load(DATA / "vocab/cuisines.json")["kuechen"])
     kinds = set(load(DATA / "vocab/kinds.json")["arten"])
+    payments = set(load(DATA / "vocab/zahlung.json")["zahlungsarten"])
 
     for city_dir in sorted(p for p in DATA.iterdir() if p.is_dir() and p.name != "vocab"):
         restaurants = {}
@@ -67,8 +72,23 @@ def main() -> int:
                 check_provenance(f"{where}/Bestellung", order.get("provenance"))
             if hours := r.get("openingHours"):
                 check_provenance(f"{where}/Oeffnungszeiten", hours.get("provenance"))
-            for rating in r.get("ratings", []):
-                check_provenance(f"{where}/Bewertung {rating.get('source')}", rating.get("provenance"))
+            for review in r.get("reviews", []):
+                src = review.get("source")
+                check_provenance(f"{where}/Bewertung {src}", review.get("provenance"))
+                if src not in REVIEW_SOURCES:
+                    findings.append(f"{where}: unbekannte Bewertungsquelle '{src}'")
+                if not review.get("url"):
+                    findings.append(f"{where}: Bewertung {src} ohne Link")
+                # Eine Note ohne Skala ist nicht einzuordnen: 4 von 5 ist etwas
+                # anderes als 4 von 10.
+                if (rating := review.get("rating")) and not rating.get("scale"):
+                    findings.append(f"{where}: Bewertung {src} ohne Skala")
+            for slug, claim in (r.get("payment") or {}).items():
+                if slug not in payments:
+                    findings.append(f"{where}: Zahlungsart '{slug}' fehlt im Vokabular")
+                if not isinstance(claim.get("accepted"), bool):
+                    findings.append(f"{where}: Zahlungsart '{slug}' ohne klares Ja oder Nein")
+                check_provenance(f"{where}/Zahlung {slug}", claim.get("provenance"))
             for name in r["menus"]:
                 if not (city_dir / "menus" / name).exists():
                     findings.append(f"{where}: verweist auf fehlende Karte {name}")

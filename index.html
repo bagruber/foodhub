@@ -15,5 +15,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Zählung von moosburg.eu, absoluter Pfad, damit alle Projekte dieselbe
+         Datei bekommen. Ohne Cookie und ohne Speicher im Browser; der
+         Endpunkt nimmt nur Anfragen mit der Origin moosburg.eu an, deshalb
+         läuft der Aufruf auf GitHub Pages absichtlich ins Leere. Die App hat
+         nur eine Ansicht, ein Routenwechsel ist nicht zu melden. -->
+    <script src="/assets/zaehler.js" defer></script>
   </body>
 </html>

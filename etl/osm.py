@@ -13,6 +13,7 @@ Namen ändern sich, und `Drei Tannen` in OSM ist derselbe Gasthof wie
 Lizenz: ODbL. Wer die Daten zeigt, nennt „© OpenStreetMap-Mitwirkende".
 
     python etl/osm.py moosburg
+    python etl/osm.py moosburg --aus-abzug   # ohne Overpass, aus der letzten Datei
 """
 
 from __future__ import annotations
@@ -142,22 +143,42 @@ def coordinates(element: dict) -> tuple[float, float] | None:
     return None
 
 
-def main(city_id: str) -> int:
+def main(city_id: str, cached: bool = False) -> int:
+    """`cached` liest den letzten Abzug statt Overpass neu zu fragen.
+
+    Dafuer, dass sich die Zuordnungsregeln hier aendern, ohne dass sich in OSM
+    etwas geaendert hat. Die oeffentliche Overpass-Instanz ist ein geteiltes,
+    kostenloses Gut und antwortet unter Last mit 504; sie fuer einen
+    Regeltest zu fragen waere unhoeflich. Umrisse bleiben dabei unberuehrt: sie
+    braeuchten eine zweite Abfrage, und ohne sie wuerde jeder vorhandene Umriss
+    geloescht.
+    """
     city_dir = ROOT / "data" / city_id
     city = json.loads((city_dir / "city.json").read_text(encoding="utf-8"))
     today = date.today().isoformat()
 
-    raw = fetch(city)
-    dump = ROOT / "sources" / city_id / f"osm_{today}.json"
-    dump.parent.mkdir(parents=True, exist_ok=True)
-    dump.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    if cached:
+        dumps = sorted((ROOT / "sources" / city_id).glob("osm_*.json"))
+        if not dumps:
+            raise SystemExit("kein gespeicherter Abzug vorhanden")
+        dump = dumps[-1]
+        raw = json.loads(dump.read_text(encoding="utf-8"))
+        print(f"aus {dump.relative_to(ROOT)}, ohne Overpass zu fragen")
+    else:
+        raw = fetch(city)
+        dump = ROOT / "sources" / city_id / f"osm_{today}.json"
+        dump.parent.mkdir(parents=True, exist_ok=True)
+        dump.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     elements = [e for e in raw["elements"] if e.get("tags", {}).get("name")]
     print(f"{len(elements)} benannte Gaststätten in OSM, gesichert in {dump.relative_to(ROOT)}")
 
-    node_ids = [str(e["id"]) for e in elements if e["type"] == "node"]
-    buildings = fetch_buildings(node_ids)
-    print(f"{len(buildings)} Gebäudeumrisse dazu")
+    if cached:
+        buildings = []
+    else:
+        node_ids = [str(e["id"]) for e in elements if e["type"] == "node"]
+        buildings = fetch_buildings(node_ids)
+        print(f"{len(buildings)} Gebäudeumrisse dazu")
 
     by_id = {f"{e['type']}/{e['id']}": e for e in elements}
     by_name: dict[str, list[dict]] = {}
@@ -192,10 +213,11 @@ def main(city_id: str) -> int:
                 "note": "© OpenStreetMap-Mitwirkende, ODbL",
             },
         }
-        if outline := outline_for(pos[1], pos[0], buildings, today):
-            r["outline"] = outline
-        else:
-            r.pop("outline", None)
+        if not cached:
+            if outline := outline_for(pos[1], pos[0], buildings, today):
+                r["outline"] = outline
+            else:
+                r.pop("outline", None)
 
         # Art des Hauses und Dienste kommen aus OSM, auch bei den von Hand
         # gepflegten Häusern. Die Küche nicht: die steht dort genauer, weil sie
@@ -213,6 +235,12 @@ def main(city_id: str) -> int:
             r["services"] = services
         if diet := diet_of(hit["tags"]):
             r["diet"] = diet
+        # Zahlungsarten aus OSM ueberschreiben nur ihre eigenen Slugs. Die
+        # MoosburgCard kommt aus einer anderen Quelle und bleibt stehen.
+        if pay := payment_of(hit["tags"], r["location"]["provenance"]):
+            r["payment"] = {**{k: v for k, v in (r.get("payment") or {}).items()
+                               if k not in PAYMENT_TAGS.values() and k != "mobile"},
+                            **pay}
 
         if offen := r.get("open"):
             r["open"] = [x for x in offen if x != "Koordinaten fehlen"]
@@ -300,6 +328,41 @@ def services_of(tags: dict) -> dict:
     return out
 
 
+# OSM-Tag zu Slug aus data/vocab/zahlung.json. `payment:cards` ist der
+# Sammelbegriff und bleibt daneben stehen: ein Haus, das ihn setzt, sagt damit
+# nicht, welche Karten, und das ist eine andere Auskunft als EC-Karte ja,
+# Kreditkarte nein.
+PAYMENT_TAGS = {
+    "payment:cash": "cash",
+    "payment:cards": "cards",
+    "payment:debit_cards": "debit_cards",
+    "payment:credit_cards": "credit_cards",
+    "payment:contactless": "contactless",
+    "payment:qr_code": "qr_code",
+}
+# Handy-Bezahldienste zaehlen zusammen: wer Apple Pay nimmt, nimmt praktisch
+# immer auch Google Pay, und die App fragt nach dem Handy, nicht nach der Marke.
+PAYMENT_MOBILE = ("payment:apple_pay", "payment:google_pay", "payment:mobile_payment")
+
+
+def payment_of(tags: dict, prov: dict) -> dict:
+    """Zahlungsarten mit Herkunft je Angabe.
+
+    `no` wird uebernommen, nicht verschwiegen. Dass ein Wirtshaus ausdruecklich
+    keine Kreditkarte nimmt, ist die nuetzlichere Auskunft von beiden: sie sagt
+    jemandem, dass er Bargeld braucht. Ein fehlender Schluessel heisst dagegen,
+    dass wir es nicht wissen.
+    """
+    out = {}
+    for tag, slug in PAYMENT_TAGS.items():
+        if tags.get(tag) in ("yes", "no"):
+            out[slug] = {"accepted": tags[tag] == "yes", "provenance": dict(prov)}
+    mobile = [tags[t] for t in PAYMENT_MOBILE if tags.get(t) in ("yes", "no")]
+    if mobile:
+        out["mobile"] = {"accepted": "yes" in mobile, "provenance": dict(prov)}
+    return out
+
+
 def diet_of(tags: dict) -> dict:
     """Ernährungsangebot des Hauses, nicht des einzelnen Gerichts.
 
@@ -358,13 +421,15 @@ def draft(element: dict, city_id: str, today: str) -> dict | None:
         "osm": key, "address": address,
         "location": {"lat": round(pos[0], 6), "lon": round(pos[1], 6), "provenance": prov},
         "contact": contact, "kinds": kinds_of(tags), "cuisines": cuisines,
-        "ratings": [], "menus": [],
+        "reviews": [], "menus": [],
         "open": ["Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"],
     }
     if services := services_of(tags):
         out["services"] = services
     if diet := diet_of(tags):
         out["diet"] = diet
+    if pay := payment_of(tags, prov):
+        out["payment"] = pay
     if hours := tags.get("opening_hours"):
         out["openingHours"] = {"raw": hours, "osm": hours, "provenance": dict(prov)}
     if menu_url := tags.get("website:menu"):
@@ -373,4 +438,5 @@ def draft(element: dict, city_id: str, today: str) -> dict | None:
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "moosburg"))
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    sys.exit(main(args[0] if args else "moosburg", "--aus-abzug" in sys.argv))
