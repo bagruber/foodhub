@@ -1,4 +1,5 @@
 import type { Dish } from "./data";
+import katalog from "../../data/vocab/produkte.json";
 
 /**
  * Gleiche Produkte über Häuser hinweg zusammenfassen.
@@ -31,16 +32,49 @@ export function normaliseName(name: string): string {
     // `Fl.` ist die Darreichung, nicht die Grösse: die steht daneben als
     // `0,33l`. Grössenwörter wie Tasse oder Haferl bleiben dagegen stehen,
     // denn sie unterscheiden zwei Angebote mit eigenem Preis.
-    .replace(/\bfl\.?\b|\bflasche\b/gi, " ")
+    //
+    // Geprüft wird gegen Leerzeichen statt `\b`: JavaScript zählt Umlaute
+    // nicht zu den Wortzeichen, deshalb sieht `\bfl\b` mitten in `Flötzinger`
+    // eine Wortgrenze und machte daraus `ötzinger`.
+    .replace(/(^|\s)(fl\.?|flasche)(?=\s|$)/gi, " ")
     .replace(/\(.*?\)/g, " ")
     .replace(/[^a-zäöüß ]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
+/**
+ * Der Produktkatalog: welcher Name meint welches Produkt.
+ *
+ * Der maschinelle Weg über den Wortkern reicht nur bis `Espresso` gleich
+ * `Espresso`. Er sieht nicht, dass `Tafelwasser still` und `Stilles Wasser`
+ * dasselbe sind, und er darf es auch nicht raten: sechs Häuser teilen sich das
+ * Wort `Salat` mit fünfzehn völlig verschiedenen Gerichten, vier das Wort
+ * `Curry`. Wer nach Wortüberschneidung zusammenfasst, legt den Papayasalat
+ * neben den Wurstsalat.
+ *
+ * Deshalb steht in `data/vocab/produkte.json` ausgeschrieben, welche
+ * Schreibweisen dasselbe Produkt meinen. Was dort nicht steht, bleibt für
+ * sich. Der Preis dafür ist Pflege: eine neue Karte bringt neue Schreibweisen,
+ * und die fallen erst auf, wenn zwei Zeilen nebeneinander stehen, die eine
+ * sein sollten.
+ */
+type Product = { id: string; label: string };
+
+const PRODUCTS: Map<string, Product> = new Map(
+  Object.entries(katalog.produkte).flatMap(([id, p]) =>
+    p.schreibweisen.map((s) => [s, { id, label: p.label }] as [string, Product]),
+  ),
+);
+
+/** Die Schreibweisen aus dem Katalog, für den Test auf Normalform. */
+export const catalogueSpellings = Object.values(katalog.produkte).flatMap(
+  (p) => p.schreibweisen,
+);
+
 export type DishGroup = {
   key: string;
-  /** Der längste der vorkommenden Namen, meist der vollständigste. */
+  /** Der Katalogname, sonst der längste der vorkommenden Namen. */
   label: string;
   items: Dish[];
   houses: string[];
@@ -51,9 +85,13 @@ export type DishGroup = {
 
 export function groupDishes(dishes: Dish[]): DishGroup[] {
   const buckets = new Map<string, Dish[]>();
+  const labels = new Map<string, string>();
   for (const dish of dishes) {
-    const key = normaliseName(dish.name) || dish.name.toLowerCase();
+    const name = normaliseName(dish.name) || dish.name.toLowerCase();
+    const product = PRODUCTS.get(name);
+    const key = product?.id ?? name;
     buckets.set(key, [...(buckets.get(key) ?? []), dish]);
+    if (product) labels.set(key, product.label);
   }
 
   const groups: DishGroup[] = [];
@@ -61,7 +99,7 @@ export function groupDishes(dishes: Dish[]): DishGroup[] {
     const amounts = items.flatMap((d) => d.prices.map((p) => p.amount));
     groups.push({
       key,
-      label: items.reduce((a, b) => (b.name.length > a.name.length ? b : a)).name,
+      label: labels.get(key) ?? longestName(items),
       items,
       houses: [...new Set(items.map((d) => d.restaurantId))],
       low: amounts.length ? Math.min(...amounts) : null,
@@ -69,6 +107,19 @@ export function groupDishes(dishes: Dish[]): DishGroup[] {
     });
   }
   return groups;
+}
+
+/**
+ * Der vollständigste der vorkommenden Namen, ohne die Menge am Ende.
+ *
+ * Der längste Name ist meist der vollständigste, `Coca Cola Fl.` gegen `Cola`.
+ * Er trägt aber auch die Menge, die genau das Haus dazuschreibt, das sie
+ * dazuschreibt: die Gruppe hieß `Hugo 0,2l`, obwohl drei der vier Häuser
+ * schlicht `Hugo` drucken.
+ */
+function longestName(items: Dish[]): string {
+  const name = items.reduce((a, b) => (b.name.length > a.name.length ? b : a)).name;
+  return name.replace(/\s+\d+[,.]?\d*\s*(l|cl|ml|g)\b\.?$/i, "").trim() || name;
 }
 
 /**

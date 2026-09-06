@@ -1,0 +1,1383 @@
+{
+  "restaurantId": "westerberg-stubn",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/westerberg-stubn_getraenkekarte_2026-06-27.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.westerberg-stubn.de/",
+    "createdAt": "2026-06-27",
+    "note": "Abschnittsüberschriften stehen als Grafik in der Karte und sind von Hand übertragen"
+  },
+  "legend": {
+    "allergens": {
+      "A": "gluten",
+      "B": "crustaceans",
+      "C": "eggs",
+      "D": "fish",
+      "E": "peanuts",
+      "F": "soybeans",
+      "G": "milk",
+      "H": "nuts",
+      "I": "celery",
+      "J": "mustard",
+      "K": "sesame",
+      "L": "sulphites",
+      "M": "lupin",
+      "N": "molluscs"
+    },
+    "additives": {
+      "1": "colorant",
+      "2": "preservative",
+      "3": "antioxidant",
+      "4": "flavour_enhancer",
+      "5": "sulphured",
+      "6": "blackened",
+      "7": "waxed",
+      "9": "sweetener",
+      "10": "milk_protein",
+      "11": "caffeine",
+      "12": "quinine"
+    }
+  },
+  "sections": [
+    {
+      "title": "Aperitifs",
+      "items": [
+        {
+          "name": "Glas Prosecco",
+          "prices": [
+            {
+              "amount": 4.2,
+              "currency": "EUR",
+              "portion": "0,1l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Sanbitter-Maracuja-Cassis Cocktail (alkoholfrei)",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR",
+              "portion": "0,3l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Sanbitter, Wasser, Maracujasaft, Cassis-Sirup, Zitronensaft, Eiswürfel"
+        },
+        {
+          "name": "Aperol Spritz",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Aperol, Prosecco, Soda, Orange, Eiswürfel"
+        },
+        {
+          "name": "Hugo",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Holunderblütensirup, Prosecco, Minze, Eiswürfel"
+        },
+        {
+          "name": "Lillet Rose Wild Berry",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR",
+              "portion": "0,2l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Lillet Rose, Wild Berry, Beeren, Eiswürfel"
+        },
+        {
+          "name": "aus der Flasche",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Scavi & Ray Prosecco Superiore Valdobbiadene"
+        }
+      ]
+    },
+    {
+      "title": "Alkoholfreie Getränke",
+      "items": [
+        {
+          "name": "Adelholzener Classic",
+          "prices": [
+            {
+              "amount": 5.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Adelholzener naturell",
+          "prices": [
+            {
+              "amount": 5.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Tafelwasser",
+          "prices": [
+            {
+              "amount": 2.9,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 3.8,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Flötzinger Orangen-Limonade",
+          "prices": [
+            {
+              "amount": 3.4,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.2,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "1"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Flötzinger Zitronen-Limonade",
+          "prices": [
+            {
+              "amount": 3.4,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.2,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Flötzinger Cola-Mix",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Flötzinger Kracherl",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Coca-Cola",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "9",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Coca-Cola light",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,25l"
+            },
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "9",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Riedenburger Bio-Limonaden",
+          "prices": [
+            {
+              "amount": 4.2,
+              "currency": "EUR",
+              "portion": "0,33l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Pure Holunder-Ingwer Pure Rhabarber-Cassis"
+        }
+      ]
+    },
+    {
+      "title": "Säfte und Fruchtschorlen",
+      "items": [
+        {
+          "name": "Saft",
+          "prices": [
+            {
+              "amount": 4.1,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 5.5,
+              "currency": "EUR",
+              "portion": "0,4l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Schorle",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,4l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Holunderschorle",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 4.7,
+              "currency": "EUR",
+              "portion": "0,4l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "hausgemachter Holunderblütensirup, Minze, Limettensaft und Mineralwasser"
+        }
+      ]
+    },
+    {
+      "title": "Biere",
+      "items": [
+        {
+          "name": "Hell vom Fass",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hell „Spezial“",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hell alkoholfrei",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Trachtler Hoibe",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Exportbier, Bersteinfarben"
+        },
+        {
+          "name": "Rosenheimer Märzen",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Vollmundiger Malzgeschmack"
+        },
+        {
+          "name": "Natur-Radler",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hefe-Weiße vom Fass",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "1543 Hefe-Weiße kellertrüb",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "ausgeprägt malzig und fruchtaromatisch"
+        },
+        {
+          "name": "Weißbier alkoholfrei",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Weißbier leicht",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Russ`n",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Cola-Weiße",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "9",
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant",
+            "sweetener"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Pils",
+          "prices": [
+            {
+              "amount": 4.1,
+              "currency": "EUR",
+              "portion": "0,33l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Dunkel",
+          "prices": [
+            {
+              "amount": 4.6,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Weißbier hell",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Weißbier dunkel",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR",
+              "portion": "0,5l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Digestif",
+      "items": [
+        {
+          "name": "Apfelbrand Rubinette (Gold prämiert)",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kräftiger Geschmack mit Birnennoten"
+        },
+        {
+          "name": "Himbeergeist (Silber prämiert)",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Süß und fruchtig"
+        },
+        {
+          "name": "Wahl´sche Schnapsbirne (Gold prämiert)",
+          "prices": [
+            {
+              "amount": 7.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Fruchtig und honigsüß am Gaumen"
+        },
+        {
+          "name": "Quittenbrand (Silber prämiert)",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Süß mit nussigen Aromen"
+        },
+        {
+          "name": "Kirschbrand im Eichenfass gelagert",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Whiskeyaromen"
+        },
+        {
+          "name": "Williams, Marille, Obstler",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Williams mit Birne",
+          "prices": [
+            {
+              "amount": 4.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Himbeerlikör",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit leichter Zitrusnote"
+        },
+        {
+          "name": "Weichsellikör",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "nicht zu süß"
+        },
+        {
+          "name": "Williams Birnenlikör",
+          "prices": [
+            {
+              "amount": 6.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "leichte Honigtöne"
+        },
+        {
+          "name": "Frangelico",
+          "prices": [
+            {
+              "amount": 3.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Hopfenkräuterlikör",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "feinherb, würzige Noten nach Kräutern, und Hopfen"
+        },
+        {
+          "name": "Luzetto – Bayrischer Edelbitter",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kräuter, Orangenschale getrocknete Früchte, leichte Hopfenwürze, dezente Süße"
+        },
+        {
+          "name": "Bio Holledauer Haselnusslikör",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Heiland Doppelbocklikör",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Togouchi Premium Japanese Whiskey",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "süße Honignote, Nüsse und geröstetes Getreide, frische Fruchtnote und ein Hauch Rauch"
+        },
+        {
+          "name": "Tomintoul 12Y Oloraso",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "leichte Sherry-Noten verbinden sich mit Malz und Eiche"
+        },
+        {
+          "name": "Grappa di Prosecco Riserva",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Ouzo Nr. 12",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Ramazzotti mit Eis und Zitrone",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Rüscherl",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Longdrink 4cl",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "(Asbach, Jack Daniels, Havanna Club, Wodka, Gin)"
+        }
+      ]
+    },
+    {
+      "title": "Warme Getränke",
+      "items": [
+        {
+          "name": "Espresso",
+          "prices": [
+            {
+              "amount": 2.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Doppelter Espresso",
+          "prices": [
+            {
+              "amount": 3.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Cappuccino",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "groß"
+            },
+            {
+              "amount": 3.5,
+              "currency": "EUR",
+              "portion": "klein"
+            }
+          ],
+          "markersRaw": [
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Tasse Kaffee",
+          "prices": [
+            {
+              "amount": 3.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Haferl Kaffee",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Latte Macchiato",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Milchkaffee",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "11"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Heiße Schokolade",
+          "prices": [
+            {
+              "amount": 3.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "(Vollmilch, weiße Schokolade)"
+        },
+        {
+          "name": "Ronnefeldt Tee",
+          "prices": [
+            {
+              "amount": 3.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Darjeeling Summer Gold Bio, Maroccan Mint Bio, Bergkräuter Bio, Lemon Fresh Bio, Rosy Rose Hip Früchte Bio, Fruity Camomile"
+        }
+      ]
+    },
+    {
+      "title": "Weißwein",
+      "items": [
+        {
+          "name": "Grauer Burgunder - trocken",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,1l"
+            },
+            {
+              "amount": 6.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 21.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Schittler Becker, Rheinhessen Fruchtig und cremig mit Aromen von Birne Honigmelone und Mandel"
+        },
+        {
+          "name": "Ratsherr Silvaner Spätlese - trocken Bio",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR",
+              "portion": "0,1l"
+            },
+            {
+              "amount": 7.1,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 22.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Simon Stumpf, Franken Feine Birnenaromen, dezente Heunoten würzig und ausgewogen"
+        },
+        {
+          "name": "Sauvignon Blanc - trocken",
+          "prices": [
+            {
+              "amount": 4.1,
+              "currency": "EUR",
+              "portion": "0,1l"
+            },
+            {
+              "amount": 7.2,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 23.5,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Lischer, Rheinland-Pfalz Duftig und frisch mit Holunderblüte und Stachelbeere"
+        },
+        {
+          "name": "Gelber Muskateller QbA - feinherb Bio",
+          "prices": [
+            {
+              "amount": 24.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Simon Stumpf, Franken Aromatisch, intensive Muskataromen, frisch leicht und elegant"
+        },
+        {
+          "name": "Chardonnay „Ried Höhlgraben“ - trocken",
+          "prices": [
+            {
+              "amount": 26.5,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Müller-Grossmann, Österreich, Kremstal Fruchtiges Bukett, tropische Früchte kraftvoll und harmonisch"
+        }
+      ]
+    },
+    {
+      "title": "Rosè",
+      "items": [
+        {
+          "name": "Rose vom Zweigelt - trocken",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,1l"
+            },
+            {
+              "amount": 6.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 21.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Müller-Grossmann, Österreich, Kremstal Duftig, mit dezenten Himbeer- und Erdbeeraromen wunderbar fruchtig und erfrischend im Geschmack."
+        }
+      ]
+    },
+    {
+      "title": "Rotwein",
+      "items": [
+        {
+          "name": "Merlot - trocken",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,1l"
+            },
+            {
+              "amount": 6.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 21.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Tonon, Italien, Venetien Reife Frucht, feine Würze, weich und vollmundig"
+        },
+        {
+          "name": "Spätburgunder - trocken",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR",
+              "portion": "0,1l"
+            },
+            {
+              "amount": 6.9,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 21.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Schittler Becker, Rheinhessen Beeren, Schokolade, feine Röstaromen vom Buchenrauch und weiches Tannin"
+        },
+        {
+          "name": "Zweigelt grandioso - trocken",
+          "prices": [
+            {
+              "amount": 4.1,
+              "currency": "EUR",
+              "portion": "0,1l"
+            },
+            {
+              "amount": 7.5,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 23.5,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weinbau Hanousek, Niederösterreich Dunkle Beeren, dezente Würze, kraftvoll und rund"
+        },
+        {
+          "name": "Domina QbA - trocken Bio",
+          "prices": [
+            {
+              "amount": 24.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Simon Stumpf, Franken Dunkle Beeren, feinwürzig, komplex mit kräftigem Tannin"
+        },
+        {
+          "name": "Goethewein Blaufränkisch Classic",
+          "prices": [
+            {
+              "amount": 26.9,
+              "currency": "EUR",
+              "portion": "0,75l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Weingut Pannonia Migsich Kirsche und Beeren, feine Gewürze, elegant und ausgewogen"
+        }
+      ]
+    },
+    {
+      "title": "Weinschorlen",
+      "items": [
+        {
+          "name": "Weißwein-, Rosè- oder Rotweinschorle",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR",
+              "portion": "0,2l"
+            },
+            {
+              "amount": 6.5,
+              "currency": "EUR",
+              "portion": "0,4l"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "süß oder sauer gemischt mit unseren Hausweinen"
+        }
+      ]
+    }
+  ]
+}

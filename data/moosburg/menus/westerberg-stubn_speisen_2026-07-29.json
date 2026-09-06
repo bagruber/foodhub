@@ -1,0 +1,490 @@
+{
+  "restaurantId": "westerberg-stubn",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/westerberg-stubn_speisekarte_2026-07-29.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.westerberg-stubn.de/",
+    "createdAt": "2026-07-29",
+    "note": "Abschnitte und Vegetarisch-Kennzeichnung stehen als Grafik in der Karte und sind von Hand übertragen"
+  },
+  "legend": {
+    "allergens": {},
+    "additives": {}
+  },
+  "sections": [
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Kleiner Beilagensalat",
+          "prices": [
+            {
+              "amount": 5.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          }
+        },
+        {
+          "name": "Großer Beilagensalat",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          }
+        },
+        {
+          "name": "Salatvariation",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Bunte Salatschüssel mit gebratenen Putenbruststreifen, weißem Balsamicodressing, Radieschensprossen und Steinofenbaguette"
+        },
+        {
+          "name": "Gourmet-Salat",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit marinierten Garnelenspießen, verschiedenen Blattsalaten, Rohkost, unserem feinem Hausdressing und Steinofenbaguette"
+        }
+      ]
+    },
+    {
+      "title": "Für unsere kleinen Gäste",
+      "items": [
+        {
+          "name": "Pommes mit Ketchup",
+          "prices": [
+            {
+              "amount": 4.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          }
+        },
+        {
+          "name": "Spätzle mit Soße",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Semmel- oder Kartoffelknödel mit Soße",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Kinderschnitzel mit Pommes",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Schweinelendchen mit Spätzle und Bratensoße",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Burger",
+      "items": [
+        {
+          "name": "Burger „Aufschlag“",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rindfleisch ( 180g ) , auf Eisbergsalat, Salsasoße, Tomate, Essiggurken und Burgersoße"
+        },
+        {
+          "name": "Cheeseburger",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit feinem Rinderpatty ( 180g ) , Salat, Burgersoße, Strauchtomaten, Salatgurken und Käse"
+        },
+        {
+          "name": "Westernburger",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit gebratenem Rinderpatty ( 180g ) ,auf Eisbergsalat, Barbecuesoße, Tomaten, Gurken, Röstzwiebeln, Spiegelei und Speck"
+        },
+        {
+          "name": "„Moos“-Burger",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rindfleisch ( 180g ) , Salat, Emmentaler, Preiselbeeren, Salatgurke, Strauchtomate und Röstzwiebeln"
+        },
+        {
+          "name": "Veggie-Burger",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "description": "mit Kichererbsenbratling auf Salatblatt, Pfirsich-Chutney, Tomate, Salatgurke und Sour-Cream"
+        }
+      ]
+    },
+    {
+      "title": "Sonn- und Feiertage",
+      "items": [
+        {
+          "name": "Ofenfrischer Krustenschweinebraten vom „Strohschwein“",
+          "prices": [],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit König-Ludwig-Dunkelbiersoße, Kartoffelknödel und hausgemachten Krautsalat"
+        }
+      ]
+    },
+    {
+      "title": "Getränk des Monats",
+      "items": [
+        {
+          "name": "Fruchtiger Erdbeer-Spritz",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Prosecco, Erdbeer-Limes, Mineralwasser, Limette, Eiswürfel"
+        },
+        {
+          "name": "Lavendel-Limoncello-Spritz",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Hausgemachter Lavendelsirup, Limoncello, Prosecco Mineralwasser und Eiswürfel"
+        }
+      ]
+    },
+    {
+      "title": "Suppen",
+      "items": [
+        {
+          "name": "Fruchtige Tomatensuppe mit Sahnehaube und Croutons",
+          "prices": [
+            {
+              "amount": 6.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Hauptgerichte",
+      "items": [
+        {
+          "name": "Schmankerlsalat",
+          "prices": [
+            {
+              "amount": 18.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "frische Blatt- und Rohkostsalate mit gebratenen Lachs-, Doraden- und Zanderfilet dazu Steinofenbaguette"
+        },
+        {
+          "name": "Hausgemachte Spinatknödel",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "description": "mit sautierten Pilzen in Rahm"
+        },
+        {
+          "name": "Gefüllte Teigtaschen",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Pilzfüllung, Kirschtomaten, gehacktem Salbei und Zitronensoße"
+        },
+        {
+          "name": "Frische Pfifferlinge",
+          "prices": [
+            {
+              "amount": 17.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared"
+          },
+          "description": "in Rahm mit frischen Kräutern und Semmelknödel"
+        },
+        {
+          "name": "„Green-Power-Bowl“ vegan",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegetarian": "declared",
+            "vegan": "declared"
+          },
+          "description": "Reis, Karotten, Belugalinsen, Erbsen, Brokkoli, Falafel und Guacamole"
+        },
+        {
+          "name": "Schnitzel „Wiener Art“",
+          "prices": [
+            {
+              "amount": 17.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "vom Schwein in Butterschmalz gebraten dazu Pommes frites und ein kleiner Salat"
+        },
+        {
+          "name": "Cordon bleu",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Schinken und Käse gefüllt dazu Pommes frites und ein kleiner Beilagensalat"
+        },
+        {
+          "name": "Weiße und Grüne Tagliatelle",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Kalbfleisch-Streifen, Pfifferlingen in Rahm, Rucola und Grana Padano"
+        },
+        {
+          "name": "Putenmedaillons vom Grill",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "auf Couscous-Gemüsesalat mit Petersilien-Gremolata und Joghurt-Minz-Dip"
+        },
+        {
+          "name": "Zartes Schweinefilet",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "auf Waldpilzrahm, dazu hausgemachte Butterspätzle und kleinem Salat"
+        },
+        {
+          "name": "Grillteller",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "mit Rinderlende, Schweinefilet und Putensteak, Würstl, Speckscheibe dazu Kräuterbutter, Pommes und Gemüse"
+        },
+        {
+          "name": "Gebratenes Regenbogen-Forellenfilet",
+          "prices": [
+            {
+              "amount": 21.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "auf Senf-Sahnesoße, Butterkartoffel und frischem Gemüse mit Belugalinsen"
+        },
+        {
+          "name": "Zwiebelrostbraten",
+          "prices": [
+            {
+              "amount": 27.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "von der bayerischen Rinderlende mit krossen Röstzwiebeln, Bratkartoffeln vom Bio-Hof Meidinger und einem kleinen Salatteller"
+        }
+      ]
+    }
+  ]
+}

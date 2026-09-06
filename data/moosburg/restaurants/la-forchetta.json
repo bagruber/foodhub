@@ -37,7 +37,9 @@
     }
   },
   "ratings": [],
-  "menus": [],
+  "menus": [
+    "la-forchetta_2025-09-23.json"
+  ],
   "open": [
     "Speisekarte noch nicht eingelesen",
     "Bewertungen noch nicht angebunden"

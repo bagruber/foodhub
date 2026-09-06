@@ -9,12 +9,17 @@ import type { Restaurant } from "@/lib/data";
 const BASEMAP = "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/styles/bm_web_gry.json";
 
 /**
- * Ab hier zeigt die Karte Gebäudeumrisse statt Punkte.
+ * Ab hier zeichnet die Karte zusätzlich den Gebäudeumriss.
  *
  * Darunter wäre ein Gebäude wenige Pixel gross und als Ziel unbrauchbar. Der
  * Umriss ist ohnehin nur eine Näherung: er umfasst das ganze Gebäude, nicht
  * die Gasträume, und ein Wirtshaus im Erdgeschoss eines Wohnblocks bekommt
  * dessen volle Grundfläche. Erst aus der Nähe kann man das einordnen.
+ *
+ * Der Punkt bleibt trotzdem stehen. Er ist das, was man antippt und was in
+ * jeder Zoomstufe gleich aussieht; der Umriss sagt nur, welches Haus gemeint
+ * ist. Blendete der Punkt aus, verschwände beim Hineinzoomen genau die Marke,
+ * der man gerade gefolgt ist.
  */
 const OUTLINE_ZOOM = 16;
 
@@ -27,6 +32,42 @@ const OUTLINE_ZOOM = 16;
  * Strassen und Hausnummern bleiben, nur die Piktogramme gehen.
  */
 const HIDE_LAYERS = /^(Gebaeudepunkt_|Symbol_BauwerkP_|Symbol_BauwerksP_|Symbol_BauwerkF_|Symbol_BauwerksF_|Symbol_HistorischP_|Symbol_HistorischF_)/;
+
+/**
+ * Der Stil, einmal geholt und dann behalten.
+ *
+ * Er liegt bei einer fremden Stelle und wiegt 490 kB, der Abruf dauerte
+ * gemessen 0,85 s. Vorher stand er hinter den Hausdaten in der Reihe, weil die
+ * Karte erst in den Baum kommt, wenn die Häuser da sind; beides nacheinander
+ * ist der Grund, warum die Karte spürbar später erscheint als die Liste.
+ * `preloadBasemap()` stösst ihn beim Start an, parallel zu allem anderen.
+ */
+let pending: Promise<StyleSpecification> | null = null;
+
+export function preloadBasemap(): Promise<StyleSpecification> {
+  pending ??= fetch(BASEMAP)
+    .then((r) => r.json())
+    .then(trim)
+    .catch(() => ({ version: 8, sources: {}, layers: [] }) as StyleSpecification);
+  return pending;
+}
+
+/**
+ * Ebenen wegwerfen, die nie zu sehen sind.
+ *
+ * Der Stil bringt 557 Ebenen mit. Die ausgeblendeten Piktogramme kosten auch
+ * unsichtbar noch Übersetzung und Speicher, und die drei Ebenen mit
+ * `fill-extrusion` zeichnen Gebäude in drei Dimensionen, was diese Karte
+ * nirgends zeigt. Wegwerfen ist billiger als verstecken.
+ */
+function trim(style: StyleSpecification): StyleSpecification {
+  return {
+    ...style,
+    layers: style.layers.filter(
+      (l) => !HIDE_LAYERS.test(l.id) && l.type !== "fill-extrusion",
+    ),
+  };
+}
 
 type Props = {
   restaurants: Restaurant[];
@@ -49,9 +90,7 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
     let cancelled = false;
 
     (async () => {
-      const style: StyleSpecification | string = await fetch(BASEMAP)
-        .then((r) => r.json())
-        .catch(() => "https://demotiles.maplibre.org/style.json");
+      const style = await preloadBasemap();
       if (cancelled || !container.current) return;
 
       instance = new maplibregl.Map({
@@ -71,12 +110,6 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
       instance.on("load", () => {
         if (!instance) return;
 
-        for (const layer of instance.getStyle().layers ?? []) {
-          if (HIDE_LAYERS.test(layer.id)) {
-            instance.setLayoutProperty(layer.id, "visibility", "none");
-          }
-        }
-
         instance.addSource("outlines", { type: "geojson", data: outlineJson(restaurants) });
         instance.addSource("houses", { type: "geojson", data: pointJson(restaurants) });
 
@@ -88,7 +121,7 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
           paint: {
             "fill-color": ["case", ["get", "hasMenu"], "#c8102e", "#6f6b63"],
             "fill-opacity": ["interpolate", ["linear"], ["zoom"],
-              OUTLINE_ZOOM - 0.5, 0, OUTLINE_ZOOM + 0.5, 0.22],
+              OUTLINE_ZOOM - 0.5, 0, OUTLINE_ZOOM + 0.5, 0.18],
           },
         });
         instance.addLayer({
@@ -98,9 +131,9 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
           minzoom: OUTLINE_ZOOM - 0.5,
           paint: {
             "line-color": ["case", ["get", "hasMenu"], "#c8102e", "#6f6b63"],
-            "line-width": ["case", ["==", ["get", "id"], ["literal", ""]], 2, 1.5],
+            "line-width": 1.5,
             "line-opacity": ["interpolate", ["linear"], ["zoom"],
-              OUTLINE_ZOOM - 0.5, 0, OUTLINE_ZOOM + 0.5, 0.9],
+              OUTLINE_ZOOM - 0.5, 0, OUTLINE_ZOOM + 0.5, 0.85],
           },
         });
 
@@ -112,12 +145,10 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
           source: "houses",
           filter: ["==", ["get", "hasMenu"], false],
           paint: {
-            "circle-radius": ["interpolate", ["linear"], ["zoom"], 12, 4, 16, 7],
+            "circle-radius": ["interpolate", ["linear"], ["zoom"], 12, 4, 16, 6],
             "circle-color": "#faf7f2",
             "circle-stroke-width": 1.5,
             "circle-stroke-color": "#6f6b63",
-            "circle-opacity": fadeWhereOutlined(),
-            "circle-stroke-opacity": fadeWhereOutlined(),
           },
         });
         instance.addLayer({
@@ -126,12 +157,10 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
           source: "houses",
           filter: ["==", ["get", "hasMenu"], true],
           paint: {
-            "circle-radius": ["interpolate", ["linear"], ["zoom"], 12, 7, 16, 10],
+            "circle-radius": ["interpolate", ["linear"], ["zoom"], 12, 7, 16, 9],
             "circle-color": "#c8102e",
             "circle-stroke-width": 2,
             "circle-stroke-color": "#faf7f2",
-            "circle-opacity": fadeWhereOutlined(),
-            "circle-stroke-opacity": fadeWhereOutlined(),
           },
         });
         instance.addLayer({
@@ -205,16 +234,6 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
   return <div ref={container} className="h-full w-full" />;
 }
 
-/** Wo ein Umriss gezeichnet wird, blendet der Punkt aus, sonst bleibt er. */
-function fadeWhereOutlined(): maplibregl.ExpressionSpecification {
-  return [
-    "case",
-    ["get", "hasOutline"],
-    ["interpolate", ["linear"], ["zoom"], OUTLINE_ZOOM - 0.5, 1, OUTLINE_ZOOM + 0.5, 0],
-    1,
-  ];
-}
-
 /**
  * Der Rueckgabetyp bleibt abgeleitet. Ihn auszuschreiben brauchte den
  * `GeoJSON`-Namespace aus `@types/geojson`, und das Paket gehoert maplibre-gl,
@@ -228,12 +247,7 @@ function pointJson(restaurants: Restaurant[]) {
       .map((r) => ({
         type: "Feature" as const,
         geometry: { type: "Point" as const, coordinates: [r.location!.lon, r.location!.lat] },
-        properties: {
-          id: r.id,
-          name: r.name,
-          hasMenu: r.dishCount > 0,
-          hasOutline: !!r.outline,
-        },
+        properties: { id: r.id, name: r.name, hasMenu: r.dishCount > 0 },
       })),
   };
 }

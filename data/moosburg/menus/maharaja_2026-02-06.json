@@ -455,15 +455,19 @@
           }
         },
         {
-          "name": "Chicken Palak²",
+          "name": "Chicken Palak",
           "prices": [
             {
               "amount": 16.9,
               "currency": "EUR"
             }
           ],
-          "markersRaw": [],
-          "allergens": [],
+          "markersRaw": [
+            "2"
+          ],
+          "allergens": [
+            "milk"
+          ],
           "additives": [],
           "diet": {},
           "ref": "165",
@@ -1209,29 +1213,37 @@
       "title": "Warme Getränke",
       "items": [
         {
-          "name": "Masala Chai²",
+          "name": "Masala Chai",
           "prices": [
             {
               "amount": 3.5,
               "currency": "EUR"
             }
           ],
-          "markersRaw": [],
-          "allergens": [],
+          "markersRaw": [
+            "2"
+          ],
+          "allergens": [
+            "milk"
+          ],
           "additives": [],
           "diet": {},
           "ref": "270"
         },
         {
-          "name": "Cappuccino²",
+          "name": "Cappuccino",
           "prices": [
             {
               "amount": 3.9,
               "currency": "EUR"
             }
           ],
-          "markersRaw": [],
-          "allergens": [],
+          "markersRaw": [
+            "2"
+          ],
+          "allergens": [
+            "milk"
+          ],
           "additives": [],
           "diet": {},
           "ref": "271"
@@ -1265,15 +1277,19 @@
           "ref": "273"
         },
         {
-          "name": "Espresso Macchiato²",
+          "name": "Espresso Macchiato",
           "prices": [
             {
               "amount": 2.9,
               "currency": "EUR"
             }
           ],
-          "markersRaw": [],
-          "allergens": [],
+          "markersRaw": [
+            "2"
+          ],
+          "allergens": [
+            "milk"
+          ],
           "additives": [],
           "diet": {},
           "ref": "274"
@@ -1307,15 +1323,19 @@
           "ref": "277"
         },
         {
-          "name": "Latte Macchiato²",
+          "name": "Latte Macchiato",
           "prices": [
             {
               "amount": 4.5,
               "currency": "EUR"
             }
           ],
-          "markersRaw": [],
-          "allergens": [],
+          "markersRaw": [
+            "2"
+          ],
+          "allergens": [
+            "milk"
+          ],
           "additives": [],
           "diet": {},
           "ref": "276"

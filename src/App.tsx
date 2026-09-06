@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { BottomSheet, type Detent } from "@/components/BottomSheet";
-import { CityMap } from "@/components/CityMap";
-import { Chip, FilterSheet } from "@/components/FilterSheet";
+import { CityMap, preloadBasemap } from "@/components/CityMap";
+import { FilterSheet } from "@/components/FilterSheet";
 import { HouseDetail } from "@/components/HouseDetail";
+import { Book, Chilli, Clock, Cutlery, House, Leaf, Sliders } from "@/components/Icons";
 import { Marks } from "@/components/Marks";
 import {
   formatPrice,
@@ -13,7 +14,15 @@ import {
   type DishData,
   type Restaurant,
 } from "@/lib/data";
-import { EMPTY, countActive, matchesDish, matchesHouse, now, type Filters } from "@/lib/filters";
+import {
+  EMPTY,
+  countActive,
+  matchesDish,
+  matchesHouse,
+  now,
+  toggle,
+  type Filters,
+} from "@/lib/filters";
 import { groupDishes, sortByPrice, type DishGroup } from "@/lib/group";
 import { clock } from "@/lib/hours";
 
@@ -30,14 +39,18 @@ export function App() {
   const [filters, setFilters] = useState<Filters>(EMPTY);
   const [filterOpen, setFilterOpen] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
-  const [detent, setDetent] = useState<Detent>("half");
+  const [detent, setDetent] = useState<Detent>("peek");
 
   useEffect(() => {
+    // Der Kartenstil hängt an einer fremden Adresse und wiegt 490 kB. Sein
+    // Abruf beginnt hier und nicht erst, wenn die Karte im Baum steht: sonst
+    // wartet er auf die Häuser, und die Karte bleibt eine Sekunde länger leer.
+    preloadBasemap();
     loadCity(CITY).then(setCity).catch((e) => setError(String(e)));
   }, []);
 
   // Die Gerichte kommen erst, wenn jemand sie braucht. Die Karte soll nicht
-  // auf 120 kB warten, die die meisten Besucher nie öffnen. Ein geöffnetes
+  // auf 200 kB warten, die die meisten Besucher nie öffnen. Ein geöffnetes
   // Haus mit Speisekarte braucht sie auch.
   const needDishes = mode === "dishes" || filters.without.length > 0 || !!selected;
   useEffect(() => {
@@ -48,13 +61,16 @@ export function App() {
   const houses = city?.restaurants ?? [];
   const byId = useMemo(() => new Map(houses.map((h) => [h.id, h])), [houses]);
 
-  const available = useMemo(
-    () => ({
-      kinds: new Set(houses.flatMap((h) => h.kinds ?? [])),
-      cuisines: new Set(houses.flatMap((h) => h.cuisines)),
-    }),
-    [houses],
-  );
+  // Wie oft eine Art und eine Küche vorkommt. Die Filterliste sortiert danach,
+  // sonst steht das eine japanische Haus vor den zwölf bayerischen.
+  const counts = useMemo(() => {
+    const tally = (pick: (h: Restaurant) => string[]) => {
+      const map = new Map<string, number>();
+      for (const h of houses) for (const s of pick(h)) map.set(s, (map.get(s) ?? 0) + 1);
+      return map;
+    };
+    return { kinds: tally((h) => h.kinds ?? []), cuisines: tally((h) => h.cuisines) };
+  }, [houses]);
 
   const visibleHouses = useMemo(
     () =>
@@ -86,14 +102,21 @@ export function App() {
   if (error) return <Notice>Die Daten ließen sich nicht laden. {error}</Notice>;
   if (!city) return <Notice>Wird geladen …</Notice>;
 
+  // Suche und Wechsel in die Gerichte holen das Blatt herauf: beides fragt
+  // nach der Liste, und die ist unten zugeklappt.
+  const show = () => setDetent((d) => (d === "peek" ? "half" : d));
+
   const head = (
     <Head
       mode={mode}
-      setMode={setMode}
+      setMode={(m) => {
+        setMode(m);
+        show();
+      }}
       filters={filters}
       setFilters={setFilters}
       onOpenFilters={() => setFilterOpen(true)}
-      hits={hits}
+      onFocusSearch={show}
     />
   );
 
@@ -105,6 +128,17 @@ export function App() {
     ) : (
       <p className="px-4 py-6 text-sm text-ink-muted">Gerichte werden geladen …</p>
     );
+
+  // Die Trefferzahl steht am Kopf der Liste und nicht in der festen Leiste:
+  // dort kostete sie eine ganze Zeile Kartenfläche.
+  const counted = (
+    <>
+      <p className="tabular border-b border-ink-line px-4 py-2 text-xs text-ink-muted">
+        {hits} {mode === "houses" ? "Häuser" : "Gerichte"}
+      </p>
+      {list}
+    </>
+  );
 
   const panel = detail ? (
     <HouseDetail
@@ -132,7 +166,7 @@ export function App() {
           {panel ?? (
             <>
               <div className="border-b border-ink-line px-4 py-3">{head}</div>
-              <div className="min-h-0 flex-1 overflow-y-auto">{list}</div>
+              <div className="min-h-0 flex-1 overflow-y-auto">{counted}</div>
             </>
           )}
         </div>
@@ -154,7 +188,7 @@ export function App() {
             </div>
           ) : (
             <BottomSheet detent={detent} onDetent={setDetent} head={head}>
-              {list}
+              {counted}
             </BottomSheet>
           )}
         </div>
@@ -168,7 +202,7 @@ export function App() {
           kinds={city.kinds}
           cuisines={city.cuisines}
           allergens={dishData?.allergens ?? {}}
-          available={available}
+          counts={counts}
           hits={hits}
         />
       )}
@@ -190,11 +224,14 @@ function DesktopHeader({ city }: { city: string }) {
 }
 
 /**
- * Was fest stehen bleibt: Umschalter, Suche, Filterknopf.
+ * Was in jeder Rastung stehen bleibt: Umschalter, Suche, Filterreihe.
  *
- * Bewusst knapp. Auf dem Telefon liegt darüber die Karte, und jede Zeile hier
- * nimmt ihr Platz weg. Alles, was nicht ständig gebraucht wird, steckt hinter
- * dem Filterknopf, der seine Zahl trägt.
+ * Zwei Zeilen, mehr nicht. Auf dem Telefon liegt darüber die Karte, und jede
+ * Zeile hier nimmt ihr Platz weg. Der Umschalter ist deshalb auf seine Zeichen
+ * zusammengezogen, damit die Suche daneben passt statt darunter.
+ *
+ * Die Filterreihe scrollt waagrecht. Was ständig gebraucht wird, steht darin;
+ * alles Übrige liegt hinter dem ersten Knopf, der seine Zahl trägt.
  */
 function Head({
   mode,
@@ -202,61 +239,121 @@ function Head({
   filters,
   setFilters,
   onOpenFilters,
-  hits,
+  onFocusSearch,
 }: {
   mode: Mode;
   setMode: (m: Mode) => void;
   filters: Filters;
   setFilters: (f: Filters) => void;
   onOpenFilters: () => void;
-  hits: number;
+  onFocusSearch: () => void;
 }) {
   const active = countActive(filters);
+  const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
+
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <div className="flex flex-1 gap-0.5 rounded-lg bg-cream-dark p-0.5 text-sm">
-          {(["houses", "dishes"] as const).map((m) => (
+        <div className="flex shrink-0 gap-0.5 rounded-lg bg-cream-dark p-0.5 text-xs">
+          {(
+            [
+              ["houses", "Häuser", House],
+              ["dishes", "Gerichte", Cutlery],
+            ] as const
+          ).map(([m, label, Icon]) => (
             <button
               key={m}
               onClick={() => setMode(m)}
-              className={`flex-1 rounded-md px-3 py-1.5 font-medium transition ${
+              aria-pressed={mode === m}
+              className={`flex items-center gap-1 rounded-md px-2 py-1.5 font-medium transition ${
                 mode === m ? "bg-cream text-ink shadow-sm" : "text-ink-muted"
               }`}
             >
-              {m === "houses" ? "Häuser" : "Gerichte"}
+              <Icon className="h-3.5 w-3.5" />
+              {label}
             </button>
           ))}
         </div>
-        <button
-          onClick={onOpenFilters}
-          className={`flex shrink-0 items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm ${
-            active ? "border-red-500 bg-red-500 text-white" : "border-ink-line text-ink-soft"
-          }`}
-        >
-          Filter
-          {active > 0 && <span className="tabular font-medium">{active}</span>}
-        </button>
-      </div>
-
-      <div className="flex items-center gap-2">
         <input
           value={filters.query}
-          onChange={(e) => setFilters({ ...filters, query: e.target.value })}
+          onFocus={onFocusSearch}
+          onChange={(e) => set({ query: e.target.value })}
           placeholder={mode === "houses" ? "Haus suchen" : "Gericht oder Zutat"}
           className="min-w-0 flex-1 rounded-lg border border-ink-line bg-cream px-3 py-2 text-sm outline-none placeholder:text-ink-muted focus:border-ink-muted"
         />
-        <Chip
-          active={!!filters.openAt}
-          onClick={() => setFilters({ ...filters, openAt: filters.openAt ? null : now() })}
-          label={filters.openAt ? `offen ${clock(filters.openAt.minute)}` : "offen jetzt"}
-        />
       </div>
 
-      <p className="tabular text-xs text-ink-muted">
-        {hits} {mode === "houses" ? "Häuser" : "Gerichte"}
-      </p>
+      <div className="no-scrollbar -mx-4 flex touch-pan-x items-center gap-1.5 overflow-x-auto px-4">
+        <button
+          onClick={onOpenFilters}
+          className={`flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition ${
+            active ? "border-red-500 bg-red-500 text-white" : "border-ink-line text-ink-soft"
+          }`}
+        >
+          <Sliders className="h-3.5 w-3.5" />
+          Filter
+          {active > 0 && <span className="tabular">{active}</span>}
+        </button>
+        <span className="h-4 w-px shrink-0 bg-ink-line" />
+        <Quick
+          active={!!filters.openAt}
+          onClick={() => set({ openAt: filters.openAt ? null : now() })}
+          icon={<Clock className="h-3.5 w-3.5" />}
+          label={filters.openAt ? `offen ${clock(filters.openAt.minute)}` : "offen jetzt"}
+        />
+        <Quick
+          active={filters.diet.includes("vegetarian")}
+          onClick={() => set({ diet: toggle(filters.diet, "vegetarian") })}
+          icon={<Leaf className="h-3.5 w-3.5" />}
+          label="vegetarisch"
+        />
+        <Quick
+          active={filters.diet.includes("vegan")}
+          onClick={() => set({ diet: toggle(filters.diet, "vegan") })}
+          icon={<Leaf className="h-3.5 w-3.5" />}
+          label="vegan"
+        />
+        <Quick
+          active={filters.spicy}
+          onClick={() => set({ spicy: !filters.spicy })}
+          icon={<Chilli className="h-3.5 w-3.5" />}
+          label="scharf"
+        />
+        <Quick
+          active={filters.onlyWithMenu}
+          onClick={() => set({ onlyWithMenu: !filters.onlyWithMenu })}
+          icon={<Book className="h-3.5 w-3.5" />}
+          label="mit Karte"
+        />
+      </div>
     </div>
+  );
+}
+
+function Quick({
+  active,
+  onClick,
+  icon,
+  label,
+}: {
+  active: boolean;
+  onClick: () => void;
+  icon: React.ReactNode;
+  label: string;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-pressed={active}
+      className={`flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-xs whitespace-nowrap transition ${
+        active
+          ? "border-red-500 bg-red-500 text-white"
+          : "border-ink-line bg-cream text-ink-soft hover:border-ink-muted"
+      }`}
+    >
+      {icon}
+      {label}
+    </button>
   );
 }
 
@@ -304,8 +401,13 @@ function HouseList({
  *
  * Espresso, Radler und Hugo stehen auf jeder zweiten Karte. Untereinander
  * gelistet ergeben sie eine Wand aus Wiederholungen, in der die eigentlichen
- * Gerichte untergehen. Zusammengefasst zeigt eine Zeile die Preisspanne und
- * wie viele Häuser es führen, aufklappbar bis zum einzelnen Preis.
+ * Gerichte untergehen. Zusammengefasst zeigt eine Zeile die Preisspanne,
+ * aufklappbar bis zum einzelnen Haus.
+ *
+ * Das Haus steht in jeder Zeile: bei einem oder zwei Häusern ausgeschrieben,
+ * ab dreien mit Zahl, weil vier Namen nebeneinander nicht mehr lesbar sind.
+ * Aufgeklappt steht es immer, denn dort ist es die eigentliche Auskunft: wo
+ * kostet dieser Hugo was.
  */
 function GroupList({
   groups,
@@ -318,6 +420,7 @@ function GroupList({
 }) {
   const [open, setOpen] = useState<string | null>(null);
   if (!groups.length) return <Empty />;
+  const nameOf = (id: string) => byId.get(id)?.name ?? id;
 
   return (
     <ul className="divide-y divide-ink-line">
@@ -326,7 +429,6 @@ function GroupList({
         // meist mehrere Häuser, können aber auch zwei Angebote desselben
         // Hauses sein, etwa Tasse und Haferl Kaffee.
         const many = g.items.length > 1;
-        const manyHouses = g.houses.length > 1;
         const expanded = open === g.key;
         return (
           <li key={g.key} className="px-4 py-3">
@@ -343,16 +445,10 @@ function GroupList({
                 </span>
               </div>
               <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-ink-muted">
-                {many ? (
-                  <span className="rounded bg-cream-dark px-1.5 py-0.5">
-                    {manyHouses
-                      ? `in ${g.houses.length} Häusern`
-                      : `${g.items.length} Angebote`}{" "}
-                    {expanded ? "▾" : "▸"}
-                  </span>
-                ) : (
-                  <span>{byId.get(g.houses[0])?.name ?? g.houses[0]}</span>
-                )}
+                <span className={many ? "rounded bg-cream-dark px-1.5 py-0.5" : undefined}>
+                  {houseLine(g, nameOf)}
+                  {many && (expanded ? " ▾" : " ▸")}
+                </span>
                 <Marks dish={g.items[0]} />
               </div>
             </button>
@@ -367,9 +463,14 @@ function GroupList({
                   <li key={`${d.restaurantId}-${d.ref ?? i}`} className="flex justify-between gap-3">
                     <button
                       onClick={() => onSelect(d.restaurantId)}
-                      className="text-left text-xs underline decoration-ink-line underline-offset-2"
+                      className="min-w-0 text-left text-xs"
                     >
-                      {manyHouses ? byId.get(d.restaurantId)?.name ?? d.restaurantId : d.name}
+                      <span className="underline decoration-ink-line underline-offset-2">
+                        {nameOf(d.restaurantId)}
+                      </span>
+                      {/* Der gedruckte Name nur dort, wo er vom Gruppennamen
+                          abweicht: sonst stünde `Cola` hinter jedem Haus. */}
+                      {d.name !== g.label && <span className="text-ink-muted"> · {d.name}</span>}
                     </button>
                     <span className="tabular shrink-0 text-xs text-ink-soft">
                       {d.prices.map(formatPrice).join(" · ") || "ohne Preis"}
@@ -388,6 +489,15 @@ function GroupList({
       )}
     </ul>
   );
+}
+
+function houseLine(g: DishGroup, nameOf: (id: string) => string): string {
+  if (g.houses.length === 1) {
+    const one = nameOf(g.houses[0]);
+    return g.items.length > 1 ? `${one} · ${g.items.length} Angebote` : one;
+  }
+  if (g.houses.length === 2) return g.houses.map(nameOf).join(" und ");
+  return `${nameOf(g.houses[0])} und ${g.houses.length - 1} weitere`;
 }
 
 /**

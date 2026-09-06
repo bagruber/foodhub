@@ -1,3 +1,4 @@
+import { Bag, Book, Chilli, Clock, House, Leaf, Tag, Truck, Umbrella, Wheat } from "@/components/Icons";
 import { EMPTY, countActive, now, toggle, type Filters } from "@/lib/filters";
 import { WEEKDAY_LABEL, clock } from "@/lib/hours";
 
@@ -6,8 +7,16 @@ import { WEEKDAY_LABEL, clock } from "@/lib/hours";
  *
  * Bewusst kein Ausklappen innerhalb der festen Leiste: ein aufgeklappter
  * Bereich in einem nicht scrollbaren Kopf schiebt sich selbst aus dem Bild.
- * Hier ist die ganze Fläche scrollbar, und der Fuss mit "Übernehmen" bleibt
+ * Hier ist die ganze Fläche scrollbar, und der Fuss mit der Trefferzahl bleibt
  * stehen.
+ *
+ * Sechs Abschnitte aus lauter gleich aussehenden Marken sind schwer zu
+ * überfliegen, deshalb zwei Zugaben. Erstens trägt jede Überschrift ihr
+ * Zeichen, damit man beim Scrollen sieht, wo man ist, statt zu lesen.
+ * Zweitens tragen Art und Küche ihre Anzahl und stehen danach sortiert: mit
+ * 27 Küchen in alphabetischer Ordnung steht das eine japanische Haus vor den
+ * zwölf bayerischen, und die Liste sagt nichts darüber, was Moosburg
+ * eigentlich hat.
  */
 
 type Props = {
@@ -17,7 +26,8 @@ type Props = {
   kinds: Record<string, string>;
   cuisines: Record<string, string>;
   allergens: Record<string, string>;
-  available: { kinds: Set<string>; cuisines: Set<string> };
+  /** Wie viele Häuser je Art und Küche. Bestimmt Reihenfolge und Zahl. */
+  counts: { kinds: Map<string, number>; cuisines: Map<string, number> };
   hits: number;
 };
 
@@ -36,7 +46,7 @@ export function FilterSheet(p: Props) {
       </header>
 
       <div className="min-h-0 flex-1 space-y-6 overflow-y-auto px-4 py-4">
-        <Section title="Geöffnet">
+        <Section title="Geöffnet" icon={<Clock />}>
           <div className="flex flex-wrap items-center gap-2">
             <Chip
               active={!!f.openAt}
@@ -88,40 +98,50 @@ export function FilterSheet(p: Props) {
           )}
         </Section>
 
-        <Section title="Art des Hauses">
+        <Section title="Art des Hauses" icon={<House />}>
           <ChipList
-            entries={Object.entries(p.kinds).filter(([k]) => p.available.kinds.has(k))}
+            entries={byCount(p.kinds, p.counts.kinds)}
             selected={f.kinds}
+            counts={p.counts.kinds}
             onPick={(k) => set({ kinds: toggle(f.kinds, k) })}
           />
         </Section>
 
-        <Section title="Küche">
+        <Section title="Küche" icon={<Tag />}>
           <ChipList
-            entries={Object.entries(p.cuisines).filter(([k]) => p.available.cuisines.has(k))}
+            entries={byCount(p.cuisines, p.counts.cuisines)}
             selected={f.cuisines}
+            counts={p.counts.cuisines}
             onPick={(c) => set({ cuisines: toggle(f.cuisines, c) })}
           />
         </Section>
 
-        <Section title="Ernährung">
+        <Section title="Ernährung" icon={<Leaf className="h-4 w-4" />}>
           <div className="flex flex-wrap gap-1.5">
             <Chip
               active={f.diet.includes("vegetarian")}
               onClick={() => set({ diet: toggle(f.diet, "vegetarian") })}
+              icon={<Leaf />}
               label="vegetarisch"
             />
             <Chip
               active={f.diet.includes("vegan")}
               onClick={() => set({ diet: toggle(f.diet, "vegan") })}
+              icon={<Leaf />}
               label="vegan"
             />
-            <Chip active={f.spicy} onClick={() => set({ spicy: !f.spicy })} label="scharf" />
+            <Chip
+              active={f.spicy}
+              onClick={() => set({ spicy: !f.spicy })}
+              icon={<Chilli />}
+              label="scharf"
+            />
           </div>
         </Section>
 
         <Section
           title="Ohne diese Allergene"
+          icon={<Wheat />}
           note="Wirkt auf Gerichte, deren Karte eingelesen ist. Ungekennzeichnete Gerichte bleiben sichtbar, denn fehlende Angabe heisst nicht frei davon."
         >
           <ChipList
@@ -131,26 +151,30 @@ export function FilterSheet(p: Props) {
           />
         </Section>
 
-        <Section title="Angebot">
+        <Section title="Angebot" icon={<Bag />}>
           <div className="flex flex-wrap gap-1.5">
             <Chip
               active={f.services.includes("delivery")}
               onClick={() => set({ services: toggle(f.services, "delivery") })}
+              icon={<Truck />}
               label="Lieferung"
             />
             <Chip
               active={f.services.includes("takeaway")}
               onClick={() => set({ services: toggle(f.services, "takeaway") })}
+              icon={<Bag />}
               label="zum Mitnehmen"
             />
             <Chip
               active={f.services.includes("outdoorSeating")}
               onClick={() => set({ services: toggle(f.services, "outdoorSeating") })}
+              icon={<Umbrella />}
               label="Plätze draußen"
             />
             <Chip
               active={f.onlyWithMenu}
               onClick={() => set({ onlyWithMenu: !f.onlyWithMenu })}
+              icon={<Book />}
               label="mit Speisekarte"
             />
           </div>
@@ -176,18 +200,36 @@ export function FilterSheet(p: Props) {
   );
 }
 
+/** Nur was vorkommt, das Häufigste zuerst, bei Gleichstand alphabetisch. */
+function byCount(
+  labels: Record<string, string>,
+  counts: Map<string, number>,
+): [string, string][] {
+  return Object.entries(labels)
+    .filter(([slug]) => counts.has(slug))
+    .sort(
+      ([a, la], [b, lb]) =>
+        counts.get(b)! - counts.get(a)! || la.localeCompare(lb, "de"),
+    );
+}
+
 function Section({
   title,
+  icon,
   note,
   children,
 }: {
   title: string;
+  icon: React.ReactNode;
   note?: string;
   children: React.ReactNode;
 }) {
   return (
     <section>
-      <h3 className="eyebrow">{title}</h3>
+      <h3 className="eyebrow flex items-center gap-1.5">
+        <span className="text-ink-soft">{icon}</span>
+        {title}
+      </h3>
       {note && <p className="mt-1 mb-2 text-xs leading-relaxed text-ink-muted">{note}</p>}
       <div className="mt-2">{children}</div>
     </section>
@@ -197,16 +239,24 @@ function Section({
 function ChipList({
   entries,
   selected,
+  counts,
   onPick,
 }: {
   entries: [string, string][];
   selected: string[];
+  counts?: Map<string, number>;
   onPick: (slug: string) => void;
 }) {
   return (
     <div className="flex flex-wrap gap-1.5">
       {entries.map(([slug, label]) => (
-        <Chip key={slug} active={selected.includes(slug)} onClick={() => onPick(slug)} label={label} />
+        <Chip
+          key={slug}
+          active={selected.includes(slug)}
+          onClick={() => onPick(slug)}
+          label={label}
+          count={counts?.get(slug)}
+        />
       ))}
     </div>
   );
@@ -215,23 +265,31 @@ function ChipList({
 export function Chip({
   active,
   onClick,
+  icon,
   label,
+  count,
 }: {
   active: boolean;
   onClick: () => void;
+  icon?: React.ReactNode;
   label: string;
+  count?: number;
 }) {
   return (
     <button
       onClick={onClick}
       aria-pressed={active}
-      className={`rounded-full border px-2.5 py-1 text-xs transition ${
+      className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs transition ${
         active
           ? "border-red-500 bg-red-500 text-white"
           : "border-ink-line bg-cream text-ink-soft hover:border-ink-muted"
       }`}
     >
+      {icon}
       {label}
+      {count !== undefined && (
+        <span className={`tabular ${active ? "opacity-80" : "text-ink-muted"}`}>{count}</span>
+      )}
     </button>
   );
 }

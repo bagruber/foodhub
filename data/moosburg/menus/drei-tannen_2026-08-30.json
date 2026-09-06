@@ -229,10 +229,10 @@
           "allergens": [],
           "additives": [],
           "diet": {},
-          "description": "die erfrischenden Zitrusaromen gibt`s auch alkoholfrei! Yuzu-Fruchtsaft, aufgegossen mit Tonic und Soda (0,2l) Neu aus der Hohenthanner Schlossbrauerei: Natur-Radler Blutorange alkoholfrei Intensive Blutorange trifft auf fein abgestimmte Braukunst aus besten Zutaten. Perfekt ausbalanciert wird das ehrlichen Genuss für alle, die vollen Geschmack"
+          "description": "die erfrischenden Zitrusaromen gibt`s auch alkoholfrei! Yuzu-Fruchtsaft, aufgegossen mit Tonic und Soda (0,2l) Neu aus der Hohenthanner Schlossbrauerei:"
         },
         {
-          "name": "0,33l",
+          "name": "Natur-Radler Blutorange alkoholfrei 0,33l",
           "prices": [
             {
               "amount": 4.3,
@@ -243,7 +243,7 @@
           "allergens": [],
           "additives": [],
           "diet": {},
-          "description": "– das ganze alkoholfrei und hergestellt Natur-Radler Blutorange alkoholfrei zu einem und pure Frische lieben.."
+          "description": "Intensive Blutorange trifft auf fein abgestimmte Braukunst aus besten Zutaten. Perfekt ausbalanciert wird das ehrlichen Genuss für alle, die vollen Geschmack"
         }
       ]
     },
@@ -1618,6 +1618,11 @@
             {
               "amount": 4.5,
               "currency": "EUR"
+            },
+            {
+              "amount": 5.6,
+              "currency": "EUR",
+              "portion": "0,5l"
             }
           ],
           "markersRaw": [],
@@ -1631,35 +1636,17 @@
             {
               "amount": 3.7,
               "currency": "EUR"
+            },
+            {
+              "amount": 4.7,
+              "currency": "EUR",
+              "portion": "0,5l"
             }
           ],
           "markersRaw": [],
           "allergens": [],
           "additives": [],
           "diet": {}
-        },
-        {
-          "name": "0,5l",
-          "prices": [
-            {
-              "amount": 5.6,
-              "currency": "EUR"
-            }
-          ],
-          "markersRaw": [
-            "0",
-            "4",
-            "70"
-          ],
-          "allergens": [],
-          "additives": [
-            "colorant"
-          ],
-          "diet": {},
-          "markersUnknown": [
-            "0",
-            "70"
-          ]
         }
       ]
     },
@@ -1923,39 +1910,6 @@
           "diet": {}
         },
         {
-          "name": "Radler Radler Russ Cola Tannen Saisonales 0,33l _ Weißbier 4,70 dunkel alkoholfrei Pils Craft",
-          "prices": [
-            {
-              "amount": 4.1,
-              "currency": "EUR"
-            }
-          ],
-          "markersRaw": [
-            "4",
-            "70",
-            "4",
-            "70",
-            "4",
-            "50",
-            "4",
-            "7",
-            "4",
-            "80"
-          ],
-          "allergens": [],
-          "additives": [
-            "caffeine",
-            "colorant"
-          ],
-          "diet": {},
-          "markersUnknown": [
-            "70",
-            "70",
-            "50",
-            "80"
-          ]
-        },
-        {
           "name": "Hefe Weißbier vom Fass",
           "prices": [
             {
@@ -2038,6 +1992,90 @@
           "prices": [
             {
               "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Radler dunkel",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Radler alkoholfrei",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Russ",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Cola Weißbier",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4",
+            "7"
+          ],
+          "allergens": [],
+          "additives": [
+            "caffeine",
+            "colorant"
+          ],
+          "diet": {}
+        },
+        {
+          "name": "Tannen Pils",
+          "prices": [
+            {
+              "amount": 4.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Saisonales Craft Bier",
+          "prices": [
+            {
+              "amount": 4.8,
               "currency": "EUR"
             }
           ],
@@ -2649,11 +2687,10 @@
           "markersRaw": [],
           "allergens": [],
           "additives": [],
-          "diet": {},
-          "description": "Gin Tonic alkoholfrei Siegfried Wonderleaf 4cl Allergene: A) Glutenhaltiges Getreide B) Krebstiere C) Eier (einschließlich Laktose) H) Schalenfrüchte I) Sellerie J) Senf N) Weichtiere Zusatzstoffe: 1= mit Konservierungsstoff, 2= mit Geschmacksverstärker, mit Phosphat, 6= mit Süßungsmittel, 7= koffeinhaltig, 8= chininhaltig, Alle Preise in Euro und inklusive der gesetzlichen"
+          "diet": {}
         },
         {
-          "name": "/ Thomas Henry 0,2l",
+          "name": "Gin Tonic alkoholfrei Siegfried Wonderleaf 4cl / Thomas Henry 0,2l",
           "prices": [
             {
               "amount": 9.9,
@@ -2664,7 +2701,7 @@
           "allergens": [],
           "additives": [],
           "diet": {},
-          "description": "D) Fisch E) Erdnüsse F) Soja G) Milch und Milchprodukte K) Sesamsamen L) Schwefeldioxid und Sulfite M) Lupinen 3= mit Antioxidationsmittel, 4= mit Farbstoff, 5= 9=geschwärzt, 10=enthält Phenylalaninquelle Mehrwertsteuer."
+          "description": "Allergene: A) Glutenhaltiges Getreide B) Krebstiere C) Eier D) Fisch E) Erdnüsse F) Soja G) Milch und Milchprodukte (einschließlich Laktose) H) Schalenfrüchte I) Sellerie J) Senf K) Sesamsamen L) Schwefeldioxid und Sulfite M) Lupinen N) Weichtiere Zusatzstoffe: 1= mit Konservierungsstoff, 2= mit Geschmacksverstärker, 3= mit Antioxidationsmittel, 4= mit Farbstoff, 5= mit Phosphat, 6= mit Süßungsmittel, 7= koffeinhaltig, 8= chininhaltig, 9=geschwärzt, 10=enthält Phenylalaninquelle Alle Preise in Euro und inklusive der gesetzlichen Mehrwertsteuer."
         }
       ]
     }

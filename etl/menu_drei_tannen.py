@@ -39,12 +39,25 @@ URL = "https://www.gasthof-dreitannen.de/"
 
 DIVIDER = 295.0
 
-# Die Weinkarte auf Seite 8 ist einspaltig: Name und Beschreibung laufen über
-# die volle Breite und damit quer über die Teilerachse. Mit Teiler zerfiel
+# Seitenlayout als waagrechte Baender: ab welcher Hoehe gilt welcher Teiler.
+# Die Weinkarte auf Seite 8 ist ganz einspaltig, Name und Beschreibung laufen
+# über die volle Breite und damit quer über die Achse; mit Teiler zerfiel
 # `Sauvignon blanc Schneider Pfaffmann / Deutschland, Pfalz _ 7,90` in zwei
-# Zeilen, und der Wein fehlte. Seite 9 ist trotz ähnlichem Aussehen wieder
-# echt zweispaltig, dort bleibt der Teiler.
-DIVIDERS = {8: None}
+# Zeilen, und der Wein fehlte.
+#
+# Seite 9 wechselt auf halber Höhe: die Spirituosen oben stehen zweispaltig,
+# ab den Aperitifen läuft die Karte einspaltig weiter. Ein Teiler für die
+# ganze Seite zerschnitt dort `Gin Tonic Bombay Sapphire 4cl / Thomas Henry
+# 0,2l _ 8,90` und machte aus dem Rest das Gericht `0,2l`.
+BANDS: dict[int, list[tuple[float, float | None]]] = {
+    8: [(0.0, None)],
+    9: [(0.0, DIVIDER), (450.0, None)],
+}
+
+
+def bands(page: int) -> list[tuple[float, float | None]]:
+    return BANDS.get(page, [(0.0, DIVIDER)])
+
 
 # Gemessene Schriftgroessen der beiden Ueberschriftenebenen, mit Toleranz.
 HEADINGS = (41.5, 14.6)
@@ -54,12 +67,23 @@ TOLERANCE = 0.1
 # verschraenkte Werbetext bei 40,1 pt.
 DECORATION_HEIGHT = 20.0
 
+# Die Zeichenerklaerung am Fuss der letzten Seite. Sie steht in derselben
+# Groesse wie eine Beschreibung und haengte sich sonst an das zuletzt gelesene
+# Getraenk, im Ergebnis trug `Rüscherl` die gesamte Allergenliste als
+# Beschreibung. Ab dieser Zeile ist die Seite zu Ende.
+FOOTER = re.compile(r"^(Allergene|Zusatzstoffe|Alle Preise)")
+
 # `Name _ Preis` und alles, was hinter dem Preis an Zeichen folgt.
 DISH = re.compile(r"^(?P<name>.+?)\s*_\s*(?P<price>\d{1,3},\d{2})\s*(?P<tail>.*)$")
 
 # Die Marker hinter dem Preis: Buchstaben fuer Allergene, Zahlen fuer
 # Zusatzstoffe, gemischt und mit Komma getrennt, etwa `A,G,1,5`.
 MARKERS = re.compile(r"\b([A-N]|\d{1,2})\b")
+
+# Eine Zeile, deren Name nur eine Menge ist: `0,5l _ 5,60` unter
+# `Saft nach Wahl pur 0,3l _ 4,50`. Das ist kein zweites Getraenk, sondern der
+# zweite Preis desselben, und stand sonst als Gericht `0,5l` in der Liste.
+PORTION_ONLY = re.compile(r"^\d{1,2},\d{1,2}\s*l$", re.I)
 
 SMALL_PORTION = "↡"   # Pfeil fuer "auch als kleine Portion"
 CHILLI = "\U0001f336"
@@ -94,13 +118,20 @@ def is_heading(row: pdftext.Row) -> bool:
 
 def parse() -> dict:
     words = pdftext.words(PDF)
-    rows: list[pdftext.Row] = []
+    # Jede Zeile behaelt den Teiler ihres Bandes, denn daran haengt spaeter,
+    # in welcher Spalte sie steht.
+    rows: list[tuple[pdftext.Row, float | None]] = []
     for page in sorted({w.page for w in words}):
-        divider = DIVIDERS.get(page, DIVIDER)
-        page_rows = pdftext.rows([w for w in words if w.page == page], divider=divider)
-        if divider is not None:
-            page_rows = pdftext.merge_numeric_tails(page_rows, divider=divider)
-        rows += page_rows
+        page_words = [w for w in words if w.page == page]
+        limits = bands(page) + [(1e9, None)]
+        for (top, divider), (bottom, _) in zip(limits, limits[1:]):
+            band = [w for w in page_words if top <= w.y0 < bottom]
+            if not band:
+                continue
+            band_rows = pdftext.rows(band, divider=divider)
+            if divider is not None:
+                band_rows = pdftext.merge_numeric_tails(band_rows, divider=divider)
+            rows += [(r, divider) for r in band_rows]
     sections: list[dict] = []
     last: dict[int, Item | None] = {0: None, 1: None}
     ignored = 0
@@ -109,11 +140,19 @@ def parse() -> dict:
     # Ueberschrift oder Kopfzeile.
     portions: list[str] = []
 
-    for row in rows:
+    page = 0
+    for row, divider in rows:
         text = row.text.strip()
         if not text:
             continue
-        column = 0 if row.x0 < (DIVIDERS.get(row.page, DIVIDER) or 1e9) else 1
+        if row.page != page:
+            page, done = row.page, False
+        if done:
+            continue
+        if FOOTER.match(text):
+            done = True
+            continue
+        column = 0 if row.x0 < (divider or 1e9) else 1
         height = max(w.height for w in row.words)
 
         if is_heading(row):
@@ -135,6 +174,13 @@ def parse() -> dict:
         if found := portion_header(text):
             portions = found
         elif m := DISH.match(text):
+            if PORTION_ONLY.match(m["name"].strip()) and last[column] is not None:
+                last[column].prices.append({
+                    "amount": float(m["price"].replace(",", ".")),
+                    "currency": "EUR",
+                    "portion": m["name"].strip(),
+                })
+                continue
             item = read_dish(m)
             if not sections:
                 sections.append({"title": "Ohne Abschnitt", "items": []})

@@ -39,7 +39,9 @@
     }
   },
   "ratings": [],
-  "menus": [],
+  "menus": [
+    "staudinger-keller_2026-06-01.json"
+  ],
   "open": [
     "Speisekarte noch nicht eingelesen",
     "Bewertungen noch nicht angebunden",

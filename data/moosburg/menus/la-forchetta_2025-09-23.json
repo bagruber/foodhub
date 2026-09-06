@@ -1,0 +1,1342 @@
+{
+  "restaurantId": "la-forchetta",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/la-forchetta_speisekarte_2025-09-23.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.la-forchetta.com/",
+    "createdAt": "2025-09-23",
+    "note": "Aufpreise für Pizzabelag nicht übernommen"
+  },
+  "legend": {
+    "allergens": {
+      "14": "sulphites"
+    },
+    "additives": {
+      "1": "colorant",
+      "2": "preservative",
+      "3": "antioxidant",
+      "4": "flavour_enhancer",
+      "5": "sulphured",
+      "6": "blackened",
+      "7": "phosphate",
+      "8": "milk_protein",
+      "9": "caffeine",
+      "10": "quinine",
+      "11": "sweetener",
+      "12": "stabiliser",
+      "15": "acidifier",
+      "*": "formed_meat"
+    }
+  },
+  "sections": [
+    {
+      "title": "ANTIPASTI",
+      "items": [
+        {
+          "name": "Verdure Miste Gemischte Gemüse platte",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Mozzarella & Pomodoro",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Vitello Tonnato",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Carpaccio Cipriani mit",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Olivenöl, Parmesan, Rucola und Zitrone"
+        },
+        {
+          "name": "Antipasto di Mare Meeresfrüchtesalat",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Portion Bruschetta 3-4 Stk Klassisch mit frische Tomaten stücke",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Pizzabrot mit Tomate und Knoblauch",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "INSALATE",
+      "items": [
+        {
+          "name": "Insalata Mista gemischte Salat",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Insalata Mista Grande Große gem. Salat",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Insalata di Pomodori Tomatensalat mit Zwiebeln",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Insalata di Cetrioli Gurkensalat",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Insalata di Rucola con Parmigiano",
+          "prices": [
+            {
+              "amount": 8.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Rucolasalat mit Kirschtomaten und Parmesan"
+        },
+        {
+          "name": "Insalata della Casa",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*",
+            "6"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "blackened",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Gem .Salat mit Thunfisch, Ei, Schinken und Oliven"
+        },
+        {
+          "name": "Insalata dello Chef",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Gem .Salat mit Schinken Käse u. Artischocken"
+        },
+        {
+          "name": "Insalata Mista con Frutti di Mare",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gem. Salat mit Meeresfrüchten"
+        },
+        {
+          "name": "Insalata Mista con Tonno e Cipolla",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gem. Salat mit Thunfisch und Zwiebeln"
+        }
+      ]
+    },
+    {
+      "title": "PASTA",
+      "items": [
+        {
+          "name": "Spaghetti al Pesto di Basilco",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit selbstgemachte Basilikum Pesto"
+        },
+        {
+          "name": "Spaghetti al Pomodoro",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "In Tomatensauce"
+        },
+        {
+          "name": "Spaghetti alla Bolognese",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Hackfleischsauce"
+        },
+        {
+          "name": "Spaghetti alla Carbonara",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {},
+          "description": "Mit Speck u. Ei in Sahnesauce"
+        },
+        {
+          "name": "Spaghetti ai Frutti di Mare",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Meeresfrüchten in Tomatensauce"
+        },
+        {
+          "name": "Penne all’ Arrabbiata",
+          "prices": [
+            {
+              "amount": 9.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "In Scharfer Tomatensauce mit Knoblauch"
+        },
+        {
+          "name": "Penne al Forno",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Hackfleisch, bechamel mit Käse überbacken"
+        },
+        {
+          "name": "Penne ai Quattro Formaggi",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit vier Käsesorten"
+        },
+        {
+          "name": "Tagliatelle Verdi ai Gamberini",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Grüne Tagliatelle mit Shrimps in Tomaten-Sahnesauce"
+        },
+        {
+          "name": "Tagliatelle Verdi al Salmone",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Grüne Tagliatelle mit Lachs in Tomaten-Sahnesauce"
+        },
+        {
+          "name": "Tagliatelle Verdi all’Emiliana",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Schinken Champions und Erbsen in Tomaten-Sahnesauce"
+        },
+        {
+          "name": "Gnocchi alla Sorrentina",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "In Tomatensoße mit Mozzarella und Basilikum"
+        },
+        {
+          "name": "Gnocchi al Burro & Salvia",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "In Butter Salbei geschwenkt"
+        },
+        {
+          "name": "Ravioli di Porcini al Burro & Salvia",
+          "prices": [
+            {
+              "amount": 14.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Steinpilze-Ricotta Füllung in Butter Salbei geschwenkt"
+        },
+        {
+          "name": "Tortellini Panna & Prosciutto",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Schinken Sahnesauce"
+        },
+        {
+          "name": "Lasagne Bolognesi al Forno",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Nach Haus Rezept Lasagne mit Käse überbacken"
+        }
+      ]
+    },
+    {
+      "title": "PIZZE 30 cm",
+      "items": [
+        {
+          "name": "Margherita",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Salame",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Salami"
+        },
+        {
+          "name": "Funghi",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Champignons"
+        },
+        {
+          "name": "Prosciutto",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Schinken"
+        },
+        {
+          "name": "Calabrese",
+          "prices": [
+            {
+              "amount": 9.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit scharfer Salami"
+        },
+        {
+          "name": "Regina",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Schinken und Champignon"
+        },
+        {
+          "name": "Reginella",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Salami und Champignon"
+        },
+        {
+          "name": "Hawaii",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Schinken und Ananas"
+        },
+        {
+          "name": "Diavola",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2"
+          ],
+          "allergens": [],
+          "additives": [
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit scharfer Salami und scharfen Peperoni"
+        },
+        {
+          "name": "Romana",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "4"
+          ],
+          "allergens": [],
+          "additives": [
+            "flavour_enhancer"
+          ],
+          "diet": {},
+          "description": "Mit Oliven , Sardellen, Kapern und Knoblauch"
+        },
+        {
+          "name": "Tonno",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Thunfisch und Zwiebeln"
+        },
+        {
+          "name": "Quattro Stagioni",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Schinken Champignon, Paprika und Artischocken"
+        },
+        {
+          "name": "Capricciosa",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*",
+            "1",
+            "2",
+            "6"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "blackened",
+            "colorant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Schinken Salami , Champignon, Paprika Oliven , Peperoni, Artischocken"
+        },
+        {
+          "name": "Triestina",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "colorant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Salami , Schinken Champignon. Peperoni"
+        },
+        {
+          "name": "Vegetariana",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit verschiedenen frischen Gemüse"
+        },
+        {
+          "name": "Calzone",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "4",
+            "*",
+            "1",
+            "2"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "colorant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Gefüllt mit Schinken Artischocken, Peperoni und Salami"
+        },
+        {
+          "name": "Calzone di Ricotta",
+          "prices": [
+            {
+              "amount": 11.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Gefüllt mit Ricotta (Frischkäse) und Spinat"
+        },
+        {
+          "name": "Parma & Rucola",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit original Parmaschinken und Rucola"
+        },
+        {
+          "name": "Frutti di Mare",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Meeresfrüchten und Knoblauch"
+        },
+        {
+          "name": "Gamberini e Aglio",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Schrips und Knoblauch"
+        },
+        {
+          "name": "Salmone e Cipolla",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit frischem Lachs und Zwiebeln"
+        },
+        {
+          "name": "Spinaci & Salmone",
+          "prices": [
+            {
+              "amount": 16.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Spinat und Lachs"
+        },
+        {
+          "name": "Rucola & Parmigiano",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Rucola und Parmesan"
+        },
+        {
+          "name": "Quattro Formaggi",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit vier Käsesorten"
+        },
+        {
+          "name": "Gorgonzola & Spinaci",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Gorgonzola und Spinat"
+        },
+        {
+          "name": "Formaggi e Broccoli",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit 4 verschiedene Käse und Broccoli"
+        },
+        {
+          "name": "La Forchetta",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "2",
+            "3",
+            "4",
+            "*"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant",
+            "colorant",
+            "flavour_enhancer",
+            "formed_meat",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Scharfer Salami , Schinken und Rucola"
+        },
+        {
+          "name": "Ghiottone",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Gorgonzola und original Parmaschinken"
+        },
+        {
+          "name": "Caprese",
+          "prices": [
+            {
+              "amount": 10.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Mozzarella und frischem Basilikum"
+        },
+        {
+          "name": "Bruschetta",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Mozzarella, frische Basilikum und Tomaten stücke"
+        },
+        {
+          "name": "Napoletana",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Büffelmozzarella und frischem Basilikum"
+        },
+        {
+          "name": "Salernitana",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Büffelmozzarella, frische Basilikum und Tomaten stücke"
+        },
+        {
+          "name": "Siciliana",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit Auberginen, Zwiebeln & Kapern"
+        },
+        {
+          "name": "Tirolese",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {},
+          "description": "Mit Speck , Zwiebeln und Peperoni"
+        },
+        {
+          "name": "Speck & Gorgonzola",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "3"
+          ],
+          "allergens": [],
+          "additives": [
+            "antioxidant"
+          ],
+          "diet": {},
+          "description": "Mit Speck und Gorgonzola"
+        },
+        {
+          "name": "Formaggi & Confettura nicht immer verfügbar",
+          "prices": [
+            {
+              "amount": 13.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit 4 verschiedene Käse und etwas Fruchtmarmelade"
+        },
+        {
+          "name": "Salsiccia & Porcini",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "2",
+            "3",
+            "15"
+          ],
+          "allergens": [],
+          "additives": [
+            "acidifier",
+            "antioxidant",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit frische Salsiccia und Steinpilze"
+        },
+        {
+          "name": "Nduja & Cipolla nicht immer verfügbar",
+          "prices": [
+            {
+              "amount": 12.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [
+            "1",
+            "2",
+            "3",
+            "15"
+          ],
+          "allergens": [],
+          "additives": [
+            "acidifier",
+            "antioxidant",
+            "colorant",
+            "preservative"
+          ],
+          "diet": {},
+          "description": "Mit Pikante Streichsalami und Zwiebeln"
+        },
+        {
+          "name": "Formaggi & Tartufo nicht immer verfügbar",
+          "prices": [
+            {
+              "amount": 17.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Mit verschiedenen Käse und Schwarzem Trüffel"
+        }
+      ]
+    },
+    {
+      "title": "DESSERT Hausgemachte",
+      "items": [
+        {
+          "name": "Tiramisù",
+          "prices": [
+            {
+              "amount": 4.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Crema Catalana",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Panna Cotta",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Lauwarm Schokoladentörtchen mit Vanilleeis",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "VINIBianchi & Rossi",
+      "items": [
+        {
+          "name": "Soave Veneto doc, trocken 0,75l",
+          "prices": [
+            {
+              "amount": 14.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Primitivo Puglia igt, halbtrocken 0,75l",
+          "prices": [
+            {
+              "amount": 14.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Lambrusco Emilia Romagna doc, liblich 0,75l",
+          "prices": [
+            {
+              "amount": 10.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    }
+  ]
+}

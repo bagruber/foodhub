@@ -53,14 +53,14 @@ verschiedenen Quellen stammen. `etl/check.py` prüft, dass keine davon fehlt.
 
 | Restaurant | Kartenstand | Textlayer | Stand |
 |---|---|---|---|
-| Maharaja, indisch | 06.02.2026 | ja | 149 Gerichte eingelesen |
-| Gasthof Drei Tannen, bayerisch | 30.08.2026 | ja | 139 Gerichte eingelesen |
 | AN Asia Cuisine & Sushi | 13.05.2026 | **nein**, 20 Seiten je ein Bild | 157 Gerichte, außerhalb ausgelesen |
+| Maharaja, indisch | 06.02.2026 | ja | 149 Gerichte |
+| Gasthof Drei Tannen, bayerisch | 30.08.2026 | ja | 143 Gerichte |
+| Staudinger Keller, bayerisch | 01.06.2026 | ja | 117 Gerichte |
+| La Forchetta, italienisch | 23.09.2025 | ja | 78 Gerichte |
+| Westerberg-Stub'n, Getränke | 27.06.2026 | ja | 78 Getränke |
+| Westerberg-Stub'n, Speisen | 29.07.2026 | ja | 31 Gerichte |
 | Asia Rose, vietnamesisch | 28.04.2022 | **nein**, Schrift in Kurven | offen |
-| Staudinger Keller, bayerisch | 01.06.2026 | ja | offen |
-| Westerberg-Stub'n, Speisen | 29.07.2026 | ja | offen |
-| Westerberg-Stub'n, Getränke | 27.06.2026 | ja | offen |
-| La Forchetta, italienisch | 23.09.2025 | ja | offen |
 
 Zwei Karten haben keinen Textlayer. Das ist kein Randfall, sondern der
 Normalfall bei Gastronomie-PDFs aus Canva und CorelDRAW, und es bestimmt, wie
@@ -125,9 +125,12 @@ sinnvoll unter einen Parser zu passen. Was sie teilen, steht in
 
 - **Maharaja**: durchgehende Gerichtsnummern 101 bis 412
 - **Drei Tannen**: der Unterstrich vor dem Preis, `Name _ 17,90`
+- **La Forchetta**: das Eurozeichen, `Name € 11,00`, dazu drei Spalten
+- **Staudinger Keller**: Überschriften an ihren Unterstrichen, `_ Salate _`
+- **Westerberg-Stub'n**: der rechtsbündige Preis am Zeilenende
 
-Beide Karten sind zweispaltig und brauchen einen `DIVIDER`, eine senkrechte
-Achse, an der die Spalten vor der Zeilenbildung getrennt werden. Ohne ihn
+Drei Karten sind mehrspaltig und brauchen einen `DIVIDER`, eine oder mehrere
+senkrechte Achsen, an denen die Spalten vor der Zeilenbildung getrennt werden. Ohne ihn
 ziehen zwei leicht versetzte Zeilen einander in eine gemeinsame und der Text
 steht verschränkt. Der Preis dafür: Zeilen, die über beide Spalten laufen,
 werden zerschnitten.
@@ -145,6 +148,22 @@ Drei Folgen davon sind gelöst, weil sie sonst ganze Abschnitte kosten:
   „Alkoholfreie Getränke", rechts „Flaschen". Deshalb werden Abschnitt und
   Mengenspalten dort je Spalte geführt, sonst stünde das Leitungswasser unter
   „Flaschen".
+- **Seiten mit wechselndem Layout** bekommen waagrechte Bänder. Seite 9 der
+  Drei Tannen ist oben zweispaltig und ab den Aperitifen einspaltig; ein Teiler
+  für die ganze Seite zerschnitt dort `Gin Tonic Bombay Sapphire 4cl / Thomas
+  Henry 0,2l _ 8,90` und machte daraus das Getränk `0,2l`.
+
+Zwei weitere Fallen liegen nicht in den Spalten, sondern im Satz:
+
+- **Zierrat.** Ein Wort, das ein Vielfaches der üblichen Schrifthöhe misst, ist
+  keine Schrift mehr. Auf der Bierseite der Drei Tannen steht ein
+  geschwungenes `Servus` mit 287,6 pt quer über der Seite, das Zwanzigfache der
+  üblichen 14,1 pt. Über die Zeilentoleranz zog es eine halbe Seite in eine
+  einzige Zeile. Solche Wörter bilden deshalb je eine eigene Zeile.
+- **Ligaturen und hochgestellte Zeichen.** `Ofenkartoﬀel` kommt als ein Zeichen
+  aus dem PDF, `Cappuccino²` als ein Wort mit einem hochgestellten Zeichen
+  darin. Beides lässt sich geometrisch nicht trennen, weil es keine zweite Box
+  gibt; beides wird deshalb im Text normalisiert.
 
 Getränke stehen in Preistabellen mit Mengenspalten, nicht in Fließsatz. Die
 Kopfzeile `0,25l 0,5l` wird gelesen und die Beträge darunter der Reihe nach
@@ -152,10 +171,14 @@ zugeordnet, aber nur, wenn genau so viele Beträge dastehen wie Spalten
 angekündigt sind. Vom Preis unterscheidet die Marker die Stellenzahl: ein Preis
 hat immer zwei Nachkommastellen, `3,60`, ein Zusatzstoffmarker nie, `3,4,6,7`.
 
+Zwei Karten liefern nicht alles im Text. Bei der Westerberg-Stub'n stehen die
+handgeschriebenen Abschnittsüberschriften und das grüne Blatt für „vegetarisch"
+als Grafik in der Seite. Beides ist im Parser von Hand eingetragen, abgelesen
+von den gerenderten Seiten, und als solches gekennzeichnet: es ist die einzige
+Stelle im Bestand mit gepflegten statt gelesenen Inhalten.
+
 ```bash
-python etl/menu_maharaja.py      # liest das PDF, schreibt data/.../menus/
-python etl/menu_drei_tannen.py
-python etl/menu_an_asia.py       # räumt den außerhalb erzeugten Extrakt auf
+for f in etl/menu_*.py; do python "$f"; done
 python etl/check.py              # prüft alle Daten gegen sich selbst
 ```
 
@@ -192,12 +215,24 @@ Drei Dinge, die nicht offensichtlich aus den Daten folgen:
 
 **Gleiche Produkte in einer Zeile.** Espresso, Radler und Hugo stehen auf jeder
 zweiten Karte. Untereinander gelistet ergeben sie eine Wand aus
-Wiederholungen. `lib/group.ts` fasst sie über einen normalisierten Namen
-zusammen und zeigt die Preisspanne, aufklappbar bis zum einzelnen Haus. Die
-Normalisierung ist bewusst zurückhaltend: `Chicken Curry` und `Hähnchencurry`
-bleiben getrennt. Zwei Zeilen zu viel sind harmloser als zwei Gerichte
-fälschlich verschmolzen, denn dann stünde der Preis des einen Hauses unter dem
-Namen des anderen.
+Wiederholungen. `lib/group.ts` fasst sie zusammen und zeigt die Preisspanne,
+aufklappbar bis zum einzelnen Haus.
+
+Das geschieht auf zwei Wegen. Maschinell über den Wortkern: Mengen, Klammern
+und Ziffern fallen weg, `Coca Cola Fl. 0,33l` und `Coca Cola` treffen sich.
+Der Wortkern reicht aber nur bis `Espresso` gleich `Espresso`. Er sieht nicht,
+dass `Tafelwasser still` und `Stilles Wasser` dasselbe sind, und er darf es
+auch nicht raten: sechs Häuser teilen sich das Wort `Salat` mit fünfzehn
+völlig verschiedenen Gerichten, vier das Wort `Curry`. Wer nach
+Wortüberschneidung zusammenfasst, legt den Papayasalat neben den Wurstsalat.
+
+Deshalb der zweite Weg, `data/vocab/produkte.json`: dort steht ausgeschrieben,
+welche Schreibweisen dasselbe Produkt meinen. Die Regel dafür steht in der
+Datei selbst. Zusammengefasst wird, wo der Unterschied Wortwahl, Marke einer
+Massenware oder Portionsgröße ist; nicht zusammengefasst wird, wo der
+Unterschied eine Sorte ist, zwischen der ein Gast wählt: hell und dunkel, süß
+und trocken, mit und ohne Alkohol. Was dort nicht steht, bleibt für sich. Aus
+753 Gerichten werden so 603 Zeilen, 59 Produkte stehen in mehreren Häusern.
 
 **Öffnungszeiten ohne fremde Bibliothek.** `lib/hours.ts` liest den Ausschnitt
 des OSM-Formats, den die Daten brauchen. `opening_hours.js` kann mehr, wiegt

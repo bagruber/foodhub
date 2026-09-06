@@ -4,15 +4,22 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
  * Das Blatt über der Karte, in drei Rastungen.
  *
  * Der wunde Punkt eines solchen Blatts ist der Streit zwischen Ziehen und
- * Scrollen: beides ist dieselbe Geste nach oben oder unten. Die Regel hier ist
- * einfach und deshalb vorhersehbar.
+ * Scrollen: beides ist dieselbe Geste nach oben oder unten. Die Regel folgt
+ * der aus Google Maps, weil die den meisten schon in den Fingern sitzt.
  *
- *   Griff angefasst          -> immer ziehen
- *   Liste angefasst, oben    -> nach unten ziehen bewegt das Blatt
- *   Liste angefasst, gescrollt -> die Liste scrollt, das Blatt bleibt
+ *   Griff angefasst              -> immer ziehen
+ *   unterste Rastung             -> immer ziehen, es gibt noch keine Liste
+ *   Liste angefasst, ganz oben   -> nach unten ziehen bewegt das Blatt
+ *   Liste angefasst, gescrollt   -> die Liste scrollt, das Blatt bleibt
  *
- * `touch-action: none` steht deshalb nur am Griff. Am Inhalt bleibt das
- * native Scrollen unangetastet, samt Schwung und Randverhalten des Systems.
+ * In der untersten Rastung ist die Liste gar nicht da. Das ist der Punkt: dort
+ * gehört die Fläche der Karte, und eine halb abgeschnittene Liste am unteren
+ * Rand nützt niemandem. Sichtbar bleiben Suche und Filter, und beide holen das
+ * Blatt beim Antippen selbst nach oben.
+ *
+ * `touch-action: none` steht deshalb nur dort, wo gezogen wird. In der Liste
+ * bleibt das native Scrollen unangetastet, samt Schwung und Randverhalten des
+ * Systems.
  */
 
 export type Detent = "peek" | "half" | "full";
@@ -26,19 +33,25 @@ const HEIGHT: Record<Detent, string> = {
 
 const ORDER: Detent[] = ["peek", "half", "full"];
 
+/** Woran die Geste begonnen hat. Davon haengt ab, ob sie ziehen darf. */
+type Source = "handle" | "head" | "list";
+
+/** Übliche Schwelle, ab der eine Wischgeste als gewollt gilt. */
+const THRESHOLD = 48;
+
 type Props = {
   detent: Detent;
   onDetent: (d: Detent) => void;
-  /** Bleibt beim Ziehen sichtbar: Suche, Umschalter, Filterknopf. */
+  /** Bleibt in jeder Rastung sichtbar: Umschalter, Suche, Filterreihe. */
   head: ReactNode;
   children: ReactNode;
 };
 
 export function BottomSheet({ detent, onDetent, head, children }: Props) {
-  const sheet = useRef<HTMLDivElement>(null);
   const scroller = useRef<HTMLDivElement>(null);
   const [drag, setDrag] = useState<number | null>(null);
-  const start = useRef({ y: 0, fromScroller: false });
+  const start = useRef({ y: 0, source: "handle" as Source });
+  const closed = detent === "peek";
 
   // Waehrend gezogen wird, folgt das Blatt dem Finger ohne Uebergang.
   const style = {
@@ -47,11 +60,15 @@ export function BottomSheet({ detent, onDetent, head, children }: Props) {
     transition: drag === null ? "height 260ms cubic-bezier(0.32,0.72,0,1), transform 260ms" : "none",
   };
 
-  function begin(event: React.PointerEvent, fromScroller: boolean) {
+  function begin(event: React.PointerEvent, source: Source) {
     // Aus der Liste heraus zieht nur, wer schon ganz oben steht. Sonst wuerde
     // jeder Scrollversuch das Blatt zuklappen.
-    if (fromScroller && (scroller.current?.scrollTop ?? 0) > 0) return;
-    start.current = { y: event.clientY, fromScroller };
+    if (source === "list" && (scroller.current?.scrollTop ?? 0) > 0) return;
+    // Im Kopf zieht nur die freie Flaeche. Wer die Suche antippt, will tippen,
+    // wer einen Filter antippt, will ihn setzen. Am Griff gilt das nicht: er
+    // ist selbst ein Knopf und muss trotzdem ziehen.
+    if (source === "head" && (event.target as Element).closest?.("input, button, a, label")) return;
+    start.current = { y: event.clientY, source };
     setDrag(0);
     (event.target as Element).setPointerCapture?.(event.pointerId);
   }
@@ -60,7 +77,7 @@ export function BottomSheet({ detent, onDetent, head, children }: Props) {
     if (drag === null) return;
     const delta = event.clientY - start.current.y;
     // Aus der Liste heraus nur nach unten. Nach oben soll sie scrollen.
-    if (start.current.fromScroller && delta < 0) {
+    if (start.current.source === "list" && delta < 0) {
       setDrag(null);
       return;
     }
@@ -70,47 +87,56 @@ export function BottomSheet({ detent, onDetent, head, children }: Props) {
   function end() {
     if (drag === null) return;
     const index = ORDER.indexOf(detent);
-    // 48 px sind die uebliche Schwelle, ab der eine Wischgeste als gewollt gilt.
-    const step = drag > 48 ? -1 : drag < -48 ? 1 : 0;
+    const step = drag > THRESHOLD ? -1 : drag < -THRESHOLD ? 1 : 0;
     const next = ORDER[Math.min(ORDER.length - 1, Math.max(0, index + step))];
     setDrag(null);
     if (next !== detent) onDetent(next);
   }
 
-  // Beim Wechsel in eine kleinere Rastung nach oben scrollen, sonst zeigt das
-  // zusammengeschobene Blatt die Mitte einer Liste.
+  // Beim Zuklappen nach oben scrollen, sonst zeigt die Liste beim naechsten
+  // Aufklappen ihre Mitte.
   useEffect(() => {
-    if (detent === "peek" && scroller.current) scroller.current.scrollTop = 0;
-  }, [detent]);
+    if (closed && scroller.current) scroller.current.scrollTop = 0;
+  }, [closed]);
+
+  const dragHandlers = {
+    onPointerMove: move,
+    onPointerUp: end,
+    onPointerCancel: end,
+  };
 
   return (
     <div
-      ref={sheet}
       style={style}
       className="pointer-events-auto flex flex-col rounded-t-2xl border-t border-ink-line bg-cream shadow-[0_-8px_24px_rgba(28,28,28,0.12)]"
     >
       <div
-        onPointerDown={(e) => begin(e, false)}
-        onPointerMove={move}
-        onPointerUp={end}
-        onPointerCancel={end}
+        onPointerDown={(e) => begin(e, "handle")}
+        {...dragHandlers}
         className="shrink-0 cursor-grab touch-none px-4 pt-2 pb-1 active:cursor-grabbing"
       >
         <button
-          onClick={() => onDetent(detent === "full" ? "peek" : "full")}
-          aria-label={detent === "full" ? "Liste einklappen" : "Liste ausklappen"}
+          onClick={() => onDetent(closed ? "half" : "peek")}
+          aria-label={closed ? "Liste zeigen" : "Liste einklappen"}
           className="mx-auto block h-1.5 w-10 rounded-full bg-ink-line"
         />
       </div>
 
-      <div className="shrink-0 px-4 pb-2">{head}</div>
+      {/* In der untersten Rastung zieht auch der Kopf, denn darunter liegt
+          keine Liste, die scrollen könnte. */}
+      <div
+        onPointerDown={closed ? (e) => begin(e, "head") : undefined}
+        {...(closed ? dragHandlers : {})}
+        className={`shrink-0 px-4 pb-2 ${closed ? "touch-pan-x" : ""}`}
+      >
+        {head}
+      </div>
 
       <div
         ref={scroller}
-        onPointerDown={(e) => begin(e, true)}
-        onPointerMove={move}
-        onPointerUp={end}
-        onPointerCancel={end}
+        onPointerDown={(e) => begin(e, "list")}
+        {...dragHandlers}
+        hidden={closed}
         className="min-h-0 flex-1 overflow-y-auto overscroll-contain"
       >
         {children}

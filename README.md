@@ -8,8 +8,8 @@ Jede Angabe trägt Quelle und Abrufdatum mit, und wo das Quelldokument eines
 führt, auch sein Erstelldatum. Eine Speisekarte sagt von sich aus nicht, ob sie
 noch gilt.
 
-**Stand:** 49 Häuser in Moosburg auf der Karte, davon 3 mit eingelesener
-Speisekarte, zusammen 445 Gerichte. Vier weitere Karten liegen bereit.
+**Stand:** 49 Häuser in Moosburg auf der Karte, davon 6 mit eingelesener
+Speisekarte, zusammen 753 Gerichte aus sieben Karten.
 
 Der Projektkontext steht in [KONTEXT.md](KONTEXT.md), was aussteht in
 [OFFENE-PUNKTE.md](OFFENE-PUNKTE.md), das Datenmodell in
@@ -32,9 +32,7 @@ Braucht Python und `pypdf`, dazu `pdftotext` und `pdfimages` **aus Poppler**
 Programm aus Xpdf genügt nicht, ihm fehlt `-bbox-layout`.
 
 ```bash
-python etl/menu_maharaja.py
-python etl/menu_drei_tannen.py
-python etl/menu_an_asia.py
+for f in etl/menu_*.py; do python "$f"; done
 python etl/check.py
 ```
 

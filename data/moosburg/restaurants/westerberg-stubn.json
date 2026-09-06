@@ -38,7 +38,10 @@
     }
   },
   "ratings": [],
-  "menus": [],
+  "menus": [
+    "westerberg-stubn_speisen_2026-07-29.json",
+    "westerberg-stubn_getraenke_2026-06-27.json"
+  ],
   "open": [
     "Speisekarte noch nicht eingelesen",
     "Bewertungen noch nicht angebunden",

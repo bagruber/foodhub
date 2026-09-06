@@ -1,19 +1,22 @@
 # Offene Punkte
 
-*Stand: 05.09.2026*
+*Stand: 06.09.2026*
 
 ## Braucht eine Entscheidung
 
-- **Koordinaten der vier Häuser.** Für die Karte nötig. Overpass könnte sie
-  liefern und gleich Adresse, `opening_hours` und `cuisine` mitbringen, ohne
-  Key und ohne Cookies. Wäre zugleich die Probe darauf, ob OSM als Stammdaten-
-  quelle trägt.
 - **Bewertungen.** Zurückgestellt, Recherchestand in KONTEXT.md, Abschnitt 5.
   Das Schema hält den Platz frei.
-- **Vier neue Karten liegen bereit, noch nicht eingelesen:** Staudinger Keller
-  (16 Seiten, einspaltig, sehr regelmäßig), Westerberg-Stub'n mit Speise- und
-  Getränkekarte, La Forchetta (2 Seiten, italienisch). Alle vier haben einen
-  Textlayer. Stammdaten und Koordinaten stehen bereits.
+- **moosburg.eu.** Die zweite Adresse braucht `moosburg-eu.yml` mit
+  FTP-Deploy nach `/data/foodhub/`, das Muster steht in
+  `baumkarte/PLATTFORM.md`. Dafür fehlen die drei Secrets im Repo
+  (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`), sie sind nicht von einem
+  anderen Repo übertragbar. Dort ist auch vermerkt, warum der Deploy dieser
+  Familie 300 s Timeout braucht und dass `dangerous-clean-slate` die
+  Geschwister-Apps mitlöschen würde.
+- **Die Zählung** gehört dazu: `<script src="/assets/zaehler.js" defer></script>`
+  vor `</body>`, mit absolutem Pfad, sobald die App auf moosburg.eu läuft. Auf
+  GitHub Pages läuft der Aufruf absichtlich ins Leere, damit die Zwillinge die
+  Zahlen nicht verdoppeln.
 
 ## Daten
 
@@ -25,36 +28,46 @@
 - **Bilder zu den Gerichten fehlen ganz.** Das Schema hat `MenuItem.image`,
   gefüllt ist nichts. Die ergiebigste Quelle liegt im Asia-Rose-PDF mit seinen
   96 freigestellten Aufnahmen.
-
-- **45 weitere Gaststätten führt OSM in Moosburg**, mit Koordinaten, Adresse,
-  `opening_hours` und `cuisine`, viele mit `website:menu`. Sie ließen sich als
-  Grundstock anlegen, dann zeigte die Karte die ganze Stadt und die
-  Speisekarten wären das, was einzelne Häuser darüber hinaus haben.
-
 - **Asia Rose ist noch nicht eingelesen.** Das PDF hat keinen Textlayer, die
-  Schrift ist in Kurven umgewandelt. Dafür liegen **96 freigestellte
-  Gerichtsbilder** darin, eines je Gericht, kreisförmig und sauber zuzuordnen.
-  Das ist die ergiebigste Bildquelle im ganzen Bestand.
-- **Die Karte von Asia Rose ist von 2022.** Vier Jahre alt, Preise und
-  Öffnungszeiten entsprechend unsicher. Eine aktuellere Fassung wäre zu suchen.
-- **Quell-URLs fehlen** für AN und Asia Rose. Bei Drei Tannen und Maharaja sind
-  sie belegt.
-- **Kontaktdaten von AN** fehlen bis auf die Adresse.
+  Schrift ist in Kurven umgewandelt. Dafür liegen darin die genannten 96
+  Gerichtsbilder, eines je Gericht, kreisförmig und sauber zuzuordnen. Die
+  Karte ist von 2022, vier Jahre alt; eine aktuellere Fassung wäre zu suchen.
+- **43 weitere Gaststätten führt OSM in Moosburg** ohne eingelesene Karte. Sie
+  stehen auf der Karte als offene Ringe, die Speisekarten sind das, was
+  einzelne Häuser darüber hinaus haben.
+- **Quell-URLs fehlen** für AN und Asia Rose. Für die übrigen fünf sind sie
+  belegt.
+- **Der Produktkatalog will gepflegt werden.** `data/vocab/produkte.json` sagt
+  ausgeschrieben, welche Schreibweisen dasselbe Produkt meinen. Eine neue Karte
+  bringt neue Schreibweisen, und die fallen erst auf, wenn zwei Zeilen
+  nebeneinander stehen, die eine sein sollten. Ein Test hält wenigstens fest,
+  dass jede eingetragene Schreibweise in Normalform steht.
 
 ## Kleinere Funde beim Einlesen
 
+- **Westerberg-Stub'n: Abschnitte und Vegetarisch-Zeichen sind Grafik.** Die
+  handgeschriebenen Überschriften und das grüne Blatt stehen als Bild in der
+  Seite, nicht im Text. Beides ist im Parser von Hand eingetragen, abgelesen
+  von den gerenderten Seiten. Das ist die einzige Stelle im Bestand mit von
+  Hand gepflegten Inhalten und wird bei einer neuen Kartenfassung als Erstes
+  falsch.
+- **Staudinger Keller: die Karte erklärt den Zusatzstoff 1 nicht.** Sie führt
+  10, 8, 7, 4 und 3 auf, verwendet aber auch eine 1. Sieben Getränke tragen
+  sie, sie bleibt unbekannt.
+- **La Forchetta und Staudinger Keller: Aufpreise nicht übernommen.** Pizzabelag
+  und Umbestellungen sind keine Gerichte. Bei La Forchetta stehen sie als
+  Komma-Liste je Preis, beim Staudinger Keller in zwei Abschnitten `Extras`.
+  Beides ist in der Herkunft vermerkt.
+- **Westerberg-Stub'n: der Sonntagsbraten hat keinen Preis.** Er wird auf der
+  Karte nur angekündigt.
 - **AN: sechs Gerichte tragen den Marker `j`**, den die Zeichenerklärung der
   Karte nicht kennt, sie springt von i auf k. Betroffen sind Red Dragon,
-  California Roll und vier Sushi-Menüs. Zu klären, wenn jemand die Bildseiten
-  prüft.
+  California Roll und vier Sushi-Menüs.
 - **AN: 13 Gerichte ohne Preis**, und bei 90 bis 92 ist die Beschreibung als
   Name gelandet. Fehler aus dem außerhalb erzeugten Extrakt, nicht aus dem
   Einlesen hier.
 - **Drei Tannen: die Mittagskarte** nennt einen Preis für vier Gerichte
   gemeinsam. Erfasst wird nur das erste.
-- **Drei Tannen: die Bierkarte** ist als mehrspaltige Tabelle gesetzt, die
-  weder dem zweispaltigen noch dem einspaltigen Muster folgt, und fällt in eine
-  verstümmelte Zeile. Betrifft einen Eintrag von 139.
 - **Maharaja: der Spirituosen-Abschnitt** heißt „2cl 4cl", weil die Überschrift
   daneben steht und nicht darüber.
 - **Maharaja: die Positionen 226 bis 228** heißen alle „Mango Cream". Das steht
@@ -62,28 +75,14 @@
 
 ## Technik
 
-- **Die Kartenfläche ist visuell ungeprüft.** Im Screenshot bleibt sie leer,
-  während Zoom, Maßstab und Quellenangabe erscheinen. Das spricht dafür, dass
-  MapLibre läuft und nur der WebGL-Canvas nicht in den Screenshot gelangt,
-  bewiesen ist es nicht. Ein Blick in einen echten Browser klärt es in einer
-  Sekunde.
-- **Das Blatt über der Karte ist nur im Code geprüft.** Ziehen zwischen den
-  drei Rastungen und der Übergang von Ziehen zu Scrollen brauchen einen echten
-  Finger auf einem echten Gerät; headless lässt sich das nicht auslösen.
-- **Unter 548 px ist das Layout ungeprüft.** Headless-Chrome und -Edge haben
-  auf diesem Rechner eine Mindestfensterbreite von 548 px und beschneiden
-  schmalere Aufnahmen nur, statt schmaler zu rendern. Bei 548 px stimmt der
-  Umbruch. Für ein Telefon mit 390 px fehlt der Nachweis.
-- **moosburg.eu fehlt noch.** GitHub Pages läuft unter
-  [bagruber.github.io/foodhub](https://bagruber.github.io/foodhub/). Für die
-  zweite Adresse braucht es `moosburg-eu.yml` mit FTP-Deploy nach
-  `/data/foodhub/`, das Muster steht in `baumkarte/PLATTFORM.md`. Dort ist auch
-  vermerkt, warum der Deploy dieser Familie 300 s Timeout braucht und dass
-  `dangerous-clean-slate` die Geschwister-Apps mitlöschen würde.
-- **Die Zählung fehlt.** `<script src="/assets/zaehler.js" defer></script>` vor
-  `</body>`, mit absolutem Pfad, sobald die App auf moosburg.eu läuft. Auf
-  GitHub Pages läuft der Aufruf absichtlich ins Leere, damit die Zwillinge die
-  Zahlen nicht verdoppeln.
+- **Der Kartenstil wiegt 490 kB und kommt von fremder Stelle.** Sein Abruf
+  beginnt jetzt beim Start statt hinter den Hausdaten, und die zwölf
+  ausgeblendeten Piktogrammebenen samt der drei mit `fill-extrusion` fliegen
+  vor dem Bau heraus. Was danach bleibt, ist der Abruf selbst: gemessen 0,85 s.
+  Eine eigene Kopie im Repo wäre schneller, ginge aber still veralten, wenn der
+  Bund seinen Stil ändert.
+- **Das JS-Bündel wiegt 1,26 MB, gepackt 345 kB.** Fast alles davon ist
+  MapLibre.
 - Der Spaltenteiler zerschneidet Zeilen, die über beide Spalten laufen. Trifft
   einzelne Fließtexthinweise. Wäre lösbar, indem solche Zeilen erkannt und
   wieder zusammengeführt werden, lohnt aber erst, wenn es stört.

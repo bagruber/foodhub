@@ -1,9 +1,10 @@
 import type { Dish } from "@/lib/data";
+import { Chilli, Leaf } from "@/components/Icons";
 
 /**
  * Die Merkmale eines Gerichts als Zeichen statt als Wortkette.
  *
- * In einer Liste aus 445 Zeilen liest niemand "vegetarisch" dreihundertmal.
+ * In einer Liste aus 781 Zeilen liest niemand "vegetarisch" dreihundertmal.
  * Ein Zeichen mit fester Farbe wird nach der dritten Zeile nicht mehr gelesen,
  * sondern erkannt.
  *
@@ -14,29 +15,6 @@ import type { Dish } from "@/lib/data";
  * verlässt, muss sehen können, worauf.
  */
 
-function Leaf() {
-  return (
-    <svg viewBox="0 0 16 16" className="h-3 w-3" aria-hidden="true">
-      <path
-        d="M13 3c0 5.5-3 8.5-7.5 8.5C4 11.5 3 10.5 3 9c0-4 4-6 10-6Z"
-        fill="currentColor"
-      />
-      <path d="M11 5C8 6.5 6 8.5 4.5 13" stroke="currentColor" strokeWidth="1.2" fill="none" />
-    </svg>
-  );
-}
-
-function Chilli() {
-  return (
-    <svg viewBox="0 0 16 16" className="h-3 w-3" aria-hidden="true">
-      <path
-        d="M11 4c1.8 0 3 1.6 3 3.6C14 11 11 14 7.5 14 5 14 3 12.6 3 10.6 3 8 6 6 9 6c0-1 .6-2 2-2Z"
-        fill="currentColor"
-      />
-      <path d="M11 4c0-1.2.8-2 2-2" stroke="currentColor" strokeWidth="1.3" fill="none" />
-    </svg>
-  );
-}
 
 const SPICE_LABEL = ["", "leicht scharf", "scharf", "sehr scharf"];
 

@@ -71,6 +71,25 @@ def spice(text: str) -> dict | None:
     return None
 
 
+# Hochgestellte Ziffern als eigenes Zeichen. `pdftext` trennt Marker an
+# Position und Groesse, aber `Cappuccino²` ist ein einziges Wort mit einem
+# hochgestellten Zeichen darin: geometrisch nicht zu erkennen, denn es gibt
+# keine zweite Box. Fuenf Gerichte bei Maharaja trugen die Ziffer deshalb
+# mitten im Namen.
+SUPERSCRIPTS = {
+    "⁰": "0", "¹": "1", "²": "2", "³": "3",
+    "⁴": "4", "⁵": "5", "⁶": "6", "⁷": "7",
+    "⁸": "8", "⁹": "9",
+}
+
+
+def strip_superscripts(text: str) -> tuple[str, list[str]]:
+    found = [SUPERSCRIPTS[c] for c in text if c in SUPERSCRIPTS]
+    for c in SUPERSCRIPTS:
+        text = text.replace(c, "")
+    return text.strip(), found
+
+
 @dataclass
 class Item:
     name: str
@@ -84,8 +103,9 @@ class Item:
     spice: dict | None = None
 
     def to_json(self, legend: dict, diet: dict | None = None) -> dict:
+        name, inline = strip_superscripts(self.name)
         allergens, additives, unknown = [], [], []
-        for raw in self.markersRaw:
+        for raw in self.markersRaw + inline:
             # Die Karten sind uneinheitlich: Maharaja druckt die Marker klein
             # und erklaert sie gross, AN schreibt beides klein. Deshalb beide
             # Schreibweisen nachschlagen statt eine zu erzwingen.
@@ -96,9 +116,9 @@ class Item:
             else:
                 unknown.append(raw)
         out = {
-            "name": self.name,
+            "name": name,
             "prices": self.prices,
-            "markersRaw": self.markersRaw,
+            "markersRaw": self.markersRaw + inline,
             "allergens": sorted(set(allergens)),
             "additives": sorted(set(additives)),
             "diet": {**(diet or {}), **self.diet},

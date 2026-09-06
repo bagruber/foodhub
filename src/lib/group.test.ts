@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { groupDishes, normaliseName } from "./group";
+import { catalogueSpellings, groupDishes, normaliseName } from "./group";
 import type { Dish } from "./data";
 
 const dish = (name: string, restaurantId: string, amount: number): Dish =>
@@ -28,6 +28,43 @@ describe("normaliseName", () => {
     // stuende der Preis des einen Hauses unter dem Namen des anderen.
     expect(normaliseName("Chicken Curry")).not.toBe(normaliseName("Hähnchencurry"));
     expect(normaliseName("Weißweinschorle")).not.toBe(normaliseName("Rotweinschorle"));
+  });
+});
+
+describe("Produktkatalog", () => {
+  it("fuehrt jede Schreibweise schon in Normalform", () => {
+    // Sonst greift der Eintrag nie: verglichen wird gegen normaliseName().
+    // Wandert die Zurichtung, faellt es hier auf und nicht erst daran, dass
+    // zwei Zeilen nebeneinander stehen, die eine sein sollten.
+    const schief = catalogueSpellings.filter((s) => normaliseName(s) !== s);
+    expect(schief).toEqual([]);
+  });
+
+  it("fasst die Faelle zusammen, an denen der Wortkern scheitert", () => {
+    const alle = JSON.parse(readFileSync("public/data/moosburg/dishes.json", "utf8")) as {
+      dishes: Dish[];
+    };
+    const groups = groupDishes(alle.dishes);
+    const von = (label: string) => groups.find((g) => g.label === label);
+
+    expect(von("Stilles Wasser")!.houses.length).toBeGreaterThan(1);
+    expect(von("Kaffee")!.items.map((d) => d.name)).toContain("Tasse Kaffee");
+    expect(von("Kaffee")!.items.map((d) => d.name)).toContain("Haferl Kaffee");
+    expect(von("Aperol Spritz")!.houses.length).toBe(4);
+  });
+
+  it("legt nicht zusammen, was nur ein Wort teilt", () => {
+    const alle = JSON.parse(readFileSync("public/data/moosburg/dishes.json", "utf8")) as {
+      dishes: Dish[];
+    };
+    const groups = groupDishes(alle.dishes);
+    const salate = groups.filter((g) => g.label.toLowerCase().includes("salat"));
+    // Papayasalat und Wurstsalat sind nicht dasselbe Produkt.
+    expect(salate.length).toBeGreaterThan(8);
+    // Hell und dunkel sind eine Sorte, keine Schreibweise.
+    expect(groups.find((g) => g.label === "Weißbier")!.key).not.toBe(
+      groups.find((g) => g.label === "Weißbier dunkel")!.key,
+    );
   });
 });
 
