@@ -1,22 +1,34 @@
 # Offene Punkte
 
-*Stand: 06.09.2026*
+*Stand: 06.09.2026, abends*
 
 ## Braucht eine Entscheidung
 
 - **Bewertungen.** Zurückgestellt, Recherchestand in KONTEXT.md, Abschnitt 5.
   Das Schema hält den Platz frei.
-- **moosburg.eu.** Die zweite Adresse braucht `moosburg-eu.yml` mit
-  FTP-Deploy nach `/data/foodhub/`, das Muster steht in
-  `baumkarte/PLATTFORM.md`. Dafür fehlen die drei Secrets im Repo
-  (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`), sie sind nicht von einem
-  anderen Repo übertragbar. Dort ist auch vermerkt, warum der Deploy dieser
-  Familie 300 s Timeout braucht und dass `dangerous-clean-slate` die
-  Geschwister-Apps mitlöschen würde.
-- **Die Zählung** gehört dazu: `<script src="/assets/zaehler.js" defer></script>`
-  vor `</body>`, mit absolutem Pfad, sobald die App auf moosburg.eu läuft. Auf
-  GitHub Pages läuft der Aufruf absichtlich ins Leere, damit die Zwillinge die
-  Zahlen nicht verdoppeln.
+- **moosburg.eu braucht nur noch die Secrets.** `.github/workflows/moosburg-eu.yml`
+  steht, der Zähler ist eingebunden. Fehlen die drei Zugangsdaten im Repo
+  unter Settings, Secrets and variables, Actions: `FTP_HOST`, `FTP_USER`,
+  `FTP_PASSWORD`, mit denselben Werten wie in `baumkarte`. Sie sind nicht von
+  einem Repo ins andere übertragbar, GitHub hält sie je Repo.
+
+## Karten, die noch warten
+
+Alle sechs haben einen Textlayer, die Quellen liegen unter `sources/moosburg/`.
+
+- **Da Sophie e Massimo.** Der Parser steht (`etl/menu_da_sophie.py`) und
+  liest sauber, aber der PDF-Ausdruck enthält nur 38 der geschätzt 120
+  Gerichte: die Seite lädt die Karte über ein Joomla-Modul nach, und der
+  Ausdruck hat nur erwischt, was beim Drucken schon da war. Die erzeugte
+  Kartendatei ist deshalb wieder gelöscht. 38 von 120 unter dem Namen des
+  Hauses zu zeigen wäre schlechter als nichts zu zeigen: wer dort nach einer
+  Pizza sucht, fände genau eine. Gebraucht wird entweder ein vollständiger
+  Ausdruck oder die Adresse, unter der das Modul seine Daten holt.
+- **Café Woch'nblatt**, **Iss Wurscht**, **Amrutham**, **Necmi's Pizza and
+  more**, **Rosenhof**: noch nicht angesehen.
+- **Iss Wurscht** und **Amrutham** haben noch keinen Eintrag unter
+  `data/moosburg/restaurants/`. OSM kennt sie unter diesen Namen nicht, beide
+  brauchen also Stammdaten von Hand: Anschrift, Koordinaten, Öffnungszeiten.
 
 ## Daten
 
@@ -28,10 +40,22 @@
 - **Bilder zu den Gerichten fehlen ganz.** Das Schema hat `MenuItem.image`,
   gefüllt ist nichts. Die ergiebigste Quelle liegt im Asia-Rose-PDF mit seinen
   96 freigestellten Aufnahmen.
-- **Asia Rose ist noch nicht eingelesen.** Das PDF hat keinen Textlayer, die
-  Schrift ist in Kurven umgewandelt. Dafür liegen darin die genannten 96
-  Gerichtsbilder, eines je Gericht, kreisförmig und sauber zuzuordnen. Die
-  Karte ist von 2022, vier Jahre alt; eine aktuellere Fassung wäre zu suchen.
+- **Die Karte von Asia Rose ist von 2022**, vier Jahre alt. Eine aktuellere
+  Fassung wäre zu suchen. Im PDF liegen außerdem die genannten 96
+  Gerichtsbilder.
+- **Tripadvisor-Links fehlen.** Die Seite antwortet auf jede
+  nicht-Browser-Anfrage mit HTTP 403 hinter einer Bot-Sperre, und die
+  Nutzungsbedingungen untersagen automatisierten Zugriff unabhängig von der
+  Menge. `etl/reviews.py` lässt fremde Einträge stehen, von Hand eingetragene
+  Links überlebt also jeder Lauf.
+- **Google Maps liefert nur den Link, keine Bewertung.** Für Werte bräuchte es
+  die Places API mit Schlüssel und Abrechnung, und deren Bedingungen erlauben
+  kein dauerhaftes Speichern der Werte. Das verträgt sich nicht mit einem
+  Repo, dessen Zweck das Aufbewahren mit Abrufdatum ist.
+- **23 Häuser haben keinen Eintrag bei Restaurant Guru.** Meist kleinere
+  Betriebe. Beim `Wiesender Café` ist die Zuordnung bewusst leer: Guru führt
+  dort eine dritte Wiesender-Filiale, und welche der beiden anderen gemeint
+  wäre, ist nicht zu entscheiden.
 - **43 weitere Gaststätten führt OSM in Moosburg** ohne eingelesene Karte. Sie
   stehen auf der Karte als offene Ringe, die Speisekarten sind das, was
   einzelne Häuser darüber hinaus haben.

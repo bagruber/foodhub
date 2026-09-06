@@ -53,10 +53,8 @@
       }
     }
   ],
-  "menus": [],
-  "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap",
-    "Karte laut OSM unter https://mythos-moosburg.de/products"
+  "menus": [
+    "mythos-im-moosburger-hof_2026-09-06.json"
   ],
   "openingHours": {
     "raw": "Mo-Su 11:00-14:30,17:00-24:00",

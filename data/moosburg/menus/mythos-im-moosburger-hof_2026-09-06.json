@@ -1,0 +1,1886 @@
+{
+  "restaurantId": "mythos-im-moosburger-hof",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/mythos-im-moosburger-hof_speisekarte_2026-09-06.pdf",
+    "retrievedAt": "2026-09-06",
+    "url": "https://www.mythos-moosburg.de/",
+    "createdAt": "2026-09-06",
+    "note": "Die Karte weist keine Allergene aus."
+  },
+  "legend": {
+    "allergens": {},
+    "additives": {}
+  },
+  "sections": [
+    {
+      "title": "Mittagsmenü",
+      "items": [
+        {
+          "name": "Briam",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "500",
+          "description": "Ofengemüsse mit Feta (Schafskäse)"
+        },
+        {
+          "name": "Schnitzel",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "501"
+        },
+        {
+          "name": "Kalbsleber",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "502",
+          "description": "mit Reis, dazu gemischter Salat"
+        },
+        {
+          "name": "Bifteki",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "503",
+          "description": "mit Reis, Tzatziki, dazu gemischter Salat"
+        },
+        {
+          "name": "Gyros",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "504",
+          "description": "mit Reis, Tzaziki, dazu gemischter Salat"
+        },
+        {
+          "name": "Suzuki",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "505",
+          "description": "Hackfleischbällchen in Tomatensauce, Reis, dazu gemischter Salat"
+        },
+        {
+          "name": "Schweinesteak",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "506",
+          "description": "aus der Lende mit Pfeffersauce, Reis, dazu gemischter Salat"
+        },
+        {
+          "name": "Mythos Teller",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "507",
+          "description": "Souvlaki, Suzuki, Gyros, Reis, Tzatziki, dazu Bauernsalat"
+        },
+        {
+          "name": "Trikala Teller",
+          "prices": [
+            {
+              "amount": 10.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "508",
+          "description": "Gyros, Suzuki, Kalbsleber mit Reis, Tzatziki, dazu gemischter Salat"
+        },
+        {
+          "name": "Mini Grill Teller",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "509",
+          "description": "Suzuki, Kalbsleber, Lammkotelett, Souvlaki, Reis, dazu gemischter Salat\""
+        },
+        {
+          "name": "Lachsfilet",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "510",
+          "description": "mit Butterreis, dazu gemischter Salat"
+        },
+        {
+          "name": "Fisch Teller",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "511",
+          "description": "Seezungen-Fillet (tropenzungenfilet), Baby-Kalamari, Scampi, Butterreis, dazu gemischter Salat"
+        },
+        {
+          "name": "Dorade-Filet",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "512",
+          "description": "mit Butterreis, dazu gemischter Salat"
+        },
+        {
+          "name": "Gyros mit Kalamari frittiert",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "513",
+          "description": "mit Reis, dazu gemischter Salat"
+        },
+        {
+          "name": "Gyros in Metaxasauce",
+          "prices": [
+            {
+              "amount": 12.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "514"
+        },
+        {
+          "name": "Suzuki",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "515",
+          "description": "Hackfleischbälchen mit Käse Überbacken und Tomatensauce"
+        }
+      ]
+    },
+    {
+      "title": "Kalte Vorspeisen",
+      "items": [
+        {
+          "name": "Tzatziki",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "1"
+        },
+        {
+          "name": "Kalte Vorspeise für 1 Person",
+          "prices": [
+            {
+              "amount": 11.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "10",
+          "description": "Tzatziki, Taramas, Tirokafteri (Schafskäsesalat), Auberginensalat, Bohnensalat, Meeresfrüchtesalat, Kalamarisalat, Schafskäse (Feta)"
+        },
+        {
+          "name": "Kalte Vorspeise für 2 Personen",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "11",
+          "description": "Tzatziki, Taramas, Tirokafteri (Schafskäsesalat), Auberginensalat, Bohnensalat, Meeresfrüchtesalat, Kalamarisalat, Schafskäse (Feta)"
+        },
+        {
+          "name": "Taramas",
+          "prices": [
+            {
+              "amount": 4.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "2",
+          "description": "roter Kaviar in Öl eigelegt"
+        },
+        {
+          "name": "Tirokafteri",
+          "prices": [
+            {
+              "amount": 5.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "3"
+        },
+        {
+          "name": "Auberginensalat",
+          "prices": [
+            {
+              "amount": 5.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "4"
+        },
+        {
+          "name": "Bohnensalat",
+          "prices": [
+            {
+              "amount": 4.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "5"
+        },
+        {
+          "name": "Oktapussalat",
+          "prices": [
+            {
+              "amount": 7.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "6",
+          "description": "(Tentakeln)"
+        },
+        {
+          "name": "Kalamarisalat",
+          "prices": [
+            {
+              "amount": 6.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "7"
+        },
+        {
+          "name": "Feta",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "8",
+          "description": "Schafskäse"
+        },
+        {
+          "name": "Oliven, Peperoni",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "9"
+        },
+        {
+          "name": "Dako original von Kreta",
+          "prices": [
+            {
+              "amount": 7.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "12",
+          "description": "Schafskäse (Feta), Tomaten, Oliven, Olivenöl und Basilikum"
+        },
+        {
+          "name": "Meeresfrüchtesalat",
+          "prices": [
+            {
+              "amount": 10.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "13"
+        },
+        {
+          "name": "Weinblätter Vegetarische",
+          "prices": [
+            {
+              "amount": 7.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "14",
+          "description": "Gefüllt mit Reis"
+        },
+        {
+          "name": "Weinblätter",
+          "prices": [
+            {
+              "amount": 8.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "15",
+          "description": "Gefüllt mit Reis und Hackfleisch"
+        }
+      ]
+    },
+    {
+      "title": "Warme Vorspeisen",
+      "items": [
+        {
+          "name": "Tiropitakia gefüllt",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "18",
+          "description": "Blätterteig mit Schafskässe gefüllt"
+        },
+        {
+          "name": "Octopus vom Grill",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "19",
+          "description": "mit Balsamico-Creme"
+        },
+        {
+          "name": "Florinis",
+          "prices": [
+            {
+              "amount": 7.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "20"
+        },
+        {
+          "name": "Gebackene Auberginen und Zucchini",
+          "prices": [
+            {
+              "amount": 6.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "21"
+        },
+        {
+          "name": "Muscheln",
+          "prices": [
+            {
+              "amount": 7.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "22",
+          "description": "aus dem Backofen in Balsamicosauce mit Olivenöl und Knoblauchsauce"
+        },
+        {
+          "name": "Peperoni vom Grill",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "23"
+        },
+        {
+          "name": "Saganaki",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "24",
+          "description": "gebackener Schafskäse (Feta)"
+        },
+        {
+          "name": "Schafskäse (Feta)",
+          "prices": [
+            {
+              "amount": 7.8,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "25",
+          "description": "aus dem Backofen mit Tomate, Zwiebeln, Olivenöl und Knoblauchsauce"
+        },
+        {
+          "name": "Zwiebelringe",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "26",
+          "description": "Goldbraun gebacken im Bierbackteig dazu Tzatziki"
+        },
+        {
+          "name": "Chicken Wings",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "27",
+          "description": "Knusprige Hähnchenflügel mit Chili-Sauce"
+        },
+        {
+          "name": "Warme Vorspeise für 1 Person",
+          "prices": [
+            {
+              "amount": 11.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "28",
+          "description": "Florinis (Paprika gefüllt mit Schaskäse), Auberginen, Zucchini, Saganaki (gebackener Schafskäse) und Tiropikati (Blätterteig mit Schafskäse)."
+        },
+        {
+          "name": "Warme Vorspeise für 2 Personen",
+          "prices": [
+            {
+              "amount": 19.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "29",
+          "description": "Florinis (Paprika gefüllt mit Schaskäse), Auberginen, Zucchini, Saganaki (gebackener Schafskäse) und Tiropikati (Blätterteig mit Schafskäse)."
+        },
+        {
+          "name": "Krebsfleisch paniert",
+          "prices": [
+            {
+              "amount": 7.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "30",
+          "description": "mit Tzatziki"
+        },
+        {
+          "name": "Hackfleisch Bällchen",
+          "prices": [
+            {
+              "amount": 6.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "31",
+          "description": "In Tomatensauce"
+        },
+        {
+          "name": "Sardellen",
+          "prices": [
+            {
+              "amount": 7.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "32",
+          "description": "Paniert und gebacken"
+        },
+        {
+          "name": "Muscheln Saganaki",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "37",
+          "description": "in pikanter Tomatensauce"
+        }
+      ]
+    },
+    {
+      "title": "Suppen",
+      "items": [
+        {
+          "name": "Hühnersuppe",
+          "prices": [
+            {
+              "amount": 5.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "33"
+        },
+        {
+          "name": "Bohnensuppe",
+          "prices": [
+            {
+              "amount": 5.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "34"
+        },
+        {
+          "name": "Gulaschsuppe",
+          "prices": [
+            {
+              "amount": 6.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "35",
+          "description": "mit Rindfleisch (würzig)"
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Griechischer Bauernsalat",
+          "prices": [
+            {
+              "amount": 10.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "50",
+          "description": "mit Tomaten, Gurken, Zwiebeln, Oliven und Schafskäse (Feta) leicht angemacht"
+        },
+        {
+          "name": "Gemischter Salat",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "51",
+          "description": "mit Kräuterdressing des Hauses"
+        },
+        {
+          "name": "Thunfisch Salat",
+          "prices": [
+            {
+              "amount": 9.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "52",
+          "description": "mit Kräuterdressing des Hauses"
+        },
+        {
+          "name": "Fitness Salat",
+          "prices": [
+            {
+              "amount": 13.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "53",
+          "description": "mit Hähnchenbrustfiletstreifen und Kräuterdressing des Hauses"
+        },
+        {
+          "name": "Ladies Salat",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "54",
+          "description": "mit Scampis gegrillt und Kräuterdressing des Hauses"
+        },
+        {
+          "name": "Bunter Mixsalat",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "55",
+          "description": "Seezungefilet (Tropenzungenfilet), Baby-Kalamari, Scampi und Kräuterdressing des Hauses"
+        },
+        {
+          "name": "Mythos-Salat",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "56",
+          "description": "mit gebratenen Champignons, putenbrustfiletstreifen und Kräuterdressing des Hauses"
+        }
+      ]
+    },
+    {
+      "title": "Vom Grill",
+      "items": [
+        {
+          "name": "Gyros vom Schweinenacken",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "59",
+          "description": "Pita, Tzatziki, Pommes, dazu gemischter Salat"
+        },
+        {
+          "name": "Gyros vom Schweinenacken",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "60",
+          "description": "mit Reis, Tzatziki, dazu gemischter Salat"
+        },
+        {
+          "name": "Bifteki",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "61",
+          "description": "Hackfleisch mit Schafskäse (Feta) gefüllt und Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Souvlaki (2 Spieße)",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "62",
+          "description": "Schweinefleisch Spieße mit Reis, dazu gemischter Salat"
+        },
+        {
+          "name": "Kalbsleber",
+          "prices": [
+            {
+              "amount": 18.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "63",
+          "description": "mit Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Lammkotelett",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "64",
+          "description": "Tzatziki mit Rosmarinkartoffeln dazu gemischter Salat"
+        },
+        {
+          "name": "Lammfilet",
+          "prices": [
+            {
+              "amount": 23.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "65",
+          "description": "mit Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Spareribs",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "66",
+          "description": "mit Barbecuesauce, Pommes dazu gemischter Salat"
+        },
+        {
+          "name": "Suzuki",
+          "prices": [
+            {
+              "amount": 13.3,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "67",
+          "description": "Hackfleischbällchen mit Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Schweine Steak",
+          "prices": [
+            {
+              "amount": 13.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "68",
+          "description": "(aus der Lende) mit Reis, dazu gemischter Salat"
+        },
+        {
+          "name": "Rinderfilet 200g",
+          "prices": [
+            {
+              "amount": 26.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "69",
+          "description": "Friches Grillgemüse dazu gemischter Salat"
+        },
+        {
+          "name": "Gefüllte Souflaki",
+          "prices": [
+            {
+              "amount": 15.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "79",
+          "description": "mit Schafskäse (Feta), Reis, dazu gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "Gemischte Platten vom Grill",
+      "items": [
+        {
+          "name": "Dorf Teller",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "70",
+          "description": "Souvlaki, Schweinesteak, Gyros, Tzatziki mit Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Moosburger-Hof-Teller",
+          "prices": [
+            {
+              "amount": 18.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "71",
+          "description": "Schweinefiletspieß, Gyros, Tzatziki mit Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Grill Teller",
+          "prices": [
+            {
+              "amount": 21.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "72",
+          "description": "Schweinefilet, Rinderfilet, Lammfilet, Hähnchenbrustfilet mit Tzaziki, Country-Potatoes dazu gemischter Salat"
+        },
+        {
+          "name": "Paros Teller",
+          "prices": [
+            {
+              "amount": 17.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "73",
+          "description": "Kalamari frittiert, Gyros, Tzatziki mit Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Mythos-Platte für 2 Personen",
+          "prices": [
+            {
+              "amount": 43.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "74",
+          "description": "Gyros, Schweinefilet, Hähnchenbrustfilet, Spareribs, Kalamari frittiert, Tzatziki, Barbecuesauce mit Pommes dazu gemischter Salat\""
+        },
+        {
+          "name": "Epidavros Teller",
+          "prices": [
+            {
+              "amount": 19.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "75",
+          "description": "Suzuki, Gyros, Souvlaki, Lammkotelett, Tzatziki, Reis dazu gemischter Salat"
+        },
+        {
+          "name": "Spezial Teller",
+          "prices": [
+            {
+              "amount": 21.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "76",
+          "description": "Suzuki, Souvlaki, Kalbsleber, Lammkotelett, Kalamari frittiert, Reis dazu gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "Aus dem Backofen",
+      "items": [
+        {
+          "name": "Musaka",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "80",
+          "description": "Zucchini-und Auberginenauflauf mit Rosmarin-Kartoffeln, Hackfleisch und Bechamelsauce dazu gemischter Salat"
+        },
+        {
+          "name": "Lammhaxe",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "81",
+          "description": "mit frischem Gemüse dazu gemischter Salat."
+        },
+        {
+          "name": "Lammhaxe",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "82",
+          "description": "mit Riesenbohnen in Tomatensauce, Geriebener Schafskäse dazu gemischter Salat"
+        },
+        {
+          "name": "Lammhaxe",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "83",
+          "description": "mit Rosmarin-Kartoffeln aus dem Backofen dazu gemischter Salat"
+        },
+        {
+          "name": "Lammhaxe mit Reisnudeln",
+          "prices": [
+            {
+              "amount": 20.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "84",
+          "description": "(Kritharaki) dazu gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "Fischfilet",
+      "items": [
+        {
+          "name": "Zanderfilet",
+          "prices": [
+            {
+              "amount": 23.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "90",
+          "description": "in Zitronensauce mit frischem Gemüse dazu gemischter Salat"
+        },
+        {
+          "name": "Loup de mer filet",
+          "prices": [
+            {
+              "amount": 24.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "91",
+          "description": "In Zitronensauce mit frischem Gemüse dazu gemischter Salat"
+        },
+        {
+          "name": "Seezungenfilet",
+          "prices": [
+            {
+              "amount": 25.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "92",
+          "description": "(tropenzungenfilet) in Zitronensauce mit frischem Gemüse dazu gemischter Salat"
+        },
+        {
+          "name": "Lachsfilet",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "93",
+          "description": "in Zitronensauce mit frischem Gemüse dazu gemischter Salat"
+        },
+        {
+          "name": "Seehecht Frittiert",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "94",
+          "description": "mit frischem Gemüse dazu Gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "Fisch",
+      "items": [
+        {
+          "name": "Scampi gegrillt",
+          "prices": [
+            {
+              "amount": 24.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "100",
+          "description": "in Knoblauchsauce mit Butterreis dazu gemischter Salat"
+        },
+        {
+          "name": "Fischplatte für 1 Person",
+          "prices": [
+            {
+              "amount": 26.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "101",
+          "description": "Lachsfilet, Baby-Kalamari, Seezungenfilet (Tropenzungenfilet), Scampi in Knoblauchsauce mit Reis und Rosmarinkartoffeln aus dem Backofen dazu gemischter Salat"
+        },
+        {
+          "name": "Fischplatte für 2 Personen",
+          "prices": [
+            {
+              "amount": 45.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "102",
+          "description": "Lachsfilet, Baby-Kalamari, Seezungenfilet (Tropenzungenfilet), Scampi in Knoblauchsauce mit Reis und Rosmarinkartoffeln aus dem Backofen dazu gemischter Salat"
+        },
+        {
+          "name": "Baby-Kalamari gegrillt",
+          "prices": [
+            {
+              "amount": 20.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "98",
+          "description": "in Knoblauchsauce mit Butterreis dazu gemischter Salat"
+        },
+        {
+          "name": "Kalamari frittiert",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "99",
+          "description": "mit Tzatziki, Reis dazu gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "Bayerische Gerichte",
+      "items": [
+        {
+          "name": "Schnitzel (Wiener Art)",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "110",
+          "description": "mit Pommes. dazu gemischter Salat"
+        },
+        {
+          "name": "Schnitzel mit heller Sauce",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "111",
+          "description": "mit Pommes, dazu gemischter Salat"
+        },
+        {
+          "name": "Schnitzel mit Pfeffersauce",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "112",
+          "description": "mit Pommes dazu gemischter Salat"
+        },
+        {
+          "name": "Schnitzel mit Champignonsauce.",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "113",
+          "description": "mit Pommes dazu gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "Kindergerichte",
+      "items": [
+        {
+          "name": "Kinder Gyros",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "120",
+          "description": "mit Pommes"
+        },
+        {
+          "name": "Kinder Souvlaki",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "121",
+          "description": "Schweinefleisch Spieß mit Pommes"
+        },
+        {
+          "name": "Kinderschnitzel Wiener Art",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "122",
+          "description": "mit Pommes"
+        },
+        {
+          "name": "Spaghetti",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "123",
+          "description": "mit Hackfleisch und Tomatensauce"
+        }
+      ]
+    },
+    {
+      "title": "Aus der Pfanne",
+      "items": [
+        {
+          "name": "Schweinefilet und Rinderfilet",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "130",
+          "description": "mit Champignonsauce, Butterreis dazu gemischter Salat"
+        },
+        {
+          "name": "Lammfilet",
+          "prices": [
+            {
+              "amount": 23.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "131",
+          "description": "mit Käsesauce, Butterreis dazu gemischter Salat"
+        },
+        {
+          "name": "Duett",
+          "prices": [
+            {
+              "amount": 22.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "132",
+          "description": "Hähnchenbrustfilet mit Scampi in Orangensauce, Butterreis dazu gemischter Salat"
+        },
+        {
+          "name": "Gyros in Metaxasauce",
+          "prices": [
+            {
+              "amount": 17.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "133",
+          "description": "dazu gemischter Salat"
+        },
+        {
+          "name": "Putengeschnetzeltes in Metaxasauce",
+          "prices": [
+            {
+              "amount": 16.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "134",
+          "description": "dazu gemischter Salat"
+        }
+      ]
+    },
+    {
+      "title": "Beilagen",
+      "items": [
+        {
+          "name": "Riesenbohnen",
+          "prices": [
+            {
+              "amount": 6.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "148",
+          "description": "in Tomatensauce"
+        },
+        {
+          "name": "Pita Mesogeios",
+          "prices": [
+            {
+              "amount": 7.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "39",
+          "description": "Knoblauchsauce, Scampis, Tomatensauce und Parmesan"
+        },
+        {
+          "name": "Country Potatoes",
+          "prices": [
+            {
+              "amount": 4.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "40"
+        },
+        {
+          "name": "Pommes Frites",
+          "prices": [
+            {
+              "amount": 4.1,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "41"
+        },
+        {
+          "name": "Pita Brot",
+          "prices": [
+            {
+              "amount": 2.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "42"
+        },
+        {
+          "name": "Pita Brot mit Knoblauch",
+          "prices": [
+            {
+              "amount": 2.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "43"
+        },
+        {
+          "name": "Knoblauch Brot",
+          "prices": [
+            {
+              "amount": 4.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "44",
+          "description": "(Skordopsomo) mit Tzatziki"
+        },
+        {
+          "name": "Rosmarinkartoffeln",
+          "prices": [
+            {
+              "amount": 3.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "45",
+          "description": "aus dem Backofen"
+        },
+        {
+          "name": "Frisches Gemüse",
+          "prices": [
+            {
+              "amount": 5.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "46"
+        },
+        {
+          "name": "Butterreis",
+          "prices": [
+            {
+              "amount": 3.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "47"
+        },
+        {
+          "name": "Tomatenreis",
+          "prices": [
+            {
+              "amount": 4.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "48"
+        },
+        {
+          "name": "Vegetarisches Teller",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "49",
+          "description": "gebackene Auberginen und Zucchini mit Butterreis, Tirokafteri (Schafskäsesalat), Riesenbohnen in Tomatensauce"
+        }
+      ]
+    },
+    {
+      "title": "Kuchen und Eis",
+      "items": [
+        {
+          "name": "Galaktoburico",
+          "prices": [
+            {
+              "amount": 7.6,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "140",
+          "description": "Blätterteig mit Eiercreme gefüllt und Vanille-Eis"
+        },
+        {
+          "name": "Baklava",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "141",
+          "description": "mit Nüssen, Honigsirup und Vanille-Eis"
+        },
+        {
+          "name": "Halva",
+          "prices": [
+            {
+              "amount": 5.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "142",
+          "description": "Sesamgebäck mit Honig und Zitrone"
+        },
+        {
+          "name": "Griechischer Joghurt",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "143",
+          "description": "mit Honig und Nüssen"
+        },
+        {
+          "name": "Schokosouffle",
+          "prices": [
+            {
+              "amount": 8.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "ref": "146",
+          "description": "mit Puderzucker und Schokoeis"
+        }
+      ]
+    }
+  ]
+}

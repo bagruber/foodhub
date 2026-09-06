@@ -8,8 +8,8 @@ Jede Angabe trägt Quelle und Abrufdatum mit, und wo das Quelldokument eines
 führt, auch sein Erstelldatum. Eine Speisekarte sagt von sich aus nicht, ob sie
 noch gilt.
 
-**Stand:** 49 Häuser in Moosburg auf der Karte, davon 6 mit eingelesener
-Speisekarte, zusammen 753 Gerichte aus sieben Karten.
+**Stand:** 49 Häuser in Moosburg auf der Karte, davon 10 mit eingelesener
+Speisekarte, zusammen 1146 Gerichte aus elf Karten.
 
 Der Projektkontext steht in [KONTEXT.md](KONTEXT.md), was aussteht in
 [OFFENE-PUNKTE.md](OFFENE-PUNKTE.md), das Datenmodell in
