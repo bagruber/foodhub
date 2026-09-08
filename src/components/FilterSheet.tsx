@@ -1,4 +1,4 @@
-import { Bag, Book, Card, Chilli, Clock, Cutlery, House, Leaf, Tag, Truck, Umbrella, Wheat } from "@/components/Icons";
+import { Bag, Book, Card, Chilli, Clock, Cutlery, House, Leaf, Tag, Truck, Umbrella, Verboten, Wheat } from "@/components/Icons";
 import { EMPTY, countActive, now, toggle, type Filters } from "@/lib/filters";
 import { WEEKDAY_LABEL, clock } from "@/lib/hours";
 
@@ -169,6 +169,7 @@ export function FilterSheet(p: Props) {
             entries={Object.entries(p.allergens)}
             selected={f.without}
             onPick={(a) => set({ without: toggle(f.without, a) })}
+            negativ
           />
         </Section>
 
@@ -275,23 +276,30 @@ function ChipList({
   selected,
   counts,
   onPick,
+  negativ = false,
 }: {
   entries: [string, string][];
   selected: string[];
   counts?: Map<string, number>;
   onPick: (slug: string) => void;
+  /** Gewählt heisst hier ausschliessen, nicht einschränken. */
+  negativ?: boolean;
 }) {
   return (
     <div className="flex flex-wrap gap-1.5">
-      {entries.map(([slug, label]) => (
-        <Chip
-          key={slug}
-          active={selected.includes(slug)}
-          onClick={() => onPick(slug)}
-          label={label}
-          count={counts?.get(slug)}
-        />
-      ))}
+      {entries.map(([slug, label]) => {
+        const active = selected.includes(slug);
+        return (
+          <Chip
+            key={slug}
+            active={active}
+            onClick={() => onPick(slug)}
+            icon={negativ && active ? <Verboten /> : undefined}
+            label={label}
+            count={counts?.get(slug)}
+          />
+        );
+      })}
     </div>
   );
 }

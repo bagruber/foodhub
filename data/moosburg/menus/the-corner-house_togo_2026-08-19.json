@@ -1,0 +1,666 @@
+{
+  "restaurantId": "the-corner-house",
+  "provenance": {
+    "kind": "pdf",
+    "file": "sources/moosburg/the-corner-house_togo-und-lieferkarte_2026-08-19.pdf",
+    "retrievedAt": "2026-09-09",
+    "url": "https://thecornerhouse-moosburg.de/",
+    "createdAt": "2026-08-19",
+    "note": "Karte zum Mitnehmen und Liefern, nicht die Karte im Haus. Allergene weist sie nicht aus. Die Aufpreise unter „Options“ sind nicht erfasst."
+  },
+  "legend": {
+    "allergens": {},
+    "additives": {}
+  },
+  "sections": [
+    {
+      "title": "Burgerspecial",
+      "note": "Für unsere Burger verwenden wir heimisches Rind welches wir frisch von der Metzgerei Keller in Langenbach geliefert bekommen. Die Patties braten wir standardmäßig Medium. Solltet ihr die Burger lieber \"durch\" wünschen bitte bei der Bestellung angeben.",
+      "items": [
+        {
+          "name": "King Louie Burger",
+          "prices": [
+            {
+              "amount": 17.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Willkommen im Burger-Dschungel! Unser King Louie Burger ist nichts für gewöhnliche Geschmäcker: Saftiges 100 % heimisches Rind trifft auf geschmolzenen Cheddar, knusprigen Bacon und frischen Rucola. Dazu kommt süßlich gegrillte Banane, eine cremig-würzige Erdnussbuttersauce und unser fruchtiges Himbeer-Zwiebel-Chutney. Herzhaft. Fruchtig. Cremig. Wild. Eine überraschende Kombination aus süß und salzig, die verdammt gut zusammenpasst. Also: Trau dich in den Dschungel und gönn dir den King Louie! P.S.: Elvis hätte ihn geliebt ;)"
+        }
+      ]
+    },
+    {
+      "title": "Wochenspecials · Jeden Mittwoch",
+      "items": [
+        {
+          "name": "Chicken Wings Combo",
+          "prices": [
+            {
+              "amount": 14.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "6 ganze Chicken Wings, wahlweise in Buffalo Hot Sauce (scharf) oder BBQ Sauce (würzig) mariniert, mit Blue Cheese Dip und French Fries",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Wochenspecials · Jeden Donnerstag",
+      "items": [
+        {
+          "name": "Baby Back Ribs BBQ Style",
+          "prices": [
+            {
+              "amount": 19.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Ganze Seite Baby Back Ribs im BBQ Style langsam gegart mit French Fries und hausgemachter BBQ Sauce"
+        }
+      ]
+    },
+    {
+      "title": "Wochenspecials · Jedes Wochenende (ab Freitag, solange der Vorrat reicht)",
+      "items": [
+        {
+          "name": "Pulled Pork Burger",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Zartes über Nacht gegartes Schweinefleisch, Rucola, BBQ Sauce, Portwein-Balsamico Zwiebeln"
+        },
+        {
+          "name": "Weekend Fries",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "French Fries, Pulled Pork, Zwiebeln, Jalapenos, BBQ Sauce, mit Cheddar überbacken Für unsere Burger verwenden wir heimisches Rind welches wir frisch von der Metzgerei Keller in Langenbach geliefert bekommen. Die Patties braten wir standardmäßig Medium. Solltet ihr die Burger lieber \"durch\" wünschen bitte bei der Bestellung angeben."
+        }
+      ]
+    },
+    {
+      "title": "Burger",
+      "items": [
+        {
+          "name": "Galway Burger",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rind, Salat, Tomate, Zwiebeln, Burgersauce"
+        },
+        {
+          "name": "Dublin Burger",
+          "prices": [
+            {
+              "amount": 13.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "I100% Rind, Cheddar, Salat, Tomate, Zwiebeln, Burgersauce"
+        },
+        {
+          "name": "SanAntonio Burger",
+          "prices": [
+            {
+              "amount": 14.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rind, Cheddar, Salat, Tomate, Bacon Jam, Jalapenos, Burgersauce"
+        },
+        {
+          "name": "Akapulko Burger",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "I100% Rind Cheddar, Bacon, Salat, BBQ Sauce, Guacamole, Jalapenos"
+        },
+        {
+          "name": "Chili Cheese Burger",
+          "prices": [
+            {
+              "amount": 14.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rind, Burger Sauce, Rucola, Cheddar, Bacon, gegrillte Paprika, Jalapenos und Chili Cheese Sauce (leicht scharf)",
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Blue Cheese Burger",
+          "prices": [
+            {
+              "amount": 14.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rind, Rucola, Blauschimmel-Käse, BBQ-Sauce, Bacon, Portwein-Balsamico-Zwiebeln"
+        },
+        {
+          "name": "Lyon Burger",
+          "prices": [
+            {
+              "amount": 14.0,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "100% Rind, Salat, Camembert, Honigsenf, Preiselbeeren, Pekanuss-Krokant"
+        },
+        {
+          "name": "Veggie Burger",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Patty aus Süßkartoffeln, Kidney Bohnen und Kichererbsen in Reisflocken Panade, mit Cheddar, Salat, BBQ Sauce, Guacamole, Tomaten, Zwiebeln"
+        }
+      ]
+    },
+    {
+      "title": "Sandwich Rolls (im Baguette)",
+      "items": [
+        {
+          "name": "Pork Belly Chili Onion Roll (PBCP/ scharf)",
+          "prices": [
+            {
+              "amount": 13.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Knuspriger Schweinebauch mit Rucola und Chili Onion Sauce",
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Fish Roll",
+          "prices": [
+            {
+              "amount": 13.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kabeljau im hausgemachten Fischteig mit Rucola, Sauce Tartar und Limetten Aioli"
+        },
+        {
+          "name": "Garlic Shrimp Roll",
+          "prices": [
+            {
+              "amount": 13.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "In Knoblauchöl gebratene Garnelen mit Guacamole, Rucola und Chipotle Mayo"
+        },
+        {
+          "name": "Greenfield Roll (vegan)",
+          "prices": [
+            {
+              "amount": 13.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegan": "declared",
+            "vegetarian": "declared"
+          },
+          "description": "Hausgemachte Falafel Nuggets mit Chili Onion Sauce, Rucola und Tzatziki (vegan)"
+        }
+      ]
+    },
+    {
+      "title": "Sides",
+      "items": [
+        {
+          "name": "French Fries (Pommes)",
+          "prices": [
+            {
+              "amount": 4.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Sweet Potato Fries",
+          "prices": [
+            {
+              "amount": 5.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "(Süßkartoffelpommes)"
+        }
+      ]
+    },
+    {
+      "title": "Other Stuff",
+      "items": [
+        {
+          "name": "Fish & Chips",
+          "prices": [
+            {
+              "amount": 15.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "Kabeljau in hausgemachtem Bierteig mit Sauce Tartar"
+        },
+        {
+          "name": "Falafel & Chips (vegan)",
+          "prices": [
+            {
+              "amount": 13.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {
+            "vegan": "declared",
+            "vegetarian": "declared"
+          },
+          "description": "Hausgemachte Falafel Nuggets mit French Fries, Guacamole, und Tzatziki (vegan)"
+        },
+        {
+          "name": "Chili con Carne (leicht scharf)",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Chili Cheese Fries",
+          "prices": [
+            {
+              "amount": 12.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "French Fries, Chili con Carne, Jalapenos mit Cheddar überbacken"
+        },
+        {
+          "name": "Outlaw Fries",
+          "prices": [
+            {
+              "amount": 11.7,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "French Fries, Chili Cheese Sauce, Bacon, Zwieblen, Jalapenos, mit Cheddar überbacken"
+        },
+        {
+          "name": "Parmesan Garlic Fries",
+          "prices": [
+            {
+              "amount": 6.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "French Fries mit Knoblauch und Parmesan überbacken Alle Salate wahlweise mit Hausdressing (Essig und Öl Basis) oder Cream & Onion Dressing (Sahne Dressing)"
+        },
+        {
+          "name": "Crisps",
+          "prices": [
+            {
+              "amount": 2.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "(Chips) verschiedene Sorten"
+        }
+      ]
+    },
+    {
+      "title": "Salate",
+      "items": [
+        {
+          "name": "Kleiner gemischter Salat",
+          "prices": [
+            {
+              "amount": 5.2,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Großer gemischter Salat",
+          "prices": [
+            {
+              "amount": 8.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Greek Salad",
+          "prices": [
+            {
+              "amount": 11.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gemischter Salat mit Oliven, Feta und Peperoni"
+        },
+        {
+          "name": "Surf Salad",
+          "prices": [
+            {
+              "amount": 13.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "description": "gemischter Salat mit Garnelen in Knoblauchöl"
+        }
+      ]
+    },
+    {
+      "title": "Homemade Dips",
+      "items": [
+        {
+          "name": "Limetten Aioli",
+          "prices": [
+            {
+              "amount": 1.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Guacamole (leicht scharf)",
+          "prices": [
+            {
+              "amount": 1.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Chipotle Mayo",
+          "prices": [
+            {
+              "amount": 1.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Burger Sauce",
+          "prices": [
+            {
+              "amount": 1.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "BBQ Sauce",
+          "prices": [
+            {
+              "amount": 1.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Chili Onion Sauce (scharf)",
+          "prices": [
+            {
+              "amount": 1.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "spice": {
+            "level": 2,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Chili Cheese Sauce (leicht scharf)",
+          "prices": [
+            {
+              "amount": 1.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {},
+          "spice": {
+            "level": 1,
+            "basis": "declared"
+          }
+        },
+        {
+          "name": "Sauce Tartare",
+          "prices": [
+            {
+              "amount": 1.5,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Wasabi Mayo",
+          "prices": [
+            {
+              "amount": 1.4,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    },
+    {
+      "title": "Drinks",
+      "items": [
+        {
+          "name": "Guinness (Dose 0,44 l)",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        },
+        {
+          "name": "Augustiner Hell (Flasche 0,5l)",
+          "prices": [
+            {
+              "amount": 3.9,
+              "currency": "EUR"
+            }
+          ],
+          "markersRaw": [],
+          "allergens": [],
+          "additives": [],
+          "diet": {}
+        }
+      ]
+    }
+  ]
+}

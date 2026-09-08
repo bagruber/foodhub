@@ -1,7 +1,7 @@
 # foodhub, Projektkontext
 
 *Lebendes Arbeitsdokument. Vollständig lesen, bevor Code geschrieben wird.
-Änderungen mit Datum vermerken. Stand: 06.09.2026, abends*
+Änderungen mit Datum vermerken. Stand: 09.09.2026*
 
 ---
 
@@ -66,15 +66,17 @@ verschiedenen Quellen stammen. `etl/check.py` prüft, dass keine davon fehlt.
 | La Forchetta, italienisch | 23.09.2025 | ja | 78 Gerichte |
 | Westerberg-Stub'n, Getränke | 27.06.2026 | ja | 78 Getränke |
 | Balkan-Restaurant Avlija | 24.01.2024 | ja, über speisekarte.de | 43 Gerichte |
+| The Corner House | 19.08.2026 | ja | 41 Gerichte, nur ToGo und Lieferung |
 | Da Sophie e Massimo | 06.09.2026 | ja, Seitenausdruck | 38 Gerichte |
 | Westerberg-Stub'n, Speisen | 29.07.2026 | ja | 31 Gerichte |
 | Rosenhof-Lichtspiele | 07.08.2026 | ja | 19 Gerichte |
 
-Zusammen 1673 Gerichte aus sechzehn Karten in fünfzehn Häusern, von 49
+Zusammen 1714 Gerichte aus siebzehn Karten in sechzehn Häusern, von 49
 erfassten. Zwei Karten kommen aus einem Ausdruck der Bestellseite, eine über
-ein fremdes Portal; das steht jeweils in der Herkunft, denn es ist ein
-Unterschied, ob der Wirt eine Fassung veröffentlicht hat oder ein Dritter sie
-erfasst hat.
+ein fremdes Portal, eine ist nur die Karte zum Mitnehmen; das steht jeweils in
+der Herkunft, denn es ist ein Unterschied, ob der Wirt eine Fassung
+veröffentlicht hat, ein Dritter sie erfasst hat, oder ob sie überhaupt alles
+zeigt, was es im Haus gibt.
 
 Zwei Karten haben keinen Textlayer. Das ist kein Randfall, sondern der
 Normalfall bei Gastronomie-PDFs aus Canva und CorelDRAW, und es bestimmt, wie
@@ -288,7 +290,7 @@ kommt aus der Überschrift der gedruckten Karte.
 
 Das ist dasselbe Problem wie beim Produktkatalog, eine Stufe höher: was bei
 den Drei Tannen „Schmankerl" heißt, heißt bei Alexander „FLEISCHGERICHTE VOM
-GRILL" und bei Necmi „Grill Gerichte". 203 verschiedene Überschriften stehen
+GRILL" und bei Necmi „Grill Gerichte". 211 verschiedene Überschriften stehen
 im Bestand. `data/vocab/gaenge.json` ordnet sie dreizehn Gängen zu, erst über
 den vollen Wortlaut, dann über geordnete Wortregeln; geprüft wird auf
 Wortanfänge, damit `suppe` auch `Suppen` trifft und `eis` trotzdem nicht das
@@ -297,6 +299,11 @@ Wortanfänge, damit `suppe` auch `Suppen` trifft und `eis` trotzdem nicht das
 Stand heute trifft eine einzige keine Regel, und die ist bewusst so gesetzt
 („Das solltest du nicht verpassen!" bei den Drei Tannen mischt Nachspeise und
 Getränk).
+
+Die Grenze des Verfahrens ist der Titel selbst: „Drinks" heißt im Staudinger
+Keller Wodka und Longdrink, im Corner House Guinness und Augustiner. Beide
+landen unter „Bar und Spirituosen". Ein Ausweg wäre ein Eintrag je Haus und
+Titel, und der lohnt bei zwei Zeilen nicht.
 
 Anders als beim Produktkatalog wird hier also mit Regeln gearbeitet und nicht
 mit einer vollständigen Liste. Der Grund ist der Einsatz: eine falsch

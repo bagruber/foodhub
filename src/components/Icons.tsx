@@ -2,7 +2,7 @@
  * Die Zeichen der Oberfläche, als Pfade statt als Schriftart.
  *
  * Ein Icon-Paket wäre bequemer, brächte aber ein weiteres Abhängigkeitspaar
- * und für neunzehn Zeichen ein Vielfaches an Gewicht. Alle sind auf demselben
+ * und für zwanzig Zeichen ein Vielfaches an Gewicht. Alle sind auf demselben
  * Raster von 16 gezeichnet, mit derselben Strichstärke, und nehmen ihre Farbe
  * vom Text darüber.
  *
@@ -219,6 +219,22 @@ export function Star({ className = "h-3.5 w-3.5", fill = 1, id }: Props & { fill
           <path d={d} fill="currentColor" clipPath={`url(#${id})`} />
         </>
       )}
+    </Svg>
+  );
+}
+
+/**
+ * Der durchgestrichene Kreis. Steht an den gewählten Allergenen, weil die
+ * als einzige verneinend filtern: alle anderen Marken schränken auf etwas
+ * ein, diese schließen etwas aus. Ohne das Zeichen sieht eine gewählte Marke
+ * bei den Allergenen genauso aus wie bei der Küche und liest sich falsch
+ * herum.
+ */
+export function Verboten({ className = "h-3.5 w-3.5" }: Props) {
+  return (
+    <Svg className={className}>
+      <circle cx="8" cy="8" r="6" {...STROKE} />
+      <path d="M3.8 12.2 12.2 3.8" {...STROKE} />
     </Svg>
   );
 }

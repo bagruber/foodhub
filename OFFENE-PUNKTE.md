@@ -1,6 +1,6 @@
 # Offene Punkte
 
-*Stand: 06.09.2026, spät*
+*Stand: 09.09.2026*
 
 ## Braucht eine Entscheidung
 
@@ -42,8 +42,14 @@
   kontaktlos zahlen lässt. Die übrigen 28 Häuser sind unbekannt, nicht
   verneint. Von Hand recherchieren ginge, braucht dann aber eine Quelle je
   Angabe.
+- **The Corner House: erfasst ist nur die ToGo- und Lieferkarte.** Was im Haus
+  auf der Karte steht, ist damit nicht gesagt — die Datei heißt in den
+  Metadaten „ToGo- und Lieferkarte Lieferando". Sie nennt außerdem eigene
+  Zeiten (Do–So 17:30–21:30), die von den Öffnungszeiten aus OSM abweichen;
+  übernommen ist keine von beiden als die andere.
 - **Bestell- und Lieferlinks:** erster Eintrag steht, Necmi's eigener Shop.
-  Für die übrigen fehlt der Link; OSM führt nur `delivery=yes`.
+  Für die übrigen fehlt der Link; OSM führt nur `delivery=yes`. Beim Corner
+  House liegt einer bei Lieferando nahe, belegt ist er nicht.
 - **Bilder zu den Gerichten fehlen ganz.** Das Schema hat `MenuItem.image`.
   Die ergiebigste Quelle liegt im Asia-Rose-PDF mit seinen 96 freigestellten
   Aufnahmen.
@@ -56,7 +62,9 @@
   Karten bringen neue Schreibweisen, und die fallen erst auf, wenn zwei Zeilen
   nebeneinander stehen, die eine sein sollten.
 - **Die Gangzuordnung ebenso.** `python etl/gaenge.py` zeigt nach jeder neuen
-  Karte, welche Überschriften keine Regel treffen.
+  Karte, welche Überschriften keine Regel treffen. Ihre Grenze ist der Titel:
+  „Drinks" heißt im Staudinger Keller Wodka und Longdrink, im Corner House
+  Guinness und Augustiner, und beide landen unter „Bar und Spirituosen".
 
 ## Kleinere Funde beim Einlesen
 
@@ -71,6 +79,11 @@
 - **Rosenhof: die Variationen mit Aufpreis fehlen.** Word hat sie in einen
   eigenen Rahmen gesetzt, ihre Preise stehen im Ausdruck versetzt zu ihren
   Zeilen. Erkennbar sind sie am Einzug, übernommen werden sie nicht.
+- **Corner House: `pdftotext -layout` liest die Preise falsch.** Es zieht die
+  Preisspalte in einen eigenen Block und verschiebt sie dabei um zwei Zeilen;
+  auf der Dip-Seite bekäme die Guacamole den Preis der Aioli. Über die
+  Wortpositionen stimmt es. Ein gutes Beispiel dafür, warum hier auf
+  Koordinaten gearbeitet wird und nicht auf Fließtext.
 - **Necmi's: vier Pizzen führen zwei Preise unter derselben Größe**, `Ø33cm`
   zweimal. Das ist ein Fehler des Shops, nicht des Ausdrucks; übernommen wird,
   was dort steht.

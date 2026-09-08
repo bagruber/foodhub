@@ -413,7 +413,7 @@ function Head({
           active={filters.onlyWithMenu}
           onClick={() => set({ onlyWithMenu: !filters.onlyWithMenu })}
           icon={<Book className="h-3.5 w-3.5" />}
-          label="mit Karte"
+          label="mit Speisekarte"
         />
       </div>
     </div>

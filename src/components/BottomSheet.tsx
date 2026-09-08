@@ -27,7 +27,7 @@ export type Detent = "peek" | "half" | "full";
 /** Anteil der Fensterhöhe, den das Blatt in dieser Rastung freigibt. */
 const HEIGHT: Record<Detent, string> = {
   peek: "var(--sheet-peek)",
-  half: "52dvh",
+  half: "64dvh",
   full: "calc(100dvh - 4.5rem)",
 };
 

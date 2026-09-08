@@ -22,7 +22,10 @@
     "email": "happy@thecornerhouse.de",
     "website": "https://thecornerhouse-moosburg.de/"
   },
-  "cuisines": [],
+  "cuisines": [
+    "burger",
+    "american"
+  ],
   "reviews": [
     {
       "source": "google_maps",
@@ -50,9 +53,13 @@
       }
     }
   ],
-  "menus": [],
+  "menus": [
+    "the-corner-house_togo_2026-08-19.json"
+  ],
   "open": [
-    "Keine Speisekarte erfasst, Stammdaten aus OpenStreetMap"
+    "Erfasst ist nur die ToGo- und Lieferkarte, nicht die Karte im Haus",
+    "Allergene weist die Karte nicht aus",
+    "Die Karte nennt für ToGo Do-So 17:30-21:30; die Öffnungszeiten aus OSM lauten anders"
   ],
   "openingHours": {
     "raw": "Tu-Th,Su 17:30-23:00; Fr,Sa 17:30-24:00; Mo off",
