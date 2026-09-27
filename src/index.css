@@ -1,7 +1,6 @@
 @import "tailwindcss";
-@import "@fontsource-variable/inter";
-@import "@fontsource/playfair-display/400.css";
-@import "@fontsource/playfair-display/700.css";
+@import "@fontsource-variable/source-serif-4/opsz.css";
+@import "@fontsource-variable/atkinson-hyperlegible-next";
 
 /* Die Grund-Tokens kommen aus dem gemeinsamen Kanon:
    github.com/bagruber/moosburg-design */
@@ -41,7 +40,6 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: "ss01", "cv11";
 }
 
 /* Versal-Playfair wie in den Geschwisterprojekten */
