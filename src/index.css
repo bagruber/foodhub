@@ -2,9 +2,20 @@
 @import "@fontsource-variable/source-serif-4/opsz.css";
 @import "@fontsource-variable/atkinson-hyperlegible-next";
 
+/* MapLibres Stylesheet zuerst, damit die Trimmung weiter unten gewinnt. Lag es
+   im Komponenten-Import, stand es im Bundle hinter unseren Regeln und
+   ueberschrieb sie bei gleicher Spezifitaet. */
+@import "maplibre-gl/dist/maplibre-gl.css";
+
 /* Die Grund-Tokens kommen aus dem gemeinsamen Kanon:
    github.com/bagruber/moosburg-design */
 @import "moosburg-design/css/theme.css";
+
+/* Probe 7C: Zeiger dieser Karte in ihrer Themenfarbe. Eine Stelle, ein Wert.
+   Ersatz 7A: --zeiger: var(--color-red-700); */
+:root {
+  --zeiger: var(--color-thema-aubergine);
+}
 
 @theme {
   /* Merkmale der Gerichte. Gruen fuer die Ernaehrungsform, warm fuer die
@@ -22,9 +33,12 @@ body,
 
 /* Hoehe des zusammengeschobenen Blatts ueber der Karte. Genau Griff, Zeile
    mit Umschalter und Suche, Filterreihe. Keine Liste: die faengt erst in der
-   mittleren Rastung an, darunter gehoert die Flaeche der Karte. */
+   mittleren Rastung an, darunter gehoert die Flaeche der Karte.
+   --blatt-hoehe traegt dieselbe Zahl fuer die aktuelle Rastung: daran haengt
+   der Standort-Knopf, der mit dem Blatt wandert. */
 :root {
   --sheet-peek: 7.75rem;
+  --blatt-hoehe: var(--sheet-peek);
 }
 
 /* Die Filterreihe scrollt waagrecht, ihr Balken stoert dabei nur. */
@@ -42,30 +56,173 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Versal-Playfair wie in den Geschwisterprojekten */
-.headline {
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  font-weight: 700;
-  line-height: 1.05;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
+/* Beschriftung an einem Instrument oder Kopf einer Gruppe: Satzschreibung,
+   13 px, halbfett. Der Titel steht seit der Formsprache-Probe im Band. */
+.mess-label {
+  font-size: 13px;
   font-weight: 600;
-  font-size: 0.6875rem;
-  color: var(--color-ink-muted);
+  color: var(--color-ink-soft);
 }
 
 /* Zahlen in Listen sollen untereinander stehen. */
 .tabular {
-  font-variant-numeric: tabular-nums;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* Gesetzter Filter in Gold (Probe 6). Steht als eine Klasse hier, damit der
+   Ersatz an genau einer Stelle umgelegt wird.
+   Ersatz 6: border-red-500 bg-red-500 text-white */
+.chip-an {
+  border-color: var(--color-gold-500);
+  background: var(--color-gold-100);
+  color: var(--color-gold-700);
+  font-weight: 600;
 }
 
 /* MapLibre bringt eigene Schrift und Farben mit, die hier stoeren. */
 .maplibregl-ctrl-attrib {
   font-family: var(--font-sans);
-  font-size: 10px;
+  font-size: 12px;
+}
+
+/* Kartenknoepfe: Creme, Haarlinie, 4 px Ecken. Die Gruppe von MapLibre wird
+   nicht gezeigt, die Knoepfe kommen mit Phosphor-Zeichen aus der App. */
+.maplibregl-ctrl-top-right {
+  display: none;
+}
+
+/* Massstab als Meterstab, wie ihn gedruckte Karten tragen: vier gleich breite
+   Felder im Wechsel Tinte und Creme unter der Strecke. MapLibre setzt Breite
+   und Text des Elements, die Felder entstehen hier als Hintergrund in Prozent.
+   Keine Flaeche dahinter, nur ein Hof in Creme gegen dunkle Kartenstellen. */
+.maplibregl-ctrl-scale {
+  position: relative;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0 0 8px;
+  color: var(--color-ink-soft);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+  text-shadow:
+    0 0 2px var(--color-cream),
+    0 0 4px var(--color-cream),
+    0 0 6px var(--color-cream);
+}
+.maplibregl-ctrl-scale::before {
+  content: "0";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.maplibregl-ctrl-scale::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 5px;
+  border: 1px solid var(--color-ink);
+  box-shadow: 0 0 0 1px rgb(250 247 242 / 0.85);
+  background: linear-gradient(
+    90deg,
+    var(--color-ink) 0 25%,
+    var(--color-cream) 25% 50%,
+    var(--color-ink) 50% 75%,
+    var(--color-cream) 75%
+  );
+}
+
+/* Popup und Kartenknoepfe auf 4 px, wie der Kanon es fuer Kleinteile auf der
+   Karte vorsieht. */
+.maplibregl-popup-content {
+  border-radius: var(--radius-md);
+}
+
+/* Die Auswahlmarke des gewaehlten Hauses (Probe 10): Klecks mit bleibendem
+   Hof, dazu ein Ring, der beim Waehlen einmal auseinanderlaeuft. */
+.klecks-hof {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 84px;
+  height: 84px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgb(200 16 46 / 0.38) 0,
+    rgb(200 16 46 / 0.16) 45%,
+    rgb(200 16 46 / 0) 70%
+  );
+}
+.klecks-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  border: 2px solid var(--color-red-500);
+  border-radius: 50%;
+  animation: klecks-ring 600ms ease-out forwards;
+}
+@keyframes klecks-ring {
+  from {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+/* Erstes Laden: drei Kacheln mit Rosen, wie der RoseLoader im Stadt-Konzept.
+   Nachladen: dieselbe Rose, nur drehend, an der Stelle der Kennzahl. */
+@keyframes rose-tile-pulse {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(-6px) scale(1.05);
+  }
+  60% {
+    transform: translateY(0) scale(0.96);
+    opacity: 0.55;
+  }
+}
+.rose-tile {
+  animation: rose-tile-pulse 1.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+.rose-tile:nth-child(2) {
+  animation-delay: 200ms;
+}
+.rose-tile:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+@keyframes rose-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rose-spin {
+  animation: rose-spin 1.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rose-tile,
+  .rose-spin,
+  .klecks-ring {
+    animation: none;
+  }
+  .klecks-ring {
+    display: none;
+  }
 }

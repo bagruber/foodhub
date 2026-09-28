@@ -1,12 +1,37 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import type { StyleSpecification } from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
+import { Crosshair, ForkKnife, Minus, Plus } from "@phosphor-icons/react";
+import { createPortal } from "react-dom";
+import { papierton } from "@/lib/papierton";
 import type { Restaurant } from "@/lib/data";
 
 // Amtliche Vektorkacheln des Bundes, wie in der Baumkarte. Kein Schlüssel,
 // keine Cookies, keine Fremdanfrage an einen Anbieter, der mitzählt.
 const BASEMAP = "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/styles/bm_web_gry.json";
+
+/**
+ * Rueckfallebene, falls basemap.de nicht erreichbar ist: die graue
+ * TopPlusOpen des BKG. Bis September 2026 gab es gar keine, dann zeigte die
+ * App bei einem Ausfall Punkte ohne Karte und ohne Hinweis. Das Raster bleibt
+ * ungetoent, ein Raster laesst sich nicht kanalweise multiplizieren.
+ */
+const TOPPLUS: StyleSpecification = {
+  version: 8,
+  sources: {
+    topplus: {
+      type: "raster",
+      tiles: [
+        "https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web_grau/default/WEBMERCATOR/{z}/{y}/{x}.png",
+      ],
+      tileSize: 256,
+      // Der Quellenvermerk nennt, was tatsaechlich geladen wurde, nicht was
+      // geplant war.
+      attribution: "TopPlusOpen, © Bundesamt für Kartographie und Geodäsie",
+    },
+  },
+  layers: [{ id: "topplus", type: "raster", source: "topplus" }],
+};
 
 /**
  * Ab hier zeichnet die Karte zusätzlich den Gebäudeumriss.
@@ -45,10 +70,13 @@ const HIDE_LAYERS = /^(Gebaeudepunkt_|Symbol_BauwerkP_|Symbol_BauwerksP_|Symbol_
 let pending: Promise<StyleSpecification> | null = null;
 
 export function preloadBasemap(): Promise<StyleSpecification> {
+  // Erst ausduennen, dann in den Papierton ziehen: Die weggeworfenen Ebenen
+  // muessen gar nicht erst durchgerechnet werden.
   pending ??= fetch(BASEMAP)
-    .then((r) => r.json())
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
     .then(trim)
-    .catch(() => ({ version: 8, sources: {}, layers: [] }) as StyleSpecification);
+    .then(papierton)
+    .catch(() => TOPPLUS);
   return pending;
 }
 
@@ -74,11 +102,26 @@ type Props = {
   center: { lat: number; lon: number };
   selected: string | null;
   onSelect: (id: string | null) => void;
+  onBereit: () => void;
 };
 
-export function CityMap({ restaurants, center, selected, onSelect }: Props) {
+export function CityMap({ restaurants, center, selected, onSelect, onBereit }: Props) {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<maplibregl.Map | null>(null);
+  const ortung = useRef<maplibregl.GeolocateControl | null>(null);
+  // Die Marke des gewaehlten Hauses haengt als eigenes Element an der Karte
+  // und wird von React hineingezeichnet.
+  const markeEl = useRef<HTMLDivElement | null>(null);
+  if (!markeEl.current && typeof document !== "undefined") {
+    markeEl.current = document.createElement("div");
+  }
+  const marke = useRef<maplibregl.Marker | null>(null);
+  const bereitCb = useRef(onBereit);
+  bereitCb.current = onBereit;
+  // Zoomknoepfe nur mit Maus (Formsprache-Probe, Punkt 9).
+  const [maus] = useState(
+    () => window.matchMedia("(hover: hover) and (pointer: fine)").matches,
+  );
   // Der Klick-Handler soll immer den aktuellen aufrufen, ohne die Karte neu
   // aufzubauen. Deshalb über ein Ref statt über die Abhängigkeitsliste.
   const select = useRef(onSelect);
@@ -101,11 +144,18 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
         attributionControl: { compact: true },
       });
       map.current = instance;
-      instance.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+      // Die Ortung steuert weiter MapLibre, die Knoepfe stehen als eigene
+      // Gruppe daneben: nur so tragen sie die Zeichen der Familie.
+      ortung.current = new maplibregl.GeolocateControl({ trackUserLocation: false });
+      instance.addControl(ortung.current, "top-right");
+      // Meterstab: ab lg unten links in der Karte, darunter oben links.
       instance.addControl(
-        new maplibregl.GeolocateControl({ trackUserLocation: false }),
-        "top-right",
+        new maplibregl.ScaleControl(),
+        window.innerWidth >= 1024 ? "bottom-left" : "top-left",
       );
+      instance.once("idle", () => {
+        if (!cancelled) bereitCb.current();
+      });
 
       instance.on("load", () => {
         if (!instance) return;
@@ -222,6 +272,40 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
     });
   }, [selected, restaurants]);
 
+  // Die Auswahlmarke: ein Klecks am Ort des gewaehlten Hauses. Nie alle
+  // Haeuser als Klecks, sonst ist die Marke keine Auszeichnung mehr.
+  useEffect(() => {
+    const m = map.current;
+    const el = markeEl.current;
+    if (!m || !el) return;
+    const house = restaurants.find((r) => r.id === selected);
+    if (!house?.location) {
+      marke.current?.remove();
+      marke.current = null;
+      return;
+    }
+    // Erst der Ort, dann an die Karte: `addTo` liest die Koordinaten sofort.
+    marke.current ??= new maplibregl.Marker({ element: el });
+    marke.current.setLngLat([house.location.lon, house.location.lat]).addTo(m);
+  }, [selected, restaurants]);
+
+  // Der Punkt des gewaehlten Hauses geht aus der Punktebene, sonst schaut er
+  // unter dem Klecks hervor.
+  useEffect(() => {
+    const m = map.current;
+    if (!m?.getLayer("houses-menu")) return;
+    for (const [id, hasMenu] of [
+      ["houses-menu", true],
+      ["houses-plain", false],
+    ] as const) {
+      m.setFilter(id, [
+        "all",
+        ["==", ["get", "hasMenu"], hasMenu],
+        ["!=", ["get", "id"], selected ?? ""],
+      ]);
+    }
+  }, [selected]);
+
   useEffect(() => {
     const m = map.current;
     if (!m?.isStyleLoaded()) return;
@@ -231,7 +315,89 @@ export function CityMap({ restaurants, center, selected, onSelect }: Props) {
     );
   }, [restaurants]);
 
-  return <div ref={container} className="h-full w-full" />;
+  return (
+    <div className="relative h-full w-full">
+      <div ref={container} className="h-full w-full" />
+
+      {maus ? (
+        <div className="absolute right-3 top-3 z-10 flex flex-col overflow-hidden rounded-md border border-ink-frame bg-cream shadow-soft">
+          <Kartenknopf label="Hineinzoomen" onClick={() => map.current?.zoomIn()}>
+            <Plus size={17} aria-hidden />
+          </Kartenknopf>
+          <Kartenknopf label="Herauszoomen" onClick={() => map.current?.zoomOut()}>
+            <Minus size={17} aria-hidden />
+          </Kartenknopf>
+          <Kartenknopf label="Meinen Standort zeigen" onClick={() => ortung.current?.trigger()}>
+            <Crosshair size={17} aria-hidden />
+          </Kartenknopf>
+        </div>
+      ) : (
+        // Am Daumen statt am Rand: der Standort-Knopf sitzt ueber dem Blatt
+        // und wandert mit, wenn es aufgezogen wird.
+        <button
+          type="button"
+          aria-label="Meinen Standort zeigen"
+          onClick={() => ortung.current?.trigger()}
+          style={{ bottom: "calc(var(--blatt-hoehe) + 12px)" }}
+          className="absolute right-3 z-10 grid h-[42px] w-[42px] place-items-center rounded-xl border border-ink-frame bg-cream text-ink shadow-soft"
+        >
+          <Crosshair size={20} aria-hidden />
+        </button>
+      )}
+
+      {selected && markeEl.current && createPortal(<Klecks schluessel={selected} />, markeEl.current)}
+    </div>
+  );
+}
+
+function Kartenknopf({
+  label,
+  onClick,
+  children,
+}: {
+  label: string;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      onClick={onClick}
+      className="grid h-[34px] w-[34px] place-items-center text-ink hover:bg-cream-dark [&+&]:border-t [&+&]:border-ink-line"
+    >
+      {children}
+    </button>
+  );
+}
+
+/**
+ * Die Auswahlmarke (Probe 10): Klecks mit bleibendem Hof, dazu ein Ring, der
+ * beim Waehlen einmal auseinanderlaeuft. Der Ring haengt am Schluessel des
+ * Hauses, damit er bei jeder neuen Wahl von vorn laeuft.
+ */
+function Klecks({ schluessel }: { schluessel: string }) {
+  return (
+    <div className="relative h-11 w-11">
+      <span aria-hidden className="klecks-hof" />
+      <span key={schluessel} aria-hidden className="klecks-ring" />
+      <svg
+        viewBox="0 0 48 48"
+        className="relative h-11 w-11 drop-shadow-[0_1px_2px_rgb(0_0_0/0.25)]"
+        aria-hidden
+      >
+        <path
+          d="M25 3.5c8.6.3 17.8 5.2 19.2 14.6 1.5 9.8-4 21.5-14.4 24.9C19.7 46.3 6.6 41.5 4.3 30.7 2 19.6 12.2 3 25 3.5z"
+          fill="var(--color-red-100)"
+          stroke="var(--color-cream)"
+          strokeWidth="2.5"
+        />
+      </svg>
+      <span className="absolute inset-0 grid place-items-center text-red-700">
+        <ForkKnife size={19} weight="bold" aria-hidden />
+      </span>
+    </div>
+  );
 }
 
 /**

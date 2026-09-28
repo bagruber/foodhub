@@ -1,240 +1,109 @@
 /**
- * Die Zeichen der Oberfläche, als Pfade statt als Schriftart.
+ * Die Zeichen der Oberfläche.
  *
- * Ein Icon-Paket wäre bequemer, brächte aber ein weiteres Abhängigkeitspaar
- * und für zwanzig Zeichen ein Vielfaches an Gewicht. Alle sind auf demselben
- * Raster von 16 gezeichnet, mit derselben Strichstärke, und nehmen ihre Farbe
- * vom Text darüber.
+ * Bis September 2026 waren sie hier von Hand gezeichnet, auf einem Raster von
+ * 16. Seit der Formsprache-Probe kommen sie aus Phosphor, wie in den
+ * Geschwisterprojekten: ein Satz für alle Projekte wiegt schwerer als zwanzig
+ * gesparte Kilobyte. Die Namen bleiben deutsch beziehungsweise wie gehabt,
+ * damit die Aufrufstellen unverändert lesen.
  *
- * Blatt und Chili sind gefüllt statt gestrichen: sie stehen in der Liste
- * hinter jedem Gericht und müssen auf drei Millimetern noch erkennbar sein.
+ * Zwei Zeichen bleiben von Hand gezeichnet, weil Phosphor sie nicht führt:
+ * das Kontaktlos-Zeichen der Bezahlung und der Stern, der zu Teilen gefüllt
+ * sein muss.
  */
+import {
+  BookOpen,
+  Cardholder,
+  Clock as PhClock,
+  CreditCard,
+  DeviceMobile,
+  ForkKnife,
+  Grains,
+  House as PhHouse,
+  Leaf as PhLeaf,
+  Money,
+  Pepper,
+  Prohibit,
+  QrCode as PhQrCode,
+  ShoppingBag,
+  SlidersHorizontal,
+  Tag as PhTag,
+  Truck as PhTruck,
+  Umbrella as PhUmbrella,
+  type Icon,
+  type IconWeight,
+} from "@phosphor-icons/react";
 
-type Props = { className?: string };
+type Props = { className?: string; weight?: IconWeight };
 
-const STROKE = {
-  fill: "none",
-  stroke: "currentColor",
-  strokeWidth: 1.5,
-  strokeLinecap: "round",
-  strokeLinejoin: "round",
-} as const;
+/**
+ * Ein Phosphor-Zeichen mit unserer Vorgabe: dekorativ, Gewicht `regular`. In
+ * kleinen farbigen Flächen wird `bold` übergeben, sonst trägt der dünne Strich
+ * auf drei Millimetern nicht.
+ */
+function zeichen(Ikon: Icon, standard = "h-4 w-4") {
+  return function Zeichen({ className = standard, weight = "regular" }: Props) {
+    return <Ikon className={className} weight={weight} aria-hidden />;
+  };
+}
 
-function Svg({ className = "h-4 w-4", children }: Props & { children: React.ReactNode }) {
+export const Leaf = zeichen(PhLeaf, "h-3 w-3");
+export const Chilli = zeichen(Pepper, "h-3 w-3");
+export const House = zeichen(PhHouse);
+export const Cutlery = zeichen(ForkKnife);
+export const Sliders = zeichen(SlidersHorizontal);
+export const Clock = zeichen(PhClock);
+export const Wheat = zeichen(Grains);
+export const Truck = zeichen(PhTruck);
+export const Bag = zeichen(ShoppingBag);
+export const Umbrella = zeichen(PhUmbrella);
+export const Book = zeichen(BookOpen);
+export const Card = zeichen(CreditCard);
+export const CardChip = zeichen(Cardholder);
+export const Cash = zeichen(Money);
+export const Phone = zeichen(DeviceMobile);
+export const QrCode = zeichen(PhQrCode);
+export const Tag = zeichen(PhTag);
+export const Verboten = zeichen(Prohibit, "h-3.5 w-3.5");
+
+/**
+ * Kontaktlos: Phosphor hat kein Zeichen dafür. Das Funkwellen-Symbol der
+ * Kartenzahlung ist genormt und als solches erkennbar, ein Ersatz aus dem Satz
+ * wäre eine andere Aussage.
+ */
+export function Contactless({ className = "h-4 w-4" }: Props) {
   return (
     <svg viewBox="0 0 16 16" className={className} aria-hidden="true">
-      {children}
+      <g fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round">
+        <path d="M5.5 5.5a4 4 0 0 1 0 5" />
+        <path d="M8 3.5a7 7 0 0 1 0 9" />
+        <path d="M10.5 1.8a10 10 0 0 1 0 12.4" />
+      </g>
     </svg>
   );
 }
 
-export function Leaf({ className = "h-3 w-3" }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M13 3c0 5.5-3 8.5-7.5 8.5C4 11.5 3 10.5 3 9c0-4 4-6 10-6Z" fill="currentColor" />
-      <path d="M11 5C8 6.5 6 8.5 4.5 13" stroke="currentColor" strokeWidth="1.2" fill="none" />
-    </Svg>
-  );
-}
-
-export function Chilli({ className = "h-3 w-3" }: Props) {
-  return (
-    <Svg className={className}>
-      <path
-        d="M11 4c1.8 0 3 1.6 3 3.6C14 11 11 14 7.5 14 5 14 3 12.6 3 10.6 3 8 6 6 9 6c0-1 .6-2 2-2Z"
-        fill="currentColor"
-      />
-      <path d="M11 4c0-1.2.8-2 2-2" stroke="currentColor" strokeWidth="1.3" fill="none" />
-    </Svg>
-  );
-}
-
-export function House({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M2.5 7 8 2.5 13.5 7v6.5h-11Z" {...STROKE} />
-      <path d="M6.5 13.5v-4h3v4" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Cutlery({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M4 2v4.5a1.5 1.5 0 0 0 3 0V2M5.5 6.5V14" {...STROKE} />
-      <path d="M11.5 14V9.5m0 0c1.2 0 2-.9 2-2.6C13.5 4.5 12.7 2 11.5 2S9.5 4.5 9.5 6.9c0 1.7.8 2.6 2 2.6Z" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Sliders({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M2 4.5h5m3 0h4M2 11.5h4m3 0h5" {...STROKE} />
-      <circle cx="8.5" cy="4.5" r="1.6" {...STROKE} />
-      <circle cx="7.5" cy="11.5" r="1.6" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Clock({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <circle cx="8" cy="8" r="5.8" {...STROKE} />
-      <path d="M8 4.6V8l2.4 1.6" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Wheat({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M8 14V6" {...STROKE} />
-      <path d="M8 6c0-2 1-3.5 2.5-4.5C11 3.5 10 5.5 8 6Zm0 0C8 4 7 2.5 5.5 1.5 5 3.5 6 5.5 8 6Z" {...STROKE} />
-      <path d="M8 10c0-1.6 1-2.8 2.5-3.6C11 8 10 9.6 8 10Zm0 0c0-1.6-1-2.8-2.5-3.6C5 8 6 9.6 8 10Z" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Truck({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M1.5 4h7v6.5h-7Zm7 2H11l2 2.2v2.3H8.5Z" {...STROKE} />
-      <circle cx="4.5" cy="12" r="1.4" {...STROKE} />
-      <circle cx="11" cy="12" r="1.4" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Bag({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M3 5h10l-.8 8.5H3.8Z" {...STROKE} />
-      <path d="M5.8 5V3.6a2.2 2.2 0 0 1 4.4 0V5" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Umbrella({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M1.8 8a6.2 6.2 0 0 1 12.4 0Z" {...STROKE} />
-      <path d="M8 8v4.4a1.6 1.6 0 0 1-3.2 0" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Book({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M2.5 2.5h4A2 2 0 0 1 8 3.2a2 2 0 0 1 1.5-.7h4v10h-4a2 2 0 0 0-1.5.7 2 2 0 0 0-1.5-.7h-4Z" {...STROKE} />
-      <path d="M8 3.2v9.8" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Card({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <rect x="1.5" y="3.5" width="13" height="9" rx="1.5" {...STROKE} />
-      <path d="M1.5 6.5h13M4 10h3" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Tag({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M2.5 2.5h5l6 6-5 5-6-6Z" {...STROKE} />
-      <circle cx="5.3" cy="5.3" r="1" fill="currentColor" />
-    </Svg>
-  );
-}
-
-export function CardChip({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <rect x="1.5" y="3.5" width="13" height="9" rx="1.5" {...STROKE} />
-      <rect x="3.5" y="6" width="3.5" height="2.8" rx="0.6" {...STROKE} />
-      <path d="M10 10.5h3" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Contactless({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <path d="M5 3.2a7 7 0 0 1 0 9.6M8 4.8a4.6 4.6 0 0 1 0 6.4M11 6.4a2.2 2.2 0 0 1 0 3.2" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Cash({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <rect x="1.5" y="4" width="13" height="8" rx="1.2" {...STROKE} />
-      <circle cx="8" cy="8" r="1.9" {...STROKE} />
-      <path d="M4 8h.01M12 8h.01" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function Phone({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <rect x="4.5" y="1.5" width="7" height="13" rx="1.5" {...STROKE} />
-      <path d="M7 12.5h2" {...STROKE} />
-    </Svg>
-  );
-}
-
-export function QrCode({ className }: Props) {
-  return (
-    <Svg className={className}>
-      <rect x="2" y="2" width="4.5" height="4.5" rx="0.8" {...STROKE} />
-      <rect x="9.5" y="2" width="4.5" height="4.5" rx="0.8" {...STROKE} />
-      <rect x="2" y="9.5" width="4.5" height="4.5" rx="0.8" {...STROKE} />
-      <path d="M9.5 9.5h2v2h-2Zm4.5 4.5h-2v-2" {...STROKE} />
-    </Svg>
-  );
-}
-
 /**
- * Der Stern der Bewertungen, wahlweise teilweise gefüllt.
- *
- * `fill` ist der Anteil von 0 bis 1. Gefüllt wird über ein `clipPath` und
- * nicht über zwei übereinandergelegte Sterne: bei 4,3 von 5 ist der fünfte
- * Stern zu 30 Prozent gefüllt, und das soll man sehen.
+ * Der Stern der Herkunftsbewertung, zu einem Teil gefüllt. Phosphor kennt nur
+ * ganz oder gar nicht; ein halber Stern wäre dort zwei übereinandergelegte
+ * Zeichen mit einer Maske, also genau diese Zeichnung.
  */
-export function Star({ className = "h-3.5 w-3.5", fill = 1, id }: Props & { fill?: number; id: string }) {
-  const d = "M8 1.6l1.9 4 4.3.6-3.1 3 .8 4.3L8 11.4 4.1 13.5l.8-4.3-3.1-3 4.3-.6Z";
+export function Star({
+  className = "h-3.5 w-3.5",
+  fill = 1,
+  id,
+}: Props & { fill?: number; id: string }) {
+  const d =
+    "M8 1.6 9.9 5.5l4.3.6-3.1 3 .7 4.3L8 11.4l-3.8 2 .7-4.3-3.1-3 4.3-.6Z";
   return (
-    <Svg className={className}>
-      <path d={d} fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
-      {fill > 0 && (
-        <>
-          <clipPath id={id}>
-            <rect x="0" y="0" width={16 * Math.min(fill, 1)} height="16" />
-          </clipPath>
-          <path d={d} fill="currentColor" clipPath={`url(#${id})`} />
-        </>
-      )}
-    </Svg>
-  );
-}
-
-/**
- * Der durchgestrichene Kreis. Steht an den gewählten Allergenen, weil die
- * als einzige verneinend filtern: alle anderen Marken schränken auf etwas
- * ein, diese schließen etwas aus. Ohne das Zeichen sieht eine gewählte Marke
- * bei den Allergenen genauso aus wie bei der Küche und liest sich falsch
- * herum.
- */
-export function Verboten({ className = "h-3.5 w-3.5" }: Props) {
-  return (
-    <Svg className={className}>
-      <circle cx="8" cy="8" r="6" {...STROKE} />
-      <path d="M3.8 12.2 12.2 3.8" {...STROKE} />
-    </Svg>
+    <svg viewBox="0 0 16 16" className={className} aria-hidden="true">
+      <defs>
+        <clipPath id={id}>
+          <rect x="0" y="0" width={16 * fill} height="16" />
+        </clipPath>
+      </defs>
+      <path d={d} fill="none" stroke="currentColor" strokeWidth="1.2" />
+      <path d={d} fill="currentColor" clipPath={`url(#${id})`} />
+    </svg>
   );
 }

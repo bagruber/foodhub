@@ -54,11 +54,11 @@ export function HouseDetail({
   return (
     <div className="min-h-0 flex-1 overflow-y-auto">
       <div className="sticky top-0 z-10 border-b border-ink-line bg-cream px-4 py-3 lg:py-2.5">
-        <button onClick={onClose} className="eyebrow hover:text-ink">
+        <button onClick={onClose} className="mess-label hover:text-ink">
           ← zurück zur Liste
         </button>
-        <h2 className="headline mt-1 text-xl lg:text-lg">{house.name}</h2>
-        <p className="mt-1 text-sm text-ink-soft lg:mt-0.5 lg:text-xs">{tags.join(" · ")}</p>
+        <h2 className="mt-1 font-display text-xl font-semibold lg:text-lg">{house.name}</h2>
+        <p className="mt-1 text-sm text-ink-soft lg:mt-0.5 lg:text-xs">{tags.join(", ")}</p>
       </div>
 
       <div className="space-y-5 px-4 py-4 lg:space-y-4 lg:py-3 lg:text-[0.9375rem]">
@@ -126,11 +126,11 @@ export function HouseDetail({
 
         {house.openingHours && (
           <section>
-            <h3 className="eyebrow flex items-baseline gap-2">
+            <h3 className="mess-label flex items-baseline gap-2">
               Öffnungszeiten
               {open !== null && (
                 <span
-                  className={`rounded px-1.5 py-0.5 text-[0.65rem] normal-case tracking-normal ${
+                  className={`rounded px-1.5 py-0.5 text-[12px] font-normal ${
                     open ? "bg-diet-vegan/15 text-diet-vegan" : "bg-cream-dark text-ink-muted"
                   }`}
                 >
@@ -161,7 +161,7 @@ export function HouseDetail({
 
         {house.menuProvenance?.map((p, i) => (
           <section key={i}>
-            <h3 className="eyebrow">Speisekarte</h3>
+            <h3 className="mess-label">Speisekarte</h3>
             <Herkunft provenance={p} className="mt-1.5" />
           </section>
         ))}
@@ -177,7 +177,7 @@ export function HouseDetail({
 
         {sections.map(([title, items]) => (
           <section key={title}>
-            <h3 className="eyebrow border-b border-ink-line pb-1">{title}</h3>
+            <h3 className="mess-label border-b border-ink-line pb-1">{title}</h3>
             <ul className="mt-2 space-y-2.5 lg:mt-1.5 lg:space-y-2">
               {items.map((d, i) => (
                 <li key={`${d.ref ?? i}`}>
@@ -280,7 +280,7 @@ function Zahlung({
 
   return (
     <section>
-      <h3 className="eyebrow">Zahlung</h3>
+      <h3 className="mess-label">Zahlung</h3>
       <div className="mt-1.5 flex flex-wrap gap-1.5 text-xs">
         {yes.map(([slug]) => {
           const Icon = PAYMENT_ICON[slug];
@@ -348,7 +348,7 @@ function Bewertungen({ reviews }: { reviews?: Review[] }) {
   if (!reviews?.length) return null;
   return (
     <section>
-      <h3 className="eyebrow">Bewertungen anderswo</h3>
+      <h3 className="mess-label">Bewertungen anderswo</h3>
       <ul className="mt-1.5 space-y-1.5 text-sm">
         {reviews.map((r) => (
           <li key={r.source} className="flex items-center justify-between gap-3">

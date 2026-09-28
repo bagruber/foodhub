@@ -1,6 +1,8 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BottomSheet, type Detent } from "@/components/BottomSheet";
+import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { BottomSheet, HEIGHT, type Detent } from "@/components/BottomSheet";
 import { CityMap, preloadBasemap } from "@/components/CityMap";
+import { Kopf, PanelInhalt } from "@/components/Kopf";
+import { Laden } from "@/components/Laden";
 import { FilterSheet } from "@/components/FilterSheet";
 import { HouseDetail } from "@/components/HouseDetail";
 import { Book, Chilli, Clock, Cutlery, House, Leaf, Sliders } from "@/components/Icons";
@@ -41,6 +43,7 @@ export function App() {
   const [filterOpen, setFilterOpen] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
   const [detent, setDetent] = useState<Detent>("peek");
+  const [karteSteht, setKarteSteht] = useState(false);
 
   useEffect(() => {
     // Der Kartenstil hängt an einer fremden Adresse und wiegt 490 kB. Sein
@@ -61,6 +64,17 @@ export function App() {
 
   const houses = city?.restaurants ?? [];
   const byId = useMemo(() => new Map(houses.map((h) => [h.id, h])), [houses]);
+
+  // Die Kennzahl im Band. Sie kommt aus den Hausdaten, nicht aus der erst
+  // spaeter geladenen dishes.json: sonst stuende im Band minutenlang nichts.
+  const kennzahl = useMemo(() => {
+    const gerichte = houses.reduce((a, h) => a + h.dishCount, 0);
+    const mitKarte = houses.filter((h) => h.dishCount > 0).length;
+    return {
+      zahl: gerichte.toLocaleString("de-DE"),
+      einheit: `Gerichte aus ${mitKarte} Häusern`,
+    };
+  }, [houses]);
 
   // Wie oft eine Art und eine Küche vorkommt. Die Filterliste sortiert danach,
   // sonst steht das eine japanische Haus vor den zwölf bayerischen.
@@ -124,6 +138,7 @@ export function App() {
   // Auch `null`: ein Tipp neben die Punkte hebt die Auswahl auf, und der Weg
   // dorthin ist derselbe wie der aus der Liste heraus.
   const openHouse = useCallback((id: string | null) => setSelected(id), []);
+  const onBereit = useCallback(() => setKarteSteht(true), []);
 
   if (error) return <Notice>Die Daten ließen sich nicht laden. {error}</Notice>;
   if (!city) return <Notice>Wird geladen …</Notice>;
@@ -157,15 +172,13 @@ export function App() {
         byId={byId}
         onSelect={openHouse}
       />
-    ) : (
-      <p className="px-4 py-6 text-sm text-ink-muted">Gerichte werden geladen …</p>
-    );
+    ) : null;
 
   // Die Trefferzahl steht am Kopf der Liste und nicht in der festen Leiste:
   // dort kostete sie eine ganze Zeile Kartenfläche.
   const counted = (
     <>
-      <p className="tabular border-b border-ink-line px-4 py-2 text-xs text-ink-muted lg:py-1.5">
+      <p className="tabular border-b border-ink-line px-4 py-2 text-[12px] text-ink-muted lg:py-1.5">
         {hits} {mode === "houses" ? "Häuser" : "Gerichte"}
       </p>
       {list}
@@ -182,19 +195,42 @@ export function App() {
     />
   ) : null;
 
+  const karte = (
+    <CityMap
+      restaurants={onMap}
+      center={city.city.center}
+      selected={selected}
+      onSelect={openHouse}
+      onBereit={onBereit}
+    />
+  );
+
   return (
-    <>
-      <div className="hidden h-full lg:flex lg:flex-row-reverse">
-        <div className="min-w-0 flex-1 border-l border-ink-line">
-          <CityMap
-            restaurants={onMap}
-            center={city.city.center}
-            selected={selected}
-            onSelect={openHouse}
+    <div
+      className="flex h-full flex-col"
+      style={{ "--blatt-hoehe": HEIGHT[detent] } as CSSProperties}
+    >
+      <Kopf
+        titel="Speisekarten"
+        zahl={kennzahl.zahl}
+        einheit={kennzahl.einheit}
+        zeigeKennzahl={karteSteht}
+        laedtNach={needDishes && !dishData ? "Gerichte werden geladen" : undefined}
+        panel={
+          <PanelInhalt
+            name="Speisekarten Moosburg"
+            satz="Die Karten der Moosburger Gastronomie an einem Ort, nach Gericht durchsuchbar."
+            repo="https://github.com/bagruber/foodhub"
           />
+        }
+      />
+
+      <div className="hidden min-h-0 flex-1 lg:flex lg:flex-row-reverse">
+        <div className="relative min-w-0 flex-1 border-l border-ink-line">
+          {karte}
+          {!karteSteht && <Laden />}
         </div>
-        <div className="flex w-[26rem] min-w-0 flex-col">
-          <DesktopHeader city={city.city.name} />
+        <div className="flex w-[25rem] min-w-0 flex-col">
           {panel ?? (
             <>
               <div className="border-b border-ink-line px-4 py-3">{head}</div>
@@ -204,18 +240,12 @@ export function App() {
         </div>
       </div>
 
-      <div className="relative h-full lg:hidden">
-        <div className="absolute inset-0">
-          <CityMap
-            restaurants={onMap}
-            center={city.city.center}
-            selected={selected}
-            onSelect={openHouse}
-          />
-        </div>
+      <div className="relative min-h-0 flex-1 lg:hidden">
+        <div className="absolute inset-0">{karte}</div>
+        {!karteSteht && <Laden />}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 flex flex-col justify-end">
           {panel ? (
-            <div className="pointer-events-auto max-h-[88dvh] overflow-y-auto rounded-t-2xl border-t border-ink-line bg-cream shadow-[0_-8px_24px_rgba(28,28,28,0.12)]">
+            <div className="pointer-events-auto max-h-[88dvh] overflow-y-auto rounded-t-xl border-t border-ink-line bg-cream shadow-[0_-8px_24px_rgba(28,28,28,0.12)]">
               {panel}
             </div>
           ) : (
@@ -240,7 +270,7 @@ export function App() {
           hits={hits}
         />
       )}
-    </>
+    </div>
   );
 }
 
@@ -287,15 +317,6 @@ function Notice({ children }: { children: React.ReactNode }) {
   return <div className="grid h-full place-items-center p-8 text-sm text-ink-soft">{children}</div>;
 }
 
-function DesktopHeader({ city }: { city: string }) {
-  return (
-    <header className="border-b border-ink-line px-4 pt-3.5 pb-2.5">
-      <p className="eyebrow">{city}</p>
-      <h1 className="headline mt-0.5 text-[1.35rem]">Was gibt es zu essen</h1>
-    </header>
-  );
-}
-
 /**
  * Was in jeder Rastung stehen bleibt: Umschalter, Suche, Filterreihe.
  *
@@ -329,7 +350,7 @@ function Head({
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <div className="flex shrink-0 gap-0.5 rounded-lg bg-cream-dark p-0.5 text-xs">
+        <div className="flex shrink-0 gap-0.5 rounded-xl bg-cream-dark p-0.5 text-[12px]">
           {(
             [
               ["houses", "Häuser", House],
@@ -353,7 +374,7 @@ function Head({
           value={filters.query}
           onFocus={onFocusSearch}
           onChange={(e) => set({ query: e.target.value })}
-          placeholder={mode === "houses" ? "Haus suchen" : "Gericht oder Zutat"}
+          placeholder={mode === "houses" ? "Haus suchen" : "Was gibt es zu essen?"}
           className="min-w-0 flex-1 rounded-lg border border-ink-line bg-cream px-3 py-2 text-sm outline-none placeholder:text-ink-muted focus:border-ink-muted"
         />
       </div>
@@ -361,8 +382,8 @@ function Head({
       <div className="no-scrollbar -mx-4 flex touch-pan-x items-center gap-1.5 overflow-x-auto px-4">
         <button
           onClick={onOpenFilters}
-          className={`flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition ${
-            active ? "border-red-500 bg-red-500 text-white" : "border-ink-line text-ink-soft"
+          className={`flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[12px] font-medium transition ${
+            active ? "chip-an" : "border-ink-line text-ink-soft"
           }`}
         >
           <Sliders className="h-3.5 w-3.5" />
@@ -435,10 +456,8 @@ function Quick({
     <button
       onClick={onClick}
       aria-pressed={active}
-      className={`flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-xs whitespace-nowrap transition ${
-        active
-          ? "border-red-500 bg-red-500 text-white"
-          : "border-ink-line bg-cream text-ink-soft hover:border-ink-muted"
+      className={`flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[12px] whitespace-nowrap transition ${
+        active ? "chip-an" : "border-ink-line bg-cream text-ink-soft hover:border-ink-muted"
       }`}
     >
       {icon}
@@ -468,16 +487,18 @@ function HouseList({
             <div className="flex items-baseline justify-between gap-2">
               <span className="min-w-0 font-medium lg:text-[0.9375rem]">{h.name}</span>
               {h.dishCount > 0 && (
-                <span className="tabular shrink-0 rounded bg-red-100 px-1.5 py-0.5 text-xs font-medium text-red-700">
-                  {h.dishCount}
+                <span className="tabular shrink-0 text-[12px] text-ink-soft">
+                  {h.dishCount} Gerichte
                 </span>
               )}
             </div>
-            <div className="mt-0.5 text-xs text-ink-muted lg:mt-0 lg:text-[0.6875rem]">
+            <div className="mt-0.5 text-[12px] text-ink-muted lg:mt-0">
               {[
-                ...(h.kinds ?? []).map((k) => names.kinds[k] ?? k),
+                // „Restaurant" sagt nichts, was der Ort nicht schon sagt.
+                // Gasthof, Café und Imbiss dagegen schon.
+                ...(h.kinds ?? []).filter((k) => k !== "restaurant").map((k) => names.kinds[k] ?? k),
                 ...h.cuisines.map((c) => names.cuisines[c] ?? c),
-              ].join(" · ") || "ohne Angabe"}
+              ].join(", ") || "ohne Angabe"}
             </div>
           </button>
         </li>
@@ -532,7 +553,7 @@ function GroupList({
         budget -= shown.length;
         return (
           <section key={course}>
-            <h3 className="eyebrow sticky top-0 z-10 border-y border-ink-line bg-cream-dark/95 px-4 py-1.5 backdrop-blur">
+            <h3 className="mess-label sticky top-0 z-10 border-y border-ink-line bg-cream-dark px-4 py-1.5">
               {labels[course]?.label ?? course}
               <span className="tabular ml-1.5 font-normal text-ink-muted">{groups.length}</span>
             </h3>
@@ -548,7 +569,7 @@ function GroupList({
                 />
               ))}
               {rest > 0 && (
-                <li className="px-4 py-3 text-xs text-ink-muted">
+                <li className="px-4 py-3 text-[12px] text-ink-muted">
                   {rest} weitere in diesem Gang, bitte die Suche einengen.
                 </li>
               )}
@@ -592,7 +613,7 @@ function GroupRow({
             {many ? priceRange(g) : g.items[0].prices.map(formatPrice).join(" · ") || "ohne Preis"}
           </span>
         </div>
-        <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-ink-muted lg:mt-0.5">
+        <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[12px] text-ink-muted lg:mt-0.5">
           {/* Einzeilig gekappt: `Da Sophie e Massimo - Gasthaus zur Kegelhalle
               und La Forchetta` lief sonst über zwei Zeilen und machte die
               Liste um die Hälfte höher als nötig. */}
@@ -609,7 +630,7 @@ function GroupRow({
       </button>
 
       {!many && g.items[0].description && (
-        <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-ink-soft">
+        <p className="mt-1 line-clamp-2 text-[12px] leading-relaxed text-ink-soft">
           {g.items[0].description}
         </p>
       )}
@@ -618,7 +639,7 @@ function GroupRow({
         <ul className="mt-2 space-y-1.5 border-l-2 border-ink-line pl-3">
           {g.items.map((d, i) => (
             <li key={`${d.restaurantId}-${d.ref ?? i}`} className="flex justify-between gap-3">
-              <button onClick={() => onSelect(d.restaurantId)} className="min-w-0 text-left text-xs">
+              <button onClick={() => onSelect(d.restaurantId)} className="min-w-0 text-left text-[12px]">
                 <span className="underline decoration-ink-line underline-offset-2">
                   {nameOf(d.restaurantId)}
                 </span>
@@ -626,7 +647,7 @@ function GroupRow({
                     abweicht: sonst stünde `Cola` hinter jedem Haus. */}
                 {d.name !== g.label && <span className="text-ink-muted"> · {d.name}</span>}
               </button>
-              <span className="tabular max-w-[55%] shrink-0 text-right text-xs text-ink-soft">
+              <span className="tabular max-w-[55%] shrink-0 text-right text-[12px] text-ink-soft">
                 {d.prices.map(formatPrice).join(" · ") || "ohne Preis"}
               </span>
             </li>

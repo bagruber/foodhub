@@ -24,8 +24,10 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export type Detent = "peek" | "half" | "full";
 
-/** Anteil der Fensterhöhe, den das Blatt in dieser Rastung freigibt. */
-const HEIGHT: Record<Detent, string> = {
+/** Anteil der Fensterhöhe, den das Blatt in dieser Rastung freigibt. Auch der
+ *  Standort-Knopf auf der Karte haengt daran: er sitzt ueber dem Blatt und
+ *  wandert mit. */
+export const HEIGHT: Record<Detent, string> = {
   peek: "var(--sheet-peek)",
   half: "64dvh",
   full: "calc(100dvh - 4.5rem)",
@@ -108,7 +110,7 @@ export function BottomSheet({ detent, onDetent, head, children }: Props) {
   return (
     <div
       style={style}
-      className="pointer-events-auto flex flex-col rounded-t-2xl border-t border-ink-line bg-cream shadow-[0_-8px_24px_rgba(28,28,28,0.12)]"
+      className="pointer-events-auto flex flex-col rounded-t-xl border-t border-ink-line bg-cream shadow-[0_-8px_24px_rgba(28,28,28,0.12)]"
     >
       <div
         onPointerDown={(e) => begin(e, "handle")}

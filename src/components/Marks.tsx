@@ -37,7 +37,7 @@ function Mark({
   return (
     <span
       title={title}
-      className={`inline-flex items-center gap-0.5 rounded px-1 py-0.5 text-[0.65rem] font-medium ${colour} ${
+      className={`inline-flex items-center gap-0.5 rounded px-1 py-0.5 text-[12px] font-medium ${colour} ${
         declared ? "bg-current/12" : "border border-current/40 border-dashed"
       }`}
     >
@@ -60,7 +60,7 @@ export function Marks({ dish }: { dish: Dish }) {
         declared={declared}
         title={declared ? "vegan, laut Karte" : "vermutlich vegan, aus der Beschreibung geschlossen"}
       >
-        <Leaf />
+        <Leaf weight="bold" />
         vegan
       </Mark>,
     );
@@ -77,7 +77,7 @@ export function Marks({ dish }: { dish: Dish }) {
             : "vermutlich vegetarisch, aus der Beschreibung geschlossen"
         }
       >
-        <Leaf />
+        <Leaf weight="bold" />
         veg
       </Mark>,
     );

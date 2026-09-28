@@ -44,7 +44,7 @@ export function FilterSheet(p: Props) {
   return (
     <div className="fixed inset-0 z-30 flex flex-col bg-cream">
       <header className="flex shrink-0 items-baseline justify-between border-b border-ink-line px-4 py-3">
-        <h2 className="headline text-lg">Filter</h2>
+        <h2 className="font-display text-lg font-semibold">Filter</h2>
         <button onClick={p.onClose} className="text-sm underline underline-offset-2">
           Schließen
         </button>
@@ -92,7 +92,8 @@ export function FilterSheet(p: Props) {
                   onChange={(e) =>
                     set({ openAt: { ...f.openAt!, minute: Number(e.target.value) } })
                   }
-                  className="mt-1 w-full accent-red-500"
+                  className="mt-1 w-full"
+                  style={{ accentColor: "var(--zeiger)" }}
                 />
               </label>
               <p className="text-xs text-ink-muted">
@@ -261,7 +262,7 @@ function Section({
 }) {
   return (
     <section>
-      <h3 className="eyebrow flex items-center gap-1.5">
+      <h3 className="mess-label flex items-center gap-1.5">
         <span className="text-ink-soft">{icon}</span>
         {title}
       </h3>
@@ -323,7 +324,7 @@ export function Chip({
       aria-pressed={active}
       className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs transition ${
         active
-          ? "border-red-500 bg-red-500 text-white"
+          ? "chip-an"
           : "border-ink-line bg-cream text-ink-soft hover:border-ink-muted"
       }`}
     >

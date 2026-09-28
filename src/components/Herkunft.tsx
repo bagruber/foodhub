@@ -61,7 +61,7 @@ export function Herkunft({
   return (
     <div className={`text-xs leading-relaxed text-ink-soft ${className}`}>
       <div className="flex flex-wrap items-baseline gap-x-1.5">
-        <span className="eyebrow">Quelle</span>
+        <span className="mess-label">Quelle</span>
         {provenance.url ? (
           <a
             href={provenance.url}
