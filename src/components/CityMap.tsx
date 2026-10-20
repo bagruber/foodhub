@@ -1,10 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-import maplibregl from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
 import type { StyleSpecification } from "maplibre-gl";
+import maplibreWorker from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import { Crosshair, ForkKnife, Minus, Plus } from "@phosphor-icons/react";
 import { createPortal } from "react-dom";
 import { papierton } from "@/lib/papierton";
 import type { Restaurant } from "@/lib/data";
+
+// MapLibre 6 laedt seinen Worker als eigenes Modul. Ohne die gebuendelte URL
+// findet der Vite-Build ihn nicht, und die Karte bleibt leer.
+maplibregl.setWorkerUrl(maplibreWorker);
 
 // Amtliche Vektorkacheln des Bundes, wie in der Baumkarte. Kein Schlüssel,
 // keine Cookies, keine Fremdanfrage an einen Anbieter, der mitzählt.
